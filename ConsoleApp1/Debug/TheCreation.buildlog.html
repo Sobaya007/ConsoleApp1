@@ -1,0 +1,68 @@
+<html><head><META HTTP-EQUIV="Content-Type" content="text/html">
+</head><body><pre>
+<table width=100% bgcolor=#CFCFE5><tr><td>
+	<font face=arial size=+3>Build Log</font>
+</table>
+<table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Building Debug\TheCreation.exe
+</font></table>
+<table width=100% bgcolor=#EFEFE5><tr><td><font face=arial size=+1>
+Command Line
+</font></table>
+set PATH=C:\D\dmd2\windows\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\\Common7\IDE;C:\Program Files (x86)\Windows Kits\8.0\\bin;%PATH%
+set DMD_LIB=;DerelictLib
+
+echo Camera.d &gt;Debug\TheCreation.build.rsp
+echo SbyLib\Manipulator.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\gl\FrameBufferObject.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\gl\imports.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\gl\IndexBufferObject.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\gl\RenderBufferObject.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\gl\ShaderProgram.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\gl\TextureObject.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\gl\VertexArrayObject.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\gl\VertexBufferObject.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\fpscounter.d &gt;&gt;Debug\TheCreation.build.rsp
+echo functions.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\imports.d &gt;&gt;Debug\TheCreation.build.rsp
+echo math.d &gt;&gt;Debug\TheCreation.build.rsp
+echo others.d &gt;&gt;Debug\TheCreation.build.rsp
+echo package.d &gt;&gt;Debug\TheCreation.build.rsp
+echo primitive.d &gt;&gt;Debug\TheCreation.build.rsp
+echo world.d &gt;&gt;Debug\TheCreation.build.rsp
+echo FluidUtils.d &gt;&gt;Debug\TheCreation.build.rsp
+echo Import.d &gt;&gt;Debug\TheCreation.build.rsp
+echo main.d &gt;&gt;Debug\TheCreation.build.rsp
+echo Player.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyDistanceField.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyScript.d &gt;&gt;Debug\TheCreation.build.rsp
+
+dmd -g -debug -X -Xf&quot;Debug\TheCreation.json&quot; -Iderelict -deps=&quot;Debug\TheCreation.dep&quot; -c -of&quot;Debug\TheCreation.obj&quot; @Debug\TheCreation.build.rsp
+if errorlevel 1 goto reportError
+
+set LIB=&quot;C:\D\dmd2\windows\bin\..\lib&quot;;\dm\lib
+echo. &gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo &quot;Debug\TheCreation.obj&quot;,&quot;Debug\TheCreation.exe&quot;,&quot;Debug\TheCreation.map&quot;,DerelictUtil.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo DerelictGL3.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo DerelictGLFW3.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo DerelictIL.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo DerelictFT.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo user32.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo kernel32.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo DerelictLib\/NOMAP/CO/NOI/DELEXE &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+
+&quot;C:\Program Files (x86)\VisualD\pipedmd.exe&quot; -deps Debug\TheCreation.lnkdep C:\D\dmd2\windows\bin\link.exe @C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+if errorlevel 1 goto reportError
+if not exist &quot;Debug\TheCreation.exe&quot; (echo &quot;Debug\TheCreation.exe&quot; not created! &amp;&amp; goto reportError)
+
+goto noError
+
+:reportError
+echo Building Debug\TheCreation.exe failed!
+
+:noError
+<table width=100% bgcolor=#EFEFE5><tr><td><font face=arial size=+1>
+Output
+</font></table>
+
+</body></html>

@@ -1,0 +1,4774 @@
+[
+ {
+  "name" : "sbylib.camera.camera",
+  "kind" : "module",
+  "file" : "Camera.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Camera",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "eye",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 8,
+      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3",
+      "init" : "Vector([0F, 0F, -1F])",
+      "offset" : 8
+     },
+     {
+      "name" : "vec",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 9,
+      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3",
+      "init" : "Vector([0F, 0F, 1F])",
+      "offset" : 20
+     },
+     {
+      "name" : "up",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 10,
+      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3",
+      "init" : "Vector([0F, 1F, 0F])",
+      "offset" : 32
+     },
+     {
+      "name" : "viewUpdate",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 11,
+      "deco" : "b",
+      "init" : "true",
+      "offset" : 44
+     },
+     {
+      "name" : "viewMatrix",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 12,
+      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "offset" : 48
+     },
+     {
+      "name" : "projUpdate",
+      "kind" : "variable",
+      "protection" : "protected",
+      "line" : 13,
+      "deco" : "b",
+      "init" : "true",
+      "offset" : 176
+     },
+     {
+      "name" : "projMatrix",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 14,
+      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "offset" : 180
+     },
+     {
+      "name" : "baseVecUpdate",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 15,
+      "deco" : "G3b",
+      "originalType" : "bool[3]",
+      "init" : "true",
+      "offset" : 308
+     },
+     {
+      "name" : "baseVec",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 16,
+      "deco" : "G3S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3[3]",
+      "offset" : 312
+     },
+     {
+      "name" : "viewProjUpdate",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 17,
+      "deco" : "b",
+      "offset" : 348
+     },
+     {
+      "name" : "viewProjMatrix",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 18,
+      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "offset" : 352
+     },
+     {
+      "name" : "nearZ",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 19,
+      "deco" : "f",
+      "offset" : 480
+     },
+     {
+      "name" : "farZ",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 19,
+      "deco" : "f",
+      "offset" : 484
+     },
+     {
+      "name" : "manip",
+      "kind" : "variable",
+      "line" : 23,
+      "deco" : "C6sbylib6camera11manipulator20SbyCameraManipulator",
+      "originalType" : "SbyCameraManipulator",
+      "offset" : 488
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 25,
+      "deco" : "FZC6sbylib6camera6camera6Camera",
+      "endline" : 27
+     },
+     {
+      "name" : "CreateSetterGetter!(eye, \"baseVecUpdate[0] = baseVecUpdate[2] = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09   viewUpdate = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09   viewProjUpdate = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 32
+     },
+     {
+      "name" : "CreateSetterGetter!(vec, \"baseVecUpdate[0] = baseVecUpdate[2] = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09  viewUpdate = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09  viewProjUpdate = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 37
+     },
+     {
+      "name" : "CreateSetterGetter!(up, \"baseVecUpdate[1] = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09  viewUpdate = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09  viewProjUpdate = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 42
+     },
+     {
+      "name" : "CreateSetterGetter!(nearZ, \"projUpdate = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 44
+     },
+     {
+      "name" : "CreateSetterGetter!(farZ, \"projUpdate = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 45
+     },
+     {
+      "name" : "Target",
+      "kind" : "function",
+      "line" : 48,
+      "storageClass" : [
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 t)",
+      "parameters" : [
+       {
+        "name" : "t",
+        "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 53
+     },
+     {
+      "name" : "XVec",
+      "kind" : "function",
+      "line" : 54,
+      "storageClass" : [
+       "@property"
+      ],
+      "deco" : "FNdZS6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 60
+     },
+     {
+      "name" : "YVec",
+      "kind" : "function",
+      "line" : 61,
+      "storageClass" : [
+       "@property"
+      ],
+      "deco" : "FNdZS6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 67
+     },
+     {
+      "name" : "ZVec",
+      "kind" : "function",
+      "line" : 68,
+      "storageClass" : [
+       "@property"
+      ],
+      "deco" : "FNdZS6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 74
+     },
+     {
+      "name" : "GetViewMatrix",
+      "kind" : "function",
+      "line" : 77,
+      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4()",
+      "endline" : 83
+     },
+     {
+      "name" : "GetProjectionMatrix",
+      "kind" : "function",
+      "line" : 85,
+      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4()",
+      "endline" : 91
+     },
+     {
+      "name" : "GetViewProjectionMatrix",
+      "kind" : "function",
+      "line" : 93,
+      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4()",
+      "endline" : 99
+     },
+     {
+      "name" : "GetBillboardMatrix",
+      "kind" : "function",
+      "line" : 101,
+      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4()",
+      "endline" : 105
+     },
+     {
+      "name" : "KeyMove",
+      "kind" : "function",
+      "line" : 107,
+      "deco" : "FZv",
+      "endline" : 109
+     },
+     {
+      "name" : "GenerateProjectionMatrix",
+      "kind" : "function",
+      "protection" : "protected",
+      "line" : 111,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4()"
+     }
+    ]
+   },
+   {
+    "name" : "PerspectiveCamera",
+    "kind" : "class",
+    "line" : 114,
+    "base" : "Camera",
+    "members" : [
+     {
+      "name" : "aspectWperH",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 116,
+      "deco" : "f",
+      "offset" : 492
+     },
+     {
+      "name" : "fovy",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 117,
+      "deco" : "f",
+      "offset" : 496
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 120,
+      "deco" : "FffffZC6sbylib6camera6camera17PerspectiveCamera",
+      "parameters" : [
+       {
+        "name" : "aspect",
+        "deco" : "f"
+       },
+       {
+        "name" : "fovy",
+        "deco" : "f"
+       },
+       {
+        "name" : "nearZ",
+        "deco" : "f"
+       },
+       {
+        "name" : "farZ",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 125
+     },
+     {
+      "name" : "CreateSetterGetter!(aspectWperH, \"projUpdate = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 127
+     },
+     {
+      "name" : "CreateSetterGetter!(fovy, \"projUpdate = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 128
+     },
+     {
+      "name" : "GenerateProjectionMatrix",
+      "kind" : "function",
+      "line" : 130,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4()",
+      "endline" : 132,
+      "overrides" : [
+       "sbylib.camera.camera.Camera.GenerateProjectionMatrix"
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "OrthoCamera",
+    "kind" : "class",
+    "line" : 135,
+    "base" : "Camera",
+    "members" : [
+     {
+      "name" : "width",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 137,
+      "deco" : "f",
+      "offset" : 492
+     },
+     {
+      "name" : "height",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 137,
+      "deco" : "f",
+      "offset" : 496
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 140,
+      "deco" : "FffffZC6sbylib6camera6camera11OrthoCamera",
+      "parameters" : [
+       {
+        "name" : "width",
+        "deco" : "f"
+       },
+       {
+        "name" : "height",
+        "deco" : "f"
+       },
+       {
+        "name" : "nearZ",
+        "deco" : "f"
+       },
+       {
+        "name" : "farZ",
+        "deco" : "f"
+       }
+      ],
+      "endline" : 145
+     },
+     {
+      "name" : "CreateSetterGetter!(width, \"projUpdate = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 147
+     },
+     {
+      "name" : "CreateSetterGetter!(height, \"projUpdate = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 148
+     },
+     {
+      "name" : "GenerateProjectionMatrix",
+      "kind" : "function",
+      "line" : 150,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4()",
+      "endline" : 152,
+      "overrides" : [
+       "sbylib.camera.camera.Camera.GenerateProjectionMatrix"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.camera.manipulator",
+  "kind" : "module",
+  "file" : "SbyLib\\Manipulator.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 2,
+    "protection" : "private"
+   },
+   {
+    "name" : "SbyCameraManipulator",
+    "kind" : "class",
+    "line" : 4,
+    "members" : [
+     {
+      "name" : "Manipulate",
+      "kind" : "function",
+      "line" : 6,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FC6sbylib6camera6camera6CameraZv",
+      "parameters" : [
+       {
+        "name" : "camera",
+        "deco" : "C6sbylib6camera6camera6Camera"
+       }
+      ]
+     },
+     {
+      "name" : "LeftKey",
+      "kind" : "variable",
+      "line" : 8,
+      "deco" : "k",
+      "init" : "87u",
+      "offset" : 8
+     }
+    ]
+   },
+   {
+    "name" : "CameraSimpleRotator",
+    "kind" : "class",
+    "line" : 12,
+    "base" : "SbyCameraManipulator",
+    "members" : [
+     {
+      "name" : "Manipulate",
+      "kind" : "function",
+      "line" : 14,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FC6sbylib6camera6camera6CameraZv",
+      "parameters" : [
+       {
+        "name" : "camera",
+        "deco" : "C6sbylib6camera6camera6Camera"
+       }
+      ],
+      "endline" : 52,
+      "overrides" : [
+       "sbylib.camera.manipulator.SbyCameraManipulator.Manipulate"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.gl.FrameBufferObject",
+  "kind" : "module",
+  "file" : "sbylib\\gl\\FrameBufferObject.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "FrameBufferObject",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "id",
+      "kind" : "variable",
+      "line" : 9,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yk",
+      "originalType" : "uint",
+      "offset" : 8
+     },
+     {
+      "name" : "viewportData",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 11,
+      "deco" : "G4i",
+      "originalType" : "int[4]",
+      "offset" : 12
+     },
+     {
+      "name" : "frameBufferData",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 12,
+      "deco" : "i",
+      "offset" : 28
+     },
+     {
+      "name" : "texIdData",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 13,
+      "deco" : "i",
+      "offset" : 32
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 15,
+      "deco" : "FZC6sbylib2gl17FrameBufferObject17FrameBufferObject",
+      "endline" : 19
+     },
+     {
+      "name" : "~this",
+      "kind" : "destructor",
+      "line" : 21,
+      "deco" : "FZv",
+      "endline" : 23
+     },
+     {
+      "name" : "fb",
+      "kind" : "variable",
+      "line" : 25,
+      "deco" : "i",
+      "offset" : 36
+     },
+     {
+      "name" : "Bind",
+      "kind" : "function",
+      "line" : 27,
+      "deco" : "FZv",
+      "endline" : 32
+     },
+     {
+      "name" : "UnBind",
+      "kind" : "function",
+      "line" : 34,
+      "deco" : "FZv",
+      "endline" : 36
+     },
+     {
+      "name" : "AttatchTextureAsColor",
+      "kind" : "function",
+      "line" : 38,
+      "deco" : "FC6sbylib2gl13TextureObject13TextureObjectZv",
+      "parameters" : [
+       {
+        "name" : "tex",
+        "deco" : "C6sbylib2gl13TextureObject13TextureObject"
+       }
+      ],
+      "endline" : 43
+     },
+     {
+      "name" : "AttatchTextureAsDepth",
+      "kind" : "function",
+      "line" : 45,
+      "deco" : "FC6sbylib2gl13TextureObject13TextureObjectZv",
+      "parameters" : [
+       {
+        "name" : "tex",
+        "deco" : "C6sbylib2gl13TextureObject13TextureObject"
+       }
+      ],
+      "endline" : 50
+     },
+     {
+      "name" : "AttatchRenderBufferObjectAsColor",
+      "kind" : "function",
+      "line" : 52,
+      "deco" : "FC6sbylib2gl18RenderBufferObject18RenderBufferObjectZv",
+      "parameters" : [
+       {
+        "name" : "rb",
+        "deco" : "C6sbylib2gl18RenderBufferObject18RenderBufferObject"
+       }
+      ],
+      "endline" : 57
+     },
+     {
+      "name" : "AttatchRenderBufferObjectAsDepth",
+      "kind" : "function",
+      "line" : 59,
+      "deco" : "FC6sbylib2gl18RenderBufferObject18RenderBufferObjectZv",
+      "parameters" : [
+       {
+        "name" : "rb",
+        "deco" : "C6sbylib2gl18RenderBufferObject18RenderBufferObject"
+       }
+      ],
+      "endline" : 64
+     },
+     {
+      "name" : "WriteBegin",
+      "kind" : "function",
+      "line" : 66,
+      "deco" : "FiiZv",
+      "parameters" : [
+       {
+        "name" : "width",
+        "deco" : "i"
+       },
+       {
+        "name" : "height",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 79
+     },
+     {
+      "name" : "WriteEnd",
+      "kind" : "function",
+      "line" : 81,
+      "deco" : "FZv",
+      "endline" : 86
+     },
+     {
+      "name" : "Write",
+      "kind" : "function",
+      "line" : 88,
+      "deco" : "FiiDFZvZv",
+      "parameters" : [
+       {
+        "name" : "width",
+        "deco" : "i"
+       },
+       {
+        "name" : "height",
+        "deco" : "i"
+       },
+       {
+        "name" : "Draw",
+        "deco" : "DFZv"
+       }
+      ],
+      "endline" : 92
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.gl.imports",
+  "kind" : "module",
+  "file" : "sbylib\\gl\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.gl.FrameBufferObject",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.gl.RenderBufferObject",
+    "kind" : "import",
+    "line" : 4
+   },
+   {
+    "name" : "sbylib.gl.ShaderProgram",
+    "kind" : "import",
+    "line" : 5
+   },
+   {
+    "name" : "sbylib.gl.TextureObject",
+    "kind" : "import",
+    "line" : 6
+   },
+   {
+    "name" : "sbylib.gl.VertexArrayObject",
+    "kind" : "import",
+    "line" : 7
+   },
+   {
+    "name" : "sbylib.gl.VertexBufferObject",
+    "kind" : "import",
+    "line" : 8
+   },
+   {
+    "name" : "sbylib.gl.IndexBufferObject",
+    "kind" : "import",
+    "line" : 9
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.gl.IndexBufferObject",
+  "kind" : "module",
+  "file" : "sbylib\\gl\\IndexBufferObject.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "IndexBufferObject(T)",
+    "line" : 5,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "IndexBufferObject",
+      "kind" : "class",
+      "line" : 5,
+      "members" : [
+       {
+        "name" : "Frequency",
+        "kind" : "enum",
+        "line" : 7,
+        "members" : [
+         {
+          "name" : "STREAM",
+          "kind" : "enum member",
+          "line" : 8
+         },
+         {
+          "name" : "DYNAMIC",
+          "kind" : "enum member",
+          "line" : 8
+         },
+         {
+          "name" : "STATIC",
+          "kind" : "enum member",
+          "line" : 8
+         }
+        ]
+       },
+       {
+        "name" : "id",
+        "kind" : "variable",
+        "line" : 11,
+        "deco" : "k"
+       },
+       {
+        "name" : "usage",
+        "kind" : "variable",
+        "line" : 12,
+        "deco" : "k"
+       },
+       {
+        "name" : "length",
+        "kind" : "variable",
+        "line" : 13,
+        "deco" : "i"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 15,
+        "type" : "(T[] data, Frequency frequency)",
+        "parameters" : [
+         {
+          "name" : "data",
+          "type" : "T[]"
+         },
+         {
+          "name" : "frequency",
+          "type" : "Frequency"
+         }
+        ],
+        "endline" : 26
+       },
+       {
+        "name" : "~this",
+        "kind" : "destructor",
+        "line" : 28,
+        "endline" : 30
+       },
+       {
+        "name" : "Bind",
+        "kind" : "function",
+        "line" : 32,
+        "type" : "const void()",
+        "endline" : 34
+       },
+       {
+        "name" : "UnBind",
+        "kind" : "function",
+        "line" : 36,
+        "type" : "const void()",
+        "endline" : 38
+       },
+       {
+        "name" : "Update",
+        "kind" : "function",
+        "line" : 40,
+        "type" : "void(T[] data)",
+        "parameters" : [
+         {
+          "name" : "data",
+          "type" : "T[]"
+         }
+        ],
+        "endline" : 49
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "IBO",
+    "kind" : "alias",
+    "line" : 54
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.gl.RenderBufferObject",
+  "kind" : "module",
+  "file" : "sbylib\\gl\\RenderBufferObject.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "RenderBufferObject",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "id",
+      "kind" : "variable",
+      "line" : 6,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yk",
+      "originalType" : "uint",
+      "offset" : 8
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 8,
+      "deco" : "FZC6sbylib2gl18RenderBufferObject18RenderBufferObject",
+      "endline" : 12
+     },
+     {
+      "name" : "~this",
+      "kind" : "destructor",
+      "line" : 14,
+      "deco" : "FZv",
+      "endline" : 16
+     },
+     {
+      "name" : "Bind",
+      "kind" : "function",
+      "line" : 18,
+      "deco" : "FZv",
+      "endline" : 20
+     },
+     {
+      "name" : "UnBind",
+      "kind" : "function",
+      "line" : 22,
+      "deco" : "FZv",
+      "endline" : 24
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.gl.ShaderProgram",
+  "kind" : "module",
+  "file" : "sbylib\\gl\\ShaderProgram.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "ShaderProgram",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "InputType",
+      "kind" : "enum",
+      "line" : 7,
+      "baseDeco" : "i",
+      "members" : [
+       {
+        "name" : "SourceCode",
+        "kind" : "enum member",
+        "line" : 7
+       },
+       {
+        "name" : "FilePath",
+        "kind" : "enum member",
+        "line" : 7
+       }
+      ]
+     },
+     {
+      "name" : "programID",
+      "kind" : "variable",
+      "line" : 9,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yk",
+      "originalType" : "uint",
+      "offset" : 8
+     },
+     {
+      "name" : "Shaders",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 10,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "HAyak"
+     },
+     {
+      "name" : "attributeApply",
+      "kind" : "variable",
+      "line" : 11,
+      "deco" : "HAyaDFZv",
+      "offset" : 12
+     },
+     {
+      "name" : "uniformApply",
+      "kind" : "variable",
+      "line" : 12,
+      "deco" : "HAyaDFZv",
+      "offset" : 16
+     },
+     {
+      "name" : "texIDs",
+      "kind" : "variable",
+      "line" : 14,
+      "deco" : "HiS3std8typecons14__T5TupleTkTiZ5Tuple",
+      "offset" : 20
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 16,
+      "deco" : "FAyaAyaE6sbylib2gl13ShaderProgram13ShaderProgram9InputTypeZC6sbylib2gl13ShaderProgram13ShaderProgram",
+      "parameters" : [
+       {
+        "name" : "vs",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "fs",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "inputType",
+        "deco" : "E6sbylib2gl13ShaderProgram13ShaderProgram9InputType"
+       }
+      ],
+      "endline" : 25
+     },
+     {
+      "name" : "~this",
+      "kind" : "destructor",
+      "line" : 27,
+      "deco" : "FZv",
+      "endline" : 29
+     },
+     {
+      "name" : "Uniform",
+      "kind" : "function",
+      "protection" : "package",
+      "line" : 31,
+      "deco" : "xFZv",
+      "endline" : 40
+     },
+     {
+      "name" : "SetTexture",
+      "kind" : "function",
+      "line" : 42,
+      "deco" : "FC6sbylib2gl13TextureObject13TextureObjectAyaiZv",
+      "parameters" : [
+       {
+        "name" : "texObj",
+        "deco" : "C6sbylib2gl13TextureObject13TextureObject"
+       },
+       {
+        "name" : "locationName",
+        "deco" : "Aya",
+        "default" : "\"mTexture\""
+       },
+       {
+        "name" : "textureUnit",
+        "deco" : "i",
+        "default" : "0"
+       }
+      ],
+      "endline" : 44
+     },
+     {
+      "name" : "SetTexture",
+      "kind" : "function",
+      "line" : 46,
+      "deco" : "FkAyaiZv",
+      "parameters" : [
+       {
+        "name" : "texID",
+        "deco" : "k"
+       },
+       {
+        "name" : "locationName",
+        "deco" : "Aya",
+        "default" : "\"mTexture\""
+       },
+       {
+        "name" : "textureUnit",
+        "deco" : "i",
+        "default" : "0"
+       }
+      ],
+      "endline" : 51
+     },
+     {
+      "name" : "SetVertex",
+      "kind" : "function",
+      "line" : 53,
+      "deco" : "FkAfZv",
+      "parameters" : [
+       {
+        "name" : "vertexBufferID",
+        "deco" : "k"
+       },
+       {
+        "name" : "vertex",
+        "deco" : "Af"
+       }
+      ],
+      "endline" : 61
+     },
+     {
+      "name" : "SetTexcoord",
+      "kind" : "function",
+      "line" : 63,
+      "deco" : "FkAfZv",
+      "parameters" : [
+       {
+        "name" : "vertexBufferID",
+        "deco" : "k"
+       },
+       {
+        "name" : "texcoords",
+        "deco" : "Af"
+       }
+      ],
+      "endline" : 71
+     },
+     {
+      "kind" : "template",
+      "name" : "SetAttribute(int num, string name)(void delegate() preFunc = null, float* attribute = null)",
+      "line" : 73,
+      "parameters" : [
+       {
+        "name" : "num",
+        "kind" : "value",
+        "deco" : "i"
+       },
+       {
+        "name" : "name",
+        "kind" : "value",
+        "deco" : "Aya"
+       }
+      ],
+      "members" : [
+       {
+        "name" : "SetAttribute",
+        "kind" : "function",
+        "line" : 73,
+        "type" : "void(void delegate() preFunc = null, float* attribute = null)",
+        "parameters" : [
+         {
+          "name" : "preFunc",
+          "type" : "void delegate()",
+          "default" : "null"
+         },
+         {
+          "name" : "attribute",
+          "type" : "float*",
+          "default" : "null"
+         }
+        ],
+        "endline" : 81
+       }
+      ]
+     },
+     {
+      "kind" : "template",
+      "name" : "SetUniform(int num, string name)(float[num] uniform...)",
+      "line" : 83,
+      "parameters" : [
+       {
+        "name" : "num",
+        "kind" : "value",
+        "deco" : "i"
+       },
+       {
+        "name" : "name",
+        "kind" : "value",
+        "deco" : "Aya"
+       }
+      ],
+      "members" : [
+       {
+        "name" : "SetUniform",
+        "kind" : "function",
+        "line" : 83,
+        "type" : "void(float[num] uniform...)",
+        "parameters" : [
+         {
+          "name" : "uniform",
+          "type" : "float[num]"
+         }
+        ],
+        "endline" : 88
+       }
+      ]
+     },
+     {
+      "kind" : "template",
+      "name" : "SetUniformMatrix(int num, string name)(float[] uniform)",
+      "line" : 90,
+      "parameters" : [
+       {
+        "name" : "num",
+        "kind" : "value",
+        "deco" : "i"
+       },
+       {
+        "name" : "name",
+        "kind" : "value",
+        "deco" : "Aya"
+       }
+      ],
+      "members" : [
+       {
+        "name" : "SetUniformMatrix",
+        "kind" : "function",
+        "line" : 90,
+        "type" : "void(float[] uniform)",
+        "parameters" : [
+         {
+          "name" : "uniform",
+          "type" : "float[]"
+         }
+        ],
+        "endline" : 96
+       }
+      ]
+     },
+     {
+      "name" : "GetShaderProgramID",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 98,
+      "deco" : "FAyaAyaZi",
+      "parameters" : [
+       {
+        "name" : "vsPath",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "fsPath",
+        "deco" : "Aya"
+       }
+      ],
+      "endline" : 114
+     },
+     {
+      "name" : "getShaderProgramIDFromString",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 116,
+      "deco" : "FAyaAyaZi",
+      "parameters" : [
+       {
+        "name" : "vsString",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "fsString",
+        "deco" : "Aya"
+       }
+      ],
+      "endline" : 120
+     },
+     {
+      "name" : "getSP",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 122,
+      "deco" : "FiiZi",
+      "parameters" : [
+       {
+        "name" : "vsID",
+        "deco" : "i"
+       },
+       {
+        "name" : "fsID",
+        "deco" : "i"
+       }
+      ],
+      "endline" : 145
+     },
+     {
+      "name" : "getVertexShaderFromString",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 147,
+      "deco" : "FAyaAyaZi",
+      "parameters" : [
+       {
+        "name" : "vsSource",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "vsPath",
+        "deco" : "Aya",
+        "default" : "null"
+       }
+      ],
+      "endline" : 172
+     },
+     {
+      "name" : "getFragmentShaderFromString",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 174,
+      "deco" : "FAyaAyaZi",
+      "parameters" : [
+       {
+        "name" : "fsSource",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "fsPath",
+        "deco" : "Aya",
+        "default" : "null"
+       }
+      ],
+      "endline" : 200
+     },
+     {
+      "name" : "getLogString",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 202,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FAyaAyaZAya",
+      "parameters" : [
+       {
+        "name" : "log",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "sourceCode",
+        "deco" : "Aya"
+       }
+      ],
+      "endline" : 225
+     },
+     {
+      "name" : "Use",
+      "kind" : "function",
+      "line" : 227,
+      "deco" : "xFZv",
+      "endline" : 229
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.gl.TextureObject",
+  "kind" : "module",
+  "file" : "sbylib\\gl\\TextureObject.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "TextureObject",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "derelict.devil.il",
+      "kind" : "import",
+      "line" : 6,
+      "protection" : "private"
+     },
+     {
+      "name" : "derelict.devil.ilu",
+      "kind" : "import",
+      "line" : 7,
+      "protection" : "private"
+     },
+     {
+      "name" : "derelict.devil.ilut",
+      "kind" : "import",
+      "line" : 8,
+      "protection" : "private"
+     },
+     {
+      "name" : "texID",
+      "kind" : "variable",
+      "line" : 10,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yk",
+      "originalType" : "uint",
+      "offset" : 8
+     },
+     {
+      "name" : "width",
+      "kind" : "variable",
+      "line" : 11,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yi",
+      "originalType" : "int",
+      "offset" : 12
+     },
+     {
+      "name" : "height",
+      "kind" : "variable",
+      "line" : 11,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yi",
+      "originalType" : "int",
+      "offset" : 16
+     },
+     {
+      "name" : "_staticCtor1",
+      "kind" : "function",
+      "line" : 13,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FZv",
+      "endline" : 19
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 26,
+      "deco" : "FAyaZC6sbylib2gl13TextureObject13TextureObject",
+      "parameters" : [
+       {
+        "name" : "filename",
+        "deco" : "Aya"
+       }
+      ],
+      "endline" : 105
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 113,
+      "deco" : "FiikkZC6sbylib2gl13TextureObject13TextureObject",
+      "originalType" : "TextureObject(int width, int height, GLenum texMode, GLenum internalTexFormat = GL_RGB)",
+      "parameters" : [
+       {
+        "name" : "width",
+        "deco" : "i"
+       },
+       {
+        "name" : "height",
+        "deco" : "i"
+       },
+       {
+        "name" : "texMode",
+        "deco" : "k"
+       },
+       {
+        "name" : "internalTexFormat",
+        "deco" : "k",
+        "default" : "6407u"
+       }
+      ],
+      "endline" : 134
+     },
+     {
+      "name" : "TexFilterType",
+      "kind" : "enum",
+      "line" : 136,
+      "baseDeco" : "i",
+      "members" : [
+       {
+        "name" : "Linear",
+        "kind" : "enum member",
+        "line" : 136
+       },
+       {
+        "name" : "Nearest",
+        "kind" : "enum member",
+        "line" : 136
+       }
+      ]
+     },
+     {
+      "name" : "SetMagFilter",
+      "kind" : "function",
+      "line" : 138,
+      "deco" : "FE6sbylib2gl13TextureObject13TextureObject13TexFilterTypeZv",
+      "parameters" : [
+       {
+        "name" : "type",
+        "deco" : "E6sbylib2gl13TextureObject13TextureObject13TexFilterType"
+       }
+      ],
+      "endline" : 140
+     },
+     {
+      "name" : "SetMinFilter",
+      "kind" : "function",
+      "line" : 142,
+      "deco" : "FE6sbylib2gl13TextureObject13TextureObject13TexFilterTypeZv",
+      "parameters" : [
+       {
+        "name" : "type",
+        "deco" : "E6sbylib2gl13TextureObject13TextureObject13TexFilterType"
+       }
+      ],
+      "endline" : 144
+     },
+     {
+      "name" : "TexWrapType",
+      "kind" : "enum",
+      "line" : 146,
+      "baseDeco" : "i",
+      "members" : [
+       {
+        "name" : "Repeat",
+        "kind" : "enum member",
+        "line" : 147
+       },
+       {
+        "name" : "Clamp",
+        "kind" : "enum member",
+        "line" : 148
+       },
+       {
+        "name" : "ClampToEdge",
+        "kind" : "enum member",
+        "line" : 149
+       },
+       {
+        "name" : "ClampToBorder",
+        "kind" : "enum member",
+        "line" : 150
+       },
+       {
+        "name" : "MirroredRepeat",
+        "kind" : "enum member",
+        "line" : 151
+       }
+      ]
+     },
+     {
+      "name" : "SetWrapS",
+      "kind" : "function",
+      "line" : 154,
+      "deco" : "FE6sbylib2gl13TextureObject13TextureObject11TexWrapTypeZv",
+      "parameters" : [
+       {
+        "name" : "type",
+        "deco" : "E6sbylib2gl13TextureObject13TextureObject11TexWrapType"
+       }
+      ],
+      "endline" : 156
+     },
+     {
+      "name" : "SetWrapT",
+      "kind" : "function",
+      "line" : 158,
+      "deco" : "FE6sbylib2gl13TextureObject13TextureObject11TexWrapTypeZv",
+      "parameters" : [
+       {
+        "name" : "type",
+        "deco" : "E6sbylib2gl13TextureObject13TextureObject11TexWrapType"
+       }
+      ],
+      "endline" : 160
+     },
+     {
+      "name" : "Bind",
+      "kind" : "function",
+      "line" : 162,
+      "deco" : "FZv",
+      "endline" : 164
+     },
+     {
+      "name" : "UnBind",
+      "kind" : "function",
+      "line" : 166,
+      "deco" : "FZv",
+      "endline" : 168
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.gl.VertexArrayObject",
+  "kind" : "module",
+  "file" : "sbylib\\gl\\VertexArrayObject.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "VertexArrayObject(T)",
+    "line" : 5,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "VertexArrayObject",
+      "kind" : "class",
+      "line" : 5,
+      "members" : [
+       {
+        "name" : "VBO_T",
+        "kind" : "alias",
+        "line" : 7,
+        "type" : "VertexBufferObject!(T)"
+       },
+       {
+        "name" : "vaoID",
+        "kind" : "variable",
+        "line" : 8,
+        "deco" : "k"
+       },
+       {
+        "name" : "shaderProgram",
+        "kind" : "variable",
+        "line" : 9,
+        "type" : "ShaderProgram"
+       },
+       {
+        "name" : "vertex",
+        "kind" : "variable",
+        "line" : 10,
+        "type" : "VBO_T"
+       },
+       {
+        "name" : "texcoord",
+        "kind" : "variable",
+        "line" : 10,
+        "type" : "VBO_T"
+       },
+       {
+        "name" : "mode",
+        "kind" : "variable",
+        "line" : 12,
+        "type" : "GLenum",
+        "init" : "GL_TRIANGLE_STRIP"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 14,
+        "type" : "(int vertexCount)",
+        "parameters" : [
+         {
+          "name" : "vertexCount",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 16
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 18,
+        "type" : "(string vsPath, string fsPath, int vertexCount)",
+        "parameters" : [
+         {
+          "name" : "vsPath",
+          "type" : "string"
+         },
+         {
+          "name" : "fsPath",
+          "type" : "string"
+         },
+         {
+          "name" : "vertexCount",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 20
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 22,
+        "type" : "(ShaderProgram sProgram, int vertexCount, VBO_T.Frequency frequency = VBO_T.Frequency.STATIC)",
+        "parameters" : [
+         {
+          "name" : "sProgram",
+          "type" : "ShaderProgram"
+         },
+         {
+          "name" : "vertexCount",
+          "deco" : "i"
+         },
+         {
+          "name" : "frequency",
+          "type" : "VBO_T.Frequency",
+          "default" : "VBO_T.Frequency.STATIC"
+         }
+        ],
+        "endline" : 30
+       },
+       {
+        "name" : "~this",
+        "kind" : "destructor",
+        "line" : 32,
+        "endline" : 34
+       },
+       {
+        "name" : "UpdateVertex",
+        "kind" : "function",
+        "line" : 36,
+        "type" : "void(float[] position = null)",
+        "parameters" : [
+         {
+          "name" : "position",
+          "type" : "float[]",
+          "default" : "null"
+         }
+        ],
+        "endline" : 40
+       },
+       {
+        "name" : "UpdateTexcoords",
+        "kind" : "function",
+        "line" : 42,
+        "type" : "void(float[] texcoords = null)",
+        "parameters" : [
+         {
+          "name" : "texcoords",
+          "type" : "float[]",
+          "default" : "null"
+         }
+        ],
+        "endline" : 46
+       },
+       {
+        "name" : "Bind",
+        "kind" : "function",
+        "line" : 48,
+        "type" : "const void()",
+        "endline" : 50
+       },
+       {
+        "name" : "UnBind",
+        "kind" : "function",
+        "line" : 52,
+        "type" : "const void()",
+        "endline" : 54
+       },
+       {
+        "name" : "Draw",
+        "kind" : "function",
+        "line" : 56,
+        "type" : "const void()",
+        "endline" : 64
+       },
+       {
+        "name" : "Draw",
+        "kind" : "function",
+        "line" : 66,
+        "type" : "const void(IBO index)",
+        "parameters" : [
+         {
+          "name" : "index",
+          "type" : "IBO"
+         }
+        ],
+        "endline" : 76
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "VAO",
+    "kind" : "alias",
+    "line" : 81
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.gl.VertexBufferObject",
+  "kind" : "module",
+  "file" : "sbylib\\gl\\VertexBufferObject.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "VertexBufferObject(T)",
+    "line" : 5,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "VertexBufferObject",
+      "kind" : "class",
+      "line" : 5,
+      "members" : [
+       {
+        "name" : "Frequency",
+        "kind" : "enum",
+        "line" : 7,
+        "members" : [
+         {
+          "name" : "STREAM",
+          "kind" : "enum member",
+          "line" : 8
+         },
+         {
+          "name" : "DYNAMIC",
+          "kind" : "enum member",
+          "line" : 8
+         },
+         {
+          "name" : "STATIC",
+          "kind" : "enum member",
+          "line" : 8
+         }
+        ]
+       },
+       {
+        "name" : "id",
+        "kind" : "variable",
+        "line" : 11,
+        "deco" : "k"
+       },
+       {
+        "name" : "usage",
+        "kind" : "variable",
+        "line" : 12,
+        "deco" : "k"
+       },
+       {
+        "name" : "length",
+        "kind" : "variable",
+        "line" : 13,
+        "deco" : "i"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 15,
+        "type" : "(T[] data, Frequency frequency)",
+        "parameters" : [
+         {
+          "name" : "data",
+          "type" : "T[]"
+         },
+         {
+          "name" : "frequency",
+          "type" : "Frequency"
+         }
+        ],
+        "endline" : 26
+       },
+       {
+        "name" : "~this",
+        "kind" : "destructor",
+        "line" : 28,
+        "endline" : 30
+       },
+       {
+        "name" : "Update",
+        "kind" : "function",
+        "line" : 32,
+        "type" : "void(T[] data)",
+        "parameters" : [
+         {
+          "name" : "data",
+          "type" : "T[]"
+         }
+        ],
+        "endline" : 41
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "VBO",
+    "kind" : "alias",
+    "line" : 46,
+    "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject"
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.fpscounter",
+  "kind" : "module",
+  "file" : "sbylib\\fpscounter.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "FpsCounter(uint N)",
+    "line" : 5,
+    "parameters" : [
+     {
+      "name" : "N",
+      "kind" : "value",
+      "deco" : "k"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "FpsCounter",
+      "kind" : "class",
+      "line" : 5,
+      "members" : [
+       {
+        "name" : "periods",
+        "kind" : "variable",
+        "line" : 6,
+        "type" : "long[N]"
+       },
+       {
+        "name" : "total",
+        "kind" : "variable",
+        "line" : 8,
+        "deco" : "i"
+       },
+       {
+        "name" : "sw",
+        "kind" : "variable",
+        "line" : 9,
+        "type" : "StopWatch"
+       },
+       {
+        "name" : "c",
+        "kind" : "variable",
+        "line" : 10,
+        "deco" : "i"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 12,
+        "type" : "()",
+        "endline" : 14
+       },
+       {
+        "name" : "Update",
+        "kind" : "function",
+        "line" : 16,
+        "type" : "void()",
+        "endline" : 22
+       },
+       {
+        "name" : "GetFPS",
+        "kind" : "function",
+        "line" : 24,
+        "type" : "long()",
+        "endline" : 27
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.functions",
+  "kind" : "module",
+  "file" : "functions.d",
+  "members" : [
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "derelict.opengl3.gl",
+    "kind" : "import",
+    "line" : 4,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "SendBufferData(uint e)(int bufferID, float[] data)",
+    "line" : 6,
+    "parameters" : [
+     {
+      "name" : "e",
+      "kind" : "value",
+      "deco" : "k"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "SendBufferData",
+      "kind" : "function",
+      "line" : 6,
+      "type" : "void(int bufferID, float[] data)",
+      "parameters" : [
+       {
+        "name" : "bufferID",
+        "deco" : "i"
+       },
+       {
+        "name" : "data",
+        "deco" : "Af"
+       }
+      ],
+      "endline" : 9
+     }
+    ]
+   },
+   {
+    "name" : "StaticSendBufferData",
+    "kind" : "alias",
+    "line" : 11
+   },
+   {
+    "name" : "DynamicSendBufferData",
+    "kind" : "alias",
+    "line" : 12
+   },
+   {
+    "kind" : "template",
+    "name" : "contains(T)(T value, T[] array...)",
+    "line" : 14,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "contains",
+      "kind" : "function",
+      "line" : 14,
+      "type" : "bool(T value, T[] array...)",
+      "parameters" : [
+       {
+        "name" : "value",
+        "type" : "T"
+       },
+       {
+        "name" : "array",
+        "type" : "T[]"
+       }
+      ],
+      "endline" : 19
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "CreateSetter(alias vary, string setterExtCode = \"\")",
+    "line" : 21,
+    "parameters" : [
+     {
+      "name" : "vary",
+      "kind" : "alias"
+     },
+     {
+      "name" : "setterExtCode",
+      "kind" : "value",
+      "deco" : "Aya",
+      "defaultValue" : "\"\""
+     }
+    ],
+    "members" : []
+   },
+   {
+    "kind" : "template",
+    "name" : "CreateGetter(alias vary, string getterExtCode = \"\")",
+    "line" : 28,
+    "parameters" : [
+     {
+      "name" : "vary",
+      "kind" : "alias"
+     },
+     {
+      "name" : "getterExtCode",
+      "kind" : "value",
+      "deco" : "Aya",
+      "defaultValue" : "\"\""
+     }
+    ],
+    "members" : []
+   },
+   {
+    "kind" : "template",
+    "name" : "CreateSetterGetter(alias vary, string setterExtCode = \"\", string getterExtCode = \"\")",
+    "line" : 36,
+    "parameters" : [
+     {
+      "name" : "vary",
+      "kind" : "alias"
+     },
+     {
+      "name" : "setterExtCode",
+      "kind" : "value",
+      "deco" : "Aya",
+      "defaultValue" : "\"\""
+     },
+     {
+      "name" : "getterExtCode",
+      "kind" : "value",
+      "deco" : "Aya",
+      "defaultValue" : "\"\""
+     }
+    ],
+    "members" : []
+   },
+   {
+    "kind" : "template",
+    "name" : "CacheVar(alias trigger, alias target, string updateFunc)",
+    "line" : 47,
+    "parameters" : [
+     {
+      "name" : "trigger",
+      "kind" : "alias"
+     },
+     {
+      "name" : "target",
+      "kind" : "alias"
+     },
+     {
+      "name" : "updateFunc",
+      "kind" : "value",
+      "deco" : "Aya"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "CreateSetter!(trigger, target.stringof ~ \"_update_flag = true;\")",
+      "kind" : "mixin",
+      "line" : 53
+     },
+     {
+      "name" : "CreateGetter!(trigger, \"\")",
+      "kind" : "mixin",
+      "line" : 55
+     },
+     {
+      "name" : "CreateSetter!(target, \"\")",
+      "kind" : "mixin",
+      "line" : 56
+     },
+     {
+      "name" : "CreateGetter!(target, \"if (\" ~ target.stringof ~ \"_update_flag) {\" ~ target.stringof ~ \"_update_flag = false;\" ~ target.stringof ~ \" = \" ~ updateFunc ~ \"();}\")",
+      "kind" : "mixin",
+      "line" : 63
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.imports",
+  "kind" : "module",
+  "file" : "sbylib\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.math",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.functions",
+    "kind" : "import",
+    "line" : 4
+   },
+   {
+    "name" : "sbylib.others",
+    "kind" : "import",
+    "line" : 5
+   },
+   {
+    "name" : "sbylib.primitive",
+    "kind" : "import",
+    "line" : 6
+   },
+   {
+    "name" : "sbylib.world",
+    "kind" : "import",
+    "line" : 7
+   },
+   {
+    "name" : "sbylib.fpscounter",
+    "kind" : "import",
+    "line" : 8
+   },
+   {
+    "name" : "sbylib.camera.camera",
+    "kind" : "import",
+    "line" : 9
+   },
+   {
+    "name" : "sbylib.camera.manipulator",
+    "kind" : "import",
+    "line" : 10
+   },
+   {
+    "name" : "sbylib.gl.imports",
+    "kind" : "import",
+    "line" : 11
+   },
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 12
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 13
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 14
+   },
+   {
+    "name" : "std.file",
+    "kind" : "import",
+    "line" : 15
+   },
+   {
+    "name" : "std.mathspecial",
+    "kind" : "import",
+    "line" : 16
+   },
+   {
+    "name" : "std.typecons",
+    "kind" : "import",
+    "line" : 17
+   },
+   {
+    "name" : "std.algorithm",
+    "kind" : "import",
+    "line" : 18
+   },
+   {
+    "name" : "std.datetime",
+    "kind" : "import",
+    "line" : 19
+   },
+   {
+    "name" : "std.range",
+    "kind" : "import",
+    "line" : 20
+   },
+   {
+    "name" : "derelict.opengl3.gl",
+    "kind" : "import",
+    "line" : 21
+   },
+   {
+    "name" : "derelict.glfw3.glfw3",
+    "kind" : "import",
+    "line" : 22
+   },
+   {
+    "name" : "derelict.devil.il",
+    "kind" : "import",
+    "line" : 23
+   },
+   {
+    "name" : "derelict.devil.ilu",
+    "kind" : "import",
+    "line" : 24
+   },
+   {
+    "name" : "derelict.devil.ilut",
+    "kind" : "import",
+    "line" : 25
+   },
+   {
+    "name" : "derelict.freetype.ft",
+    "kind" : "import",
+    "line" : 26
+   },
+   {
+    "name" : "derelict.opengl3.gl3",
+    "kind" : "import",
+    "line" : 27
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.math",
+  "kind" : "module",
+  "file" : "math.d",
+  "members" : [
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.math",
+    "kind" : "import",
+    "line" : 4,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 5,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 6,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "ToRad(U)(U angle)",
+    "line" : 8,
+    "parameters" : [
+     {
+      "name" : "U",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "ToRad",
+      "kind" : "function",
+      "line" : 8,
+      "type" : "U(U angle)",
+      "parameters" : [
+       {
+        "name" : "angle",
+        "type" : "U"
+       }
+      ],
+      "endline" : 10
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "ToDeg(U)(U angle)",
+    "line" : 12,
+    "parameters" : [
+     {
+      "name" : "U",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "ToDeg",
+      "kind" : "function",
+      "line" : 12,
+      "type" : "U(U angle)",
+      "parameters" : [
+       {
+        "name" : "angle",
+        "type" : "U"
+       }
+      ],
+      "endline" : 14
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "Vector(T, int S)",
+    "line" : 17,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "Vector",
+      "kind" : "struct",
+      "line" : 17,
+      "members" : [
+       {
+        "name" : "elements",
+        "kind" : "variable",
+        "line" : 19,
+        "type" : "T[S]"
+       },
+       {
+        "name" : "getConstructorCode",
+        "kind" : "function",
+        "line" : 22,
+        "type" : "string()",
+        "endline" : 77
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(Vector v)",
+        "line" : 81,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 81,
+          "type" : "Vector(Vector v)",
+          "parameters" : [
+           {
+            "name" : "v",
+            "type" : "Vector"
+           }
+          ],
+          "endline" : 89
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(T t)",
+        "line" : 91,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 91,
+          "type" : "Vector(T t)",
+          "parameters" : [
+           {
+            "name" : "t",
+            "type" : "T"
+           }
+          ],
+          "endline" : 95
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinaryRight(string op)(T t)",
+        "line" : 97,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinaryRight",
+          "kind" : "function",
+          "line" : 97,
+          "type" : "Vector(T t)",
+          "parameters" : [
+           {
+            "name" : "t",
+            "type" : "T"
+           }
+          ],
+          "endline" : 101
+         }
+        ]
+       },
+       {
+        "name" : "getUnaryCode",
+        "kind" : "function",
+        "line" : 103,
+        "type" : "string(string op, int S)",
+        "parameters" : [
+         {
+          "name" : "op",
+          "type" : "string"
+         },
+         {
+          "name" : "S",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 109
+       },
+       {
+        "kind" : "template",
+        "name" : "opUnary(string op)()",
+        "line" : 111,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opUnary",
+          "kind" : "function",
+          "line" : 111,
+          "type" : "Vector()",
+          "endline" : 115
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opOpAssign(string op)(Vector v)",
+        "line" : 117,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opOpAssign",
+          "kind" : "function",
+          "line" : 117,
+          "type" : "void(Vector v)",
+          "parameters" : [
+           {
+            "name" : "v",
+            "type" : "Vector"
+           }
+          ],
+          "endline" : 124
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opOpAssign(string op)(T e)",
+        "line" : 126,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opOpAssign",
+          "kind" : "function",
+          "line" : 126,
+          "type" : "void(T e)",
+          "parameters" : [
+           {
+            "name" : "e",
+            "type" : "T"
+           }
+          ],
+          "endline" : 128
+         }
+        ]
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 130,
+        "type" : "T(int idx)",
+        "parameters" : [
+         {
+          "name" : "idx",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 132
+       },
+       {
+        "name" : "getXyzwCode",
+        "kind" : "function",
+        "line" : 134,
+        "type" : "string()",
+        "endline" : 180
+       },
+       {
+        "name" : "array",
+        "kind" : "function",
+        "line" : 187,
+        "storageClass" : [
+         "auto"
+        ],
+        "type" : "()",
+        "endline" : 189
+       },
+       {
+        "name" : "getString",
+        "kind" : "function",
+        "line" : 191,
+        "type" : "string()",
+        "endline" : 201
+       },
+       {
+        "name" : "fromString",
+        "kind" : "function",
+        "line" : 203,
+        "type" : "Vector(string str)",
+        "parameters" : [
+         {
+          "name" : "str",
+          "type" : "string"
+         }
+        ],
+        "endline" : 210
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "vec2",
+    "kind" : "alias",
+    "line" : 213,
+    "deco" : "S6sbylib4math16__T6VectorTfVi2Z6Vector"
+   },
+   {
+    "name" : "vec3",
+    "kind" : "alias",
+    "line" : 214,
+    "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector"
+   },
+   {
+    "name" : "vec4",
+    "kind" : "alias",
+    "line" : 215,
+    "deco" : "S6sbylib4math16__T6VectorTfVi4Z6Vector"
+   },
+   {
+    "name" : "getDotCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 217,
+    "deco" : "FiZAya",
+    "parameters" : [
+     {
+      "name" : "S",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 224
+   },
+   {
+    "name" : "getCrossCode3D",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 226,
+    "deco" : "FiZAya",
+    "parameters" : [
+     {
+      "name" : "S",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 234
+   },
+   {
+    "name" : "getLengthSqCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 236,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FiZAya",
+    "parameters" : [
+     {
+      "name" : "S",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 243
+   },
+   {
+    "name" : "getLengthCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 245,
+    "deco" : "FiZAya",
+    "parameters" : [
+     {
+      "name" : "S",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 252
+   },
+   {
+    "name" : "getNormalizeCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 254,
+    "deco" : "FiZAya",
+    "parameters" : [
+     {
+      "name" : "S",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 265
+   },
+   {
+    "kind" : "template",
+    "name" : "dot(T, int S)(Vector!(T, S) v, Vector!(T, S) v2)",
+    "line" : 267,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "dot",
+      "kind" : "function",
+      "line" : 267,
+      "type" : "T(Vector!(T, S) v, Vector!(T, S) v2)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       },
+       {
+        "name" : "v2",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 270
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "cross(T, int S)(Vector!(T, S) v, Vector!(T, S) v2) if (S == 2)",
+    "line" : 272,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "cross",
+      "kind" : "function",
+      "line" : 272,
+      "type" : "T(Vector!(T, S) v, Vector!(T, S) v2)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       },
+       {
+        "name" : "v2",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 274
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "cross(T, int S)(Vector!(T, S) v, Vector!(T, S) v2) if (S == 3)",
+    "line" : 276,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "cross",
+      "kind" : "function",
+      "line" : 276,
+      "type" : "Vector!(T, S)(Vector!(T, S) v, Vector!(T, S) v2)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       },
+       {
+        "name" : "v2",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 279
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "length(T, int S)(Vector!(T, S) v)",
+    "line" : 281,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "length",
+      "kind" : "function",
+      "line" : 281,
+      "type" : "T(Vector!(T, S) v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 284
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "lengthSq(T, int S)(Vector!(T, S) v)",
+    "line" : 286,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "lengthSq",
+      "kind" : "function",
+      "line" : 286,
+      "type" : "T(Vector!(T, S) v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 289
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "normalize(T, int S)(Vector!(T, S) v)",
+    "line" : 291,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "normalize",
+      "kind" : "function",
+      "line" : 291,
+      "type" : "Vector!(T, S)(Vector!(T, S) v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 294
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "Matrix(U)",
+    "line" : 296,
+    "parameters" : [
+     {
+      "name" : "U",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "Matrix",
+      "kind" : "struct",
+      "line" : 296,
+      "members" : [
+       {
+        "name" : "elements",
+        "kind" : "variable",
+        "line" : 298,
+        "type" : "U[4][4]"
+       },
+       {
+        "name" : "arrayForConvert",
+        "kind" : "variable",
+        "line" : 301,
+        "type" : "U[16]"
+       },
+       {
+        "name" : "multMMCode",
+        "kind" : "function",
+        "line" : 303,
+        "type" : "string()",
+        "endline" : 315
+       },
+       {
+        "name" : "multMVCode",
+        "kind" : "function",
+        "line" : 317,
+        "type" : "string()",
+        "endline" : 327
+       },
+       {
+        "name" : "getIdentityCode",
+        "kind" : "function",
+        "line" : 329,
+        "type" : "string()",
+        "endline" : 339
+       },
+       {
+        "name" : "getTranslationCode",
+        "kind" : "function",
+        "line" : 341,
+        "type" : "string()",
+        "endline" : 352
+       },
+       {
+        "name" : "getScaleCode",
+        "kind" : "function",
+        "line" : 354,
+        "type" : "string()",
+        "endline" : 365
+       },
+       {
+        "name" : "getRotAxisCode",
+        "kind" : "function",
+        "line" : 367,
+        "type" : "string()",
+        "endline" : 385
+       },
+       {
+        "name" : "getOpBinaryMMCode",
+        "kind" : "function",
+        "line" : 387,
+        "type" : "string(string op)",
+        "parameters" : [
+         {
+          "name" : "op",
+          "type" : "string"
+         }
+        ],
+        "endline" : 393
+       },
+       {
+        "name" : "getOpBinaryMSCode",
+        "kind" : "function",
+        "line" : 395,
+        "type" : "string(string op)",
+        "parameters" : [
+         {
+          "name" : "op",
+          "type" : "string"
+         }
+        ],
+        "endline" : 401
+       },
+       {
+        "name" : "getLookAtCode",
+        "kind" : "function",
+        "line" : 403,
+        "type" : "string()",
+        "endline" : 433
+       },
+       {
+        "name" : "getOrthoCode",
+        "kind" : "function",
+        "line" : 435,
+        "type" : "string()",
+        "endline" : 455
+       },
+       {
+        "name" : "getPerspectiveCode",
+        "kind" : "function",
+        "line" : 457,
+        "type" : "string()",
+        "endline" : 477
+       },
+       {
+        "name" : "getStringCode",
+        "kind" : "function",
+        "line" : 479,
+        "type" : "string()",
+        "endline" : 493
+       },
+       {
+        "name" : "getConvertCode",
+        "kind" : "function",
+        "line" : 495,
+        "type" : "string()",
+        "endline" : 504
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(Matrix m)",
+        "line" : 508,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 508,
+          "type" : "Matrix(Matrix m)",
+          "parameters" : [
+           {
+            "name" : "m",
+            "type" : "Matrix"
+           }
+          ],
+          "endline" : 518
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(U s)",
+        "line" : 520,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 520,
+          "type" : "Matrix(U s)",
+          "parameters" : [
+           {
+            "name" : "s",
+            "type" : "U"
+           }
+          ],
+          "endline" : 527
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(Vector!(U, 4) v)",
+        "line" : 529,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 529,
+          "type" : "vec4(Vector!(U, 4) v)",
+          "parameters" : [
+           {
+            "name" : "v",
+            "type" : "Vector!(U, 4)"
+           }
+          ],
+          "endline" : 536
+         }
+        ]
+       },
+       {
+        "name" : "Identity",
+        "kind" : "function",
+        "line" : 538,
+        "type" : "Matrix()",
+        "endline" : 542
+       },
+       {
+        "kind" : "template",
+        "name" : "Translation(int T)(Vector!(U, T) vec) if (T == 3 || T == 4)",
+        "line" : 544,
+        "parameters" : [
+         {
+          "name" : "T",
+          "kind" : "value",
+          "deco" : "i"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "Translation",
+          "kind" : "function",
+          "line" : 544,
+          "storageClass" : [
+           "auto",
+           "static"
+          ],
+          "type" : "(Vector!(U, T) vec)",
+          "parameters" : [
+           {
+            "name" : "vec",
+            "type" : "Vector!(U, T)"
+           }
+          ],
+          "endline" : 548
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "Scale(int T)(Vector!(U, T) vec) if (T == 3 || T == 4)",
+        "line" : 550,
+        "parameters" : [
+         {
+          "name" : "T",
+          "kind" : "value",
+          "deco" : "i"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "Scale",
+          "kind" : "function",
+          "line" : 550,
+          "type" : "Matrix(Vector!(U, T) vec)",
+          "parameters" : [
+           {
+            "name" : "vec",
+            "type" : "Vector!(U, T)"
+           }
+          ],
+          "endline" : 554
+         }
+        ]
+       },
+       {
+        "name" : "RotAxisAngle",
+        "kind" : "function",
+        "line" : 556,
+        "type" : "Matrix(Vector!(U, 3) v, U angle)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "angle",
+          "type" : "U"
+         }
+        ],
+        "endline" : 563
+       },
+       {
+        "name" : "RotFromTo",
+        "kind" : "function",
+        "line" : 565,
+        "type" : "Matrix(Vector!(U, 3) from, Vector!(U, 3) to)",
+        "parameters" : [
+         {
+          "name" : "from",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "to",
+          "type" : "Vector!(U, 3)"
+         }
+        ],
+        "endline" : 575
+       },
+       {
+        "name" : "LookAt",
+        "kind" : "function",
+        "line" : 577,
+        "type" : "Matrix(Vector!(U, 3) eye, Vector!(U, 3) vec, Vector!(U, 3) up)",
+        "parameters" : [
+         {
+          "name" : "eye",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "vec",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "up",
+          "type" : "Vector!(U, 3)"
+         }
+        ],
+        "endline" : 581
+       },
+       {
+        "name" : "Ortho",
+        "kind" : "function",
+        "line" : 583,
+        "type" : "Matrix(U width, U height, U nearZ, U farZ)",
+        "parameters" : [
+         {
+          "name" : "width",
+          "type" : "U"
+         },
+         {
+          "name" : "height",
+          "type" : "U"
+         },
+         {
+          "name" : "nearZ",
+          "type" : "U"
+         },
+         {
+          "name" : "farZ",
+          "type" : "U"
+         }
+        ],
+        "endline" : 587
+       },
+       {
+        "name" : "Perspective",
+        "kind" : "function",
+        "line" : 589,
+        "type" : "Matrix(U aspectWperH, U fovy, U nearZ, U farZ)",
+        "parameters" : [
+         {
+          "name" : "aspectWperH",
+          "type" : "U"
+         },
+         {
+          "name" : "fovy",
+          "type" : "U"
+         },
+         {
+          "name" : "nearZ",
+          "type" : "U"
+         },
+         {
+          "name" : "farZ",
+          "type" : "U"
+         }
+        ],
+        "endline" : 593
+       },
+       {
+        "name" : "Invert",
+        "kind" : "function",
+        "line" : 685,
+        "type" : "Matrix(Matrix m)",
+        "parameters" : [
+         {
+          "name" : "m",
+          "type" : "Matrix"
+         }
+        ],
+        "endline" : 745
+       },
+       {
+        "name" : "Transpose",
+        "kind" : "function",
+        "line" : 747,
+        "type" : "Matrix(Matrix m)",
+        "parameters" : [
+         {
+          "name" : "m",
+          "type" : "Matrix"
+         }
+        ],
+        "endline" : 760
+       },
+       {
+        "name" : "fromString",
+        "kind" : "function",
+        "line" : 762,
+        "type" : "Matrix(string str)",
+        "parameters" : [
+         {
+          "name" : "str",
+          "type" : "string"
+         }
+        ],
+        "endline" : 777
+       },
+       {
+        "name" : "getString",
+        "kind" : "function",
+        "line" : 779,
+        "type" : "string(U epsilon = 0)",
+        "parameters" : [
+         {
+          "name" : "epsilon",
+          "type" : "U",
+          "default" : "0"
+         }
+        ],
+        "endline" : 781
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 783,
+        "type" : "U(int x, int y)",
+        "parameters" : [
+         {
+          "name" : "x",
+          "deco" : "i"
+         },
+         {
+          "name" : "y",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 785
+       },
+       {
+        "name" : "array",
+        "kind" : "function",
+        "line" : 787,
+        "type" : "U[]()",
+        "endline" : 790
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "mat4",
+    "kind" : "alias",
+    "line" : 793,
+    "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix"
+   },
+   {
+    "name" : "mat4d",
+    "kind" : "alias",
+    "line" : 794,
+    "deco" : "S6sbylib4math13__T6MatrixTdZ6Matrix"
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.others",
+  "kind" : "module",
+  "file" : "others.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   }
+  ]
+ },
+ {
+  "kind" : "module",
+  "file" : "package.d",
+  "members" : [
+   {
+    "name" : "sbylib.math",
+    "kind" : "import",
+    "line" : 1
+   },
+   {
+    "name" : "sbylib.functions",
+    "kind" : "import",
+    "line" : 2
+   },
+   {
+    "name" : "sbylib.camera.camera",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.camera.manipulator",
+    "kind" : "import",
+    "line" : 4
+   },
+   {
+    "name" : "sbylib.others",
+    "kind" : "import",
+    "line" : 5
+   },
+   {
+    "name" : "sbylib.world",
+    "kind" : "import",
+    "line" : 6
+   },
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 7
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 8
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 9
+   },
+   {
+    "name" : "std.file",
+    "kind" : "import",
+    "line" : 10
+   },
+   {
+    "name" : "std.mathspecial",
+    "kind" : "import",
+    "line" : 11
+   },
+   {
+    "name" : "derelict.opengl3.gl",
+    "kind" : "import",
+    "line" : 12
+   },
+   {
+    "name" : "derelict.glfw3.glfw3",
+    "kind" : "import",
+    "line" : 13
+   },
+   {
+    "name" : "std.typecons",
+    "kind" : "import",
+    "line" : 14
+   },
+   {
+    "name" : "derelict.devil.il",
+    "kind" : "import",
+    "line" : 15
+   },
+   {
+    "name" : "derelict.devil.ilu",
+    "kind" : "import",
+    "line" : 16
+   },
+   {
+    "name" : "derelict.devil.ilut",
+    "kind" : "import",
+    "line" : 17
+   },
+   {
+    "name" : "derelict.freetype.ft",
+    "kind" : "import",
+    "line" : 18
+   },
+   {
+    "name" : "derelict.opengl3.gl3",
+    "kind" : "import",
+    "line" : 19
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.primitive",
+  "kind" : "module",
+  "file" : "primitive.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Primitive",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "Draw",
+      "kind" : "function",
+      "line" : 6,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZv"
+     },
+     {
+      "name" : "mat",
+      "kind" : "variable",
+      "protection" : "protected",
+      "line" : 8,
+      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "init" : "Matrix([[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]], [nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF])",
+      "offset" : 8
+     },
+     {
+      "kind" : "template",
+      "name" : "opOpAssign(string op)(vec3 v)",
+      "line" : 10,
+      "parameters" : [
+       {
+        "name" : "op",
+        "kind" : "value",
+        "deco" : "Aya"
+       }
+      ],
+      "members" : [
+       {
+        "name" : "opOpAssign",
+        "kind" : "function",
+        "line" : 10,
+        "type" : "void(vec3 v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "vec3"
+         }
+        ],
+        "endline" : 14
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "Box",
+    "kind" : "class",
+    "line" : 17,
+    "base" : "Primitive",
+    "members" : [
+     {
+      "name" : "vao",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 19,
+      "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
+      "originalType" : "VAO",
+      "offset" : 136
+     },
+     {
+      "name" : "index",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 20,
+      "deco" : "C6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject",
+      "originalType" : "IBO",
+      "offset" : 140
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 22,
+      "deco" : "FZC6sbylib9primitive3Box",
+      "endline" : 46
+     },
+     {
+      "name" : "Draw",
+      "kind" : "function",
+      "line" : 48,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 52,
+      "overrides" : [
+       "sbylib.primitive.Primitive.Draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.world",
+  "kind" : "module",
+  "file" : "world.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.datetime",
+    "kind" : "import",
+    "line" : 4,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.thread",
+    "kind" : "import",
+    "line" : 5,
+    "protection" : "private"
+   },
+   {
+    "name" : "CurrentWindow",
+    "kind" : "variable",
+    "protection" : "package",
+    "line" : 7,
+    "deco" : "PS8derelict5glfw35types10GLFWwindow"
+   },
+   {
+    "name" : "fps",
+    "kind" : "variable",
+    "protection" : "private",
+    "line" : 8,
+    "deco" : "f"
+   },
+   {
+    "name" : "CurrentCamera",
+    "kind" : "variable",
+    "line" : 9,
+    "deco" : "C6sbylib6camera6camera6Camera",
+    "originalType" : "Camera"
+   },
+   {
+    "name" : "CurrentFrameTime",
+    "kind" : "variable",
+    "line" : 10,
+    "deco" : "l"
+   },
+   {
+    "name" : "SbyInit",
+    "kind" : "function",
+    "line" : 12,
+    "deco" : "FPS8derelict5glfw35types10GLFWwindowlZv",
+    "parameters" : [
+     {
+      "name" : "window",
+      "deco" : "PS8derelict5glfw35types10GLFWwindow"
+     },
+     {
+      "name" : "frameTime",
+      "deco" : "l"
+     }
+    ],
+    "endline" : 15
+   },
+   {
+    "name" : "MainLoop",
+    "kind" : "function",
+    "line" : 17,
+    "deco" : "FDFZvZv",
+    "parameters" : [
+     {
+      "name" : "stepAndDraw",
+      "deco" : "DFZv"
+     }
+    ],
+    "endline" : 35
+   }
+  ]
+ },
+ {
+  "name" : "SbyFluidUtils",
+  "kind" : "module",
+  "file" : "FluidUtils.d",
+  "members" : [
+   {
+    "name" : "Import",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "Fluid(T)",
+    "line" : 5,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "Fluid",
+      "kind" : "class",
+      "line" : 5,
+      "members" : [
+       {
+        "name" : "textureRenderFrameBuffer",
+        "kind" : "variable",
+        "line" : 8,
+        "type" : "FrameBufferObject"
+       },
+       {
+        "name" : "tex",
+        "kind" : "variable",
+        "line" : 9,
+        "type" : "TextureObject"
+       },
+       {
+        "name" : "vao",
+        "kind" : "variable",
+        "line" : 10,
+        "type" : "VertexArrayObject!(T)"
+       },
+       {
+        "name" : "copy",
+        "kind" : "variable",
+        "line" : 11,
+        "type" : "ShaderProgram"
+       },
+       {
+        "name" : "dCalc",
+        "kind" : "variable",
+        "line" : 11,
+        "type" : "ShaderProgram"
+       },
+       {
+        "name" : "pCalc",
+        "kind" : "variable",
+        "line" : 11,
+        "type" : "ShaderProgram"
+       },
+       {
+        "name" : "cAdv",
+        "kind" : "variable",
+        "line" : 11,
+        "type" : "ShaderProgram"
+       },
+       {
+        "name" : "vAdv",
+        "kind" : "variable",
+        "line" : 11,
+        "type" : "ShaderProgram"
+       },
+       {
+        "name" : "vUpd",
+        "kind" : "variable",
+        "line" : 11,
+        "type" : "ShaderProgram"
+       },
+       {
+        "name" : "gaussian",
+        "kind" : "variable",
+        "line" : 11,
+        "type" : "ShaderProgram"
+       },
+       {
+        "name" : "vAdd",
+        "kind" : "variable",
+        "line" : 11,
+        "type" : "ShaderProgram"
+       },
+       {
+        "name" : "colorTexture",
+        "kind" : "variable",
+        "line" : 14,
+        "type" : "TextureObject"
+       },
+       {
+        "name" : "velocityTexture",
+        "kind" : "variable",
+        "line" : 14,
+        "type" : "TextureObject"
+       },
+       {
+        "name" : "divergenceTexture",
+        "kind" : "variable",
+        "line" : 14,
+        "type" : "TextureObject"
+       },
+       {
+        "name" : "pressureTexture",
+        "kind" : "variable",
+        "line" : 14,
+        "type" : "TextureObject"
+       },
+       {
+        "name" : "size",
+        "kind" : "variable",
+        "line" : 16,
+        "deco" : "i"
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 18,
+        "type" : "(ShaderProgram colorInitFragmentShader, ShaderProgram velocityInitFragmentShader, int size)",
+        "parameters" : [
+         {
+          "name" : "colorInitFragmentShader",
+          "type" : "ShaderProgram"
+         },
+         {
+          "name" : "velocityInitFragmentShader",
+          "type" : "ShaderProgram"
+         },
+         {
+          "name" : "size",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 101
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 103,
+        "type" : "(string colorInitFragmentPath, string velocityInitFragmentPath, int size)",
+        "parameters" : [
+         {
+          "name" : "colorInitFragmentPath",
+          "type" : "string"
+         },
+         {
+          "name" : "velocityInitFragmentPath",
+          "type" : "string"
+         },
+         {
+          "name" : "size",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 107
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 109,
+        "type" : "(ShaderProgram colorInitFragmentShader, string velocityInitFragmentPath, int size)",
+        "parameters" : [
+         {
+          "name" : "colorInitFragmentShader",
+          "type" : "ShaderProgram"
+         },
+         {
+          "name" : "velocityInitFragmentPath",
+          "type" : "string"
+         },
+         {
+          "name" : "size",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 113
+       },
+       {
+        "name" : "this",
+        "kind" : "constructor",
+        "line" : 115,
+        "type" : "(string colorInitFragmentPath, ShaderProgram velocityInitFragmentShader, int size)",
+        "parameters" : [
+         {
+          "name" : "colorInitFragmentPath",
+          "type" : "string"
+         },
+         {
+          "name" : "velocityInitFragmentShader",
+          "type" : "ShaderProgram"
+         },
+         {
+          "name" : "size",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 119
+       },
+       {
+        "name" : "Update",
+        "kind" : "function",
+        "line" : 121,
+        "type" : "void()",
+        "endline" : 183
+       },
+       {
+        "name" : "Copy",
+        "kind" : "function",
+        "line" : 185,
+        "type" : "void(TextureObject t)",
+        "parameters" : [
+         {
+          "name" : "t",
+          "type" : "TextureObject"
+         }
+        ],
+        "endline" : 189
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "Import",
+  "kind" : "module",
+  "file" : "Import.d",
+  "members" : [
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 4
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 5
+   },
+   {
+    "name" : "std.file",
+    "kind" : "import",
+    "line" : 6
+   },
+   {
+    "name" : "std.mathspecial",
+    "kind" : "import",
+    "line" : 7
+   },
+   {
+    "name" : "derelict.opengl3.gl",
+    "kind" : "import",
+    "line" : 8
+   },
+   {
+    "name" : "derelict.glfw3.glfw3",
+    "kind" : "import",
+    "line" : 9
+   },
+   {
+    "name" : "std.typecons",
+    "kind" : "import",
+    "line" : 10
+   },
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 11
+   },
+   {
+    "name" : "derelict.devil.il",
+    "kind" : "import",
+    "line" : 12
+   },
+   {
+    "name" : "derelict.devil.ilu",
+    "kind" : "import",
+    "line" : 13
+   },
+   {
+    "name" : "derelict.devil.ilut",
+    "kind" : "import",
+    "line" : 14
+   },
+   {
+    "name" : "derelict.freetype.ft",
+    "kind" : "import",
+    "line" : 15
+   },
+   {
+    "name" : "derelict.opengl3.gl3",
+    "kind" : "import",
+    "line" : 16
+   }
+  ]
+ },
+ {
+  "kind" : "module",
+  "file" : "main.d",
+  "members" : [
+   {
+    "name" : "Import",
+    "kind" : "import",
+    "line" : 1,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.thread",
+    "kind" : "import",
+    "line" : 2,
+    "protection" : "private"
+   },
+   {
+    "name" : "SbyFluidUtils",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 4,
+    "protection" : "private"
+   },
+   {
+    "name" : "window_width",
+    "kind" : "variable",
+    "line" : 6,
+    "storageClass" : [
+     "const"
+    ],
+    "deco" : "xi",
+    "originalType" : "int",
+    "init" : "800"
+   },
+   {
+    "name" : "window_height",
+    "kind" : "variable",
+    "line" : 7,
+    "storageClass" : [
+     "const"
+    ],
+    "deco" : "xi",
+    "originalType" : "int",
+    "init" : "600"
+   },
+   {
+    "name" : "main",
+    "kind" : "function",
+    "line" : 9,
+    "deco" : "FZv",
+    "endline" : 14
+   },
+   {
+    "name" : "GameMain",
+    "kind" : "function",
+    "line" : 16,
+    "deco" : "FZb",
+    "endline" : 91
+   },
+   {
+    "name" : "InitGLFW",
+    "kind" : "function",
+    "line" : 93,
+    "storageClass" : [
+     "auto"
+    ],
+    "deco" : "FxixiZPS8derelict5glfw35types10GLFWwindow",
+    "originalType" : "(in int window_width, in int window_height)",
+    "parameters" : [
+     {
+      "name" : "window_width",
+      "deco" : "xi"
+     },
+     {
+      "name" : "window_height",
+      "deco" : "xi"
+     }
+    ],
+    "endline" : 122
+   }
+  ]
+ },
+ {
+  "kind" : "module",
+  "file" : "Player.d",
+  "members" : [
+   {
+    "name" : "Import",
+    "kind" : "import",
+    "line" : 1,
+    "protection" : "private"
+   },
+   {
+    "name" : "Player",
+    "kind" : "class",
+    "line" : 3,
+    "members" : [
+     {
+      "name" : "pos",
+      "kind" : "variable",
+      "line" : 4,
+      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3",
+      "offset" : 8
+     },
+     {
+      "name" : "spd",
+      "kind" : "variable",
+      "line" : 4,
+      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3",
+      "offset" : 20
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 6,
+      "deco" : "FS6sbylib4math16__T6VectorTfVi3Z6VectorZC6Player6Player",
+      "originalType" : "Player(vec3 pos)",
+      "parameters" : [
+       {
+        "name" : "pos",
+        "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 8
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "kind" : "module",
+  "file" : "SbyDistanceField.d",
+  "members" : [
+   {
+    "name" : "derelict.glfw3.glfw3",
+    "kind" : "import",
+    "line" : 1,
+    "protection" : "private"
+   },
+   {
+    "name" : "derelict.opengl3.gl3",
+    "kind" : "import",
+    "line" : 2,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.array",
+    "kind" : "import",
+    "line" : 4,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 5,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.typecons",
+    "kind" : "import",
+    "line" : 6,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.algorithm",
+    "kind" : "import",
+    "line" : 7,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.range",
+    "kind" : "import",
+    "line" : 9,
+    "protection" : "private"
+   },
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 10,
+    "protection" : "private"
+   },
+   {
+    "name" : "DistanceFieldMaterial",
+    "kind" : "class",
+    "line" : 12,
+    "members" : [
+     {
+      "name" : "depthWriter",
+      "kind" : "variable",
+      "line" : 14,
+      "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
+      "originalType" : "ShaderProgram",
+      "offset" : 8
+     },
+     {
+      "name" : "colorField",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 15,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yAa",
+      "originalType" : "string",
+      "offset" : 12
+     },
+     {
+      "name" : "distanceField",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 16,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yAa",
+      "originalType" : "string",
+      "offset" : 20
+     },
+     {
+      "name" : "otherDeclaration",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 17,
+      "deco" : "AAya",
+      "offset" : 28
+     },
+     {
+      "name" : "materialName",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 18,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yAa",
+      "originalType" : "string",
+      "offset" : 36
+     },
+     {
+      "name" : "id",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 19,
+      "storageClass" : [
+       "immutable"
+      ],
+      "deco" : "yi",
+      "originalType" : "int",
+      "offset" : 44
+     },
+     {
+      "name" : "id_seed",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 20,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "i",
+      "init" : "2"
+     },
+     {
+      "name" : "transformMatrix",
+      "kind" : "variable",
+      "line" : 21,
+      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "init" : "Matrix([[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]], [nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF])",
+      "offset" : 48
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 23,
+      "deco" : "FAyaAyaAyaAAyaXC16SbyDistanceField21DistanceFieldMaterial",
+      "parameters" : [
+       {
+        "name" : "materialName",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "distanceField",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "colorField",
+        "deco" : "Aya"
+       },
+       {
+        "name" : "otherDeclaration",
+        "deco" : "AAya"
+       }
+      ],
+      "endline" : 87
+     }
+    ]
+   },
+   {
+    "name" : "ScreenRenderer",
+    "kind" : "class",
+    "line" : 92,
+    "members" : [
+     {
+      "name" : "vao",
+      "kind" : "variable",
+      "line" : 94,
+      "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
+      "originalType" : "VertexArrayObject!(float)",
+      "offset" : 8
+     },
+     {
+      "name" : "materials",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 95,
+      "deco" : "HAyaC16SbyDistanceField21DistanceFieldMaterial",
+      "offset" : 12
+     },
+     {
+      "name" : "objects",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 96,
+      "deco" : "AC16SbyDistanceField15SbyRenderObject",
+      "offset" : 16
+     },
+     {
+      "name" : "fbo",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 97,
+      "deco" : "C6sbylib2gl17FrameBufferObject17FrameBufferObject",
+      "originalType" : "FrameBufferObject",
+      "offset" : 24
+     },
+     {
+      "name" : "txo",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 98,
+      "deco" : "C6sbylib2gl13TextureObject13TextureObject",
+      "originalType" : "TextureObject",
+      "offset" : 28
+     },
+     {
+      "name" : "debugTexture",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 99,
+      "deco" : "C6sbylib2gl13TextureObject13TextureObject",
+      "originalType" : "TextureObject",
+      "offset" : 32
+     },
+     {
+      "name" : "window",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 100,
+      "deco" : "PS8derelict5glfw35types10GLFWwindow",
+      "offset" : 36
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 102,
+      "deco" : "FPS8derelict5glfw35types10GLFWwindowZC16SbyDistanceField14ScreenRenderer",
+      "parameters" : [
+       {
+        "name" : "window",
+        "deco" : "PS8derelict5glfw35types10GLFWwindow"
+       }
+      ],
+      "endline" : 110
+     },
+     {
+      "name" : "RegisterMaterial",
+      "kind" : "function",
+      "line" : 113,
+      "deco" : "FC16SbyDistanceField21DistanceFieldMaterialZv",
+      "parameters" : [
+       {
+        "name" : "mat",
+        "deco" : "C16SbyDistanceField21DistanceFieldMaterial"
+       }
+      ],
+      "endline" : 120,
+      "in" : {
+       "name" : "__require",
+       "kind" : "function",
+       "line" : 114,
+       "deco" : "FZv",
+       "endline" : 114
+      }
+     },
+     {
+      "name" : "RegisterObject",
+      "kind" : "function",
+      "line" : 122,
+      "deco" : "FC16SbyDistanceField15SbyRenderObjectZv",
+      "parameters" : [
+       {
+        "name" : "object",
+        "deco" : "C16SbyDistanceField15SbyRenderObject"
+       }
+      ],
+      "endline" : 124
+     },
+     {
+      "name" : "Update",
+      "kind" : "function",
+      "line" : 127,
+      "deco" : "FZv",
+      "endline" : 251
+     },
+     {
+      "name" : "Draw",
+      "kind" : "function",
+      "line" : 253,
+      "deco" : "FZv",
+      "endline" : 276
+     }
+    ]
+   },
+   {
+    "name" : "SbyRenderObject",
+    "kind" : "class",
+    "line" : 279,
+    "members" : [
+     {
+      "name" : "vao",
+      "kind" : "variable",
+      "line" : 280,
+      "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
+      "originalType" : "VertexArrayObject!(float)",
+      "offset" : 8
+     },
+     {
+      "name" : "vertexUpdateFlag",
+      "kind" : "variable",
+      "protection" : "protected",
+      "line" : 281,
+      "deco" : "b",
+      "init" : "true",
+      "offset" : 12
+     },
+     {
+      "name" : "tcUpdateFlag",
+      "kind" : "variable",
+      "protection" : "protected",
+      "line" : 282,
+      "deco" : "b",
+      "init" : "false",
+      "offset" : 13
+     },
+     {
+      "name" : "mWorld",
+      "kind" : "variable",
+      "line" : 283,
+      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "init" : "Matrix([[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]], [nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF])",
+      "offset" : 16
+     },
+     {
+      "name" : "Vao",
+      "kind" : "function",
+      "line" : 285,
+      "storageClass" : [
+       "@property"
+      ],
+      "deco" : "FNdZC6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
+      "originalType" : "VertexArrayObject!(float)()",
+      "endline" : 287
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 289,
+      "deco" : "FC16SbyDistanceField21DistanceFieldMaterialZC16SbyDistanceField15SbyRenderObject",
+      "parameters" : [
+       {
+        "name" : "dfm",
+        "deco" : "C16SbyDistanceField21DistanceFieldMaterial"
+       }
+      ],
+      "endline" : 292
+     },
+     {
+      "name" : "Draw",
+      "kind" : "function",
+      "line" : 294,
+      "deco" : "FZv",
+      "endline" : 324
+     },
+     {
+      "name" : "SetVertex",
+      "kind" : "function",
+      "protection" : "protected",
+      "line" : 327,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi3Z6VectorZv",
+      "parameters" : [
+       {
+        "name" : "vertex",
+        "deco" : "G4S6sbylib4math16__T6VectorTfVi3Z6Vector",
+        "storageClass" : [
+         "out"
+        ]
+       }
+      ]
+     },
+     {
+      "name" : "SetTexcoords",
+      "kind" : "function",
+      "protection" : "protected",
+      "line" : 328,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi2Z6VectorZv",
+      "parameters" : [
+       {
+        "name" : "tc",
+        "deco" : "G4S6sbylib4math16__T6VectorTfVi2Z6Vector",
+        "storageClass" : [
+         "out"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "SphereBillboard",
+    "kind" : "class",
+    "line" : 331,
+    "base" : "SbyRenderObject",
+    "members" : [
+     {
+      "name" : "radius",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 333,
+      "deco" : "f",
+      "init" : "0F",
+      "offset" : 144
+     },
+     {
+      "name" : "CreateSetterGetter!(radius, \"vertexUpdateFlag = true;\", \"\")",
+      "kind" : "mixin",
+      "line" : 335
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 337,
+      "deco" : "FC16SbyDistanceField21DistanceFieldMaterialbZC16SbyDistanceField15SphereBillboard",
+      "parameters" : [
+       {
+        "name" : "dfm",
+        "deco" : "C16SbyDistanceField21DistanceFieldMaterial"
+       },
+       {
+        "name" : "useTexture",
+        "deco" : "b",
+        "default" : "false"
+       }
+      ],
+      "endline" : 340
+     },
+     {
+      "name" : "SetVertex",
+      "kind" : "function",
+      "line" : 342,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi3Z6VectorZv",
+      "parameters" : [
+       {
+        "name" : "vertex",
+        "deco" : "G4S6sbylib4math16__T6VectorTfVi3Z6Vector",
+        "storageClass" : [
+         "out"
+        ]
+       }
+      ],
+      "endline" : 348,
+      "overrides" : [
+       "SbyDistanceField.SbyRenderObject.SetVertex"
+      ]
+     },
+     {
+      "name" : "SetTexcoords",
+      "kind" : "function",
+      "line" : 350,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi2Z6VectorZv",
+      "parameters" : [
+       {
+        "name" : "tc",
+        "deco" : "G4S6sbylib4math16__T6VectorTfVi2Z6Vector",
+        "storageClass" : [
+         "out"
+        ]
+       }
+      ],
+      "endline" : 355,
+      "overrides" : [
+       "SbyDistanceField.SbyRenderObject.SetTexcoords"
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "Plane",
+    "kind" : "class",
+    "line" : 360,
+    "base" : "SbyRenderObject",
+    "members" : [
+     {
+      "name" : "vertex",
+      "kind" : "variable",
+      "line" : 362,
+      "deco" : "G4S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3[4]",
+      "offset" : 144
+     },
+     {
+      "name" : "tc",
+      "kind" : "variable",
+      "line" : 363,
+      "deco" : "G4S6sbylib4math16__T6VectorTfVi2Z6Vector",
+      "originalType" : "vec2[4]",
+      "offset" : 192
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 365,
+      "deco" : "FC16SbyDistanceField21DistanceFieldMaterialZC16SbyDistanceField5Plane",
+      "parameters" : [
+       {
+        "name" : "dfm",
+        "deco" : "C16SbyDistanceField21DistanceFieldMaterial"
+       }
+      ],
+      "endline" : 367
+     },
+     {
+      "name" : "BuildBasicPlane",
+      "kind" : "function",
+      "line" : 369,
+      "deco" : "FZv",
+      "endline" : 379
+     },
+     {
+      "name" : "SetVertex",
+      "kind" : "function",
+      "line" : 381,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi3Z6VectorZv",
+      "parameters" : [
+       {
+        "name" : "vertex",
+        "deco" : "G4S6sbylib4math16__T6VectorTfVi3Z6Vector",
+        "storageClass" : [
+         "out"
+        ]
+       }
+      ],
+      "endline" : 383,
+      "overrides" : [
+       "SbyDistanceField.SbyRenderObject.SetVertex"
+      ]
+     },
+     {
+      "name" : "SetTexcoords",
+      "kind" : "function",
+      "line" : 385,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi2Z6VectorZv",
+      "parameters" : [
+       {
+        "name" : "tc",
+        "deco" : "G4S6sbylib4math16__T6VectorTfVi2Z6Vector",
+        "storageClass" : [
+         "out"
+        ]
+       }
+      ],
+      "endline" : 387,
+      "overrides" : [
+       "SbyDistanceField.SbyRenderObject.SetTexcoords"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "kind" : "module",
+  "file" : "SbyScript.d",
+  "members" : [
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 1,
+    "protection" : "private"
+   },
+   {
+    "name" : "SbyScriptLoader",
+    "kind" : "class",
+    "line" : 3,
+    "members" : [
+     {
+      "name" : "LoadShape",
+      "kind" : "function",
+      "line" : 5,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FAyaZv",
+      "parameters" : [
+       {
+        "name" : "filePath",
+        "deco" : "Aya"
+       }
+      ],
+      "endline" : 7
+     }
+    ]
+   }
+  ]
+ }
+]

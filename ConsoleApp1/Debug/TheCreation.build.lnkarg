@@ -1,0 +1,9 @@
+ 
+"Debug\TheCreation.obj","Debug\TheCreation.exe","Debug\TheCreation.map",DerelictUtil.lib+ 
+DerelictGL3.lib+ 
+DerelictGLFW3.lib+ 
+DerelictIL.lib+ 
+DerelictFT.lib+ 
+user32.lib+ 
+kernel32.lib+ 
+DerelictLib\/NOMAP/CO/NOI/DELEXE 
