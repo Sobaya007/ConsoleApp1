@@ -3978,34 +3978,39 @@
     "line" : 10
    },
    {
-    "name" : "sbylib.imports",
+    "name" : "SbyDistanceField",
     "kind" : "import",
     "line" : 11
    },
    {
-    "name" : "derelict.devil.il",
+    "name" : "sbylib.imports",
     "kind" : "import",
     "line" : 12
    },
    {
-    "name" : "derelict.devil.ilu",
+    "name" : "derelict.devil.il",
     "kind" : "import",
     "line" : 13
    },
    {
-    "name" : "derelict.devil.ilut",
+    "name" : "derelict.devil.ilu",
     "kind" : "import",
     "line" : 14
    },
    {
-    "name" : "derelict.freetype.ft",
+    "name" : "derelict.devil.ilut",
     "kind" : "import",
     "line" : 15
    },
    {
-    "name" : "derelict.opengl3.gl3",
+    "name" : "derelict.freetype.ft",
     "kind" : "import",
     "line" : 16
+   },
+   {
+    "name" : "derelict.opengl3.gl3",
+    "kind" : "import",
+    "line" : 17
    }
   ]
  },
