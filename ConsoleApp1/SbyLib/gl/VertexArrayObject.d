@@ -10,19 +10,10 @@ class VertexArrayObject(T) {
 
 	GLenum mode = GL_TRIANGLE_STRIP;
 
-	this(int vertexCount) {
-		this(null, vertexCount);
-	}
-
-	this(string vsPath, string fsPath, int vertexCount) {
-		this(new ShaderProgram(vsPath, fsPath, ShaderProgram.InputType.FilePath), vertexCount);
-	}
-
-	this(ShaderProgram sProgram, int vertexCount, VBO_T.Frequency frequency = VBO_T.Frequency.STATIC) {
+	this() {
 		uint vao;
 		glGenVertexArrays(1, &vao);
 		this.vaoID = vao;
-		this.shaderProgram = sProgram;
 	}
 
 	~this() {

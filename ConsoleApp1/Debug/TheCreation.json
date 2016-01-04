@@ -1611,68 +1611,19 @@
         "name" : "this",
         "kind" : "constructor",
         "line" : 13,
-        "type" : "(int vertexCount)",
-        "parameters" : [
-         {
-          "name" : "vertexCount",
-          "deco" : "i"
-         }
-        ],
-        "endline" : 15
-       },
-       {
-        "name" : "this",
-        "kind" : "constructor",
-        "line" : 17,
-        "type" : "(string vsPath, string fsPath, int vertexCount)",
-        "parameters" : [
-         {
-          "name" : "vsPath",
-          "type" : "string"
-         },
-         {
-          "name" : "fsPath",
-          "type" : "string"
-         },
-         {
-          "name" : "vertexCount",
-          "deco" : "i"
-         }
-        ],
-        "endline" : 19
-       },
-       {
-        "name" : "this",
-        "kind" : "constructor",
-        "line" : 21,
-        "type" : "(ShaderProgram sProgram, int vertexCount, VBO_T.Frequency frequency = VBO_T.Frequency.STATIC)",
-        "parameters" : [
-         {
-          "name" : "sProgram",
-          "type" : "ShaderProgram"
-         },
-         {
-          "name" : "vertexCount",
-          "deco" : "i"
-         },
-         {
-          "name" : "frequency",
-          "type" : "VBO_T.Frequency",
-          "default" : "VBO_T.Frequency.STATIC"
-         }
-        ],
-        "endline" : 26
+        "type" : "()",
+        "endline" : 17
        },
        {
         "name" : "~this",
         "kind" : "destructor",
-        "line" : 28,
-        "endline" : 30
+        "line" : 19,
+        "endline" : 21
        },
        {
         "name" : "SetVertex",
         "kind" : "function",
-        "line" : 32,
+        "line" : 23,
         "type" : "void(VBO vbo)",
         "parameters" : [
          {
@@ -1680,33 +1631,33 @@
           "type" : "VBO"
          }
         ],
-        "endline" : 36
+        "endline" : 27
        },
        {
         "name" : "Bind",
         "kind" : "function",
-        "line" : 38,
+        "line" : 29,
         "type" : "const void()",
-        "endline" : 40
+        "endline" : 31
        },
        {
         "name" : "UnBind",
         "kind" : "function",
-        "line" : 42,
+        "line" : 33,
         "type" : "const void()",
-        "endline" : 44
+        "endline" : 35
        },
        {
         "name" : "Draw",
         "kind" : "function",
-        "line" : 46,
+        "line" : 37,
         "type" : "const void()",
-        "endline" : 54
+        "endline" : 45
        },
        {
         "name" : "Draw",
         "kind" : "function",
-        "line" : 56,
+        "line" : 47,
         "type" : "const void(IBO index)",
         "parameters" : [
          {
@@ -1714,7 +1665,7 @@
           "type" : "IBO"
          }
         ],
-        "endline" : 66
+        "endline" : 57
        }
       ]
      }
@@ -1723,8 +1674,7 @@
    {
     "name" : "VAO",
     "kind" : "alias",
-    "line" : 71,
-    "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject"
+    "line" : 62
    }
   ]
  },
@@ -3552,13 +3502,22 @@
     "base" : "Primitive",
     "members" : [
      {
+      "name" : "vao",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 19,
+      "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
+      "originalType" : "VAO",
+      "offset" : 136
+     },
+     {
       "name" : "sp",
       "kind" : "variable",
       "protection" : "private",
       "line" : 20,
       "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
       "originalType" : "ShaderProgram",
-      "offset" : 136
+      "offset" : 140
      },
      {
       "name" : "vbo",
@@ -3567,7 +3526,7 @@
       "line" : 21,
       "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
       "originalType" : "VBO",
-      "offset" : 140
+      "offset" : 144
      },
      {
       "name" : "index",
@@ -3576,24 +3535,24 @@
       "line" : 22,
       "deco" : "C6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject",
       "originalType" : "IBO",
-      "offset" : 144
+      "offset" : 148
      },
      {
       "name" : "this",
       "kind" : "constructor",
       "line" : 24,
       "deco" : "FZC6sbylib9primitive3Box",
-      "endline" : 52
+      "endline" : 54
      },
      {
       "name" : "Draw",
       "kind" : "function",
-      "line" : 54,
+      "line" : 56,
       "storageClass" : [
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 63,
+      "endline" : 60,
       "overrides" : [
        "sbylib.primitive.Primitive.Draw"
       ]
