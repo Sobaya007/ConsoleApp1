@@ -326,6 +326,18 @@ private:
 		return code;
 	}
 
+	static string multMVAssignCode() {
+		string code;
+		foreach (i; 0..4) {
+			code ~= "this.elements[" ~ to!string(i) ~ "] = ";
+			foreach (j; 0..4) {
+				code ~= "+ elements[" ~ to!string(j) ~ "][" ~ to!string(i) ~ "] * v[" ~ to!string(j) ~ "]";
+			}
+			code ~= ";";
+		}
+		return code;
+	}
+
 	static string getIdentityCode() {
 		string code;
 		foreach (i; 0..4) {
@@ -374,7 +386,7 @@ private:
 				else if (i == 3 || j == 3)
 					code ~= "0;";
 				else if (i == j)
-					code ~= "v[" ~ to!string(i) ~ "]*v[" ~ to!string(i) ~ "]*(1-c)+c;";
+					code ~= "v[" ~ to!string(i) ~ "]*v[" ~ to!string(j) ~ "]*(1-c)+c;";
 				else if (j == (i+1)%3)
 					code ~= "v[" ~ to!string(i) ~ "]*v[" ~ to!string(j) ~ "]*(1-c)+v[" ~ to!string((i+2)%3) ~ "]*s;";
 				else
@@ -396,6 +408,14 @@ private:
 		string code;
 		foreach (i; 0..4) {
 			code ~= "result.elements[" ~ to!string(i) ~ "][] = elements[" ~ to!string(i) ~ "][]" ~ op ~ "s;";
+		}
+		return code;
+	}
+
+	static string getOpAssignMMCode(string op) {
+		string code;
+		foreach (i; 0..4) {
+			code ~= "this.elements[" ~ to!string(i) ~ "][] = elements[" ~ to!string(i) ~ "][]" ~ op ~ "m.elements[" ~ to!string(i) ~ "][];";
 		}
 		return code;
 	}
@@ -438,7 +458,6 @@ private:
 		foreach (i; 0..3) {
 			code ~= "result.elements[" ~ to!string(i) ~ 
 				"][0] = side.elements[" ~ to!string(i) ~ "];"; 
-				
 		}
 
 		foreach (i; 0..3) {
@@ -536,6 +555,17 @@ private:
 		return code;
 	}
 
+	static string getCopyCode(string identifier) {
+		string code;
+		foreach (x; 0..4) {
+			foreach (y; 0..4) {
+				code ~= "this.elements[" ~ to!string(x) ~ "][" ~ to!string(y) ~ "]
+					= " ~ identifier ~ ".elements[" ~ to!string(x) ~ "][" ~ to!string(y) ~ "];";
+			}
+		}
+		return code;
+	}
+
 public:
 
 	Matrix opBinary(string op)(Matrix m) {
@@ -564,6 +594,26 @@ public:
 		static if (op == "*") {
 			mixin(multMVCode());
 			return result;
+		}
+		assert(false);
+	}
+
+	void opOpAssign(string op)(Vector!(U,4) v) {
+		static if (op == "*") {
+			mixin(multMVAssignCode());
+			return result;
+		}
+		assert(false);
+	}
+
+	void opOpAssign(string op)(Matrix m) {
+		static if (op == "+" || op == "-") {
+			mixin(getOpAssignMMCode(op));
+			return;
+		} else if (op == "*") {
+			Matrix result = this * m;
+			mixin(getCopyCode("result"));
+			return;
 		}
 		assert(false);
 	}

@@ -38,12 +38,14 @@ bool GameMain() {
 	}
 
 	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_CULL_FACE);
+	glCullFace(GL_BACK);
 
 	auto fpsCounter = new FpsCounter!(100);
 	auto box = new Box;
 	vec3 scale = vec3(1,1,1) * 0.5f;
 	box *= scale;
-	box += vec3(1,0,0);
+	box.mat *= mat4.RotAxisAngle(vec3(1,1,1), 45);
 
 	MainLoop(() {
 
