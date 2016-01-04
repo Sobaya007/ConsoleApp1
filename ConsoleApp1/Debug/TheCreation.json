@@ -1709,7 +1709,8 @@
    {
     "name" : "VAO",
     "kind" : "alias",
-    "line" : 71
+    "line" : 71,
+    "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject"
    }
   ]
  },
@@ -3537,39 +3538,48 @@
     "base" : "Primitive",
     "members" : [
      {
-      "name" : "vao",
+      "name" : "sp",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 19,
-      "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
-      "originalType" : "VAO",
+      "line" : 20,
+      "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
+      "originalType" : "ShaderProgram",
       "offset" : 136
+     },
+     {
+      "name" : "vbo",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 21,
+      "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
+      "originalType" : "VBO",
+      "offset" : 140
      },
      {
       "name" : "index",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 20,
+      "line" : 22,
       "deco" : "C6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject",
       "originalType" : "IBO",
-      "offset" : 140
+      "offset" : 144
      },
      {
       "name" : "this",
       "kind" : "constructor",
-      "line" : 22,
+      "line" : 24,
       "deco" : "FZC6sbylib9primitive3Box",
-      "endline" : 47
+      "endline" : 54
      },
      {
       "name" : "Draw",
       "kind" : "function",
-      "line" : 49,
+      "line" : 56,
       "storageClass" : [
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 53,
+      "endline" : 62,
       "overrides" : [
        "sbylib.primitive.Primitive.Draw"
       ]
