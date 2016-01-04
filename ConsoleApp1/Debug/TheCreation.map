@@ -1,7 +1,7 @@
 
  Start         Length     Name                   Class
- 0002:00000000 00062084H  _TEXT                  CODE 32-bit
- 0002:00062084 0000024CH  ICODE                  ICODE 32-bit
+ 0002:00000000 00062094H  _TEXT                  CODE 32-bit
+ 0002:00062094 0000024CH  ICODE                  ICODE 32-bit
  0003:00000000 00000004H  .tls                   tls 32-bit
  0003:00000010 00000118H  .tls$                  tls 32-bit
  0003:00000130 00000004H  .tls$ZZZ               tls 32-bit
@@ -41,4 +41,4 @@
  0004:00029DB0 0000041DH  c_common               BSS 32-bit
  0004:0002A1D0 00000000H  STACK                  STACK 32-bit
 
-Program entry point at 0005A218 
+Program entry point at 0005A228 
