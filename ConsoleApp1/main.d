@@ -1,6 +1,5 @@
 import Import;
 import core.thread;
-import SbyFluidUtils;
 import sbylib.imports;
 
 const int window_width = 800;
@@ -25,44 +24,6 @@ bool GameMain() {
 
 	glViewport(0, 0, window_width, window_height);
 
-	//auto tex = new TextureObject("Resource/810.jpg");
-	//
-	//ShaderProgram colorInit = new ShaderProgram("Shader/Fluid/TestShader.vert", "Shader/Simple.frag", ShaderProgram.InputType.FilePath);
-	//colorInit.SetTexture(tex);
-	//glBindFramebuffer(GL_FRAMEBUFFER, 0);
-	//Fluid!float fluid = new Fluid!float("Shader/DisappearColor.frag",
-	//                                    "Shader/Fluid/VelocityInit.frag"
-	//                                    , 128);
-	//
-	DistanceFieldMaterial dfm = new DistanceFieldMaterial(
-														  "TestName",  
-														  "vec2 t = vec2(0.5, 0.1);
-														  vec2 q = vec2(length(pos.xz)-t.x,pos.y);
-														  return length(q)-t.y;", 
-														  "return vec4(getNormal(pos) * 0.5 + 0.5, 1);", 
-														  "int x;" 
-														  );
-
-	ScreenRenderer renderer = new ScreenRenderer(window);
-	renderer.RegisterMaterial(dfm);
-	renderer.Update();
-
-	SphereBillboard obj = new SphereBillboard( dfm, true );
-	with (obj) {
-		Radius = 3.0;
-		mWorld = mat4.Translation(vec3(1,0,0));
-	}
-	renderer.RegisterObject(obj);
-	VertexArrayObject!float vao = new VertexArrayObject!float(4);
-	vao.shaderProgram = new ShaderProgram("Shader/Fluid/TestShader.vert", "Shader/Fluid/TestShader.frag", ShaderProgram.InputType.FilePath);
-	//vao.SetTexture(fluid.colorTexture);
-	vao.UpdateVertex([
-		-1,-1,0, 1,
-		-1, 1,0, 1,
-		1,-1,0, 1,
-		1, 1,0, 1
-	]);
-
 	CurrentCamera = new PerspectiveCamera(1, PI_4, 1, 30);
 	with (CurrentCamera) {
 		Eye = vec3(0,0,1);
@@ -79,8 +40,7 @@ bool GameMain() {
 
 		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		renderer.Draw();
-		//box.Draw();
+		box.Draw();
 
 		
 		fpsCounter.Update();
@@ -92,6 +52,7 @@ bool GameMain() {
 
 auto InitGLFW(in int window_width, in int window_height) {
 
+	DerelictGL.load();
 	DerelictGL3.load();
 
 	DerelictGLFW3.load();

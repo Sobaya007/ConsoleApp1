@@ -48,6 +48,6 @@ class Box : Primitive {
 	override void Draw() {
 		vao.SetUniformMatrix!(4,"mWorld")(mat.array);
 		vao.SetUniformMatrix!(4,"mViewProj")(CurrentCamera.GetViewProjectionMatrix.array);
-		vao.Draw(index);
+		vao.Draw();
 	}
 }

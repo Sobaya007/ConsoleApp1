@@ -3700,239 +3700,6 @@
   ]
  },
  {
-  "name" : "SbyFluidUtils",
-  "kind" : "module",
-  "file" : "FluidUtils.d",
-  "members" : [
-   {
-    "name" : "Import",
-    "kind" : "import",
-    "line" : 3,
-    "protection" : "private"
-   },
-   {
-    "kind" : "template",
-    "name" : "Fluid(T)",
-    "line" : 5,
-    "parameters" : [
-     {
-      "name" : "T",
-      "kind" : "type"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "Fluid",
-      "kind" : "class",
-      "line" : 5,
-      "members" : [
-       {
-        "name" : "textureRenderFrameBuffer",
-        "kind" : "variable",
-        "line" : 8,
-        "type" : "FrameBufferObject"
-       },
-       {
-        "name" : "tex",
-        "kind" : "variable",
-        "line" : 9,
-        "type" : "TextureObject"
-       },
-       {
-        "name" : "vao",
-        "kind" : "variable",
-        "line" : 10,
-        "type" : "VertexArrayObject!(T)"
-       },
-       {
-        "name" : "copy",
-        "kind" : "variable",
-        "line" : 11,
-        "type" : "ShaderProgram"
-       },
-       {
-        "name" : "dCalc",
-        "kind" : "variable",
-        "line" : 11,
-        "type" : "ShaderProgram"
-       },
-       {
-        "name" : "pCalc",
-        "kind" : "variable",
-        "line" : 11,
-        "type" : "ShaderProgram"
-       },
-       {
-        "name" : "cAdv",
-        "kind" : "variable",
-        "line" : 11,
-        "type" : "ShaderProgram"
-       },
-       {
-        "name" : "vAdv",
-        "kind" : "variable",
-        "line" : 11,
-        "type" : "ShaderProgram"
-       },
-       {
-        "name" : "vUpd",
-        "kind" : "variable",
-        "line" : 11,
-        "type" : "ShaderProgram"
-       },
-       {
-        "name" : "gaussian",
-        "kind" : "variable",
-        "line" : 11,
-        "type" : "ShaderProgram"
-       },
-       {
-        "name" : "vAdd",
-        "kind" : "variable",
-        "line" : 11,
-        "type" : "ShaderProgram"
-       },
-       {
-        "name" : "colorTexture",
-        "kind" : "variable",
-        "line" : 14,
-        "type" : "TextureObject"
-       },
-       {
-        "name" : "velocityTexture",
-        "kind" : "variable",
-        "line" : 14,
-        "type" : "TextureObject"
-       },
-       {
-        "name" : "divergenceTexture",
-        "kind" : "variable",
-        "line" : 14,
-        "type" : "TextureObject"
-       },
-       {
-        "name" : "pressureTexture",
-        "kind" : "variable",
-        "line" : 14,
-        "type" : "TextureObject"
-       },
-       {
-        "name" : "size",
-        "kind" : "variable",
-        "line" : 16,
-        "deco" : "i"
-       },
-       {
-        "name" : "this",
-        "kind" : "constructor",
-        "line" : 18,
-        "type" : "(ShaderProgram colorInitFragmentShader, ShaderProgram velocityInitFragmentShader, int size)",
-        "parameters" : [
-         {
-          "name" : "colorInitFragmentShader",
-          "type" : "ShaderProgram"
-         },
-         {
-          "name" : "velocityInitFragmentShader",
-          "type" : "ShaderProgram"
-         },
-         {
-          "name" : "size",
-          "deco" : "i"
-         }
-        ],
-        "endline" : 101
-       },
-       {
-        "name" : "this",
-        "kind" : "constructor",
-        "line" : 103,
-        "type" : "(string colorInitFragmentPath, string velocityInitFragmentPath, int size)",
-        "parameters" : [
-         {
-          "name" : "colorInitFragmentPath",
-          "type" : "string"
-         },
-         {
-          "name" : "velocityInitFragmentPath",
-          "type" : "string"
-         },
-         {
-          "name" : "size",
-          "deco" : "i"
-         }
-        ],
-        "endline" : 107
-       },
-       {
-        "name" : "this",
-        "kind" : "constructor",
-        "line" : 109,
-        "type" : "(ShaderProgram colorInitFragmentShader, string velocityInitFragmentPath, int size)",
-        "parameters" : [
-         {
-          "name" : "colorInitFragmentShader",
-          "type" : "ShaderProgram"
-         },
-         {
-          "name" : "velocityInitFragmentPath",
-          "type" : "string"
-         },
-         {
-          "name" : "size",
-          "deco" : "i"
-         }
-        ],
-        "endline" : 113
-       },
-       {
-        "name" : "this",
-        "kind" : "constructor",
-        "line" : 115,
-        "type" : "(string colorInitFragmentPath, ShaderProgram velocityInitFragmentShader, int size)",
-        "parameters" : [
-         {
-          "name" : "colorInitFragmentPath",
-          "type" : "string"
-         },
-         {
-          "name" : "velocityInitFragmentShader",
-          "type" : "ShaderProgram"
-         },
-         {
-          "name" : "size",
-          "deco" : "i"
-         }
-        ],
-        "endline" : 119
-       },
-       {
-        "name" : "Update",
-        "kind" : "function",
-        "line" : 121,
-        "type" : "void()",
-        "endline" : 183
-       },
-       {
-        "name" : "Copy",
-        "kind" : "function",
-        "line" : 185,
-        "type" : "void(TextureObject t)",
-        "parameters" : [
-         {
-          "name" : "t",
-          "type" : "TextureObject"
-         }
-        ],
-        "endline" : 189
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
   "name" : "Import",
   "kind" : "module",
   "file" : "Import.d",
@@ -3978,39 +3745,34 @@
     "line" : 10
    },
    {
-    "name" : "SbyDistanceField",
+    "name" : "sbylib.imports",
     "kind" : "import",
     "line" : 11
    },
    {
-    "name" : "sbylib.imports",
+    "name" : "derelict.devil.il",
     "kind" : "import",
     "line" : 12
    },
    {
-    "name" : "derelict.devil.il",
+    "name" : "derelict.devil.ilu",
     "kind" : "import",
     "line" : 13
    },
    {
-    "name" : "derelict.devil.ilu",
+    "name" : "derelict.devil.ilut",
     "kind" : "import",
     "line" : 14
    },
    {
-    "name" : "derelict.devil.ilut",
+    "name" : "derelict.freetype.ft",
     "kind" : "import",
     "line" : 15
    },
    {
-    "name" : "derelict.freetype.ft",
-    "kind" : "import",
-    "line" : 16
-   },
-   {
     "name" : "derelict.opengl3.gl3",
     "kind" : "import",
-    "line" : 17
+    "line" : 16
    }
   ]
  },
@@ -4031,21 +3793,15 @@
     "protection" : "private"
    },
    {
-    "name" : "SbyFluidUtils",
+    "name" : "sbylib.imports",
     "kind" : "import",
     "line" : 3,
     "protection" : "private"
    },
    {
-    "name" : "sbylib.imports",
-    "kind" : "import",
-    "line" : 4,
-    "protection" : "private"
-   },
-   {
     "name" : "window_width",
     "kind" : "variable",
-    "line" : 6,
+    "line" : 5,
     "storageClass" : [
      "const"
     ],
@@ -4056,7 +3812,7 @@
    {
     "name" : "window_height",
     "kind" : "variable",
-    "line" : 7,
+    "line" : 6,
     "storageClass" : [
      "const"
     ],
@@ -4067,21 +3823,21 @@
    {
     "name" : "main",
     "kind" : "function",
-    "line" : 9,
+    "line" : 8,
     "deco" : "FZv",
-    "endline" : 14
+    "endline" : 13
    },
    {
     "name" : "GameMain",
     "kind" : "function",
-    "line" : 16,
+    "line" : 15,
     "deco" : "FZb",
-    "endline" : 91
+    "endline" : 51
    },
    {
     "name" : "InitGLFW",
     "kind" : "function",
-    "line" : 93,
+    "line" : 53,
     "storageClass" : [
      "auto"
     ],
@@ -4097,7 +3853,7 @@
       "deco" : "xi"
      }
     ],
-    "endline" : 122
+    "endline" : 83
    }
   ]
  },
@@ -4145,632 +3901,6 @@
        }
       ],
       "endline" : 8
-     }
-    ]
-   }
-  ]
- },
- {
-  "kind" : "module",
-  "file" : "SbyDistanceField.d",
-  "members" : [
-   {
-    "name" : "derelict.glfw3.glfw3",
-    "kind" : "import",
-    "line" : 1,
-    "protection" : "private"
-   },
-   {
-    "name" : "derelict.opengl3.gl3",
-    "kind" : "import",
-    "line" : 2,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.string",
-    "kind" : "import",
-    "line" : 3,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.array",
-    "kind" : "import",
-    "line" : 4,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.conv",
-    "kind" : "import",
-    "line" : 5,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.typecons",
-    "kind" : "import",
-    "line" : 6,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.algorithm",
-    "kind" : "import",
-    "line" : 7,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.stdio",
-    "kind" : "import",
-    "line" : 8,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.range",
-    "kind" : "import",
-    "line" : 9,
-    "protection" : "private"
-   },
-   {
-    "name" : "sbylib.imports",
-    "kind" : "import",
-    "line" : 10,
-    "protection" : "private"
-   },
-   {
-    "name" : "DistanceFieldMaterial",
-    "kind" : "class",
-    "line" : 12,
-    "members" : [
-     {
-      "name" : "depthWriter",
-      "kind" : "variable",
-      "line" : 14,
-      "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
-      "originalType" : "ShaderProgram",
-      "offset" : 8
-     },
-     {
-      "name" : "colorField",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 15,
-      "storageClass" : [
-       "immutable"
-      ],
-      "deco" : "yAa",
-      "originalType" : "string",
-      "offset" : 12
-     },
-     {
-      "name" : "distanceField",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 16,
-      "storageClass" : [
-       "immutable"
-      ],
-      "deco" : "yAa",
-      "originalType" : "string",
-      "offset" : 20
-     },
-     {
-      "name" : "otherDeclaration",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 17,
-      "deco" : "AAya",
-      "offset" : 28
-     },
-     {
-      "name" : "materialName",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 18,
-      "storageClass" : [
-       "immutable"
-      ],
-      "deco" : "yAa",
-      "originalType" : "string",
-      "offset" : 36
-     },
-     {
-      "name" : "id",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 19,
-      "storageClass" : [
-       "immutable"
-      ],
-      "deco" : "yi",
-      "originalType" : "int",
-      "offset" : 44
-     },
-     {
-      "name" : "id_seed",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 20,
-      "storageClass" : [
-       "static"
-      ],
-      "deco" : "i",
-      "init" : "2"
-     },
-     {
-      "name" : "transformMatrix",
-      "kind" : "variable",
-      "line" : 21,
-      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
-      "originalType" : "mat4",
-      "init" : "Matrix([[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]], [nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF])",
-      "offset" : 48
-     },
-     {
-      "name" : "this",
-      "kind" : "constructor",
-      "line" : 23,
-      "deco" : "FAyaAyaAyaAAyaXC16SbyDistanceField21DistanceFieldMaterial",
-      "parameters" : [
-       {
-        "name" : "materialName",
-        "deco" : "Aya"
-       },
-       {
-        "name" : "distanceField",
-        "deco" : "Aya"
-       },
-       {
-        "name" : "colorField",
-        "deco" : "Aya"
-       },
-       {
-        "name" : "otherDeclaration",
-        "deco" : "AAya"
-       }
-      ],
-      "endline" : 87
-     }
-    ]
-   },
-   {
-    "name" : "ScreenRenderer",
-    "kind" : "class",
-    "line" : 92,
-    "members" : [
-     {
-      "name" : "vao",
-      "kind" : "variable",
-      "line" : 94,
-      "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
-      "originalType" : "VertexArrayObject!(float)",
-      "offset" : 8
-     },
-     {
-      "name" : "materials",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 95,
-      "deco" : "HAyaC16SbyDistanceField21DistanceFieldMaterial",
-      "offset" : 12
-     },
-     {
-      "name" : "objects",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 96,
-      "deco" : "AC16SbyDistanceField15SbyRenderObject",
-      "offset" : 16
-     },
-     {
-      "name" : "fbo",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 97,
-      "deco" : "C6sbylib2gl17FrameBufferObject17FrameBufferObject",
-      "originalType" : "FrameBufferObject",
-      "offset" : 24
-     },
-     {
-      "name" : "txo",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 98,
-      "deco" : "C6sbylib2gl13TextureObject13TextureObject",
-      "originalType" : "TextureObject",
-      "offset" : 28
-     },
-     {
-      "name" : "debugTexture",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 99,
-      "deco" : "C6sbylib2gl13TextureObject13TextureObject",
-      "originalType" : "TextureObject",
-      "offset" : 32
-     },
-     {
-      "name" : "window",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 100,
-      "deco" : "PS8derelict5glfw35types10GLFWwindow",
-      "offset" : 36
-     },
-     {
-      "name" : "this",
-      "kind" : "constructor",
-      "line" : 102,
-      "deco" : "FPS8derelict5glfw35types10GLFWwindowZC16SbyDistanceField14ScreenRenderer",
-      "parameters" : [
-       {
-        "name" : "window",
-        "deco" : "PS8derelict5glfw35types10GLFWwindow"
-       }
-      ],
-      "endline" : 110
-     },
-     {
-      "name" : "RegisterMaterial",
-      "kind" : "function",
-      "line" : 113,
-      "deco" : "FC16SbyDistanceField21DistanceFieldMaterialZv",
-      "parameters" : [
-       {
-        "name" : "mat",
-        "deco" : "C16SbyDistanceField21DistanceFieldMaterial"
-       }
-      ],
-      "endline" : 120,
-      "in" : {
-       "name" : "__require",
-       "kind" : "function",
-       "line" : 114,
-       "deco" : "FZv",
-       "endline" : 114
-      }
-     },
-     {
-      "name" : "RegisterObject",
-      "kind" : "function",
-      "line" : 122,
-      "deco" : "FC16SbyDistanceField15SbyRenderObjectZv",
-      "parameters" : [
-       {
-        "name" : "object",
-        "deco" : "C16SbyDistanceField15SbyRenderObject"
-       }
-      ],
-      "endline" : 124
-     },
-     {
-      "name" : "Update",
-      "kind" : "function",
-      "line" : 127,
-      "deco" : "FZv",
-      "endline" : 251
-     },
-     {
-      "name" : "Draw",
-      "kind" : "function",
-      "line" : 253,
-      "deco" : "FZv",
-      "endline" : 276
-     }
-    ]
-   },
-   {
-    "name" : "SbyRenderObject",
-    "kind" : "class",
-    "line" : 279,
-    "members" : [
-     {
-      "name" : "vao",
-      "kind" : "variable",
-      "line" : 280,
-      "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
-      "originalType" : "VertexArrayObject!(float)",
-      "offset" : 8
-     },
-     {
-      "name" : "vertexUpdateFlag",
-      "kind" : "variable",
-      "protection" : "protected",
-      "line" : 281,
-      "deco" : "b",
-      "init" : "true",
-      "offset" : 12
-     },
-     {
-      "name" : "tcUpdateFlag",
-      "kind" : "variable",
-      "protection" : "protected",
-      "line" : 282,
-      "deco" : "b",
-      "init" : "false",
-      "offset" : 13
-     },
-     {
-      "name" : "mWorld",
-      "kind" : "variable",
-      "line" : 283,
-      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
-      "originalType" : "mat4",
-      "init" : "Matrix([[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]], [nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF])",
-      "offset" : 16
-     },
-     {
-      "name" : "Vao",
-      "kind" : "function",
-      "line" : 285,
-      "storageClass" : [
-       "@property"
-      ],
-      "deco" : "FNdZC6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
-      "originalType" : "VertexArrayObject!(float)()",
-      "endline" : 287
-     },
-     {
-      "name" : "this",
-      "kind" : "constructor",
-      "line" : 289,
-      "deco" : "FC16SbyDistanceField21DistanceFieldMaterialZC16SbyDistanceField15SbyRenderObject",
-      "parameters" : [
-       {
-        "name" : "dfm",
-        "deco" : "C16SbyDistanceField21DistanceFieldMaterial"
-       }
-      ],
-      "endline" : 292
-     },
-     {
-      "name" : "Draw",
-      "kind" : "function",
-      "line" : 294,
-      "deco" : "FZv",
-      "endline" : 324
-     },
-     {
-      "name" : "SetVertex",
-      "kind" : "function",
-      "protection" : "protected",
-      "line" : 327,
-      "storageClass" : [
-       "abstract"
-      ],
-      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi3Z6VectorZv",
-      "parameters" : [
-       {
-        "name" : "vertex",
-        "deco" : "G4S6sbylib4math16__T6VectorTfVi3Z6Vector",
-        "storageClass" : [
-         "out"
-        ]
-       }
-      ]
-     },
-     {
-      "name" : "SetTexcoords",
-      "kind" : "function",
-      "protection" : "protected",
-      "line" : 328,
-      "storageClass" : [
-       "abstract"
-      ],
-      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi2Z6VectorZv",
-      "parameters" : [
-       {
-        "name" : "tc",
-        "deco" : "G4S6sbylib4math16__T6VectorTfVi2Z6Vector",
-        "storageClass" : [
-         "out"
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "name" : "SphereBillboard",
-    "kind" : "class",
-    "line" : 331,
-    "base" : "SbyRenderObject",
-    "members" : [
-     {
-      "name" : "radius",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 333,
-      "deco" : "f",
-      "init" : "0F",
-      "offset" : 144
-     },
-     {
-      "name" : "CreateSetterGetter!(radius, \"vertexUpdateFlag = true;\", \"\")",
-      "kind" : "mixin",
-      "line" : 335
-     },
-     {
-      "name" : "this",
-      "kind" : "constructor",
-      "line" : 337,
-      "deco" : "FC16SbyDistanceField21DistanceFieldMaterialbZC16SbyDistanceField15SphereBillboard",
-      "parameters" : [
-       {
-        "name" : "dfm",
-        "deco" : "C16SbyDistanceField21DistanceFieldMaterial"
-       },
-       {
-        "name" : "useTexture",
-        "deco" : "b",
-        "default" : "false"
-       }
-      ],
-      "endline" : 340
-     },
-     {
-      "name" : "SetVertex",
-      "kind" : "function",
-      "line" : 342,
-      "storageClass" : [
-       "override"
-      ],
-      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi3Z6VectorZv",
-      "parameters" : [
-       {
-        "name" : "vertex",
-        "deco" : "G4S6sbylib4math16__T6VectorTfVi3Z6Vector",
-        "storageClass" : [
-         "out"
-        ]
-       }
-      ],
-      "endline" : 348,
-      "overrides" : [
-       "SbyDistanceField.SbyRenderObject.SetVertex"
-      ]
-     },
-     {
-      "name" : "SetTexcoords",
-      "kind" : "function",
-      "line" : 350,
-      "storageClass" : [
-       "override"
-      ],
-      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi2Z6VectorZv",
-      "parameters" : [
-       {
-        "name" : "tc",
-        "deco" : "G4S6sbylib4math16__T6VectorTfVi2Z6Vector",
-        "storageClass" : [
-         "out"
-        ]
-       }
-      ],
-      "endline" : 355,
-      "overrides" : [
-       "SbyDistanceField.SbyRenderObject.SetTexcoords"
-      ]
-     }
-    ]
-   },
-   {
-    "name" : "Plane",
-    "kind" : "class",
-    "line" : 360,
-    "base" : "SbyRenderObject",
-    "members" : [
-     {
-      "name" : "vertex",
-      "kind" : "variable",
-      "line" : 362,
-      "deco" : "G4S6sbylib4math16__T6VectorTfVi3Z6Vector",
-      "originalType" : "vec3[4]",
-      "offset" : 144
-     },
-     {
-      "name" : "tc",
-      "kind" : "variable",
-      "line" : 363,
-      "deco" : "G4S6sbylib4math16__T6VectorTfVi2Z6Vector",
-      "originalType" : "vec2[4]",
-      "offset" : 192
-     },
-     {
-      "name" : "this",
-      "kind" : "constructor",
-      "line" : 365,
-      "deco" : "FC16SbyDistanceField21DistanceFieldMaterialZC16SbyDistanceField5Plane",
-      "parameters" : [
-       {
-        "name" : "dfm",
-        "deco" : "C16SbyDistanceField21DistanceFieldMaterial"
-       }
-      ],
-      "endline" : 367
-     },
-     {
-      "name" : "BuildBasicPlane",
-      "kind" : "function",
-      "line" : 369,
-      "deco" : "FZv",
-      "endline" : 379
-     },
-     {
-      "name" : "SetVertex",
-      "kind" : "function",
-      "line" : 381,
-      "storageClass" : [
-       "override"
-      ],
-      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi3Z6VectorZv",
-      "parameters" : [
-       {
-        "name" : "vertex",
-        "deco" : "G4S6sbylib4math16__T6VectorTfVi3Z6Vector",
-        "storageClass" : [
-         "out"
-        ]
-       }
-      ],
-      "endline" : 383,
-      "overrides" : [
-       "SbyDistanceField.SbyRenderObject.SetVertex"
-      ]
-     },
-     {
-      "name" : "SetTexcoords",
-      "kind" : "function",
-      "line" : 385,
-      "storageClass" : [
-       "override"
-      ],
-      "deco" : "FJG4S6sbylib4math16__T6VectorTfVi2Z6VectorZv",
-      "parameters" : [
-       {
-        "name" : "tc",
-        "deco" : "G4S6sbylib4math16__T6VectorTfVi2Z6Vector",
-        "storageClass" : [
-         "out"
-        ]
-       }
-      ],
-      "endline" : 387,
-      "overrides" : [
-       "SbyDistanceField.SbyRenderObject.SetTexcoords"
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "kind" : "module",
-  "file" : "SbyScript.d",
-  "members" : [
-   {
-    "name" : "std.string",
-    "kind" : "import",
-    "line" : 1,
-    "protection" : "private"
-   },
-   {
-    "name" : "SbyScriptLoader",
-    "kind" : "class",
-    "line" : 3,
-    "members" : [
-     {
-      "name" : "LoadShape",
-      "kind" : "function",
-      "line" : 5,
-      "storageClass" : [
-       "static"
-      ],
-      "deco" : "FAyaZv",
-      "parameters" : [
-       {
-        "name" : "filePath",
-        "deco" : "Aya"
-       }
-      ],
-      "endline" : 7
      }
     ]
    }

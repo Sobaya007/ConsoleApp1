@@ -19,12 +19,9 @@ echo others.d >>Debug\TheCreation.build.rsp
 echo package.d >>Debug\TheCreation.build.rsp
 echo primitive.d >>Debug\TheCreation.build.rsp
 echo world.d >>Debug\TheCreation.build.rsp
-echo FluidUtils.d >>Debug\TheCreation.build.rsp
 echo Import.d >>Debug\TheCreation.build.rsp
 echo main.d >>Debug\TheCreation.build.rsp
 echo Player.d >>Debug\TheCreation.build.rsp
-echo SbyDistanceField.d >>Debug\TheCreation.build.rsp
-echo SbyScript.d >>Debug\TheCreation.build.rsp
 
 dmd -g -debug -X -Xf"Debug\TheCreation.json" -Iderelict -deps="Debug\TheCreation.dep" -c -of"Debug\TheCreation.obj" @Debug\TheCreation.build.rsp
 if errorlevel 1 goto reportError

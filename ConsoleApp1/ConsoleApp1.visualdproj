@@ -249,11 +249,8 @@
    <File path="primitive.d" />
    <File path="world.d" />
   </Folder>
-  <File path="FluidUtils.d" />
   <File path="Import.d" />
   <File path="main.d" />
   <File path="Player.d" />
-  <File path="SbyDistanceField.d" />
-  <File path="SbyScript.d" />
  </Folder>
 </DProject>

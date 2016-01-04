@@ -30,12 +30,9 @@ echo others.d &gt;&gt;Debug\TheCreation.build.rsp
 echo package.d &gt;&gt;Debug\TheCreation.build.rsp
 echo primitive.d &gt;&gt;Debug\TheCreation.build.rsp
 echo world.d &gt;&gt;Debug\TheCreation.build.rsp
-echo FluidUtils.d &gt;&gt;Debug\TheCreation.build.rsp
 echo Import.d &gt;&gt;Debug\TheCreation.build.rsp
 echo main.d &gt;&gt;Debug\TheCreation.build.rsp
 echo Player.d &gt;&gt;Debug\TheCreation.build.rsp
-echo SbyDistanceField.d &gt;&gt;Debug\TheCreation.build.rsp
-echo SbyScript.d &gt;&gt;Debug\TheCreation.build.rsp
 
 dmd -g -debug -X -Xf&quot;Debug\TheCreation.json&quot; -Iderelict -deps=&quot;Debug\TheCreation.dep&quot; -c -of&quot;Debug\TheCreation.obj&quot; @Debug\TheCreation.build.rsp
 if errorlevel 1 goto reportError
