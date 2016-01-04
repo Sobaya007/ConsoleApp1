@@ -28,7 +28,7 @@ class ShaderProgram {
 		glDeleteProgram(programID);
 	}
 
-	package void Uniform() const {
+	void Uniform() const {
 		foreach (unit; texIDs.keys) {
 			glActiveTexture(GL_TEXTURE0 + unit);
 			glBindTexture(GL_TEXTURE_2D, texIDs[unit][0]);
@@ -70,7 +70,7 @@ class ShaderProgram {
 		int loc = glGetUniformLocation(programID, name.toStringz);
 		assert(loc != -1, name ~ " is not found or used in shader.");
 		auto func = mixin("glUniform" ~ to!string(num) ~ "fv");
-		uniformApply[name] = () {func(loc, 1, uniform.ptr);};
+		uniformApply[name] = {func(loc, 1, uniform.ptr);};
 	}
 
 	void SetUniformMatrix(int num, string name)(float[] uniform) {
@@ -78,10 +78,14 @@ class ShaderProgram {
 		int loc = glGetUniformLocation(programID, name.toStringz);
 		assert(loc != -1, name ~ " is not found or used in shader.");
 		auto func = mixin("glUniformMatrix" ~ to!string(num) ~ "fv");
-		uniformApply[name] = () {func(loc, 1, GL_TRUE, uniform.ptr);};
+		uniformApply[name] = {func(loc, 1, GL_TRUE, uniform.ptr);};
 	}
 
-	private int GetShaderProgramID(string vsPath, string fsPath) {
+	void Use() const {
+		glUseProgram(programID);
+	}
+
+	private static int GetShaderProgramID(string vsPath, string fsPath) {
 		uint *p;
 		int vsID, fsID;
 		if ((p = vsPath in Shaders) != null) {
@@ -99,13 +103,13 @@ class ShaderProgram {
 		return getSP(vsID, fsID);
 	}
 
-	private int getShaderProgramIDFromString(string vsString, string fsString) {
+	private static int getShaderProgramIDFromString(string vsString, string fsString) {
 		int vsID = getVertexShaderFromString(vsString);
 		int fsID = getFragmentShaderFromString(fsString);
 		return getSP(vsID, fsID);
 	}
 
-	private int getSP(int vsID, int fsID) {
+	private static int getSP(int vsID, int fsID) {
 		//シェーダプログラムを生成
 		int programID = glCreateProgram();
 
@@ -130,7 +134,7 @@ class ShaderProgram {
 		return programID;
 	}
 
-	private int getVertexShaderFromString(string vsSource, string vsPath = null) {
+	private static int getVertexShaderFromString(string vsSource, string vsPath = null) {
 		uint vsID, fsID;
 		vsID = glCreateShader(GL_VERTEX_SHADER);
 		auto str = vsSource.toStringz;
@@ -157,7 +161,7 @@ class ShaderProgram {
 		return vsID;
 	}
 
-	private int getFragmentShaderFromString(string fsSource, string fsPath = null) {
+	private static int getFragmentShaderFromString(string fsSource, string fsPath = null) {
 		int fsID;
 		fsID = glCreateShader(GL_FRAGMENT_SHADER);
 		auto str = fsSource.toStringz;
@@ -208,9 +212,5 @@ class ShaderProgram {
 		}
 		result ~= log;
 		return result;
-	}
-
-	void Use() const {
-		glUseProgram(programID);
 	}
 }

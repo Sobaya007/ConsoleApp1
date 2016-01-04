@@ -1017,7 +1017,6 @@
      {
       "name" : "Uniform",
       "kind" : "function",
-      "protection" : "package",
       "line" : 31,
       "deco" : "xFZv",
       "endline" : 40
@@ -1180,10 +1179,20 @@
       ]
      },
      {
+      "name" : "Use",
+      "kind" : "function",
+      "line" : 84,
+      "deco" : "xFZv",
+      "endline" : 86
+     },
+     {
       "name" : "GetShaderProgramID",
       "kind" : "function",
       "protection" : "private",
-      "line" : 84,
+      "line" : 88,
+      "storageClass" : [
+       "static"
+      ],
       "deco" : "FAyaAyaZi",
       "parameters" : [
        {
@@ -1195,13 +1204,16 @@
         "deco" : "Aya"
        }
       ],
-      "endline" : 100
+      "endline" : 104
      },
      {
       "name" : "getShaderProgramIDFromString",
       "kind" : "function",
       "protection" : "private",
-      "line" : 102,
+      "line" : 106,
+      "storageClass" : [
+       "static"
+      ],
       "deco" : "FAyaAyaZi",
       "parameters" : [
        {
@@ -1213,13 +1225,16 @@
         "deco" : "Aya"
        }
       ],
-      "endline" : 106
+      "endline" : 110
      },
      {
       "name" : "getSP",
       "kind" : "function",
       "protection" : "private",
-      "line" : 108,
+      "line" : 112,
+      "storageClass" : [
+       "static"
+      ],
       "deco" : "FiiZi",
       "parameters" : [
        {
@@ -1231,13 +1246,16 @@
         "deco" : "i"
        }
       ],
-      "endline" : 131
+      "endline" : 135
      },
      {
       "name" : "getVertexShaderFromString",
       "kind" : "function",
       "protection" : "private",
-      "line" : 133,
+      "line" : 137,
+      "storageClass" : [
+       "static"
+      ],
       "deco" : "FAyaAyaZi",
       "parameters" : [
        {
@@ -1250,13 +1268,16 @@
         "default" : "null"
        }
       ],
-      "endline" : 158
+      "endline" : 162
      },
      {
       "name" : "getFragmentShaderFromString",
       "kind" : "function",
       "protection" : "private",
-      "line" : 160,
+      "line" : 164,
+      "storageClass" : [
+       "static"
+      ],
       "deco" : "FAyaAyaZi",
       "parameters" : [
        {
@@ -1269,13 +1290,13 @@
         "default" : "null"
        }
       ],
-      "endline" : 186
+      "endline" : 190
      },
      {
       "name" : "getLogString",
       "kind" : "function",
       "protection" : "private",
-      "line" : 188,
+      "line" : 192,
       "storageClass" : [
        "static"
       ],
@@ -1290,13 +1311,6 @@
         "deco" : "Aya"
        }
       ],
-      "endline" : 211
-     },
-     {
-      "name" : "Use",
-      "kind" : "function",
-      "line" : 213,
-      "deco" : "xFZv",
       "endline" : 215
      }
     ]
@@ -3569,17 +3583,17 @@
       "kind" : "constructor",
       "line" : 24,
       "deco" : "FZC6sbylib9primitive3Box",
-      "endline" : 54
+      "endline" : 52
      },
      {
       "name" : "Draw",
       "kind" : "function",
-      "line" : 56,
+      "line" : 54,
       "storageClass" : [
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 62,
+      "endline" : 63,
       "overrides" : [
        "sbylib.primitive.Primitive.Draw"
       ]
@@ -3803,12 +3817,12 @@
     "kind" : "function",
     "line" : 15,
     "deco" : "FZb",
-    "endline" : 51
+    "endline" : 50
    },
    {
     "name" : "InitGLFW",
     "kind" : "function",
-    "line" : 53,
+    "line" : 52,
     "storageClass" : [
      "auto"
     ],
@@ -3824,7 +3838,7 @@
       "deco" : "xi"
      }
     ],
-    "endline" : 83
+    "endline" : 82
    }
   ]
  },
