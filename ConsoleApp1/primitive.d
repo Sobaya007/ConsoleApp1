@@ -32,8 +32,8 @@ class Box : Primitive {
 				gl_FragColor = vec4(1,1,0,1);
 			}",
 			ShaderProgram.InputType.SourceCode);
-		vao.UpdateVertex([
-			-1,-1,0,1,
+		VBO vbo = new VBO( [
+			-1,-1,0,1f,
 			+1,-1,0,1,
 			-1,+1,0,1,
 			+1,+1,0,1,
@@ -41,7 +41,8 @@ class Box : Primitive {
 			+1,-1,1,1,
 			-1,+1,1,1,
 			+1,+1,1,1
-		]);
+		], VBO.Frequency.DYNAMIC);
+		vao.SetVertex(vbo);
 		index = new IBO([0,1,2,3], IBO.Frequency.DYNAMIC);
 	}
 

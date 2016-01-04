@@ -20,13 +20,21 @@ class VertexBufferObject(T) {
 		else if (frequency == Frequency.DYNAMIC) usage = GL_DYNAMIC_DRAW;
 		else if (frequency == Frequency.STATIC) usage = GL_STATIC_DRAW;
 		glBindBuffer(GL_ARRAY_BUFFER, id);
-		glBufferData(GL_ARRAY_BUFFER, data.sizeof, data, usage);
+		glBufferData(GL_ARRAY_BUFFER, data.length * T.sizeof, data, usage);
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 		length = data.length;
 	}
 
 	~this() {
 		glDeleteBuffers(1, &id);
+	}
+
+	void Bind() {
+		glBindBuffer(GL_ARRAY_BUFFER, id);
+	}
+
+	void UnBind() {
+		glBindBuffer(GL_ARRAY_BUFFER, 0);
 	}
 
 	void Update(T[] data) {

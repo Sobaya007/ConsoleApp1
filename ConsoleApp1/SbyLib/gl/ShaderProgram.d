@@ -50,34 +50,20 @@ class ShaderProgram {
 		texIDs[textureUnit] = tuple(texID, sLoc);
 	}
 
-	void SetVertex(uint vertexBufferID, float[] vertex) {
+	void SetVertex(VBO vbo) {
 		SetAttribute!(4, "mVertex")( {
-			if (vertex != null) {
-				DynamicSendBufferData(vertexBufferID, vertex);
-			} else {
-				glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
-			}
+			vbo.Bind();
 		});
 	}
 
-	void SetTexcoord(uint vertexBufferID, float[] texcoords) {
-		SetAttribute!(2,"mTexcoord")({
-			if (texcoords != null) {
-				DynamicSendBufferData(vertexBufferID, texcoords);
-			} else {
-				glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
-			}
-		});
-	}
-
-	void SetAttribute(int num, string name)(void delegate() preFunc = null, float* attribute = null) {
+	void SetAttribute(int num, string name)(void delegate() preFunc = null) {
 		//頂点シェーダのattribute変数のアドレスを取得
 		int vLoc = glGetAttribLocation(programID, name.toStringz);
 		assert(vLoc != -1, name ~ " is not found or used in shader.");
 		glEnableVertexAttribArray(vLoc);
 		if (preFunc) preFunc();
 		//さっきのところをmVertexってことにする
-		glVertexAttribPointer(vLoc, num, GL_FLOAT, GL_FALSE, num * float.sizeof, attribute);
+		glVertexAttribPointer(vLoc, num, GL_FLOAT, GL_FALSE, num * float.sizeof, null);
 	}
 
 	void SetUniform(int num, string name)(float[num] uniform...) {

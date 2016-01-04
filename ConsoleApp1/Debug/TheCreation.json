@@ -1072,40 +1072,20 @@
       "name" : "SetVertex",
       "kind" : "function",
       "line" : 53,
-      "deco" : "FkAfZv",
+      "deco" : "FC6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObjectZv",
+      "originalType" : "void(VBO vbo)",
       "parameters" : [
        {
-        "name" : "vertexBufferID",
-        "deco" : "k"
-       },
-       {
-        "name" : "vertex",
-        "deco" : "Af"
+        "name" : "vbo",
+        "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject"
        }
       ],
-      "endline" : 61
-     },
-     {
-      "name" : "SetTexcoord",
-      "kind" : "function",
-      "line" : 63,
-      "deco" : "FkAfZv",
-      "parameters" : [
-       {
-        "name" : "vertexBufferID",
-        "deco" : "k"
-       },
-       {
-        "name" : "texcoords",
-        "deco" : "Af"
-       }
-      ],
-      "endline" : 71
+      "endline" : 57
      },
      {
       "kind" : "template",
-      "name" : "SetAttribute(int num, string name)(void delegate() preFunc = null, float* attribute = null)",
-      "line" : 73,
+      "name" : "SetAttribute(int num, string name)(void delegate() preFunc = null)",
+      "line" : 59,
       "parameters" : [
        {
         "name" : "num",
@@ -1122,28 +1102,23 @@
        {
         "name" : "SetAttribute",
         "kind" : "function",
-        "line" : 73,
-        "type" : "void(void delegate() preFunc = null, float* attribute = null)",
+        "line" : 59,
+        "type" : "void(void delegate() preFunc = null)",
         "parameters" : [
          {
           "name" : "preFunc",
           "type" : "void delegate()",
           "default" : "null"
-         },
-         {
-          "name" : "attribute",
-          "type" : "float*",
-          "default" : "null"
          }
         ],
-        "endline" : 81
+        "endline" : 67
        }
       ]
      },
      {
       "kind" : "template",
       "name" : "SetUniform(int num, string name)(float[num] uniform...)",
-      "line" : 83,
+      "line" : 69,
       "parameters" : [
        {
         "name" : "num",
@@ -1160,7 +1135,7 @@
        {
         "name" : "SetUniform",
         "kind" : "function",
-        "line" : 83,
+        "line" : 69,
         "type" : "void(float[num] uniform...)",
         "parameters" : [
          {
@@ -1168,14 +1143,14 @@
           "type" : "float[num]"
          }
         ],
-        "endline" : 88
+        "endline" : 74
        }
       ]
      },
      {
       "kind" : "template",
       "name" : "SetUniformMatrix(int num, string name)(float[] uniform)",
-      "line" : 90,
+      "line" : 76,
       "parameters" : [
        {
         "name" : "num",
@@ -1192,7 +1167,7 @@
        {
         "name" : "SetUniformMatrix",
         "kind" : "function",
-        "line" : 90,
+        "line" : 76,
         "type" : "void(float[] uniform)",
         "parameters" : [
          {
@@ -1200,7 +1175,7 @@
           "type" : "float[]"
          }
         ],
-        "endline" : 96
+        "endline" : 82
        }
       ]
      },
@@ -1208,7 +1183,7 @@
       "name" : "GetShaderProgramID",
       "kind" : "function",
       "protection" : "private",
-      "line" : 98,
+      "line" : 84,
       "deco" : "FAyaAyaZi",
       "parameters" : [
        {
@@ -1220,13 +1195,13 @@
         "deco" : "Aya"
        }
       ],
-      "endline" : 114
+      "endline" : 100
      },
      {
       "name" : "getShaderProgramIDFromString",
       "kind" : "function",
       "protection" : "private",
-      "line" : 116,
+      "line" : 102,
       "deco" : "FAyaAyaZi",
       "parameters" : [
        {
@@ -1238,13 +1213,13 @@
         "deco" : "Aya"
        }
       ],
-      "endline" : 120
+      "endline" : 106
      },
      {
       "name" : "getSP",
       "kind" : "function",
       "protection" : "private",
-      "line" : 122,
+      "line" : 108,
       "deco" : "FiiZi",
       "parameters" : [
        {
@@ -1256,13 +1231,13 @@
         "deco" : "i"
        }
       ],
-      "endline" : 145
+      "endline" : 131
      },
      {
       "name" : "getVertexShaderFromString",
       "kind" : "function",
       "protection" : "private",
-      "line" : 147,
+      "line" : 133,
       "deco" : "FAyaAyaZi",
       "parameters" : [
        {
@@ -1275,13 +1250,13 @@
         "default" : "null"
        }
       ],
-      "endline" : 172
+      "endline" : 158
      },
      {
       "name" : "getFragmentShaderFromString",
       "kind" : "function",
       "protection" : "private",
-      "line" : 174,
+      "line" : 160,
       "deco" : "FAyaAyaZi",
       "parameters" : [
        {
@@ -1294,13 +1269,13 @@
         "default" : "null"
        }
       ],
-      "endline" : 200
+      "endline" : 186
      },
      {
       "name" : "getLogString",
       "kind" : "function",
       "protection" : "private",
-      "line" : 202,
+      "line" : 188,
       "storageClass" : [
        "static"
       ],
@@ -1315,14 +1290,14 @@
         "deco" : "Aya"
        }
       ],
-      "endline" : 225
+      "endline" : 211
      },
      {
       "name" : "Use",
       "kind" : "function",
-      "line" : 227,
+      "line" : 213,
       "deco" : "xFZv",
-      "endline" : 229
+      "endline" : 215
      }
     ]
    }
@@ -1612,28 +1587,16 @@
         "type" : "ShaderProgram"
        },
        {
-        "name" : "vertex",
-        "kind" : "variable",
-        "line" : 10,
-        "type" : "VBO_T"
-       },
-       {
-        "name" : "texcoord",
-        "kind" : "variable",
-        "line" : 10,
-        "type" : "VBO_T"
-       },
-       {
         "name" : "mode",
         "kind" : "variable",
-        "line" : 12,
+        "line" : 11,
         "type" : "GLenum",
         "init" : "GL_TRIANGLE_STRIP"
        },
        {
         "name" : "this",
         "kind" : "constructor",
-        "line" : 14,
+        "line" : 13,
         "type" : "(int vertexCount)",
         "parameters" : [
          {
@@ -1641,12 +1604,12 @@
           "deco" : "i"
          }
         ],
-        "endline" : 16
+        "endline" : 15
        },
        {
         "name" : "this",
         "kind" : "constructor",
-        "line" : 18,
+        "line" : 17,
         "type" : "(string vsPath, string fsPath, int vertexCount)",
         "parameters" : [
          {
@@ -1662,12 +1625,12 @@
           "deco" : "i"
          }
         ],
-        "endline" : 20
+        "endline" : 19
        },
        {
         "name" : "this",
         "kind" : "constructor",
-        "line" : 22,
+        "line" : 21,
         "type" : "(ShaderProgram sProgram, int vertexCount, VBO_T.Frequency frequency = VBO_T.Frequency.STATIC)",
         "parameters" : [
          {
@@ -1684,53 +1647,45 @@
           "default" : "VBO_T.Frequency.STATIC"
          }
         ],
-        "endline" : 30
+        "endline" : 26
        },
        {
         "name" : "~this",
         "kind" : "destructor",
+        "line" : 28,
+        "endline" : 30
+       },
+       {
+        "name" : "SetVertex",
+        "kind" : "function",
         "line" : 32,
-        "endline" : 34
-       },
-       {
-        "name" : "UpdateVertex",
-        "kind" : "function",
-        "line" : 36,
-        "type" : "void(float[] position = null)",
+        "type" : "void(VBO vbo)",
         "parameters" : [
          {
-          "name" : "position",
-          "type" : "float[]",
-          "default" : "null"
+          "name" : "vbo",
+          "type" : "VBO"
          }
         ],
-        "endline" : 40
-       },
-       {
-        "name" : "UpdateTexcoords",
-        "kind" : "function",
-        "line" : 42,
-        "type" : "void(float[] texcoords = null)",
-        "parameters" : [
-         {
-          "name" : "texcoords",
-          "type" : "float[]",
-          "default" : "null"
-         }
-        ],
-        "endline" : 46
+        "endline" : 36
        },
        {
         "name" : "Bind",
         "kind" : "function",
-        "line" : 48,
+        "line" : 38,
         "type" : "const void()",
-        "endline" : 50
+        "endline" : 40
        },
        {
         "name" : "UnBind",
         "kind" : "function",
-        "line" : 52,
+        "line" : 42,
+        "type" : "const void()",
+        "endline" : 44
+       },
+       {
+        "name" : "Draw",
+        "kind" : "function",
+        "line" : 46,
         "type" : "const void()",
         "endline" : 54
        },
@@ -1738,13 +1693,6 @@
         "name" : "Draw",
         "kind" : "function",
         "line" : 56,
-        "type" : "const void()",
-        "endline" : 64
-       },
-       {
-        "name" : "Draw",
-        "kind" : "function",
-        "line" : 66,
         "type" : "const void(IBO index)",
         "parameters" : [
          {
@@ -1752,7 +1700,7 @@
           "type" : "IBO"
          }
         ],
-        "endline" : 76
+        "endline" : 66
        }
       ]
      }
@@ -1761,7 +1709,7 @@
    {
     "name" : "VAO",
     "kind" : "alias",
-    "line" : 81
+    "line" : 71
    }
   ]
  },
@@ -1856,9 +1804,23 @@
         "endline" : 30
        },
        {
-        "name" : "Update",
+        "name" : "Bind",
         "kind" : "function",
         "line" : 32,
+        "type" : "void()",
+        "endline" : 34
+       },
+       {
+        "name" : "UnBind",
+        "kind" : "function",
+        "line" : 36,
+        "type" : "void()",
+        "endline" : 38
+       },
+       {
+        "name" : "Update",
+        "kind" : "function",
+        "line" : 40,
         "type" : "void(T[] data)",
         "parameters" : [
          {
@@ -1866,7 +1828,7 @@
           "type" : "T[]"
          }
         ],
-        "endline" : 41
+        "endline" : 49
        }
       ]
      }
@@ -1875,8 +1837,7 @@
    {
     "name" : "VBO",
     "kind" : "alias",
-    "line" : 46,
-    "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject"
+    "line" : 54
    }
   ]
  },
@@ -3598,17 +3559,17 @@
       "kind" : "constructor",
       "line" : 22,
       "deco" : "FZC6sbylib9primitive3Box",
-      "endline" : 46
+      "endline" : 47
      },
      {
       "name" : "Draw",
       "kind" : "function",
-      "line" : 48,
+      "line" : 49,
       "storageClass" : [
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 52,
+      "endline" : 53,
       "overrides" : [
        "sbylib.primitive.Primitive.Draw"
       ]
