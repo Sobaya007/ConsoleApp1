@@ -494,6 +494,74 @@
   ]
  },
  {
+  "name" : "sbylib.shadertemplates.imports",
+  "kind" : "module",
+  "file" : "imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.shadertemplates.shader",
+    "kind" : "import",
+    "line" : 3
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.shadertemplates.shader",
+  "kind" : "module",
+  "file" : "shader.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "ShaderStore",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "shaderList",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 6,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "HAyaC6sbylib2gl13ShaderProgram13ShaderProgram"
+     },
+     {
+      "name" : "Init",
+      "kind" : "function",
+      "line" : 8,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FZv",
+      "endline" : 50
+     },
+     {
+      "name" : "getShader",
+      "kind" : "function",
+      "line" : 52,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FAyaZC6sbylib2gl13ShaderProgram13ShaderProgram",
+      "parameters" : [
+       {
+        "name" : "key",
+        "deco" : "Aya"
+       }
+      ],
+      "endline" : 54
+     }
+    ]
+   }
+  ]
+ },
+ {
   "name" : "sbylib.gl.FrameBufferObject",
   "kind" : "module",
   "file" : "sbylib\\gl\\FrameBufferObject.d",
@@ -1674,7 +1742,8 @@
    {
     "name" : "VAO",
     "kind" : "alias",
-    "line" : 62
+    "line" : 62,
+    "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject"
    }
   ]
  },
@@ -1803,6 +1872,313 @@
     "name" : "VBO",
     "kind" : "alias",
     "line" : 54
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.primitive.cube",
+  "kind" : "module",
+  "file" : "sbylib\\primitive\\box.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Box",
+    "kind" : "class",
+    "line" : 5,
+    "base" : "Primitive",
+    "members" : [
+     {
+      "name" : "vao",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 7,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "G6C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
+      "originalType" : "VAO[6]"
+     },
+     {
+      "name" : "vertexVBO",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 8,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
+      "originalType" : "VBO"
+     },
+     {
+      "name" : "normalVBO",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 9,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "G6C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
+      "originalType" : "VBO[6]"
+     },
+     {
+      "name" : "sp",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 10,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
+      "originalType" : "ShaderProgram"
+     },
+     {
+      "name" : "index",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 11,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "G6C6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject",
+      "originalType" : "IBO[6]"
+     },
+     {
+      "name" : "initFlag",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 12,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "b",
+      "init" : "false"
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 15,
+      "deco" : "FZC6sbylib9primitive4cube3Box",
+      "endline" : 72
+     },
+     {
+      "name" : "Draw",
+      "kind" : "function",
+      "line" : 74,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 80,
+      "overrides" : [
+       "sbylib.primitive.baseprimitive.Primitive.Draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.primitive.imports",
+  "kind" : "module",
+  "file" : "sbylib\\primitive\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.primitive.baseprimitive",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.primitive.cube",
+    "kind" : "import",
+    "line" : 4
+   },
+   {
+    "name" : "sbylib.primitive.plane",
+    "kind" : "import",
+    "line" : 5
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.primitive.baseprimitive",
+  "kind" : "module",
+  "file" : "baseprimitive.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Primitive",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "Draw",
+      "kind" : "function",
+      "line" : 6,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZv"
+     },
+     {
+      "name" : "mat",
+      "kind" : "variable",
+      "line" : 8,
+      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "init" : "Matrix([[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]], [nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF])",
+      "offset" : 8
+     },
+     {
+      "kind" : "template",
+      "name" : "opOpAssign(string op)(vec3 v)",
+      "line" : 10,
+      "parameters" : [
+       {
+        "name" : "op",
+        "kind" : "value",
+        "deco" : "Aya"
+       }
+      ],
+      "members" : [
+       {
+        "name" : "opOpAssign",
+        "kind" : "function",
+        "line" : 10,
+        "type" : "void(vec3 v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "vec3"
+         }
+        ],
+        "endline" : 20
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.primitive.plane",
+  "kind" : "module",
+  "file" : "sbylib\\primitive\\plane.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Plane",
+    "kind" : "class",
+    "line" : 5,
+    "base" : "Primitive",
+    "members" : [
+     {
+      "name" : "vao",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 7,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
+      "originalType" : "VAO"
+     },
+     {
+      "name" : "vertexVBO",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 8,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
+      "originalType" : "VBO"
+     },
+     {
+      "name" : "normalVBO",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 9,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
+      "originalType" : "VBO"
+     },
+     {
+      "name" : "texcoordVBO",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 10,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
+      "originalType" : "VBO"
+     },
+     {
+      "name" : "initFlag",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 11,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "b",
+      "init" : "false"
+     },
+     {
+      "name" : "sp",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 13,
+      "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
+      "originalType" : "ShaderProgram",
+      "offset" : 136
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 15,
+      "deco" : "FC6sbylib2gl13ShaderProgram13ShaderProgramZC6sbylib9primitive5plane5Plane",
+      "originalType" : "Plane(ShaderProgram sp = ShaderStore.getShader(\"NormalShow\"))",
+      "parameters" : [
+       {
+        "name" : "sp",
+        "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
+        "default" : "getShader(\"NormalShow\")"
+       }
+      ],
+      "endline" : 59
+     },
+     {
+      "name" : "Draw",
+      "kind" : "function",
+      "line" : 61,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 65,
+      "overrides" : [
+       "sbylib.primitive.baseprimitive.Primitive.Draw"
+      ]
+     }
+    ]
    }
   ]
  },
@@ -2098,27 +2474,27 @@
     "line" : 5
    },
    {
-    "name" : "sbylib.primitive",
+    "name" : "sbylib.world",
     "kind" : "import",
     "line" : 6
    },
    {
-    "name" : "sbylib.world",
+    "name" : "sbylib.fpscounter",
     "kind" : "import",
     "line" : 7
    },
    {
-    "name" : "sbylib.fpscounter",
+    "name" : "sbylib.camera.camera",
     "kind" : "import",
     "line" : 8
    },
    {
-    "name" : "sbylib.camera.camera",
+    "name" : "sbylib.camera.manipulator",
     "kind" : "import",
     "line" : 9
    },
    {
-    "name" : "sbylib.camera.manipulator",
+    "name" : "sbylib.shadertemplates.imports",
     "kind" : "import",
     "line" : 10
    },
@@ -2128,84 +2504,89 @@
     "line" : 11
    },
    {
-    "name" : "std.stdio",
+    "name" : "sbylib.primitive.imports",
     "kind" : "import",
     "line" : 12
    },
    {
-    "name" : "std.string",
-    "kind" : "import",
-    "line" : 13
-   },
-   {
-    "name" : "std.conv",
+    "name" : "std.stdio",
     "kind" : "import",
     "line" : 14
    },
    {
-    "name" : "std.file",
+    "name" : "std.string",
     "kind" : "import",
     "line" : 15
    },
    {
-    "name" : "std.mathspecial",
+    "name" : "std.conv",
     "kind" : "import",
     "line" : 16
    },
    {
-    "name" : "std.typecons",
+    "name" : "std.file",
     "kind" : "import",
     "line" : 17
    },
    {
-    "name" : "std.algorithm",
+    "name" : "std.mathspecial",
     "kind" : "import",
     "line" : 18
    },
    {
-    "name" : "std.datetime",
+    "name" : "std.typecons",
     "kind" : "import",
     "line" : 19
    },
    {
-    "name" : "std.range",
+    "name" : "std.algorithm",
     "kind" : "import",
     "line" : 20
    },
    {
-    "name" : "derelict.opengl3.gl",
+    "name" : "std.datetime",
     "kind" : "import",
     "line" : 21
    },
    {
-    "name" : "derelict.glfw3.glfw3",
+    "name" : "std.range",
     "kind" : "import",
     "line" : 22
    },
    {
-    "name" : "derelict.devil.il",
-    "kind" : "import",
-    "line" : 23
-   },
-   {
-    "name" : "derelict.devil.ilu",
+    "name" : "derelict.opengl3.gl",
     "kind" : "import",
     "line" : 24
    },
    {
-    "name" : "derelict.devil.ilut",
+    "name" : "derelict.glfw3.glfw3",
     "kind" : "import",
     "line" : 25
    },
    {
-    "name" : "derelict.freetype.ft",
+    "name" : "derelict.devil.il",
     "kind" : "import",
     "line" : 26
    },
    {
-    "name" : "derelict.opengl3.gl3",
+    "name" : "derelict.devil.ilu",
     "kind" : "import",
     "line" : 27
+   },
+   {
+    "name" : "derelict.devil.ilut",
+    "kind" : "import",
+    "line" : 28
+   },
+   {
+    "name" : "derelict.freetype.ft",
+    "kind" : "import",
+    "line" : 29
+   },
+   {
+    "name" : "derelict.opengl3.gl3",
+    "kind" : "import",
+    "line" : 30
    }
   ]
  },
@@ -3519,165 +3900,6 @@
   ]
  },
  {
-  "name" : "sbylib.primitive",
-  "kind" : "module",
-  "file" : "primitive.d",
-  "members" : [
-   {
-    "name" : "sbylib.imports",
-    "kind" : "import",
-    "line" : 3,
-    "protection" : "private"
-   },
-   {
-    "name" : "Primitive",
-    "kind" : "class",
-    "line" : 5,
-    "members" : [
-     {
-      "name" : "Draw",
-      "kind" : "function",
-      "line" : 6,
-      "storageClass" : [
-       "abstract"
-      ],
-      "deco" : "FZv"
-     },
-     {
-      "name" : "mat",
-      "kind" : "variable",
-      "line" : 8,
-      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
-      "originalType" : "mat4",
-      "init" : "Matrix([[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]], [nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF])",
-      "offset" : 8
-     },
-     {
-      "kind" : "template",
-      "name" : "opOpAssign(string op)(vec3 v)",
-      "line" : 10,
-      "parameters" : [
-       {
-        "name" : "op",
-        "kind" : "value",
-        "deco" : "Aya"
-       }
-      ],
-      "members" : [
-       {
-        "name" : "opOpAssign",
-        "kind" : "function",
-        "line" : 10,
-        "type" : "void(vec3 v)",
-        "parameters" : [
-         {
-          "name" : "v",
-          "type" : "vec3"
-         }
-        ],
-        "endline" : 20
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "name" : "Box",
-    "kind" : "class",
-    "line" : 23,
-    "base" : "Primitive",
-    "members" : [
-     {
-      "name" : "vao",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 25,
-      "storageClass" : [
-       "static"
-      ],
-      "deco" : "G6C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
-      "originalType" : "VAO[6]"
-     },
-     {
-      "name" : "vertexVBO",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 26,
-      "storageClass" : [
-       "static"
-      ],
-      "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
-      "originalType" : "VBO"
-     },
-     {
-      "name" : "normalVBO",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 27,
-      "storageClass" : [
-       "static"
-      ],
-      "deco" : "G6C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
-      "originalType" : "VBO[6]"
-     },
-     {
-      "name" : "sp",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 28,
-      "storageClass" : [
-       "static"
-      ],
-      "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
-      "originalType" : "ShaderProgram"
-     },
-     {
-      "name" : "index",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 29,
-      "storageClass" : [
-       "static"
-      ],
-      "deco" : "G6C6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject",
-      "originalType" : "IBO[6]"
-     },
-     {
-      "name" : "initFlag",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 30,
-      "storageClass" : [
-       "static"
-      ],
-      "deco" : "b",
-      "init" : "false"
-     },
-     {
-      "name" : "this",
-      "kind" : "constructor",
-      "line" : 33,
-      "deco" : "FZC6sbylib9primitive3Box",
-      "endline" : 105
-     },
-     {
-      "name" : "Draw",
-      "kind" : "function",
-      "line" : 107,
-      "storageClass" : [
-       "override"
-      ],
-      "deco" : "FZv",
-      "endline" : 113,
-      "overrides" : [
-       "sbylib.primitive.Primitive.Draw"
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
   "name" : "sbylib.world",
   "kind" : "module",
   "file" : "world.d",
@@ -3892,12 +4114,12 @@
     "kind" : "function",
     "line" : 15,
     "deco" : "FZb",
-    "endline" : 61
+    "endline" : 70
    },
    {
     "name" : "InitGLFW",
     "kind" : "function",
-    "line" : 63,
+    "line" : 72,
     "storageClass" : [
      "auto"
     ],
@@ -3913,7 +4135,7 @@
       "deco" : "xi"
      }
     ],
-    "endline" : 93
+    "endline" : 102
    }
   ]
  },

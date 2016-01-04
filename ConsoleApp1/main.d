@@ -39,19 +39,28 @@ bool GameMain() {
 
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
+	glEnable(GL_BLEND);
 	glCullFace(GL_BACK);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+	ShaderStore.Init;
 
 	auto fpsCounter = new FpsCounter!(100);
 	auto box = new Box;
 	vec3 scale = vec3(1,1,1) * 0.5f;
 	box *= scale;
 	box.mat *= mat4.RotAxisAngle(vec3(1,1,1), 45);
+	box += vec3(0,1,0);
+
+	auto plane = new Plane(ShaderStore.getShader("Check"));
+	plane *= vec3(1,1,1) * 10;
 
 	MainLoop(() {
 
-		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+		glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		box.Draw();
+		plane.Draw();
 		
 		fpsCounter.Update();
 		window.glfwSetWindowTitle(("FPS:[" ~ to!string(fpsCounter.GetFPS) ~ "]").toStringz);

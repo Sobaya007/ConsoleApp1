@@ -230,6 +230,15 @@
     <File path="Camera.d" />
     <File path="SbyLib\Manipulator.d" />
    </Folder>
+   <Folder name="physics.d">
+    <File path="sbylib\physics.d\imports.d" />
+    <File path="obb.d" />
+    <File path="plane.d" />
+   </Folder>
+   <Folder name="shadertemplates">
+    <File path="imports.d" />
+    <File path="shader.d" />
+   </Folder>
    <Folder name="gl">
     <File path="sbylib\gl\FrameBufferObject.d" />
     <File path="sbylib\gl\imports.d" />
@@ -240,13 +249,18 @@
     <File path="sbylib\gl\VertexArrayObject.d" />
     <File path="sbylib\gl\VertexBufferObject.d" />
    </Folder>
+   <Folder name="primitive">
+    <File path="sbylib\primitive\box.d" />
+    <File path="sbylib\primitive\imports.d" />
+    <File path="baseprimitive.d" />
+    <File path="sbylib\primitive\plane.d" />
+   </Folder>
    <File path="sbylib\fpscounter.d" />
    <File path="functions.d" />
    <File path="sbylib\imports.d" />
    <File path="math.d" />
    <File path="others.d" />
    <File path="package.d" />
-   <File path="primitive.d" />
    <File path="world.d" />
   </Folder>
   <File path="Import.d" />

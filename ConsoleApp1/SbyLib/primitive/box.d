@@ -1,24 +1,6 @@
-module sbylib.primitive;
+module sbylib.primitive.cube;
 
 import sbylib.imports;
-
-abstract class Primitive {
-	public abstract void Draw();
-
-	public mat4 mat = mat4.Identity;
-
-	void opOpAssign(string op)(vec3 v) {
-		static if (op == "+") {
-			mat = mat * mat4.Translation(v);
-		} else if (op == "-") {
-			mat = mat * mat4.Translation(-v);
-		} else if (op == "*") {
-			mat = mat * mat4.Scale(v);
-		} else if (op == "/") {
-			mat = mat * mat4.Scale(vec3(1.0f / v.x, 1.0f / v.y, 1.0f / v.z));
-		}
-	}
-}
 
 class Box : Primitive {
 	static{
@@ -32,22 +14,7 @@ class Box : Primitive {
 
 	this()  {
 		if (!initFlag) {
-			sp = new ShaderProgram(
-								   "
-								   uniform mat4 mWorld;
-								   uniform mat4 mViewProj;
-								   varying vec3 n;
-
-								   void main() {
-								   gl_Position = mViewProj * mWorld * gl_Vertex;
-								   n = gl_Normal;
-								   }",
-								   "
-								   varying vec3 n;
-								   void main() {
-								   gl_FragColor = vec4(n * .5 + .5,1);
-								   }",
-								   ShaderProgram.InputType.SourceCode);
+			sp = ShaderStore.getShader("NormalShow");
 
 			vertexVBO = new VBO( [
 				-1,-1,-1,1f,

@@ -1,5 +1,7 @@
 Camera.d 
 SbyLib\Manipulator.d 
+imports.d 
+shader.d 
 sbylib\gl\FrameBufferObject.d 
 sbylib\gl\imports.d 
 sbylib\gl\IndexBufferObject.d 
@@ -8,13 +10,16 @@ sbylib\gl\ShaderProgram.d
 sbylib\gl\TextureObject.d 
 sbylib\gl\VertexArrayObject.d 
 sbylib\gl\VertexBufferObject.d 
+sbylib\primitive\box.d 
+sbylib\primitive\imports.d 
+baseprimitive.d 
+sbylib\primitive\plane.d 
 sbylib\fpscounter.d 
 functions.d 
 sbylib\imports.d 
 math.d 
 others.d 
 package.d 
-primitive.d 
 world.d 
 Import.d 
 main.d 

@@ -3,6 +3,8 @@ set DMD_LIB=;DerelictLib
 
 echo Camera.d >Debug\TheCreation.build.rsp
 echo SbyLib\Manipulator.d >>Debug\TheCreation.build.rsp
+echo imports.d >>Debug\TheCreation.build.rsp
+echo shader.d >>Debug\TheCreation.build.rsp
 echo sbylib\gl\FrameBufferObject.d >>Debug\TheCreation.build.rsp
 echo sbylib\gl\imports.d >>Debug\TheCreation.build.rsp
 echo sbylib\gl\IndexBufferObject.d >>Debug\TheCreation.build.rsp
@@ -11,13 +13,16 @@ echo sbylib\gl\ShaderProgram.d >>Debug\TheCreation.build.rsp
 echo sbylib\gl\TextureObject.d >>Debug\TheCreation.build.rsp
 echo sbylib\gl\VertexArrayObject.d >>Debug\TheCreation.build.rsp
 echo sbylib\gl\VertexBufferObject.d >>Debug\TheCreation.build.rsp
+echo sbylib\primitive\box.d >>Debug\TheCreation.build.rsp
+echo sbylib\primitive\imports.d >>Debug\TheCreation.build.rsp
+echo baseprimitive.d >>Debug\TheCreation.build.rsp
+echo sbylib\primitive\plane.d >>Debug\TheCreation.build.rsp
 echo sbylib\fpscounter.d >>Debug\TheCreation.build.rsp
 echo functions.d >>Debug\TheCreation.build.rsp
 echo sbylib\imports.d >>Debug\TheCreation.build.rsp
 echo math.d >>Debug\TheCreation.build.rsp
 echo others.d >>Debug\TheCreation.build.rsp
 echo package.d >>Debug\TheCreation.build.rsp
-echo primitive.d >>Debug\TheCreation.build.rsp
 echo world.d >>Debug\TheCreation.build.rsp
 echo Import.d >>Debug\TheCreation.build.rsp
 echo main.d >>Debug\TheCreation.build.rsp
