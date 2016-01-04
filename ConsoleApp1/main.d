@@ -22,19 +22,28 @@ bool GameMain() {
 
 	SbyInit(window, 16);
 
-	glViewport(0, 0, window_width, window_height);
+	{
+		if (window_width < window_height) {
+			glViewport(0, (window_height - window_width) /2, window_width, window_width);
+		} else {
+			glViewport((window_width - window_height) /2, 0, window_height, window_height);
+		}
+	}
 
 	CurrentCamera = new PerspectiveCamera(1, PI_4, 1, 30);
 	with (CurrentCamera) {
-		Eye = vec3(0,0,1);
+		Eye = vec3(0,1,3);
 		Target = vec3(0, 0, 0);
 		Up = vec3(0,1, 0);
 	}
+
+	glEnable(GL_DEPTH_TEST);
 
 	auto fpsCounter = new FpsCounter!(100);
 	auto box = new Box;
 	vec3 scale = vec3(1,1,1) * 0.5f;
 	box *= scale;
+	box += vec3(1,0,0);
 
 	MainLoop(() {
 

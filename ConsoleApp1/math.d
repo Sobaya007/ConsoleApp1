@@ -402,12 +402,45 @@ private:
 
 	static string getLookAtCode() {
 		string code;
+		code ~= "Vector!(U,3) side;";
+		//sideを外積で生成
 		foreach (i; 0..3) {
-			code ~= "result.elements[" ~ to!string(i) ~
-				"][0] = up.elements[" ~ to!string((i+1)%3) ~ "] * vec.elements[" ~
+			code ~= "side.elements[" ~ to!string(i) ~ "] = up.elements[" ~ to!string((i+1)%3) ~ "] * vec.elements[" ~
 				to!string((i+2)%3) ~ "] - up.elements[" ~
 				to!string((i+2)%3) ~ "] * vec.elements[" ~ to!string((i+1)%3) ~ "];";
 		}
+		//sideを正規化
+		code ~= "U length = sqrt(";
+		foreach (i; 0..3) {
+			code ~="+side.elements[" ~ to!string(i) ~ "] * side.elements[" ~ to!string(i) ~ "]";
+		}
+		code ~= ");";
+		foreach (i; 0..3) {
+			code ~= "side.elements[" ~ to!string(i) ~ "] /= length;";
+		}
+		//upを再計算
+		foreach (i; 0..3) {
+			code ~= "up.elements[" ~ to!string(i) ~ "] = vec.elements[" ~ to!string((i+1)%3) ~ "] * side.elements[" ~
+				to!string((i+2)%3) ~ "] - vec.elements[" ~
+				to!string((i+2)%3) ~ "] * side.elements[" ~ to!string((i+1)%3) ~ "];";
+		}
+		//upを正規化
+		code ~= "length = sqrt(";
+		foreach (i; 0..3) {
+			code ~="+up.elements[" ~ to!string(i) ~ "] * up.elements[" ~ to!string(i) ~ "]";
+		}
+		code ~= ");";
+		foreach (i; 0..3) {
+			code ~= "up.elements[" ~ to!string(i) ~ "] /= length;";
+		}
+
+		//行列
+		foreach (i; 0..3) {
+			code ~= "result.elements[" ~ to!string(i) ~ 
+				"][0] = side.elements[" ~ to!string(i) ~ "];"; 
+				
+		}
+
 		foreach (i; 0..3) {
 			code ~= "result.elements[" ~ to!string(i) ~
 				"][1] = up.elements[" ~ to!string(i) ~ "];";

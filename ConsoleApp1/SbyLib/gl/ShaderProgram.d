@@ -195,7 +195,8 @@ class ShaderProgram {
 		foreach (string line; lines) {
 			auto strs = split(line, ":");
 			if (strs.length > 0 && strs[0] == "ERROR") {
-				lineNum ~= to!int(strs[1].chomp)-1;
+				auto c = strs[1].split[0];
+				lineNum ~= to!int(c)-1;
 			}
 		}
 		auto r = assumeSorted(lineNum);

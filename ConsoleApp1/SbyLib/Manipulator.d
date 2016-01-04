@@ -41,8 +41,8 @@ class CameraSimpleRotator : SbyCameraManipulator {
 			if (glfwGetMouseButton(CurrentWindow, GLFW_MOUSE_BUTTON_1)) {
 				const float delta = 0.005;
 				auto mat = mat4.RotFromTo(ZVec, normalize(ZVec
-														  - XVec * (delta * (mx-bmx))
-														  + YVec * (delta * (my-bmy))));
+														  + XVec * (delta * (mx-bmx))
+														  - YVec * (delta * (my-bmy))));
 				Eye = (mat * vec4(Eye.x, Eye.y, Eye.z, 1)).xyz;
 				Up = (mat * vec4(Up.x, Up.y, Up.z, 1)).xyz;
 				Vec = (mat * vec4(Vec.x, Vec.y, Vec.z, 1)).xyz;
