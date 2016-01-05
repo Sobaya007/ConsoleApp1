@@ -5,15 +5,11 @@ import sbylib.imports;
 abstract class Camera : Entity {
 
 protected:
-	vec3 eye = vec3(0, 0, -1);
-	vec3 vec = vec3(0, 0, 1);
-	vec3 up = vec3(0, 1, 0);
 	bool viewUpdate = true;
 	mat4 viewMatrix;
 	protected bool projUpdate = true;
 	mat4 projMatrix;
-	bool[3] baseVecUpdate = true;
-	vec3[3] baseVec;
+	bool[3] baseUpdate = true;
 	bool viewProjUpdate;
 	mat4 viewProjMatrix;
 	float nearZ, farZ;
@@ -24,60 +20,73 @@ public:
 
 	this() {
 		manip = new SimpleRotator;
+		pos = vec3(0,0,-1);
+		VecX = vec3(-1,0,0);
 	}
-
-	mixin  CreateSetterGetter!(eye,
-							   "baseVecUpdate[0] = baseVecUpdate[2] = true;
-							   viewUpdate = true;
-							   viewProjUpdate = true;", "");
-
-	mixin CreateSetterGetter!(vec,
-							  "baseVecUpdate[0] = baseVecUpdate[2] = true;
-							  viewUpdate = true;
-							  viewProjUpdate = true;", "");
-
-	mixin CreateSetterGetter!(up,
-							  "baseVecUpdate[1] = true;
-							  viewUpdate = true;
-							  viewProjUpdate = true;", "");
 
 	mixin CreateSetterGetter!(nearZ, "projUpdate = true;", "");
 	mixin CreateSetterGetter!(farZ, "projUpdate = true;", "");
 
 	@property {
+		override {
+			void Pos(vec3 p) {
+				super.Pos(p);
+				baseUpdate[0] = baseUpdate[2] = true;
+				viewUpdate = true;
+				viewProjUpdate = true;
+			}
+
+			vec3 GetVecX() {
+				if (baseUpdate[0]) {
+					baseUpdate[0] = false;
+					base[0] = normalize(base[0]);
+				}
+				return base[0];
+			}
+
+			void VecX(vec3 v) {
+				super.VecX(v);
+				baseUpdate[0] = true;
+				viewUpdate = true;
+				viewProjUpdate = true;
+			}
+			vec3 GetVecY() {
+				if (baseUpdate[1]) {
+					baseUpdate[1] = false;
+					base[1] = normalize(base[1]);
+				}
+				return base[1];
+			}
+			void VecY(vec3 v) {
+				super.VecY(v);
+				baseUpdate[1] = true;
+				viewUpdate = true;
+				viewProjUpdate = true;
+			}
+			vec3 GetVecZ() {
+				if (baseUpdate[2]) {
+					baseUpdate[2] = false;
+					base[2] = normalize(base[2]);
+				}
+				return base[2];
+			}
+			void VecZ(vec3 v) {
+				super.VecZ(v);
+				baseUpdate[2] = true;
+				viewUpdate = true;
+				viewProjUpdate = true;
+			}
+		}
+
 		void Target(vec3 t) {
-			vec = normalize(t - eye);
-			baseVecUpdate[0] = baseVecUpdate[2] = true;
-			viewUpdate = true;
-			viewProjUpdate = true;
-		}
-		vec3 XVec() {
-			if (baseVecUpdate[0]) {
-				baseVecUpdate[0] = false;
-				baseVec[0] = normalize(cross(up, vec));
-			}
-			return baseVec[0];
-		}
-		vec3 YVec() {
-			if (baseVecUpdate[1]) {
-				baseVecUpdate[1] = false;
-				baseVec[1] = normalize(up);
-			}
-			return baseVec[1];
-		}
-		vec3 ZVec() {
-			if (baseVecUpdate[2]) {
-				baseVecUpdate[2] = false;
-				baseVec[2] = normalize(vec);
-			}
-			return baseVec[2];
+			VecZ(normalize(t - GetPos));
 		}
 	}
 
 	mat4 GetViewMatrix() {
 		if (viewUpdate) {
 			viewUpdate = false;
-			viewMatrix = mat4.LookAt(eye, vec, up);
+			viewMatrix = mat4.LookAt(GetPos, GetVecZ, GetVecY);
 		}
 		return viewMatrix;
 	}
@@ -100,7 +109,7 @@ public:
 
 	mat4 GetBillboardMatrix() {
 		import std.math;
-		auto mat = mat4.LookAt(vec3(0,0,0), vec, up);
+		auto mat = mat4.LookAt(vec3(0,0,0), GetVecZ, GetVecY);
 		return mat4.Invert(mat);
 	}
 

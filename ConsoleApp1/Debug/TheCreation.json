@@ -17,167 +17,242 @@
     "base" : "Entity",
     "members" : [
      {
-      "name" : "eye",
-      "kind" : "variable",
-      "protection" : "protected",
-      "line" : 8,
-      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
-      "originalType" : "vec3",
-      "init" : "Vector([0F, 0F, -1F])",
-      "offset" : 56
-     },
-     {
-      "name" : "vec",
-      "kind" : "variable",
-      "protection" : "protected",
-      "line" : 9,
-      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
-      "originalType" : "vec3",
-      "init" : "Vector([0F, 0F, 1F])",
-      "offset" : 68
-     },
-     {
-      "name" : "up",
-      "kind" : "variable",
-      "protection" : "protected",
-      "line" : 10,
-      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
-      "originalType" : "vec3",
-      "init" : "Vector([0F, 1F, 0F])",
-      "offset" : 80
-     },
-     {
       "name" : "viewUpdate",
       "kind" : "variable",
       "protection" : "protected",
-      "line" : 11,
+      "line" : 8,
       "deco" : "b",
       "init" : "true",
-      "offset" : 92
+      "offset" : 56
      },
      {
       "name" : "viewMatrix",
       "kind" : "variable",
       "protection" : "protected",
-      "line" : 12,
+      "line" : 9,
       "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4",
-      "offset" : 96
+      "offset" : 60
      },
      {
       "name" : "projUpdate",
       "kind" : "variable",
       "protection" : "protected",
-      "line" : 13,
+      "line" : 10,
       "deco" : "b",
       "init" : "true",
-      "offset" : 224
+      "offset" : 188
      },
      {
       "name" : "projMatrix",
       "kind" : "variable",
       "protection" : "protected",
-      "line" : 14,
+      "line" : 11,
       "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4",
-      "offset" : 228
+      "offset" : 192
      },
      {
-      "name" : "baseVecUpdate",
+      "name" : "baseUpdate",
       "kind" : "variable",
       "protection" : "protected",
-      "line" : 15,
+      "line" : 12,
       "deco" : "G3b",
       "originalType" : "bool[3]",
       "init" : "true",
-      "offset" : 356
-     },
-     {
-      "name" : "baseVec",
-      "kind" : "variable",
-      "protection" : "protected",
-      "line" : 16,
-      "deco" : "G3S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
-      "originalType" : "vec3[3]",
-      "offset" : 360
+      "offset" : 320
      },
      {
       "name" : "viewProjUpdate",
       "kind" : "variable",
       "protection" : "protected",
-      "line" : 17,
+      "line" : 13,
       "deco" : "b",
-      "offset" : 396
+      "offset" : 323
      },
      {
       "name" : "viewProjMatrix",
       "kind" : "variable",
       "protection" : "protected",
-      "line" : 18,
+      "line" : 14,
       "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4",
-      "offset" : 400
+      "offset" : 324
      },
      {
       "name" : "nearZ",
       "kind" : "variable",
       "protection" : "protected",
-      "line" : 19,
+      "line" : 15,
       "deco" : "f",
-      "offset" : 528
+      "offset" : 452
      },
      {
       "name" : "farZ",
       "kind" : "variable",
       "protection" : "protected",
-      "line" : 19,
+      "line" : 15,
       "deco" : "f",
-      "offset" : 532
+      "offset" : 456
      },
      {
       "name" : "manip",
       "kind" : "variable",
-      "line" : 23,
+      "line" : 19,
       "deco" : "C6sbylib11manipulator15basemanipulator11Manipulator",
       "originalType" : "Manipulator",
-      "offset" : 536
+      "offset" : 460
      },
      {
       "name" : "this",
       "kind" : "constructor",
-      "line" : 25,
+      "line" : 21,
       "deco" : "FZC6sbylib6camera10basecamera6Camera",
-      "endline" : 27
-     },
-     {
-      "name" : "CreateSetterGetter!(eye, \"baseVecUpdate[0] = baseVecUpdate[2] = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09   viewUpdate = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09   viewProjUpdate = true;\", \"\")",
-      "kind" : "mixin",
-      "line" : 32
-     },
-     {
-      "name" : "CreateSetterGetter!(vec, \"baseVecUpdate[0] = baseVecUpdate[2] = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09  viewUpdate = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09  viewProjUpdate = true;\", \"\")",
-      "kind" : "mixin",
-      "line" : 37
-     },
-     {
-      "name" : "CreateSetterGetter!(up, \"baseVecUpdate[1] = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09  viewUpdate = true;\\x0a\\x09\\x09\\x09\\x09\\x09\\x09\\x09  viewProjUpdate = true;\", \"\")",
-      "kind" : "mixin",
-      "line" : 42
+      "endline" : 25
      },
      {
       "name" : "CreateSetterGetter!(nearZ, \"projUpdate = true;\", \"\")",
       "kind" : "mixin",
-      "line" : 44
+      "line" : 27
      },
      {
       "name" : "CreateSetterGetter!(farZ, \"projUpdate = true;\", \"\")",
       "kind" : "mixin",
-      "line" : 45
+      "line" : 28
+     },
+     {
+      "name" : "Pos",
+      "kind" : "function",
+      "line" : 32,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 p)",
+      "parameters" : [
+       {
+        "name" : "p",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 37,
+      "overrides" : [
+       "sbylib.core.entity.Entity.Pos"
+      ]
+     },
+     {
+      "name" : "GetVecX",
+      "kind" : "function",
+      "line" : 39,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 45,
+      "overrides" : [
+       "sbylib.core.entity.Entity.GetVecX"
+      ]
+     },
+     {
+      "name" : "VecX",
+      "kind" : "function",
+      "line" : 47,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 52,
+      "overrides" : [
+       "sbylib.core.entity.Entity.VecX"
+      ]
+     },
+     {
+      "name" : "GetVecY",
+      "kind" : "function",
+      "line" : 53,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 59,
+      "overrides" : [
+       "sbylib.core.entity.Entity.GetVecY"
+      ]
+     },
+     {
+      "name" : "VecY",
+      "kind" : "function",
+      "line" : 60,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 65,
+      "overrides" : [
+       "sbylib.core.entity.Entity.VecY"
+      ]
+     },
+     {
+      "name" : "GetVecZ",
+      "kind" : "function",
+      "line" : 66,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 72,
+      "overrides" : [
+       "sbylib.core.entity.Entity.GetVecZ"
+      ]
+     },
+     {
+      "name" : "VecZ",
+      "kind" : "function",
+      "line" : 73,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 78,
+      "overrides" : [
+       "sbylib.core.entity.Entity.VecZ"
+      ]
      },
      {
       "name" : "Target",
       "kind" : "function",
-      "line" : 48,
+      "line" : 81,
       "storageClass" : [
        "@property"
       ],
@@ -189,85 +264,52 @@
         "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
        }
       ],
-      "endline" : 53
-     },
-     {
-      "name" : "XVec",
-      "kind" : "function",
-      "line" : 54,
-      "storageClass" : [
-       "@property"
-      ],
-      "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
-      "originalType" : "vec3()",
-      "endline" : 60
-     },
-     {
-      "name" : "YVec",
-      "kind" : "function",
-      "line" : 61,
-      "storageClass" : [
-       "@property"
-      ],
-      "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
-      "originalType" : "vec3()",
-      "endline" : 67
-     },
-     {
-      "name" : "ZVec",
-      "kind" : "function",
-      "line" : 68,
-      "storageClass" : [
-       "@property"
-      ],
-      "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
-      "originalType" : "vec3()",
-      "endline" : 74
+      "endline" : 83
      },
      {
       "name" : "GetViewMatrix",
       "kind" : "function",
-      "line" : 77,
+      "line" : 86,
       "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
-      "endline" : 83
+      "endline" : 92
      },
      {
       "name" : "GetProjectionMatrix",
       "kind" : "function",
-      "line" : 85,
+      "line" : 94,
       "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
-      "endline" : 91
+      "endline" : 100
      },
      {
       "name" : "GetViewProjectionMatrix",
       "kind" : "function",
-      "line" : 93,
+      "line" : 102,
       "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
-      "endline" : 99
+      "endline" : 108
      },
      {
       "name" : "GetBillboardMatrix",
       "kind" : "function",
-      "line" : 101,
+      "line" : 110,
       "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
-      "endline" : 105
+      "endline" : 114
      },
      {
       "name" : "KeyMove",
       "kind" : "function",
-      "line" : 107,
+      "line" : 116,
       "deco" : "FZv",
-      "endline" : 109
+      "endline" : 118
      },
      {
       "name" : "GenerateProjectionMatrix",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 111,
+      "line" : 120,
       "storageClass" : [
        "abstract"
       ],
@@ -323,7 +365,7 @@
       "protection" : "private",
       "line" : 7,
       "deco" : "f",
-      "offset" : 540
+      "offset" : 464
      },
      {
       "name" : "height",
@@ -331,7 +373,7 @@
       "protection" : "private",
       "line" : 7,
       "deco" : "f",
-      "offset" : 544
+      "offset" : 468
      },
      {
       "name" : "this",
@@ -409,7 +451,7 @@
       "protection" : "private",
       "line" : 7,
       "deco" : "f",
-      "offset" : 540
+      "offset" : 464
      },
      {
       "name" : "fovy",
@@ -417,7 +459,7 @@
       "protection" : "private",
       "line" : 8,
       "deco" : "f",
-      "offset" : 544
+      "offset" : 468
      },
      {
       "name" : "this",
@@ -491,7 +533,8 @@
      {
       "name" : "pos",
       "kind" : "variable",
-      "line" : 6,
+      "protection" : "protected",
+      "line" : 7,
       "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3",
       "offset" : 8
@@ -499,10 +542,112 @@
      {
       "name" : "base",
       "kind" : "variable",
-      "line" : 7,
+      "protection" : "protected",
+      "line" : 8,
       "deco" : "G3S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3[3]",
+      "init" : "[Vector([1F, 0F, 0F]),Vector([0F, 1F, 0F]),Vector([0F, 0F, 1F])]",
       "offset" : 20
+     },
+     {
+      "name" : "Pos",
+      "kind" : "function",
+      "line" : 15,
+      "storageClass" : [
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 p)",
+      "parameters" : [
+       {
+        "name" : "p",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 17
+     },
+     {
+      "name" : "VecX",
+      "kind" : "function",
+      "line" : 19,
+      "storageClass" : [
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 21
+     },
+     {
+      "name" : "VecY",
+      "kind" : "function",
+      "line" : 23,
+      "storageClass" : [
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 25
+     },
+     {
+      "name" : "VecZ",
+      "kind" : "function",
+      "line" : 27,
+      "storageClass" : [
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 29
+     },
+     {
+      "name" : "GetPos",
+      "kind" : "function",
+      "line" : 32,
+      "deco" : "FZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 34
+     },
+     {
+      "name" : "GetVecX",
+      "kind" : "function",
+      "line" : 36,
+      "deco" : "FZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 38
+     },
+     {
+      "name" : "GetVecY",
+      "kind" : "function",
+      "line" : 40,
+      "deco" : "FZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 42
+     },
+     {
+      "name" : "GetVecZ",
+      "kind" : "function",
+      "line" : 44,
+      "deco" : "FZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3()",
+      "endline" : 46
      }
     ]
    }
@@ -2334,7 +2479,7 @@
         "deco" : "C6sbylib4core6entity6Entity"
        }
       ],
-      "endline" : 45,
+      "endline" : 44,
       "overrides" : [
        "sbylib.manipulator.basemanipulator.Manipulator.Manipulate"
       ]
