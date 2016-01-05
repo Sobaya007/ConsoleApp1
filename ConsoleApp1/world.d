@@ -4,24 +4,24 @@ import sbylib.imports;
 import std.datetime;
 import core.thread;
 
-package GLFWwindow *CurrentWindow;
+Window CurrentWindow;
 private float fps;
 Camera CurrentCamera;
 long CurrentFrameTime; //milliseconds
 
 void SbyInit(GLFWwindow *window, long frameTime) {
-	CurrentWindow = window;
+	CurrentWindow = new Window(window);
 	CurrentFrameTime = frameTime;
 }
 
 void MainLoop(void delegate() stepAndDraw) {
 	StopWatch sw;
 	sw.start();
-	while (!glfwWindowShouldClose(CurrentWindow))
+	while (!glfwWindowShouldClose(CurrentWindow.window))
 	{
 		stepAndDraw();
 		//バッファを更新
-		glfwSwapBuffers(CurrentWindow);
+		glfwSwapBuffers(CurrentWindow.window);
 		//イベントをさばく
 		glfwPollEvents();
 		auto period = sw.peek().msecs();

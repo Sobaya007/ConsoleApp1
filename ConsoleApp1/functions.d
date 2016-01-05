@@ -18,6 +18,19 @@ static bool contains(T)(T value, T[] array... ) {
 	return false;
 }
 
+
+static string toString(int i) {
+	if (i == 0) return "0";
+	char[] s;
+	while (i > 0) {
+		s ~= cast(char)('0' + i % 10);
+		i /= 10;
+	}
+	string r;
+	foreach_reverse (c; s) r ~= c;
+	return r;
+}
+
 mixin template CreateSetter(alias vary, string setterExtCode = "") {
 	@property {
 		mixin("void " ~ std.string.capitalize([vary.stringof[0]]) ~ vary.stringof[1..$] ~ "_(" ~ typeof(vary).stringof ~ " " ~ vary.stringof ~ ") {"

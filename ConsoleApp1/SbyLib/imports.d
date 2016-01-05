@@ -1,16 +1,14 @@
 module sbylib.imports;
 
-mixin("public import sbylib.math.imports;");
-//public import sbylib.math.imports;
-public import sbylib.utils.imports;
+public import sbylib.camera.imports;
 public import sbylib.core.imports;
-public import sbylib.camera.camera;
-public import sbylib.camera.manipulator;
-public import sbylib.entity;
-public import sbylib.shadertemplates.imports;
 public import sbylib.gl.imports;
-public import sbylib.primitive.imports;
+public import sbylib.manipulator.imports;
+public import sbylib.math.imports;
 public import sbylib.physics.imports;
+public import sbylib.primitive.imports;
+public import sbylib.shadertemplates.imports;
+public import sbylib.utils.imports;
 
 public import std.stdio;
 public import std.string;

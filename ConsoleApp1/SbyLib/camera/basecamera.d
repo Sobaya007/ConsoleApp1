@@ -1,10 +1,10 @@
-module sbylib.camera.camera;
+module sbylib.camera.basecamera;
 
 import sbylib.imports;
 
 abstract class Camera : Entity {
 
-private:
+protected:
 	vec3 eye = vec3(0, 0, -1);
 	vec3 vec = vec3(0, 0, 1);
 	vec3 up = vec3(0, 1, 0);
@@ -20,10 +20,10 @@ private:
 
 public:
 
-	SbyCameraManipulator manip;
+	Manipulator manip;
 
 	this() {
-		manip = new CameraSimpleRotator;
+		manip = new SimpleRotator;
 	}
 
 	mixin  CreateSetterGetter!(eye,
@@ -109,45 +109,4 @@ public:
 	}
 
 	protected abstract mat4 GenerateProjectionMatrix();
-}
-
-final class PerspectiveCamera : Camera {
-private:
-	float aspectWperH;
-	float fovy;
-public:
-
-	this(float aspect, float fovy, float nearZ, float farZ) {
-		this.aspectWperH = aspect;
-		this.fovy = fovy;
-		this.nearZ = nearZ;
-		this.farZ = farZ;
-	}
-
-	mixin CreateSetterGetter!(aspectWperH, "projUpdate = true;", "");
-	mixin CreateSetterGetter!(fovy, "projUpdate = true;", "");
-
-	override mat4 GenerateProjectionMatrix() {
-		return mat4.Perspective(aspectWperH, fovy, nearZ, farZ);
-	}
-}
-
-final class OrthoCamera : Camera {
-private:
-	float width, height;
-public:
-
-	this(float width, float height, float nearZ, float farZ) {
-		this.width = width;
-		this.height = height;
-		this.nearZ = nearZ;
-		this.farZ = farZ;
-	}
-
-	mixin CreateSetterGetter!(width, "projUpdate = true;", "");
-	mixin CreateSetterGetter!(height, "projUpdate = true;", "");
-
-	override mat4 GenerateProjectionMatrix() {
-		return mat4.Ortho(width, height, nearZ, farZ);
-	}
 }

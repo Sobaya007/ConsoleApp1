@@ -227,16 +227,31 @@
   </Folder>
   <Folder name="sbylib">
    <Folder name="camera">
-    <Folder name="Manipulator" />
-    <File path="Camera.d" />
-    <File path="SbyLib\Manipulator.d" />
+    <File path="sbylib\camera\basecamera.d" />
+    <File path="sbylib\camera\imports.d" />
+    <File path="sbylib\camera\orthocamera.d" />
+    <File path="sbylib\camera\perspectivecamera.d" />
    </Folder>
    <Folder name="core">
+    <File path="sbylib\entity.d" />
     <File path="sbylib\core\imports.d" />
+    <File path="sbylib\core\window.d" />
     <File path="world.d" />
+   </Folder>
+   <Folder name="gl">
+    <File path="SbyLib\gl\FrameBufferObject.d" />
+    <File path="SbyLib\gl\imports.d" />
+    <File path="SbyLib\gl\IndexBufferObject.d" />
+    <File path="SbyLib\gl\RenderBufferObject.d" />
+    <File path="SbyLib\gl\ShaderProgram.d" />
+    <File path="SbyLib\gl\TextureObject.d" />
+    <File path="SbyLib\gl\VertexArrayObject.d" />
+    <File path="SbyLib\gl\VertexBufferObject.d" />
    </Folder>
    <Folder name="manipulator">
     <File path="sbylib\manipulator\basemanipulator.d" />
+    <File path="sbylib\manipulator\imports.d" />
+    <File path="sbylib\manipulator\simplerotator.d" />
    </Folder>
    <Folder name="math">
     <File path="sbylib\math\imports.d" />
@@ -254,32 +269,21 @@
     <File path="sbylib\physics\collisioninfo.d" />
     <File path="sbylib\physics\imports.d" />
    </Folder>
+   <Folder name="primitive">
+    <File path="sbylib\primitive\baseprimitive.d" />
+    <File path="SbyLib\primitive\box.d" />
+    <File path="SbyLib\primitive\imports.d" />
+    <File path="SbyLib\primitive\plane.d" />
+   </Folder>
    <Folder name="shadertemplates">
     <File path="imports.d" />
     <File path="shader.d" />
-   </Folder>
-   <Folder name="gl">
-    <File path="sbylib\gl\FrameBufferObject.d" />
-    <File path="sbylib\gl\imports.d" />
-    <File path="sbylib\gl\IndexBufferObject.d" />
-    <File path="sbylib\gl\RenderBufferObject.d" />
-    <File path="sbylib\gl\ShaderProgram.d" />
-    <File path="sbylib\gl\TextureObject.d" />
-    <File path="sbylib\gl\VertexArrayObject.d" />
-    <File path="sbylib\gl\VertexBufferObject.d" />
-   </Folder>
-   <Folder name="primitive">
-    <File path="sbylib\primitive\box.d" />
-    <File path="sbylib\primitive\imports.d" />
-    <File path="baseprimitive.d" />
-    <File path="sbylib\primitive\plane.d" />
    </Folder>
    <Folder name="utils">
     <File path="sbylib\fpscounter.d" />
     <File path="functions.d" />
     <File path="sbylib\utils\imports.d" />
    </Folder>
-   <File path="sbylib\entity.d" />
    <File path="sbylib\imports.d" />
   </Folder>
   <File path="Import.d" />

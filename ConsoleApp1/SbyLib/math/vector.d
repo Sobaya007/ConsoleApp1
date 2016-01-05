@@ -4,6 +4,7 @@ import std.conv;
 import std.math;
 import std.string;
 import std.stdio;
+import sbylib.utils.imports;
 
 //T型のS個のベクトル
 struct Vector(T, int S) {
@@ -179,9 +180,9 @@ private string getConstructorCode(int S) {
 				int elemNum = a[k] - (k == 0 ? -1 : a[k-1]); //引数の要素数
 				assert(elemNum > 0);
 				if (elemNum == 1) {
-					r ~= "T e" ~ std.conv.to!string(argCount) ~ ", ";
+					r ~= "T e" ~ toString(argCount) ~ ", ";
 				} else {
-					r ~= "Vector!(T," ~ to!string(elemNum) ~ ") e" ~ to!string(argCount) ~ ", ";
+					r ~= "Vector!(T," ~ toString(elemNum) ~ ") e" ~ toString(argCount) ~ ", ";
 				}
 				argCount++;
 				b ~= elemNum;
@@ -189,20 +190,20 @@ private string getConstructorCode(int S) {
 			int elemNum = S-1 - (i == 0 ? 0 : a[$-1]); //引数の要素数
 			assert(elemNum > 0);
 			if (elemNum == 1) {
-				r ~= "T e" ~ to!string(argCount++);
+				r ~= "T e" ~ toString(argCount++);
 			} else {
-				r ~= "Vector!(T," ~ to!string(elemNum) ~ ") e" ~ to!string(argCount);
+				r ~= "Vector!(T," ~ toString(elemNum) ~ ") e" ~ toString(argCount);
 			}
 			b ~= elemNum;
 			r ~= ") {\n";
 			int count = 0;
 			foreach (int arg,k; b) { //k個の要素
 				foreach (l; 0..k) {
-					r ~= "elements[" ~ to!string(count++) ~ "] = ";
-					r ~= "e" ~ to!string(arg);
+					r ~= "elements[" ~ toString(count++) ~ "] = ";
+					r ~= "e" ~ toString(arg);
 					if (k == 1) r ~= ";";
 					else {
-						r ~= "[" ~ to!string(l) ~ "];";
+						r ~= "[" ~ toString(l) ~ "];";
 					}
 					r ~= "\n";
 				}

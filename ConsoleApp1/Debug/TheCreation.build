@@ -1,11 +1,25 @@
 set PATH=C:\D\dmd2\windows\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\\Common7\IDE;C:\Program Files (x86)\Windows Kits\8.0\\bin;%PATH%
 set DMD_LIB=;DerelictLib
 
-echo Camera.d >Debug\TheCreation.build.rsp
-echo SbyLib\Manipulator.d >>Debug\TheCreation.build.rsp
+echo sbylib\camera\basecamera.d >Debug\TheCreation.build.rsp
+echo sbylib\camera\imports.d >>Debug\TheCreation.build.rsp
+echo sbylib\camera\orthocamera.d >>Debug\TheCreation.build.rsp
+echo sbylib\camera\perspectivecamera.d >>Debug\TheCreation.build.rsp
+echo sbylib\entity.d >>Debug\TheCreation.build.rsp
 echo sbylib\core\imports.d >>Debug\TheCreation.build.rsp
+echo sbylib\core\window.d >>Debug\TheCreation.build.rsp
 echo world.d >>Debug\TheCreation.build.rsp
+echo SbyLib\gl\FrameBufferObject.d >>Debug\TheCreation.build.rsp
+echo SbyLib\gl\imports.d >>Debug\TheCreation.build.rsp
+echo SbyLib\gl\IndexBufferObject.d >>Debug\TheCreation.build.rsp
+echo SbyLib\gl\RenderBufferObject.d >>Debug\TheCreation.build.rsp
+echo SbyLib\gl\ShaderProgram.d >>Debug\TheCreation.build.rsp
+echo SbyLib\gl\TextureObject.d >>Debug\TheCreation.build.rsp
+echo SbyLib\gl\VertexArrayObject.d >>Debug\TheCreation.build.rsp
+echo SbyLib\gl\VertexBufferObject.d >>Debug\TheCreation.build.rsp
 echo sbylib\manipulator\basemanipulator.d >>Debug\TheCreation.build.rsp
+echo sbylib\manipulator\imports.d >>Debug\TheCreation.build.rsp
+echo sbylib\manipulator\simplerotator.d >>Debug\TheCreation.build.rsp
 echo sbylib\math\imports.d >>Debug\TheCreation.build.rsp
 echo sbylib\math\matrix.d >>Debug\TheCreation.build.rsp
 echo sbylib\math\utils.d >>Debug\TheCreation.build.rsp
@@ -16,24 +30,15 @@ echo sbylib\physics\bound\obb.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\bound\plane.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\collisioninfo.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\imports.d >>Debug\TheCreation.build.rsp
+echo sbylib\primitive\baseprimitive.d >>Debug\TheCreation.build.rsp
+echo SbyLib\primitive\box.d >>Debug\TheCreation.build.rsp
+echo SbyLib\primitive\imports.d >>Debug\TheCreation.build.rsp
+echo SbyLib\primitive\plane.d >>Debug\TheCreation.build.rsp
 echo imports.d >>Debug\TheCreation.build.rsp
 echo shader.d >>Debug\TheCreation.build.rsp
-echo sbylib\gl\FrameBufferObject.d >>Debug\TheCreation.build.rsp
-echo sbylib\gl\imports.d >>Debug\TheCreation.build.rsp
-echo sbylib\gl\IndexBufferObject.d >>Debug\TheCreation.build.rsp
-echo sbylib\gl\RenderBufferObject.d >>Debug\TheCreation.build.rsp
-echo sbylib\gl\ShaderProgram.d >>Debug\TheCreation.build.rsp
-echo sbylib\gl\TextureObject.d >>Debug\TheCreation.build.rsp
-echo sbylib\gl\VertexArrayObject.d >>Debug\TheCreation.build.rsp
-echo sbylib\gl\VertexBufferObject.d >>Debug\TheCreation.build.rsp
-echo sbylib\primitive\box.d >>Debug\TheCreation.build.rsp
-echo sbylib\primitive\imports.d >>Debug\TheCreation.build.rsp
-echo baseprimitive.d >>Debug\TheCreation.build.rsp
-echo sbylib\primitive\plane.d >>Debug\TheCreation.build.rsp
 echo sbylib\fpscounter.d >>Debug\TheCreation.build.rsp
 echo functions.d >>Debug\TheCreation.build.rsp
 echo sbylib\utils\imports.d >>Debug\TheCreation.build.rsp
-echo sbylib\entity.d >>Debug\TheCreation.build.rsp
 echo sbylib\imports.d >>Debug\TheCreation.build.rsp
 echo Import.d >>Debug\TheCreation.build.rsp
 echo main.d >>Debug\TheCreation.build.rsp

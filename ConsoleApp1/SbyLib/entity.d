@@ -1,4 +1,4 @@
-module sbylib.entity;
+module sbylib.core.entity;
 
 import sbylib.imports;
 
