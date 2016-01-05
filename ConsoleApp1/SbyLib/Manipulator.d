@@ -6,7 +6,6 @@ class SbyCameraManipulator {
 	abstract void Manipulate(Camera camera);
 
 	uint LeftKey = GLFW_KEY_W;
-
 }
 
 class CameraSimpleRotator : SbyCameraManipulator {

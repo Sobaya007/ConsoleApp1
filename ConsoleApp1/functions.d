@@ -1,4 +1,4 @@
-module sbylib.functions;
+module sbylib.utils.functions;
 
 import std.string;
 import derelict.opengl3.gl;

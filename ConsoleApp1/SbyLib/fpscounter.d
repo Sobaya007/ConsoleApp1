@@ -1,4 +1,4 @@
-module sbylib.fpscounter;
+module sbylib.utils.fpscounter;
 
 import sbylib.imports;
 

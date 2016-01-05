@@ -1,4 +1,4 @@
-module sbylib.world;
+module sbylib.core.world;
 
 import sbylib.imports;
 import std.datetime;

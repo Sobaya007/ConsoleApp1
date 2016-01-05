@@ -14,36 +14,37 @@
     "name" : "Camera",
     "kind" : "class",
     "line" : 5,
+    "base" : "Entity",
     "members" : [
      {
       "name" : "eye",
       "kind" : "variable",
       "protection" : "private",
       "line" : 8,
-      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3",
       "init" : "Vector([0F, 0F, -1F])",
-      "offset" : 8
+      "offset" : 56
      },
      {
       "name" : "vec",
       "kind" : "variable",
       "protection" : "private",
       "line" : 9,
-      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3",
       "init" : "Vector([0F, 0F, 1F])",
-      "offset" : 20
+      "offset" : 68
      },
      {
       "name" : "up",
       "kind" : "variable",
       "protection" : "private",
       "line" : 10,
-      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3",
       "init" : "Vector([0F, 1F, 0F])",
-      "offset" : 32
+      "offset" : 80
      },
      {
       "name" : "viewUpdate",
@@ -52,16 +53,16 @@
       "line" : 11,
       "deco" : "b",
       "init" : "true",
-      "offset" : 44
+      "offset" : 92
      },
      {
       "name" : "viewMatrix",
       "kind" : "variable",
       "protection" : "private",
       "line" : 12,
-      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4",
-      "offset" : 48
+      "offset" : 96
      },
      {
       "name" : "projUpdate",
@@ -70,16 +71,16 @@
       "line" : 13,
       "deco" : "b",
       "init" : "true",
-      "offset" : 176
+      "offset" : 224
      },
      {
       "name" : "projMatrix",
       "kind" : "variable",
       "protection" : "private",
       "line" : 14,
-      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4",
-      "offset" : 180
+      "offset" : 228
      },
      {
       "name" : "baseVecUpdate",
@@ -89,16 +90,16 @@
       "deco" : "G3b",
       "originalType" : "bool[3]",
       "init" : "true",
-      "offset" : 308
+      "offset" : 356
      },
      {
       "name" : "baseVec",
       "kind" : "variable",
       "protection" : "private",
       "line" : 16,
-      "deco" : "G3S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "deco" : "G3S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3[3]",
-      "offset" : 312
+      "offset" : 360
      },
      {
       "name" : "viewProjUpdate",
@@ -106,16 +107,16 @@
       "protection" : "private",
       "line" : 17,
       "deco" : "b",
-      "offset" : 348
+      "offset" : 396
      },
      {
       "name" : "viewProjMatrix",
       "kind" : "variable",
       "protection" : "private",
       "line" : 18,
-      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4",
-      "offset" : 352
+      "offset" : 400
      },
      {
       "name" : "nearZ",
@@ -123,7 +124,7 @@
       "protection" : "private",
       "line" : 19,
       "deco" : "f",
-      "offset" : 480
+      "offset" : 528
      },
      {
       "name" : "farZ",
@@ -131,7 +132,7 @@
       "protection" : "private",
       "line" : 19,
       "deco" : "f",
-      "offset" : 484
+      "offset" : 532
      },
      {
       "name" : "manip",
@@ -139,7 +140,7 @@
       "line" : 23,
       "deco" : "C6sbylib6camera11manipulator20SbyCameraManipulator",
       "originalType" : "SbyCameraManipulator",
-      "offset" : 488
+      "offset" : 536
      },
      {
       "name" : "this",
@@ -180,12 +181,12 @@
       "storageClass" : [
        "@property"
       ],
-      "deco" : "FNdS6sbylib4math16__T6VectorTfVi3Z6VectorZv",
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
       "originalType" : "void(vec3 t)",
       "parameters" : [
        {
         "name" : "t",
-        "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector"
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
        }
       ],
       "endline" : 53
@@ -197,7 +198,7 @@
       "storageClass" : [
        "@property"
       ],
-      "deco" : "FNdZS6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3()",
       "endline" : 60
      },
@@ -208,7 +209,7 @@
       "storageClass" : [
        "@property"
       ],
-      "deco" : "FNdZS6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3()",
       "endline" : 67
      },
@@ -219,7 +220,7 @@
       "storageClass" : [
        "@property"
       ],
-      "deco" : "FNdZS6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3()",
       "endline" : 74
      },
@@ -227,7 +228,7 @@
       "name" : "GetViewMatrix",
       "kind" : "function",
       "line" : 77,
-      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
       "endline" : 83
      },
@@ -235,7 +236,7 @@
       "name" : "GetProjectionMatrix",
       "kind" : "function",
       "line" : 85,
-      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
       "endline" : 91
      },
@@ -243,7 +244,7 @@
       "name" : "GetViewProjectionMatrix",
       "kind" : "function",
       "line" : 93,
-      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
       "endline" : 99
      },
@@ -251,7 +252,7 @@
       "name" : "GetBillboardMatrix",
       "kind" : "function",
       "line" : 101,
-      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
       "endline" : 105
      },
@@ -270,7 +271,7 @@
       "storageClass" : [
        "abstract"
       ],
-      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()"
      }
     ]
@@ -287,7 +288,7 @@
       "protection" : "private",
       "line" : 116,
       "deco" : "f",
-      "offset" : 492
+      "offset" : 540
      },
      {
       "name" : "fovy",
@@ -295,7 +296,7 @@
       "protection" : "private",
       "line" : 117,
       "deco" : "f",
-      "offset" : 496
+      "offset" : 544
      },
      {
       "name" : "this",
@@ -339,7 +340,7 @@
       "storageClass" : [
        "override"
       ],
-      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
       "endline" : 132,
       "overrides" : [
@@ -360,7 +361,7 @@
       "protection" : "private",
       "line" : 137,
       "deco" : "f",
-      "offset" : 492
+      "offset" : 540
      },
      {
       "name" : "height",
@@ -368,7 +369,7 @@
       "protection" : "private",
       "line" : 137,
       "deco" : "f",
-      "offset" : 496
+      "offset" : 544
      },
      {
       "name" : "this",
@@ -412,7 +413,7 @@
       "storageClass" : [
        "override"
       ],
-      "deco" : "FZS6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
       "endline" : 152,
       "overrides" : [
@@ -467,13 +468,13 @@
    {
     "name" : "CameraSimpleRotator",
     "kind" : "class",
-    "line" : 12,
+    "line" : 11,
     "base" : "SbyCameraManipulator",
     "members" : [
      {
       "name" : "Manipulate",
       "kind" : "function",
-      "line" : 14,
+      "line" : 13,
       "storageClass" : [
        "override"
       ],
@@ -484,12 +485,1640 @@
         "deco" : "C6sbylib6camera6camera6Camera"
        }
       ],
-      "endline" : 52,
+      "endline" : 51,
       "overrides" : [
        "sbylib.camera.manipulator.SbyCameraManipulator.Manipulate"
       ]
      }
     ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.core.imports",
+  "kind" : "module",
+  "file" : "sbylib\\core\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.core.world",
+    "kind" : "import",
+    "line" : 3
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.core.world",
+  "kind" : "module",
+  "file" : "world.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.datetime",
+    "kind" : "import",
+    "line" : 4,
+    "protection" : "private"
+   },
+   {
+    "name" : "core.thread",
+    "kind" : "import",
+    "line" : 5,
+    "protection" : "private"
+   },
+   {
+    "name" : "CurrentWindow",
+    "kind" : "variable",
+    "protection" : "package",
+    "line" : 7,
+    "deco" : "PS8derelict5glfw35types10GLFWwindow"
+   },
+   {
+    "name" : "fps",
+    "kind" : "variable",
+    "protection" : "private",
+    "line" : 8,
+    "deco" : "f"
+   },
+   {
+    "name" : "CurrentCamera",
+    "kind" : "variable",
+    "line" : 9,
+    "deco" : "C6sbylib6camera6camera6Camera",
+    "originalType" : "Camera"
+   },
+   {
+    "name" : "CurrentFrameTime",
+    "kind" : "variable",
+    "line" : 10,
+    "deco" : "l"
+   },
+   {
+    "name" : "SbyInit",
+    "kind" : "function",
+    "line" : 12,
+    "deco" : "FPS8derelict5glfw35types10GLFWwindowlZv",
+    "parameters" : [
+     {
+      "name" : "window",
+      "deco" : "PS8derelict5glfw35types10GLFWwindow"
+     },
+     {
+      "name" : "frameTime",
+      "deco" : "l"
+     }
+    ],
+    "endline" : 15
+   },
+   {
+    "name" : "MainLoop",
+    "kind" : "function",
+    "line" : 17,
+    "deco" : "FDFZvZv",
+    "parameters" : [
+     {
+      "name" : "stepAndDraw",
+      "deco" : "DFZv"
+     }
+    ],
+    "endline" : 35
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.manipulator.basemanipulator",
+  "kind" : "module",
+  "file" : "sbylib\\manipulator\\basemanipulator.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "BaseManipulator",
+    "kind" : "class",
+    "line" : 5,
+    "members" : []
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.math.imports",
+  "kind" : "module",
+  "file" : "sbylib\\math\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.math.utils",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.math.vector",
+    "kind" : "import",
+    "line" : 4
+   },
+   {
+    "name" : "sbylib.math.matrix",
+    "kind" : "import",
+    "line" : 5
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.math.matrix",
+  "kind" : "module",
+  "file" : "sbylib\\math\\matrix.d",
+  "members" : [
+   {
+    "name" : "sbylib.math.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 4,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.math",
+    "kind" : "import",
+    "line" : 5,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 6,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 7,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "Matrix(U)",
+    "line" : 10,
+    "parameters" : [
+     {
+      "name" : "U",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "Matrix",
+      "kind" : "struct",
+      "line" : 10,
+      "members" : [
+       {
+        "name" : "arrayForConvert",
+        "kind" : "variable",
+        "line" : 12,
+        "type" : "U[16]"
+       },
+       {
+        "name" : "elements",
+        "kind" : "variable",
+        "line" : 14,
+        "type" : "U[4][4]"
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(Matrix m)",
+        "line" : 16,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 16,
+          "type" : "Matrix(Matrix m)",
+          "parameters" : [
+           {
+            "name" : "m",
+            "type" : "Matrix"
+           }
+          ],
+          "endline" : 26
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(U s)",
+        "line" : 28,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 28,
+          "type" : "Matrix(U s)",
+          "parameters" : [
+           {
+            "name" : "s",
+            "type" : "U"
+           }
+          ],
+          "endline" : 35
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(Vector!(U, 4) v)",
+        "line" : 37,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 37,
+          "type" : "vec4(Vector!(U, 4) v)",
+          "parameters" : [
+           {
+            "name" : "v",
+            "type" : "Vector!(U, 4)"
+           }
+          ],
+          "endline" : 44
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opOpAssign(string op)(Vector!(U, 4) v)",
+        "line" : 46,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opOpAssign",
+          "kind" : "function",
+          "line" : 46,
+          "type" : "void(Vector!(U, 4) v)",
+          "parameters" : [
+           {
+            "name" : "v",
+            "type" : "Vector!(U, 4)"
+           }
+          ],
+          "endline" : 52
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opOpAssign(string op)(Matrix m)",
+        "line" : 54,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opOpAssign",
+          "kind" : "function",
+          "line" : 54,
+          "type" : "void(Matrix m)",
+          "parameters" : [
+           {
+            "name" : "m",
+            "type" : "Matrix"
+           }
+          ],
+          "endline" : 64
+         }
+        ]
+       },
+       {
+        "name" : "Identity",
+        "kind" : "function",
+        "line" : 66,
+        "type" : "Matrix()",
+        "endline" : 70
+       },
+       {
+        "kind" : "template",
+        "name" : "Translation(int T)(Vector!(U, T) vec) if (T == 3 || T == 4)",
+        "line" : 72,
+        "parameters" : [
+         {
+          "name" : "T",
+          "kind" : "value",
+          "deco" : "i"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "Translation",
+          "kind" : "function",
+          "line" : 72,
+          "storageClass" : [
+           "auto",
+           "static"
+          ],
+          "type" : "(Vector!(U, T) vec)",
+          "parameters" : [
+           {
+            "name" : "vec",
+            "type" : "Vector!(U, T)"
+           }
+          ],
+          "endline" : 76
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "Scale(int T)(Vector!(U, T) vec) if (T == 3 || T == 4)",
+        "line" : 78,
+        "parameters" : [
+         {
+          "name" : "T",
+          "kind" : "value",
+          "deco" : "i"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "Scale",
+          "kind" : "function",
+          "line" : 78,
+          "type" : "Matrix(Vector!(U, T) vec)",
+          "parameters" : [
+           {
+            "name" : "vec",
+            "type" : "Vector!(U, T)"
+           }
+          ],
+          "endline" : 82
+         }
+        ]
+       },
+       {
+        "name" : "RotAxisAngle",
+        "kind" : "function",
+        "line" : 84,
+        "type" : "Matrix(Vector!(U, 3) v, U angle)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "angle",
+          "type" : "U"
+         }
+        ],
+        "endline" : 91
+       },
+       {
+        "name" : "RotFromTo",
+        "kind" : "function",
+        "line" : 93,
+        "type" : "Matrix(Vector!(U, 3) from, Vector!(U, 3) to)",
+        "parameters" : [
+         {
+          "name" : "from",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "to",
+          "type" : "Vector!(U, 3)"
+         }
+        ],
+        "endline" : 103
+       },
+       {
+        "name" : "LookAt",
+        "kind" : "function",
+        "line" : 105,
+        "type" : "Matrix(Vector!(U, 3) eye, Vector!(U, 3) vec, Vector!(U, 3) up)",
+        "parameters" : [
+         {
+          "name" : "eye",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "vec",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "up",
+          "type" : "Vector!(U, 3)"
+         }
+        ],
+        "endline" : 109
+       },
+       {
+        "name" : "Ortho",
+        "kind" : "function",
+        "line" : 111,
+        "type" : "Matrix(U width, U height, U nearZ, U farZ)",
+        "parameters" : [
+         {
+          "name" : "width",
+          "type" : "U"
+         },
+         {
+          "name" : "height",
+          "type" : "U"
+         },
+         {
+          "name" : "nearZ",
+          "type" : "U"
+         },
+         {
+          "name" : "farZ",
+          "type" : "U"
+         }
+        ],
+        "endline" : 115
+       },
+       {
+        "name" : "Perspective",
+        "kind" : "function",
+        "line" : 117,
+        "type" : "Matrix(U aspectWperH, U fovy, U nearZ, U farZ)",
+        "parameters" : [
+         {
+          "name" : "aspectWperH",
+          "type" : "U"
+         },
+         {
+          "name" : "fovy",
+          "type" : "U"
+         },
+         {
+          "name" : "nearZ",
+          "type" : "U"
+         },
+         {
+          "name" : "farZ",
+          "type" : "U"
+         }
+        ],
+        "endline" : 121
+       },
+       {
+        "name" : "Invert",
+        "kind" : "function",
+        "line" : 123,
+        "type" : "Matrix(Matrix m)",
+        "parameters" : [
+         {
+          "name" : "m",
+          "type" : "Matrix"
+         }
+        ],
+        "endline" : 183
+       },
+       {
+        "name" : "Transpose",
+        "kind" : "function",
+        "line" : 185,
+        "type" : "Matrix(Matrix m)",
+        "parameters" : [
+         {
+          "name" : "m",
+          "type" : "Matrix"
+         }
+        ],
+        "endline" : 198
+       },
+       {
+        "name" : "fromString",
+        "kind" : "function",
+        "line" : 200,
+        "type" : "Matrix(string str)",
+        "parameters" : [
+         {
+          "name" : "str",
+          "type" : "string"
+         }
+        ],
+        "endline" : 215
+       },
+       {
+        "name" : "getString",
+        "kind" : "function",
+        "line" : 217,
+        "type" : "string(U epsilon = 0)",
+        "parameters" : [
+         {
+          "name" : "epsilon",
+          "type" : "U",
+          "default" : "0"
+         }
+        ],
+        "endline" : 219
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 221,
+        "type" : "U(int x, int y)",
+        "parameters" : [
+         {
+          "name" : "x",
+          "deco" : "i"
+         },
+         {
+          "name" : "y",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 223
+       },
+       {
+        "name" : "array",
+        "kind" : "function",
+        "line" : 225,
+        "type" : "U[]()",
+        "endline" : 228
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "mat4",
+    "kind" : "alias",
+    "line" : 231,
+    "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix"
+   },
+   {
+    "name" : "mat4d",
+    "kind" : "alias",
+    "line" : 232,
+    "deco" : "S6sbylib4math6matrix13__T6MatrixTdZ6Matrix"
+   },
+   {
+    "name" : "multMMCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 236,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 248
+   },
+   {
+    "name" : "multMVCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 250,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 260
+   },
+   {
+    "name" : "multMVAssignCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 262,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 272
+   },
+   {
+    "name" : "getIdentityCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 274,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 284
+   },
+   {
+    "name" : "getTranslationCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 286,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 297
+   },
+   {
+    "name" : "getScaleCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 299,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 310
+   },
+   {
+    "name" : "getRotAxisCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 312,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 330
+   },
+   {
+    "name" : "getOpBinaryMMCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 332,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FAyaZAya",
+    "parameters" : [
+     {
+      "name" : "op",
+      "deco" : "Aya"
+     }
+    ],
+    "endline" : 338
+   },
+   {
+    "name" : "getOpBinaryMSCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 340,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FAyaZAya",
+    "parameters" : [
+     {
+      "name" : "op",
+      "deco" : "Aya"
+     }
+    ],
+    "endline" : 346
+   },
+   {
+    "name" : "getOpAssignMMCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 348,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FAyaZAya",
+    "parameters" : [
+     {
+      "name" : "op",
+      "deco" : "Aya"
+     }
+    ],
+    "endline" : 354
+   },
+   {
+    "name" : "getLookAtCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 356,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 418
+   },
+   {
+    "name" : "getOrthoCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 420,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 440
+   },
+   {
+    "name" : "getPerspectiveCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 442,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 462
+   },
+   {
+    "name" : "getStringCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 464,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 478
+   },
+   {
+    "name" : "getConvertCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 480,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FZAya",
+    "endline" : 489
+   },
+   {
+    "name" : "getCopyCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 491,
+    "storageClass" : [
+     "static"
+    ],
+    "deco" : "FAyaZAya",
+    "parameters" : [
+     {
+      "name" : "identifier",
+      "deco" : "Aya"
+     }
+    ],
+    "endline" : 500
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.math.utils",
+  "kind" : "module",
+  "file" : "sbylib\\math\\utils.d",
+  "members" : [
+   {
+    "name" : "std.math",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "sbylib.math.imports",
+    "kind" : "import",
+    "line" : 4,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "ToRad(U)(U angle)",
+    "line" : 6,
+    "parameters" : [
+     {
+      "name" : "U",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "ToRad",
+      "kind" : "function",
+      "line" : 6,
+      "type" : "U(U angle)",
+      "parameters" : [
+       {
+        "name" : "angle",
+        "type" : "U"
+       }
+      ],
+      "endline" : 8
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "ToDeg(U)(U angle)",
+    "line" : 10,
+    "parameters" : [
+     {
+      "name" : "U",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "ToDeg",
+      "kind" : "function",
+      "line" : 10,
+      "type" : "U(U angle)",
+      "parameters" : [
+       {
+        "name" : "angle",
+        "type" : "U"
+       }
+      ],
+      "endline" : 12
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.math.vector",
+  "kind" : "module",
+  "file" : "sbylib\\math\\vector.d",
+  "members" : [
+   {
+    "name" : "std.conv",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.math",
+    "kind" : "import",
+    "line" : 4,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 5,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.stdio",
+    "kind" : "import",
+    "line" : 6,
+    "protection" : "private"
+   },
+   {
+    "kind" : "template",
+    "name" : "Vector(T, int S)",
+    "line" : 9,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "Vector",
+      "kind" : "struct",
+      "line" : 9,
+      "members" : [
+       {
+        "name" : "elements",
+        "kind" : "variable",
+        "line" : 11,
+        "type" : "T[S]"
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(Vector v)",
+        "line" : 20,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 20,
+          "type" : "Vector(Vector v)",
+          "parameters" : [
+           {
+            "name" : "v",
+            "type" : "Vector"
+           }
+          ],
+          "endline" : 28
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinary(string op)(T t)",
+        "line" : 30,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinary",
+          "kind" : "function",
+          "line" : 30,
+          "type" : "Vector(T t)",
+          "parameters" : [
+           {
+            "name" : "t",
+            "type" : "T"
+           }
+          ],
+          "endline" : 34
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opBinaryRight(string op)(T t)",
+        "line" : 36,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opBinaryRight",
+          "kind" : "function",
+          "line" : 36,
+          "type" : "Vector(T t)",
+          "parameters" : [
+           {
+            "name" : "t",
+            "type" : "T"
+           }
+          ],
+          "endline" : 40
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opUnary(string op)()",
+        "line" : 42,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opUnary",
+          "kind" : "function",
+          "line" : 42,
+          "type" : "Vector()",
+          "endline" : 46
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opOpAssign(string op)(Vector v)",
+        "line" : 48,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opOpAssign",
+          "kind" : "function",
+          "line" : 48,
+          "type" : "void(Vector v)",
+          "parameters" : [
+           {
+            "name" : "v",
+            "type" : "Vector"
+           }
+          ],
+          "endline" : 55
+         }
+        ]
+       },
+       {
+        "kind" : "template",
+        "name" : "opOpAssign(string op)(T e)",
+        "line" : 57,
+        "parameters" : [
+         {
+          "name" : "op",
+          "kind" : "value",
+          "type" : "string"
+         }
+        ],
+        "members" : [
+         {
+          "name" : "opOpAssign",
+          "kind" : "function",
+          "line" : 57,
+          "type" : "void(T e)",
+          "parameters" : [
+           {
+            "name" : "e",
+            "type" : "T"
+           }
+          ],
+          "endline" : 59
+         }
+        ]
+       },
+       {
+        "name" : "opIndex",
+        "kind" : "function",
+        "line" : 61,
+        "type" : "T(int idx)",
+        "parameters" : [
+         {
+          "name" : "idx",
+          "deco" : "i"
+         }
+        ],
+        "endline" : 63
+       },
+       {
+        "name" : "array",
+        "kind" : "function",
+        "line" : 65,
+        "storageClass" : [
+         "auto"
+        ],
+        "type" : "()",
+        "endline" : 67
+       },
+       {
+        "name" : "getString",
+        "kind" : "function",
+        "line" : 69,
+        "type" : "string()",
+        "endline" : 79
+       },
+       {
+        "name" : "fromString",
+        "kind" : "function",
+        "line" : 81,
+        "type" : "Vector(string str)",
+        "parameters" : [
+         {
+          "name" : "str",
+          "type" : "string"
+         }
+        ],
+        "endline" : 88
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name" : "vec2",
+    "kind" : "alias",
+    "line" : 91,
+    "deco" : "S6sbylib4math6vector16__T6VectorTfVi2Z6Vector"
+   },
+   {
+    "name" : "vec3",
+    "kind" : "alias",
+    "line" : 92,
+    "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+   },
+   {
+    "name" : "vec4",
+    "kind" : "alias",
+    "line" : 93,
+    "deco" : "S6sbylib4math6vector16__T6VectorTfVi4Z6Vector"
+   },
+   {
+    "kind" : "template",
+    "name" : "dot(T, int S)(Vector!(T, S) v, Vector!(T, S) v2)",
+    "line" : 97,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "dot",
+      "kind" : "function",
+      "line" : 97,
+      "type" : "T(Vector!(T, S) v, Vector!(T, S) v2)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       },
+       {
+        "name" : "v2",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 107
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "cross(T, int S)(Vector!(T, S) v, Vector!(T, S) v2) if (S == 2)",
+    "line" : 109,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "cross",
+      "kind" : "function",
+      "line" : 109,
+      "type" : "T(Vector!(T, S) v, Vector!(T, S) v2)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       },
+       {
+        "name" : "v2",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 111
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "cross(T, int S)(Vector!(T, S) v, Vector!(T, S) v2) if (S == 3)",
+    "line" : 113,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "cross",
+      "kind" : "function",
+      "line" : 113,
+      "type" : "Vector!(T, S)(Vector!(T, S) v, Vector!(T, S) v2)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       },
+       {
+        "name" : "v2",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 124
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "length(T, int S)(Vector!(T, S) v)",
+    "line" : 126,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "length",
+      "kind" : "function",
+      "line" : 126,
+      "type" : "T(Vector!(T, S) v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 136
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "lengthSq(T, int S)(Vector!(T, S) v)",
+    "line" : 138,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "lengthSq",
+      "kind" : "function",
+      "line" : 138,
+      "type" : "T(Vector!(T, S) v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 148
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "normalize(T, int S)(Vector!(T, S) v)",
+    "line" : 150,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     },
+     {
+      "name" : "S",
+      "kind" : "value",
+      "deco" : "i"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "normalize",
+      "kind" : "function",
+      "line" : 150,
+      "type" : "Vector!(T, S)(Vector!(T, S) v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "type" : "Vector!(T, S)"
+       }
+      ],
+      "endline" : 164
+     }
+    ]
+   },
+   {
+    "name" : "getConstructorCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 168,
+    "deco" : "FiZAya",
+    "parameters" : [
+     {
+      "name" : "S",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 222
+   },
+   {
+    "name" : "getXyzwCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 224,
+    "deco" : "FiZAya",
+    "parameters" : [
+     {
+      "name" : "S",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 270
+   },
+   {
+    "name" : "getUnaryCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 272,
+    "deco" : "FAyaiZAya",
+    "parameters" : [
+     {
+      "name" : "op",
+      "deco" : "Aya"
+     },
+     {
+      "name" : "S",
+      "deco" : "i"
+     }
+    ],
+    "endline" : 278
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.physics.bound.basebound",
+  "kind" : "module",
+  "file" : "sbylib\\physics\\bound\\basebound.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Bound",
+    "kind" : "class",
+    "line" : 5,
+    "base" : "Entity",
+    "members" : [
+     {
+      "name" : "CollisionDetection",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 7,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FC6sbylib7physics5bound9basebound5BoundC6sbylib7physics5bound9basebound5BoundZS6sbylib7physics13collisioninfo13CollisionInfo",
+      "parameters" : [
+       {
+        "name" : "b1",
+        "deco" : "C6sbylib7physics5bound9basebound5Bound"
+       },
+       {
+        "name" : "b2",
+        "deco" : "C6sbylib7physics5bound9basebound5Bound"
+       }
+      ],
+      "endline" : 22
+     },
+     {
+      "name" : "ColPlaneAndPlane",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 24,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FC6sbylib7physics5bound5plane10PlaneBoundC6sbylib7physics5bound5plane10PlaneBoundZS6sbylib7physics13collisioninfo13CollisionInfo",
+      "parameters" : [
+       {
+        "name" : "p1",
+        "deco" : "C6sbylib7physics5bound5plane10PlaneBound"
+       },
+       {
+        "name" : "p2",
+        "deco" : "C6sbylib7physics5bound5plane10PlaneBound"
+       }
+      ],
+      "endline" : 36
+     },
+     {
+      "name" : "ColPlaneAndOBB",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 38,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FC6sbylib7physics5bound5plane10PlaneBoundC6sbylib7physics5bound3obb3OBBZS6sbylib7physics13collisioninfo13CollisionInfo",
+      "parameters" : [
+       {
+        "name" : "p",
+        "deco" : "C6sbylib7physics5bound5plane10PlaneBound"
+       },
+       {
+        "name" : "o",
+        "deco" : "C6sbylib7physics5bound3obb3OBB"
+       }
+      ],
+      "endline" : 51
+     },
+     {
+      "name" : "ColOBBAndOBB",
+      "kind" : "function",
+      "protection" : "private",
+      "line" : 53,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FC6sbylib7physics5bound3obb3OBBC6sbylib7physics5bound3obb3OBBZS6sbylib7physics13collisioninfo13CollisionInfo",
+      "parameters" : [
+       {
+        "name" : "o1",
+        "deco" : "C6sbylib7physics5bound3obb3OBB"
+       },
+       {
+        "name" : "o2",
+        "deco" : "C6sbylib7physics5bound3obb3OBB"
+       }
+      ],
+      "endline" : 81
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.physics.bound.imports",
+  "kind" : "module",
+  "file" : "sbylib\\physics\\bound\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.physics.bound.basebound",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.physics.bound.obb",
+    "kind" : "import",
+    "line" : 4
+   },
+   {
+    "name" : "sbylib.physics.bound.plane",
+    "kind" : "import",
+    "line" : 5
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.physics.bound.obb",
+  "kind" : "module",
+  "file" : "sbylib\\physics\\bound\\obb.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "OBB",
+    "kind" : "class",
+    "line" : 5,
+    "base" : "Bound",
+    "members" : [
+     {
+      "name" : "r",
+      "kind" : "variable",
+      "line" : 7,
+      "deco" : "G3f",
+      "originalType" : "float[3]",
+      "offset" : 56
+     },
+     {
+      "name" : "GetVertices",
+      "kind" : "function",
+      "line" : 9,
+      "deco" : "FZAS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "endline" : 20
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.physics.bound.plane",
+  "kind" : "module",
+  "file" : "sbylib\\physics\\bound\\plane.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "PlaneBound",
+    "kind" : "class",
+    "line" : 6,
+    "base" : "Bound",
+    "members" : [
+     {
+      "name" : "normal",
+      "kind" : "variable",
+      "line" : 7,
+      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3",
+      "offset" : 56
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.physics.collisioninfo",
+  "kind" : "module",
+  "file" : "sbylib\\physics\\collisioninfo.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "CollisionInfo",
+    "kind" : "struct",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "isHit",
+      "kind" : "variable",
+      "line" : 6,
+      "deco" : "b",
+      "offset" : 0
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.physics.imports",
+  "kind" : "module",
+  "file" : "sbylib\\physics\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.physics.bound.imports",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.physics.collisioninfo",
+    "kind" : "import",
+    "line" : 4
    }
   ]
  },
@@ -2019,6 +3648,7 @@
     "name" : "Primitive",
     "kind" : "class",
     "line" : 5,
+    "base" : "Entity",
     "members" : [
      {
       "name" : "Draw",
@@ -2033,10 +3663,10 @@
       "name" : "mat",
       "kind" : "variable",
       "line" : 8,
-      "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix",
+      "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4",
-      "init" : "Matrix([[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]], [nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF])",
-      "offset" : 8
+      "init" : "Matrix([nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF], [[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]])",
+      "offset" : 56
      },
      {
       "kind" : "template",
@@ -2148,7 +3778,7 @@
       "line" : 13,
       "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
       "originalType" : "ShaderProgram",
-      "offset" : 136
+      "offset" : 184
      },
      {
       "name" : "this",
@@ -2183,7 +3813,7 @@
   ]
  },
  {
-  "name" : "sbylib.fpscounter",
+  "name" : "sbylib.utils.fpscounter",
   "kind" : "module",
   "file" : "sbylib\\fpscounter.d",
   "members" : [
@@ -2262,7 +3892,7 @@
   ]
  },
  {
-  "name" : "sbylib.functions",
+  "name" : "sbylib.utils.functions",
   "kind" : "module",
   "file" : "functions.d",
   "members" : [
@@ -2454,42 +4084,90 @@
   ]
  },
  {
+  "name" : "sbylib.utils.imports",
+  "kind" : "module",
+  "file" : "sbylib\\utils\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.utils.fpscounter",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.utils.functions",
+    "kind" : "import",
+    "line" : 4
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.entity",
+  "kind" : "module",
+  "file" : "sbylib\\entity.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Entity",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "pos",
+      "kind" : "variable",
+      "line" : 6,
+      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3",
+      "offset" : 8
+     },
+     {
+      "name" : "base",
+      "kind" : "variable",
+      "line" : 7,
+      "deco" : "G3S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
+      "originalType" : "vec3[3]",
+      "offset" : 20
+     }
+    ]
+   }
+  ]
+ },
+ {
   "name" : "sbylib.imports",
   "kind" : "module",
   "file" : "sbylib\\imports.d",
   "members" : [
    {
-    "name" : "sbylib.math",
+    "name" : "sbylib.math.imports",
     "kind" : "import",
     "line" : 3
    },
    {
-    "name" : "sbylib.functions",
-    "kind" : "import",
-    "line" : 4
-   },
-   {
-    "name" : "sbylib.others",
+    "name" : "sbylib.utils.imports",
     "kind" : "import",
     "line" : 5
    },
    {
-    "name" : "sbylib.world",
+    "name" : "sbylib.core.imports",
     "kind" : "import",
     "line" : 6
    },
    {
-    "name" : "sbylib.fpscounter",
+    "name" : "sbylib.camera.camera",
     "kind" : "import",
     "line" : 7
    },
    {
-    "name" : "sbylib.camera.camera",
+    "name" : "sbylib.camera.manipulator",
     "kind" : "import",
     "line" : 8
    },
    {
-    "name" : "sbylib.camera.manipulator",
+    "name" : "sbylib.entity",
     "kind" : "import",
     "line" : 9
    },
@@ -2509,1475 +4187,89 @@
     "line" : 12
    },
    {
-    "name" : "std.stdio",
-    "kind" : "import",
-    "line" : 14
-   },
-   {
-    "name" : "std.string",
-    "kind" : "import",
-    "line" : 15
-   },
-   {
-    "name" : "std.conv",
-    "kind" : "import",
-    "line" : 16
-   },
-   {
-    "name" : "std.file",
-    "kind" : "import",
-    "line" : 17
-   },
-   {
-    "name" : "std.mathspecial",
-    "kind" : "import",
-    "line" : 18
-   },
-   {
-    "name" : "std.typecons",
-    "kind" : "import",
-    "line" : 19
-   },
-   {
-    "name" : "std.algorithm",
-    "kind" : "import",
-    "line" : 20
-   },
-   {
-    "name" : "std.datetime",
-    "kind" : "import",
-    "line" : 21
-   },
-   {
-    "name" : "std.range",
-    "kind" : "import",
-    "line" : 22
-   },
-   {
-    "name" : "derelict.opengl3.gl",
-    "kind" : "import",
-    "line" : 24
-   },
-   {
-    "name" : "derelict.glfw3.glfw3",
-    "kind" : "import",
-    "line" : 25
-   },
-   {
-    "name" : "derelict.devil.il",
-    "kind" : "import",
-    "line" : 26
-   },
-   {
-    "name" : "derelict.devil.ilu",
-    "kind" : "import",
-    "line" : 27
-   },
-   {
-    "name" : "derelict.devil.ilut",
-    "kind" : "import",
-    "line" : 28
-   },
-   {
-    "name" : "derelict.freetype.ft",
-    "kind" : "import",
-    "line" : 29
-   },
-   {
-    "name" : "derelict.opengl3.gl3",
-    "kind" : "import",
-    "line" : 30
-   }
-  ]
- },
- {
-  "name" : "sbylib.math",
-  "kind" : "module",
-  "file" : "math.d",
-  "members" : [
-   {
-    "name" : "std.conv",
-    "kind" : "import",
-    "line" : 3,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.math",
-    "kind" : "import",
-    "line" : 4,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.string",
-    "kind" : "import",
-    "line" : 5,
-    "protection" : "private"
-   },
-   {
-    "name" : "std.stdio",
-    "kind" : "import",
-    "line" : 6,
-    "protection" : "private"
-   },
-   {
-    "kind" : "template",
-    "name" : "ToRad(U)(U angle)",
-    "line" : 8,
-    "parameters" : [
-     {
-      "name" : "U",
-      "kind" : "type"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "ToRad",
-      "kind" : "function",
-      "line" : 8,
-      "type" : "U(U angle)",
-      "parameters" : [
-       {
-        "name" : "angle",
-        "type" : "U"
-       }
-      ],
-      "endline" : 10
-     }
-    ]
-   },
-   {
-    "kind" : "template",
-    "name" : "ToDeg(U)(U angle)",
-    "line" : 12,
-    "parameters" : [
-     {
-      "name" : "U",
-      "kind" : "type"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "ToDeg",
-      "kind" : "function",
-      "line" : 12,
-      "type" : "U(U angle)",
-      "parameters" : [
-       {
-        "name" : "angle",
-        "type" : "U"
-       }
-      ],
-      "endline" : 14
-     }
-    ]
-   },
-   {
-    "kind" : "template",
-    "name" : "Vector(T, int S)",
-    "line" : 17,
-    "parameters" : [
-     {
-      "name" : "T",
-      "kind" : "type"
-     },
-     {
-      "name" : "S",
-      "kind" : "value",
-      "deco" : "i"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "Vector",
-      "kind" : "struct",
-      "line" : 17,
-      "members" : [
-       {
-        "name" : "elements",
-        "kind" : "variable",
-        "line" : 19,
-        "type" : "T[S]"
-       },
-       {
-        "name" : "getConstructorCode",
-        "kind" : "function",
-        "line" : 22,
-        "type" : "string()",
-        "endline" : 77
-       },
-       {
-        "kind" : "template",
-        "name" : "opBinary(string op)(Vector v)",
-        "line" : 81,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opBinary",
-          "kind" : "function",
-          "line" : 81,
-          "type" : "Vector(Vector v)",
-          "parameters" : [
-           {
-            "name" : "v",
-            "type" : "Vector"
-           }
-          ],
-          "endline" : 89
-         }
-        ]
-       },
-       {
-        "kind" : "template",
-        "name" : "opBinary(string op)(T t)",
-        "line" : 91,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opBinary",
-          "kind" : "function",
-          "line" : 91,
-          "type" : "Vector(T t)",
-          "parameters" : [
-           {
-            "name" : "t",
-            "type" : "T"
-           }
-          ],
-          "endline" : 95
-         }
-        ]
-       },
-       {
-        "kind" : "template",
-        "name" : "opBinaryRight(string op)(T t)",
-        "line" : 97,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opBinaryRight",
-          "kind" : "function",
-          "line" : 97,
-          "type" : "Vector(T t)",
-          "parameters" : [
-           {
-            "name" : "t",
-            "type" : "T"
-           }
-          ],
-          "endline" : 101
-         }
-        ]
-       },
-       {
-        "name" : "getUnaryCode",
-        "kind" : "function",
-        "line" : 103,
-        "type" : "string(string op, int S)",
-        "parameters" : [
-         {
-          "name" : "op",
-          "type" : "string"
-         },
-         {
-          "name" : "S",
-          "deco" : "i"
-         }
-        ],
-        "endline" : 109
-       },
-       {
-        "kind" : "template",
-        "name" : "opUnary(string op)()",
-        "line" : 111,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opUnary",
-          "kind" : "function",
-          "line" : 111,
-          "type" : "Vector()",
-          "endline" : 115
-         }
-        ]
-       },
-       {
-        "kind" : "template",
-        "name" : "opOpAssign(string op)(Vector v)",
-        "line" : 117,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opOpAssign",
-          "kind" : "function",
-          "line" : 117,
-          "type" : "void(Vector v)",
-          "parameters" : [
-           {
-            "name" : "v",
-            "type" : "Vector"
-           }
-          ],
-          "endline" : 124
-         }
-        ]
-       },
-       {
-        "kind" : "template",
-        "name" : "opOpAssign(string op)(T e)",
-        "line" : 126,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opOpAssign",
-          "kind" : "function",
-          "line" : 126,
-          "type" : "void(T e)",
-          "parameters" : [
-           {
-            "name" : "e",
-            "type" : "T"
-           }
-          ],
-          "endline" : 128
-         }
-        ]
-       },
-       {
-        "name" : "opIndex",
-        "kind" : "function",
-        "line" : 130,
-        "type" : "T(int idx)",
-        "parameters" : [
-         {
-          "name" : "idx",
-          "deco" : "i"
-         }
-        ],
-        "endline" : 132
-       },
-       {
-        "name" : "getXyzwCode",
-        "kind" : "function",
-        "line" : 134,
-        "type" : "string()",
-        "endline" : 180
-       },
-       {
-        "name" : "array",
-        "kind" : "function",
-        "line" : 187,
-        "storageClass" : [
-         "auto"
-        ],
-        "type" : "()",
-        "endline" : 189
-       },
-       {
-        "name" : "getString",
-        "kind" : "function",
-        "line" : 191,
-        "type" : "string()",
-        "endline" : 201
-       },
-       {
-        "name" : "fromString",
-        "kind" : "function",
-        "line" : 203,
-        "type" : "Vector(string str)",
-        "parameters" : [
-         {
-          "name" : "str",
-          "type" : "string"
-         }
-        ],
-        "endline" : 210
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "name" : "vec2",
-    "kind" : "alias",
-    "line" : 213,
-    "deco" : "S6sbylib4math16__T6VectorTfVi2Z6Vector"
-   },
-   {
-    "name" : "vec3",
-    "kind" : "alias",
-    "line" : 214,
-    "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector"
-   },
-   {
-    "name" : "vec4",
-    "kind" : "alias",
-    "line" : 215,
-    "deco" : "S6sbylib4math16__T6VectorTfVi4Z6Vector"
-   },
-   {
-    "name" : "getDotCode",
-    "kind" : "function",
-    "protection" : "private",
-    "line" : 217,
-    "deco" : "FiZAya",
-    "parameters" : [
-     {
-      "name" : "S",
-      "deco" : "i"
-     }
-    ],
-    "endline" : 224
-   },
-   {
-    "name" : "getCrossCode3D",
-    "kind" : "function",
-    "protection" : "private",
-    "line" : 226,
-    "deco" : "FiZAya",
-    "parameters" : [
-     {
-      "name" : "S",
-      "deco" : "i"
-     }
-    ],
-    "endline" : 234
-   },
-   {
-    "name" : "getLengthSqCode",
-    "kind" : "function",
-    "protection" : "private",
-    "line" : 236,
-    "storageClass" : [
-     "static"
-    ],
-    "deco" : "FiZAya",
-    "parameters" : [
-     {
-      "name" : "S",
-      "deco" : "i"
-     }
-    ],
-    "endline" : 243
-   },
-   {
-    "name" : "getLengthCode",
-    "kind" : "function",
-    "protection" : "private",
-    "line" : 245,
-    "deco" : "FiZAya",
-    "parameters" : [
-     {
-      "name" : "S",
-      "deco" : "i"
-     }
-    ],
-    "endline" : 252
-   },
-   {
-    "name" : "getNormalizeCode",
-    "kind" : "function",
-    "protection" : "private",
-    "line" : 254,
-    "deco" : "FiZAya",
-    "parameters" : [
-     {
-      "name" : "S",
-      "deco" : "i"
-     }
-    ],
-    "endline" : 265
-   },
-   {
-    "kind" : "template",
-    "name" : "dot(T, int S)(Vector!(T, S) v, Vector!(T, S) v2)",
-    "line" : 267,
-    "parameters" : [
-     {
-      "name" : "T",
-      "kind" : "type"
-     },
-     {
-      "name" : "S",
-      "kind" : "value",
-      "deco" : "i"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "dot",
-      "kind" : "function",
-      "line" : 267,
-      "type" : "T(Vector!(T, S) v, Vector!(T, S) v2)",
-      "parameters" : [
-       {
-        "name" : "v",
-        "type" : "Vector!(T, S)"
-       },
-       {
-        "name" : "v2",
-        "type" : "Vector!(T, S)"
-       }
-      ],
-      "endline" : 270
-     }
-    ]
-   },
-   {
-    "kind" : "template",
-    "name" : "cross(T, int S)(Vector!(T, S) v, Vector!(T, S) v2) if (S == 2)",
-    "line" : 272,
-    "parameters" : [
-     {
-      "name" : "T",
-      "kind" : "type"
-     },
-     {
-      "name" : "S",
-      "kind" : "value",
-      "deco" : "i"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "cross",
-      "kind" : "function",
-      "line" : 272,
-      "type" : "T(Vector!(T, S) v, Vector!(T, S) v2)",
-      "parameters" : [
-       {
-        "name" : "v",
-        "type" : "Vector!(T, S)"
-       },
-       {
-        "name" : "v2",
-        "type" : "Vector!(T, S)"
-       }
-      ],
-      "endline" : 274
-     }
-    ]
-   },
-   {
-    "kind" : "template",
-    "name" : "cross(T, int S)(Vector!(T, S) v, Vector!(T, S) v2) if (S == 3)",
-    "line" : 276,
-    "parameters" : [
-     {
-      "name" : "T",
-      "kind" : "type"
-     },
-     {
-      "name" : "S",
-      "kind" : "value",
-      "deco" : "i"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "cross",
-      "kind" : "function",
-      "line" : 276,
-      "type" : "Vector!(T, S)(Vector!(T, S) v, Vector!(T, S) v2)",
-      "parameters" : [
-       {
-        "name" : "v",
-        "type" : "Vector!(T, S)"
-       },
-       {
-        "name" : "v2",
-        "type" : "Vector!(T, S)"
-       }
-      ],
-      "endline" : 279
-     }
-    ]
-   },
-   {
-    "kind" : "template",
-    "name" : "length(T, int S)(Vector!(T, S) v)",
-    "line" : 281,
-    "parameters" : [
-     {
-      "name" : "T",
-      "kind" : "type"
-     },
-     {
-      "name" : "S",
-      "kind" : "value",
-      "deco" : "i"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "length",
-      "kind" : "function",
-      "line" : 281,
-      "type" : "T(Vector!(T, S) v)",
-      "parameters" : [
-       {
-        "name" : "v",
-        "type" : "Vector!(T, S)"
-       }
-      ],
-      "endline" : 284
-     }
-    ]
-   },
-   {
-    "kind" : "template",
-    "name" : "lengthSq(T, int S)(Vector!(T, S) v)",
-    "line" : 286,
-    "parameters" : [
-     {
-      "name" : "T",
-      "kind" : "type"
-     },
-     {
-      "name" : "S",
-      "kind" : "value",
-      "deco" : "i"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "lengthSq",
-      "kind" : "function",
-      "line" : 286,
-      "type" : "T(Vector!(T, S) v)",
-      "parameters" : [
-       {
-        "name" : "v",
-        "type" : "Vector!(T, S)"
-       }
-      ],
-      "endline" : 289
-     }
-    ]
-   },
-   {
-    "kind" : "template",
-    "name" : "normalize(T, int S)(Vector!(T, S) v)",
-    "line" : 291,
-    "parameters" : [
-     {
-      "name" : "T",
-      "kind" : "type"
-     },
-     {
-      "name" : "S",
-      "kind" : "value",
-      "deco" : "i"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "normalize",
-      "kind" : "function",
-      "line" : 291,
-      "type" : "Vector!(T, S)(Vector!(T, S) v)",
-      "parameters" : [
-       {
-        "name" : "v",
-        "type" : "Vector!(T, S)"
-       }
-      ],
-      "endline" : 294
-     }
-    ]
-   },
-   {
-    "kind" : "template",
-    "name" : "Matrix(U)",
-    "line" : 296,
-    "parameters" : [
-     {
-      "name" : "U",
-      "kind" : "type"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "Matrix",
-      "kind" : "struct",
-      "line" : 296,
-      "members" : [
-       {
-        "name" : "elements",
-        "kind" : "variable",
-        "line" : 298,
-        "type" : "U[4][4]"
-       },
-       {
-        "name" : "arrayForConvert",
-        "kind" : "variable",
-        "line" : 301,
-        "type" : "U[16]"
-       },
-       {
-        "name" : "multMMCode",
-        "kind" : "function",
-        "line" : 303,
-        "type" : "string()",
-        "endline" : 315
-       },
-       {
-        "name" : "multMVCode",
-        "kind" : "function",
-        "line" : 317,
-        "type" : "string()",
-        "endline" : 327
-       },
-       {
-        "name" : "multMVAssignCode",
-        "kind" : "function",
-        "line" : 329,
-        "type" : "string()",
-        "endline" : 339
-       },
-       {
-        "name" : "getIdentityCode",
-        "kind" : "function",
-        "line" : 341,
-        "type" : "string()",
-        "endline" : 351
-       },
-       {
-        "name" : "getTranslationCode",
-        "kind" : "function",
-        "line" : 353,
-        "type" : "string()",
-        "endline" : 364
-       },
-       {
-        "name" : "getScaleCode",
-        "kind" : "function",
-        "line" : 366,
-        "type" : "string()",
-        "endline" : 377
-       },
-       {
-        "name" : "getRotAxisCode",
-        "kind" : "function",
-        "line" : 379,
-        "type" : "string()",
-        "endline" : 397
-       },
-       {
-        "name" : "getOpBinaryMMCode",
-        "kind" : "function",
-        "line" : 399,
-        "type" : "string(string op)",
-        "parameters" : [
-         {
-          "name" : "op",
-          "type" : "string"
-         }
-        ],
-        "endline" : 405
-       },
-       {
-        "name" : "getOpBinaryMSCode",
-        "kind" : "function",
-        "line" : 407,
-        "type" : "string(string op)",
-        "parameters" : [
-         {
-          "name" : "op",
-          "type" : "string"
-         }
-        ],
-        "endline" : 413
-       },
-       {
-        "name" : "getOpAssignMMCode",
-        "kind" : "function",
-        "line" : 415,
-        "type" : "string(string op)",
-        "parameters" : [
-         {
-          "name" : "op",
-          "type" : "string"
-         }
-        ],
-        "endline" : 421
-       },
-       {
-        "name" : "getLookAtCode",
-        "kind" : "function",
-        "line" : 423,
-        "type" : "string()",
-        "endline" : 485
-       },
-       {
-        "name" : "getOrthoCode",
-        "kind" : "function",
-        "line" : 487,
-        "type" : "string()",
-        "endline" : 507
-       },
-       {
-        "name" : "getPerspectiveCode",
-        "kind" : "function",
-        "line" : 509,
-        "type" : "string()",
-        "endline" : 529
-       },
-       {
-        "name" : "getStringCode",
-        "kind" : "function",
-        "line" : 531,
-        "type" : "string()",
-        "endline" : 545
-       },
-       {
-        "name" : "getConvertCode",
-        "kind" : "function",
-        "line" : 547,
-        "type" : "string()",
-        "endline" : 556
-       },
-       {
-        "name" : "getCopyCode",
-        "kind" : "function",
-        "line" : 558,
-        "type" : "string(string identifier)",
-        "parameters" : [
-         {
-          "name" : "identifier",
-          "type" : "string"
-         }
-        ],
-        "endline" : 567
-       },
-       {
-        "kind" : "template",
-        "name" : "opBinary(string op)(Matrix m)",
-        "line" : 571,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opBinary",
-          "kind" : "function",
-          "line" : 571,
-          "type" : "Matrix(Matrix m)",
-          "parameters" : [
-           {
-            "name" : "m",
-            "type" : "Matrix"
-           }
-          ],
-          "endline" : 581
-         }
-        ]
-       },
-       {
-        "kind" : "template",
-        "name" : "opBinary(string op)(U s)",
-        "line" : 583,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opBinary",
-          "kind" : "function",
-          "line" : 583,
-          "type" : "Matrix(U s)",
-          "parameters" : [
-           {
-            "name" : "s",
-            "type" : "U"
-           }
-          ],
-          "endline" : 590
-         }
-        ]
-       },
-       {
-        "kind" : "template",
-        "name" : "opBinary(string op)(Vector!(U, 4) v)",
-        "line" : 592,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opBinary",
-          "kind" : "function",
-          "line" : 592,
-          "type" : "vec4(Vector!(U, 4) v)",
-          "parameters" : [
-           {
-            "name" : "v",
-            "type" : "Vector!(U, 4)"
-           }
-          ],
-          "endline" : 599
-         }
-        ]
-       },
-       {
-        "kind" : "template",
-        "name" : "opOpAssign(string op)(Vector!(U, 4) v)",
-        "line" : 601,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opOpAssign",
-          "kind" : "function",
-          "line" : 601,
-          "type" : "void(Vector!(U, 4) v)",
-          "parameters" : [
-           {
-            "name" : "v",
-            "type" : "Vector!(U, 4)"
-           }
-          ],
-          "endline" : 607
-         }
-        ]
-       },
-       {
-        "kind" : "template",
-        "name" : "opOpAssign(string op)(Matrix m)",
-        "line" : 609,
-        "parameters" : [
-         {
-          "name" : "op",
-          "kind" : "value",
-          "type" : "string"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "opOpAssign",
-          "kind" : "function",
-          "line" : 609,
-          "type" : "void(Matrix m)",
-          "parameters" : [
-           {
-            "name" : "m",
-            "type" : "Matrix"
-           }
-          ],
-          "endline" : 619
-         }
-        ]
-       },
-       {
-        "name" : "Identity",
-        "kind" : "function",
-        "line" : 621,
-        "type" : "Matrix()",
-        "endline" : 625
-       },
-       {
-        "kind" : "template",
-        "name" : "Translation(int T)(Vector!(U, T) vec) if (T == 3 || T == 4)",
-        "line" : 627,
-        "parameters" : [
-         {
-          "name" : "T",
-          "kind" : "value",
-          "deco" : "i"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "Translation",
-          "kind" : "function",
-          "line" : 627,
-          "storageClass" : [
-           "auto",
-           "static"
-          ],
-          "type" : "(Vector!(U, T) vec)",
-          "parameters" : [
-           {
-            "name" : "vec",
-            "type" : "Vector!(U, T)"
-           }
-          ],
-          "endline" : 631
-         }
-        ]
-       },
-       {
-        "kind" : "template",
-        "name" : "Scale(int T)(Vector!(U, T) vec) if (T == 3 || T == 4)",
-        "line" : 633,
-        "parameters" : [
-         {
-          "name" : "T",
-          "kind" : "value",
-          "deco" : "i"
-         }
-        ],
-        "members" : [
-         {
-          "name" : "Scale",
-          "kind" : "function",
-          "line" : 633,
-          "type" : "Matrix(Vector!(U, T) vec)",
-          "parameters" : [
-           {
-            "name" : "vec",
-            "type" : "Vector!(U, T)"
-           }
-          ],
-          "endline" : 637
-         }
-        ]
-       },
-       {
-        "name" : "RotAxisAngle",
-        "kind" : "function",
-        "line" : 639,
-        "type" : "Matrix(Vector!(U, 3) v, U angle)",
-        "parameters" : [
-         {
-          "name" : "v",
-          "type" : "Vector!(U, 3)"
-         },
-         {
-          "name" : "angle",
-          "type" : "U"
-         }
-        ],
-        "endline" : 646
-       },
-       {
-        "name" : "RotFromTo",
-        "kind" : "function",
-        "line" : 648,
-        "type" : "Matrix(Vector!(U, 3) from, Vector!(U, 3) to)",
-        "parameters" : [
-         {
-          "name" : "from",
-          "type" : "Vector!(U, 3)"
-         },
-         {
-          "name" : "to",
-          "type" : "Vector!(U, 3)"
-         }
-        ],
-        "endline" : 658
-       },
-       {
-        "name" : "LookAt",
-        "kind" : "function",
-        "line" : 660,
-        "type" : "Matrix(Vector!(U, 3) eye, Vector!(U, 3) vec, Vector!(U, 3) up)",
-        "parameters" : [
-         {
-          "name" : "eye",
-          "type" : "Vector!(U, 3)"
-         },
-         {
-          "name" : "vec",
-          "type" : "Vector!(U, 3)"
-         },
-         {
-          "name" : "up",
-          "type" : "Vector!(U, 3)"
-         }
-        ],
-        "endline" : 664
-       },
-       {
-        "name" : "Ortho",
-        "kind" : "function",
-        "line" : 666,
-        "type" : "Matrix(U width, U height, U nearZ, U farZ)",
-        "parameters" : [
-         {
-          "name" : "width",
-          "type" : "U"
-         },
-         {
-          "name" : "height",
-          "type" : "U"
-         },
-         {
-          "name" : "nearZ",
-          "type" : "U"
-         },
-         {
-          "name" : "farZ",
-          "type" : "U"
-         }
-        ],
-        "endline" : 670
-       },
-       {
-        "name" : "Perspective",
-        "kind" : "function",
-        "line" : 672,
-        "type" : "Matrix(U aspectWperH, U fovy, U nearZ, U farZ)",
-        "parameters" : [
-         {
-          "name" : "aspectWperH",
-          "type" : "U"
-         },
-         {
-          "name" : "fovy",
-          "type" : "U"
-         },
-         {
-          "name" : "nearZ",
-          "type" : "U"
-         },
-         {
-          "name" : "farZ",
-          "type" : "U"
-         }
-        ],
-        "endline" : 676
-       },
-       {
-        "name" : "Invert",
-        "kind" : "function",
-        "line" : 768,
-        "type" : "Matrix(Matrix m)",
-        "parameters" : [
-         {
-          "name" : "m",
-          "type" : "Matrix"
-         }
-        ],
-        "endline" : 828
-       },
-       {
-        "name" : "Transpose",
-        "kind" : "function",
-        "line" : 830,
-        "type" : "Matrix(Matrix m)",
-        "parameters" : [
-         {
-          "name" : "m",
-          "type" : "Matrix"
-         }
-        ],
-        "endline" : 843
-       },
-       {
-        "name" : "fromString",
-        "kind" : "function",
-        "line" : 845,
-        "type" : "Matrix(string str)",
-        "parameters" : [
-         {
-          "name" : "str",
-          "type" : "string"
-         }
-        ],
-        "endline" : 860
-       },
-       {
-        "name" : "getString",
-        "kind" : "function",
-        "line" : 862,
-        "type" : "string(U epsilon = 0)",
-        "parameters" : [
-         {
-          "name" : "epsilon",
-          "type" : "U",
-          "default" : "0"
-         }
-        ],
-        "endline" : 864
-       },
-       {
-        "name" : "opIndex",
-        "kind" : "function",
-        "line" : 866,
-        "type" : "U(int x, int y)",
-        "parameters" : [
-         {
-          "name" : "x",
-          "deco" : "i"
-         },
-         {
-          "name" : "y",
-          "deco" : "i"
-         }
-        ],
-        "endline" : 868
-       },
-       {
-        "name" : "array",
-        "kind" : "function",
-        "line" : 870,
-        "type" : "U[]()",
-        "endline" : 873
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "name" : "mat4",
-    "kind" : "alias",
-    "line" : 876,
-    "deco" : "S6sbylib4math13__T6MatrixTfZ6Matrix"
-   },
-   {
-    "name" : "mat4d",
-    "kind" : "alias",
-    "line" : 877,
-    "deco" : "S6sbylib4math13__T6MatrixTdZ6Matrix"
-   }
-  ]
- },
- {
-  "name" : "sbylib.others",
-  "kind" : "module",
-  "file" : "others.d",
-  "members" : [
-   {
-    "name" : "sbylib.imports",
-    "kind" : "import",
-    "line" : 3,
-    "protection" : "private"
-   }
-  ]
- },
- {
-  "kind" : "module",
-  "file" : "package.d",
-  "members" : [
-   {
-    "name" : "sbylib.math",
-    "kind" : "import",
-    "line" : 1
-   },
-   {
-    "name" : "sbylib.functions",
-    "kind" : "import",
-    "line" : 2
-   },
-   {
-    "name" : "sbylib.camera.camera",
-    "kind" : "import",
-    "line" : 3
-   },
-   {
-    "name" : "sbylib.camera.manipulator",
-    "kind" : "import",
-    "line" : 4
-   },
-   {
-    "name" : "sbylib.others",
-    "kind" : "import",
-    "line" : 5
-   },
-   {
-    "name" : "sbylib.world",
-    "kind" : "import",
-    "line" : 6
-   },
-   {
-    "name" : "std.stdio",
-    "kind" : "import",
-    "line" : 7
-   },
-   {
-    "name" : "std.string",
-    "kind" : "import",
-    "line" : 8
-   },
-   {
-    "name" : "std.conv",
-    "kind" : "import",
-    "line" : 9
-   },
-   {
-    "name" : "std.file",
-    "kind" : "import",
-    "line" : 10
-   },
-   {
-    "name" : "std.mathspecial",
-    "kind" : "import",
-    "line" : 11
-   },
-   {
-    "name" : "derelict.opengl3.gl",
-    "kind" : "import",
-    "line" : 12
-   },
-   {
-    "name" : "derelict.glfw3.glfw3",
+    "name" : "sbylib.physics.imports",
     "kind" : "import",
     "line" : 13
    },
    {
-    "name" : "std.typecons",
-    "kind" : "import",
-    "line" : 14
-   },
-   {
-    "name" : "derelict.devil.il",
+    "name" : "std.stdio",
     "kind" : "import",
     "line" : 15
    },
    {
-    "name" : "derelict.devil.ilu",
+    "name" : "std.string",
     "kind" : "import",
     "line" : 16
    },
    {
-    "name" : "derelict.devil.ilut",
+    "name" : "std.conv",
     "kind" : "import",
     "line" : 17
    },
    {
-    "name" : "derelict.freetype.ft",
+    "name" : "std.file",
     "kind" : "import",
     "line" : 18
    },
    {
-    "name" : "derelict.opengl3.gl3",
+    "name" : "std.mathspecial",
     "kind" : "import",
     "line" : 19
-   }
-  ]
- },
- {
-  "name" : "sbylib.world",
-  "kind" : "module",
-  "file" : "world.d",
-  "members" : [
+   },
    {
-    "name" : "sbylib.imports",
+    "name" : "std.typecons",
     "kind" : "import",
-    "line" : 3,
-    "protection" : "private"
+    "line" : 20
+   },
+   {
+    "name" : "std.algorithm",
+    "kind" : "import",
+    "line" : 21
    },
    {
     "name" : "std.datetime",
     "kind" : "import",
-    "line" : 4,
-    "protection" : "private"
+    "line" : 22
    },
    {
-    "name" : "core.thread",
+    "name" : "std.range",
     "kind" : "import",
-    "line" : 5,
-    "protection" : "private"
+    "line" : 23
    },
    {
-    "name" : "CurrentWindow",
-    "kind" : "variable",
-    "protection" : "package",
-    "line" : 7,
-    "deco" : "PS8derelict5glfw35types10GLFWwindow"
+    "name" : "derelict.opengl3.gl",
+    "kind" : "import",
+    "line" : 25
    },
    {
-    "name" : "fps",
-    "kind" : "variable",
-    "protection" : "private",
-    "line" : 8,
-    "deco" : "f"
+    "name" : "derelict.glfw3.glfw3",
+    "kind" : "import",
+    "line" : 26
    },
    {
-    "name" : "CurrentCamera",
-    "kind" : "variable",
-    "line" : 9,
-    "deco" : "C6sbylib6camera6camera6Camera",
-    "originalType" : "Camera"
+    "name" : "derelict.devil.il",
+    "kind" : "import",
+    "line" : 27
    },
    {
-    "name" : "CurrentFrameTime",
-    "kind" : "variable",
-    "line" : 10,
-    "deco" : "l"
+    "name" : "derelict.devil.ilu",
+    "kind" : "import",
+    "line" : 28
    },
    {
-    "name" : "SbyInit",
-    "kind" : "function",
-    "line" : 12,
-    "deco" : "FPS8derelict5glfw35types10GLFWwindowlZv",
-    "parameters" : [
-     {
-      "name" : "window",
-      "deco" : "PS8derelict5glfw35types10GLFWwindow"
-     },
-     {
-      "name" : "frameTime",
-      "deco" : "l"
-     }
-    ],
-    "endline" : 15
+    "name" : "derelict.devil.ilut",
+    "kind" : "import",
+    "line" : 29
    },
    {
-    "name" : "MainLoop",
-    "kind" : "function",
-    "line" : 17,
-    "deco" : "FDFZvZv",
-    "parameters" : [
-     {
-      "name" : "stepAndDraw",
-      "deco" : "DFZv"
-     }
-    ],
-    "endline" : 35
+    "name" : "derelict.freetype.ft",
+    "kind" : "import",
+    "line" : 30
+   },
+   {
+    "name" : "derelict.opengl3.gl3",
+    "kind" : "import",
+    "line" : 31
    }
   ]
  },
@@ -4158,7 +4450,7 @@
       "name" : "pos",
       "kind" : "variable",
       "line" : 4,
-      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3",
       "offset" : 8
      },
@@ -4166,7 +4458,7 @@
       "name" : "spd",
       "kind" : "variable",
       "line" : 4,
-      "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector",
+      "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3",
       "offset" : 20
      },
@@ -4174,12 +4466,12 @@
       "name" : "this",
       "kind" : "constructor",
       "line" : 6,
-      "deco" : "FS6sbylib4math16__T6VectorTfVi3Z6VectorZC6Player6Player",
+      "deco" : "FS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZC6Player6Player",
       "originalType" : "Player(vec3 pos)",
       "parameters" : [
        {
         "name" : "pos",
-        "deco" : "S6sbylib4math16__T6VectorTfVi3Z6Vector"
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
        }
       ],
       "endline" : 8

@@ -2,7 +2,7 @@ module sbylib.camera.camera;
 
 import sbylib.imports;
 
-abstract class Camera {
+abstract class Camera : Entity {
 
 private:
 	vec3 eye = vec3(0, 0, -1);

@@ -1,15 +1,16 @@
 module sbylib.imports;
 
-public import sbylib.math;
-public import sbylib.functions;
-public import sbylib.others;
-public import sbylib.world;
-public import sbylib.fpscounter;
+mixin("public import sbylib.math.imports;");
+//public import sbylib.math.imports;
+public import sbylib.utils.imports;
+public import sbylib.core.imports;
 public import sbylib.camera.camera;
 public import sbylib.camera.manipulator;
+public import sbylib.entity;
 public import sbylib.shadertemplates.imports;
 public import sbylib.gl.imports;
 public import sbylib.primitive.imports;
+public import sbylib.physics.imports;
 
 public import std.stdio;
 public import std.string;

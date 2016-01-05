@@ -2,7 +2,7 @@ module sbylib.primitive.baseprimitive;
 
 import sbylib.imports;
 
-abstract class Primitive {
+abstract class Primitive : Entity {
 	public abstract void Draw();
 
 	public mat4 mat = mat4.Identity;

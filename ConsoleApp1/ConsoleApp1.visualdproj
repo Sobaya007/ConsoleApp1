@@ -227,13 +227,32 @@
   </Folder>
   <Folder name="sbylib">
    <Folder name="camera">
+    <Folder name="Manipulator" />
     <File path="Camera.d" />
     <File path="SbyLib\Manipulator.d" />
    </Folder>
-   <Folder name="physics.d">
-    <File path="sbylib\physics.d\imports.d" />
-    <File path="obb.d" />
-    <File path="plane.d" />
+   <Folder name="core">
+    <File path="sbylib\core\imports.d" />
+    <File path="world.d" />
+   </Folder>
+   <Folder name="manipulator">
+    <File path="sbylib\manipulator\basemanipulator.d" />
+   </Folder>
+   <Folder name="math">
+    <File path="sbylib\math\imports.d" />
+    <File path="sbylib\math\matrix.d" />
+    <File path="sbylib\math\utils.d" />
+    <File path="sbylib\math\vector.d" />
+   </Folder>
+   <Folder name="physics">
+    <Folder name="bound">
+     <File path="sbylib\physics\bound\basebound.d" />
+     <File path="sbylib\physics\bound\imports.d" />
+     <File path="sbylib\physics\bound\obb.d" />
+     <File path="sbylib\physics\bound\plane.d" />
+    </Folder>
+    <File path="sbylib\physics\collisioninfo.d" />
+    <File path="sbylib\physics\imports.d" />
    </Folder>
    <Folder name="shadertemplates">
     <File path="imports.d" />
@@ -255,13 +274,13 @@
     <File path="baseprimitive.d" />
     <File path="sbylib\primitive\plane.d" />
    </Folder>
-   <File path="sbylib\fpscounter.d" />
-   <File path="functions.d" />
+   <Folder name="utils">
+    <File path="sbylib\fpscounter.d" />
+    <File path="functions.d" />
+    <File path="sbylib\utils\imports.d" />
+   </Folder>
+   <File path="sbylib\entity.d" />
    <File path="sbylib\imports.d" />
-   <File path="math.d" />
-   <File path="others.d" />
-   <File path="package.d" />
-   <File path="world.d" />
   </Folder>
   <File path="Import.d" />
   <File path="main.d" />

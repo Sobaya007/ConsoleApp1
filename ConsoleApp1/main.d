@@ -32,7 +32,7 @@ bool GameMain() {
 
 	CurrentCamera = new PerspectiveCamera(1, PI_4, 1, 30);
 	with (CurrentCamera) {
-		Eye = vec3(0,1,3);
+		Eye = vec3(0,1,3) * 3;
 		Target = vec3(0, 0, 0);
 		Up = vec3(0,1, 0);
 	}
