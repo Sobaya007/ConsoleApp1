@@ -1,4 +1,4 @@
-module sbylib.camera.basecamera;
+module sbylib.camera.camera;
 
 import sbylib.imports;
 
@@ -16,10 +16,7 @@ protected:
 
 public:
 
-	Manipulator manip;
-
 	this() {
-		manip = new SimpleRotator;
 		pos = vec3(0,0,-1);
 		VecX = vec3(-1,0,0);
 	}
@@ -111,10 +108,6 @@ public:
 		import std.math;
 		auto mat = mat4.LookAt(vec3(0,0,0), GetVecZ, GetVecY);
 		return mat4.Invert(mat);
-	}
-
-	void KeyMove() {
-		manip.Manipulate(this);
 	}
 
 	protected abstract mat4 GenerateProjectionMatrix();

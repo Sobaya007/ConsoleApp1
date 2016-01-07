@@ -102,6 +102,26 @@ public:
 		return result;
 	}
 
+	static Matrix Replacement(Vector!(U,3) xvec, Vector!(U,3) yvec, Vector!(U,3) zvec) {
+		Matrix result;
+		mixin({
+			string code;
+			foreach (i; 0..3) 
+				code ~= "result.elements[0][" ~ to!string(i) ~ "] = xvec.elements[" ~ to!string(i) ~ "];";
+			foreach (i; 0..3) 
+				code ~= "result.elements[1][" ~ to!string(i) ~ "] = yvec.elements[" ~ to!string(i) ~ "];";
+			foreach (i; 0..3) 
+				code ~= "result.elements[2][" ~ to!string(i) ~ "] = zvec.elements[" ~ to!string(i) ~ "];";
+			foreach (i; 0..3) 
+				code ~= "result.elements[3][" ~ to!string(i) ~ "] = 0;";
+			foreach (i; 0..3) 
+				code ~= "result.elements[" ~ to!string(i) ~ "][3] = 0;";
+			code ~= "result.elements[3][3] = 1;";
+			return code;
+		}());
+		return result;
+	}
+
 	static Matrix LookAt(Vector!(U,3) eye, Vector!(U,3) vec, Vector!(U,3) up) {
 		Matrix result;
 		mixin(getLookAtCode());
@@ -214,7 +234,7 @@ public:
 		return r;
 	}
 
-	string getString(U epsilon = 0) {
+	string GetString(U epsilon = 0) {
 		mixin(getStringCode());
 	}
 

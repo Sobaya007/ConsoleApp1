@@ -59,7 +59,7 @@ class Plane : Primitive {
 	}
 
 	override void Draw() {
-		sp.SetUniformMatrix!(4,"mWorld")(mat.array);
+		sp.SetUniformMatrix!(4,"mWorld")(GetWorldMatrix.array);
 		sp.SetUniformMatrix!(4,"mViewProj")(CurrentCamera.GetViewProjectionMatrix.array);
 		vao.Draw();
 	}

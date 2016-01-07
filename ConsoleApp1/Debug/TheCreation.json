@@ -1,8 +1,8 @@
 [
  {
-  "name" : "sbylib.camera.basecamera",
+  "name" : "sbylib.camera.camera",
   "kind" : "module",
-  "file" : "sbylib\\camera\\basecamera.d",
+  "file" : "sbylib\\camera\\camera.d",
   "members" : [
    {
     "name" : "sbylib.imports",
@@ -96,34 +96,26 @@
       "offset" : 456
      },
      {
-      "name" : "manip",
-      "kind" : "variable",
-      "line" : 19,
-      "deco" : "C6sbylib11manipulator15basemanipulator11Manipulator",
-      "originalType" : "Manipulator",
-      "offset" : 460
-     },
-     {
       "name" : "this",
       "kind" : "constructor",
-      "line" : 21,
-      "deco" : "FZC6sbylib6camera10basecamera6Camera",
-      "endline" : 25
+      "line" : 19,
+      "deco" : "FZC6sbylib6camera6camera6Camera",
+      "endline" : 22
      },
      {
       "name" : "CreateSetterGetter!(nearZ, \"projUpdate = true;\", \"\")",
       "kind" : "mixin",
-      "line" : 27
+      "line" : 24
      },
      {
       "name" : "CreateSetterGetter!(farZ, \"projUpdate = true;\", \"\")",
       "kind" : "mixin",
-      "line" : 28
+      "line" : 25
      },
      {
       "name" : "Pos",
       "kind" : "function",
-      "line" : 32,
+      "line" : 29,
       "storageClass" : [
        "override",
        "@property"
@@ -136,30 +128,30 @@
         "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
        }
       ],
-      "endline" : 37,
+      "endline" : 34,
       "overrides" : [
-       "sbylib.core.entity.Entity.Pos"
+       "sbylib.core.entity.entity.Entity.Pos"
       ]
      },
      {
       "name" : "GetVecX",
       "kind" : "function",
-      "line" : 39,
+      "line" : 36,
       "storageClass" : [
        "override",
        "@property"
       ],
       "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3()",
-      "endline" : 45,
+      "endline" : 42,
       "overrides" : [
-       "sbylib.core.entity.Entity.GetVecX"
+       "sbylib.core.entity.entity.Entity.GetVecX"
       ]
      },
      {
       "name" : "VecX",
       "kind" : "function",
-      "line" : 47,
+      "line" : 44,
       "storageClass" : [
        "override",
        "@property"
@@ -172,30 +164,30 @@
         "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
        }
       ],
-      "endline" : 52,
+      "endline" : 49,
       "overrides" : [
-       "sbylib.core.entity.Entity.VecX"
+       "sbylib.core.entity.entity.Entity.VecX"
       ]
      },
      {
       "name" : "GetVecY",
       "kind" : "function",
-      "line" : 53,
+      "line" : 50,
       "storageClass" : [
        "override",
        "@property"
       ],
       "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3()",
-      "endline" : 59,
+      "endline" : 56,
       "overrides" : [
-       "sbylib.core.entity.Entity.GetVecY"
+       "sbylib.core.entity.entity.Entity.GetVecY"
       ]
      },
      {
       "name" : "VecY",
       "kind" : "function",
-      "line" : 60,
+      "line" : 57,
       "storageClass" : [
        "override",
        "@property"
@@ -208,30 +200,30 @@
         "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
        }
       ],
-      "endline" : 65,
+      "endline" : 62,
       "overrides" : [
-       "sbylib.core.entity.Entity.VecY"
+       "sbylib.core.entity.entity.Entity.VecY"
       ]
      },
      {
       "name" : "GetVecZ",
       "kind" : "function",
-      "line" : 66,
+      "line" : 63,
       "storageClass" : [
        "override",
        "@property"
       ],
       "deco" : "FNdZS6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3()",
-      "endline" : 72,
+      "endline" : 69,
       "overrides" : [
-       "sbylib.core.entity.Entity.GetVecZ"
+       "sbylib.core.entity.entity.Entity.GetVecZ"
       ]
      },
      {
       "name" : "VecZ",
       "kind" : "function",
-      "line" : 73,
+      "line" : 70,
       "storageClass" : [
        "override",
        "@property"
@@ -244,15 +236,15 @@
         "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
        }
       ],
-      "endline" : 78,
+      "endline" : 75,
       "overrides" : [
-       "sbylib.core.entity.Entity.VecZ"
+       "sbylib.core.entity.entity.Entity.VecZ"
       ]
      },
      {
       "name" : "Target",
       "kind" : "function",
-      "line" : 81,
+      "line" : 78,
       "storageClass" : [
        "@property"
       ],
@@ -264,52 +256,45 @@
         "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
        }
       ],
-      "endline" : 83
+      "endline" : 80
      },
      {
       "name" : "GetViewMatrix",
       "kind" : "function",
-      "line" : 86,
+      "line" : 83,
       "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
-      "endline" : 92
+      "endline" : 89
      },
      {
       "name" : "GetProjectionMatrix",
       "kind" : "function",
-      "line" : 94,
+      "line" : 91,
       "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
-      "endline" : 100
+      "endline" : 97
      },
      {
       "name" : "GetViewProjectionMatrix",
       "kind" : "function",
-      "line" : 102,
+      "line" : 99,
       "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
-      "endline" : 108
+      "endline" : 105
      },
      {
       "name" : "GetBillboardMatrix",
       "kind" : "function",
-      "line" : 110,
+      "line" : 107,
       "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
       "originalType" : "mat4()",
-      "endline" : 114
-     },
-     {
-      "name" : "KeyMove",
-      "kind" : "function",
-      "line" : 116,
-      "deco" : "FZv",
-      "endline" : 118
+      "endline" : 111
      },
      {
       "name" : "GenerateProjectionMatrix",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 120,
+      "line" : 113,
       "storageClass" : [
        "abstract"
       ],
@@ -326,7 +311,7 @@
   "file" : "sbylib\\camera\\imports.d",
   "members" : [
    {
-    "name" : "sbylib.camera.basecamera",
+    "name" : "sbylib.camera.camera",
     "kind" : "import",
     "line" : 3
    },
@@ -365,7 +350,7 @@
       "protection" : "private",
       "line" : 7,
       "deco" : "f",
-      "offset" : 464
+      "offset" : 460
      },
      {
       "name" : "height",
@@ -373,7 +358,7 @@
       "protection" : "private",
       "line" : 7,
       "deco" : "f",
-      "offset" : 468
+      "offset" : 464
      },
      {
       "name" : "this",
@@ -421,7 +406,7 @@
       "originalType" : "mat4()",
       "endline" : 22,
       "overrides" : [
-       "sbylib.camera.basecamera.Camera.GenerateProjectionMatrix"
+       "sbylib.camera.camera.Camera.GenerateProjectionMatrix"
       ]
      }
     ]
@@ -451,7 +436,7 @@
       "protection" : "private",
       "line" : 7,
       "deco" : "f",
-      "offset" : 464
+      "offset" : 460
      },
      {
       "name" : "fovy",
@@ -459,7 +444,7 @@
       "protection" : "private",
       "line" : 8,
       "deco" : "f",
-      "offset" : 468
+      "offset" : 464
      },
      {
       "name" : "this",
@@ -507,7 +492,7 @@
       "originalType" : "mat4()",
       "endline" : 23,
       "overrides" : [
-       "sbylib.camera.basecamera.Camera.GenerateProjectionMatrix"
+       "sbylib.camera.camera.Camera.GenerateProjectionMatrix"
       ]
      }
     ]
@@ -515,9 +500,39 @@
   ]
  },
  {
-  "name" : "sbylib.core.entity",
+  "name" : "sbylib.core.entity.drawable",
   "kind" : "module",
-  "file" : "sbylib\\entity.d",
+  "file" : "sbylib\\entity\\drawable.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "EntityDrawable",
+    "kind" : "class",
+    "line" : 5,
+    "base" : "Entity",
+    "members" : [
+     {
+      "name" : "Draw",
+      "kind" : "function",
+      "line" : 7,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZv"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.core.entity.entity",
+  "kind" : "module",
+  "file" : "sbylib\\entity\\entity.d",
   "members" : [
    {
     "name" : "sbylib.imports",
@@ -537,6 +552,7 @@
       "line" : 7,
       "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector",
       "originalType" : "vec3",
+      "init" : "Vector([0F, 0F, 0F])",
       "offset" : 8
      },
      {
@@ -654,6 +670,199 @@
   ]
  },
  {
+  "name" : "sbylib.core.entity.imports",
+  "kind" : "module",
+  "file" : "sbylib\\entity\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.core.entity.entity",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.core.entity.drawable",
+    "kind" : "import",
+    "line" : 4
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.core.manipulator.imports",
+  "kind" : "module",
+  "file" : "sbylib\\manipulator\\imports.d",
+  "members" : [
+   {
+    "name" : "sbylib.core.manipulator.manipulator",
+    "kind" : "import",
+    "line" : 3
+   },
+   {
+    "name" : "sbylib.core.manipulator.simplerotator",
+    "kind" : "import",
+    "line" : 4
+   },
+   {
+    "name" : "sbylib.core.manipulator.manipulatormanager",
+    "kind" : "import",
+    "line" : 5
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.core.manipulator.manipulator",
+  "kind" : "module",
+  "file" : "sbylib\\manipulator\\manipulator.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Manipulator",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "entity",
+      "kind" : "variable",
+      "protection" : "protected",
+      "line" : 7,
+      "deco" : "C6sbylib4core6entity6entity6Entity",
+      "originalType" : "Entity",
+      "offset" : 8
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 9,
+      "deco" : "FC6sbylib4core6entity6entity6EntityZC6sbylib4core11manipulator11manipulator11Manipulator",
+      "parameters" : [
+       {
+        "name" : "entity",
+        "deco" : "C6sbylib4core6entity6entity6Entity"
+       }
+      ],
+      "endline" : 11
+     },
+     {
+      "name" : "Manipulate",
+      "kind" : "function",
+      "line" : 13,
+      "storageClass" : [
+       "abstract"
+      ],
+      "deco" : "FZv"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.core.manipulator.manipulatormanager",
+  "kind" : "module",
+  "file" : "sbylib\\manipulator\\manipulatormanager.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "ManipulatorManager",
+    "kind" : "class",
+    "line" : 5,
+    "members" : [
+     {
+      "name" : "manipulatorList",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 6,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "AC6sbylib4core11manipulator11manipulator11Manipulator"
+     },
+     {
+      "name" : "MoveAll",
+      "kind" : "function",
+      "line" : 8,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FZv",
+      "endline" : 10
+     },
+     {
+      "name" : "Add",
+      "kind" : "function",
+      "line" : 12,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "FC6sbylib4core11manipulator11manipulator11ManipulatorZv",
+      "parameters" : [
+       {
+        "name" : "manip",
+        "deco" : "C6sbylib4core11manipulator11manipulator11Manipulator"
+       }
+      ],
+      "endline" : 14
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.core.manipulator.simplerotator",
+  "kind" : "module",
+  "file" : "sbylib\\manipulator\\simplerotator.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "SimpleRotator",
+    "kind" : "class",
+    "line" : 5,
+    "base" : "Manipulator",
+    "members" : [
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 7,
+      "deco" : "FC6sbylib4core6entity6entity6EntityZC6sbylib4core11manipulator13simplerotator13SimpleRotator",
+      "parameters" : [
+       {
+        "name" : "entity",
+        "deco" : "C6sbylib4core6entity6entity6Entity"
+       }
+      ],
+      "endline" : 9
+     },
+     {
+      "name" : "Manipulate",
+      "kind" : "function",
+      "line" : 11,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 48,
+      "overrides" : [
+       "sbylib.core.manipulator.manipulator.Manipulator.Manipulate"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
   "name" : "sbylib.core.imports",
   "kind" : "module",
   "file" : "sbylib\\core\\imports.d",
@@ -664,14 +873,19 @@
     "line" : 3
    },
    {
-    "name" : "sbylib.core.entity",
+    "name" : "sbylib.core.window",
     "kind" : "import",
     "line" : 4
    },
    {
-    "name" : "sbylib.core.window",
+    "name" : "sbylib.core.entity.imports",
     "kind" : "import",
     "line" : 5
+   },
+   {
+    "name" : "sbylib.core.manipulator.imports",
+    "kind" : "import",
+    "line" : 6
    }
   ]
  },
@@ -1041,7 +1255,7 @@
     "name" : "CurrentCamera",
     "kind" : "variable",
     "line" : 9,
-    "deco" : "C6sbylib6camera10basecamera6Camera",
+    "deco" : "C6sbylib6camera6camera6Camera",
     "originalType" : "Camera"
    },
    {
@@ -1078,7 +1292,7 @@
       "deco" : "DFZv"
      }
     ],
-    "endline" : 35
+    "endline" : 37
    }
   ]
  },
@@ -2397,98 +2611,6 @@
   ]
  },
  {
-  "name" : "sbylib.manipulator.basemanipulator",
-  "kind" : "module",
-  "file" : "sbylib\\manipulator\\basemanipulator.d",
-  "members" : [
-   {
-    "name" : "sbylib.imports",
-    "kind" : "import",
-    "line" : 3,
-    "protection" : "private"
-   },
-   {
-    "name" : "Manipulator",
-    "kind" : "class",
-    "line" : 5,
-    "members" : [
-     {
-      "name" : "Manipulate",
-      "kind" : "function",
-      "line" : 6,
-      "storageClass" : [
-       "abstract"
-      ],
-      "deco" : "FC6sbylib4core6entity6EntityZv",
-      "parameters" : [
-       {
-        "name" : "entity",
-        "deco" : "C6sbylib4core6entity6Entity"
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
-  "name" : "sbylib.manipulator.imports",
-  "kind" : "module",
-  "file" : "sbylib\\manipulator\\imports.d",
-  "members" : [
-   {
-    "name" : "sbylib.manipulator.basemanipulator",
-    "kind" : "import",
-    "line" : 3
-   },
-   {
-    "name" : "sbylib.manipulator.simplerotator",
-    "kind" : "import",
-    "line" : 4
-   }
-  ]
- },
- {
-  "name" : "sbylib.manipulator.simplerotator",
-  "kind" : "module",
-  "file" : "sbylib\\manipulator\\simplerotator.d",
-  "members" : [
-   {
-    "name" : "sbylib.imports",
-    "kind" : "import",
-    "line" : 3,
-    "protection" : "private"
-   },
-   {
-    "name" : "SimpleRotator",
-    "kind" : "class",
-    "line" : 5,
-    "base" : "Manipulator",
-    "members" : [
-     {
-      "name" : "Manipulate",
-      "kind" : "function",
-      "line" : 7,
-      "storageClass" : [
-       "override"
-      ],
-      "deco" : "FC6sbylib4core6entity6EntityZv",
-      "parameters" : [
-       {
-        "name" : "entity",
-        "deco" : "C6sbylib4core6entity6Entity"
-       }
-      ],
-      "endline" : 44,
-      "overrides" : [
-       "sbylib.manipulator.basemanipulator.Manipulator.Manipulate"
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
   "name" : "sbylib.math.imports",
   "kind" : "module",
   "file" : "sbylib\\math\\imports.d",
@@ -2808,9 +2930,30 @@
         "endline" : 103
        },
        {
-        "name" : "LookAt",
+        "name" : "Replacement",
         "kind" : "function",
         "line" : 105,
+        "type" : "Matrix(Vector!(U, 3) xvec, Vector!(U, 3) yvec, Vector!(U, 3) zvec)",
+        "parameters" : [
+         {
+          "name" : "xvec",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "yvec",
+          "type" : "Vector!(U, 3)"
+         },
+         {
+          "name" : "zvec",
+          "type" : "Vector!(U, 3)"
+         }
+        ],
+        "endline" : 123
+       },
+       {
+        "name" : "LookAt",
+        "kind" : "function",
+        "line" : 125,
         "type" : "Matrix(Vector!(U, 3) eye, Vector!(U, 3) vec, Vector!(U, 3) up)",
         "parameters" : [
          {
@@ -2826,12 +2969,12 @@
           "type" : "Vector!(U, 3)"
          }
         ],
-        "endline" : 109
+        "endline" : 129
        },
        {
         "name" : "Ortho",
         "kind" : "function",
-        "line" : 111,
+        "line" : 131,
         "type" : "Matrix(U width, U height, U nearZ, U farZ)",
         "parameters" : [
          {
@@ -2851,12 +2994,12 @@
           "type" : "U"
          }
         ],
-        "endline" : 115
+        "endline" : 135
        },
        {
         "name" : "Perspective",
         "kind" : "function",
-        "line" : 117,
+        "line" : 137,
         "type" : "Matrix(U aspectWperH, U fovy, U nearZ, U farZ)",
         "parameters" : [
          {
@@ -2876,12 +3019,12 @@
           "type" : "U"
          }
         ],
-        "endline" : 121
+        "endline" : 141
        },
        {
         "name" : "Invert",
         "kind" : "function",
-        "line" : 123,
+        "line" : 143,
         "type" : "Matrix(Matrix m)",
         "parameters" : [
          {
@@ -2889,12 +3032,12 @@
           "type" : "Matrix"
          }
         ],
-        "endline" : 183
+        "endline" : 203
        },
        {
         "name" : "Transpose",
         "kind" : "function",
-        "line" : 185,
+        "line" : 205,
         "type" : "Matrix(Matrix m)",
         "parameters" : [
          {
@@ -2902,12 +3045,12 @@
           "type" : "Matrix"
          }
         ],
-        "endline" : 198
+        "endline" : 218
        },
        {
         "name" : "fromString",
         "kind" : "function",
-        "line" : 200,
+        "line" : 220,
         "type" : "Matrix(string str)",
         "parameters" : [
          {
@@ -2915,12 +3058,12 @@
           "type" : "string"
          }
         ],
-        "endline" : 215
+        "endline" : 235
        },
        {
-        "name" : "getString",
+        "name" : "GetString",
         "kind" : "function",
-        "line" : 217,
+        "line" : 237,
         "type" : "string(U epsilon = 0)",
         "parameters" : [
          {
@@ -2929,12 +3072,12 @@
           "default" : "0"
          }
         ],
-        "endline" : 219
+        "endline" : 239
        },
        {
         "name" : "opIndex",
         "kind" : "function",
-        "line" : 221,
+        "line" : 241,
         "type" : "U(int x, int y)",
         "parameters" : [
          {
@@ -2946,14 +3089,14 @@
           "deco" : "i"
          }
         ],
-        "endline" : 223
+        "endline" : 243
        },
        {
         "name" : "array",
         "kind" : "function",
-        "line" : 225,
+        "line" : 245,
         "type" : "U[]()",
-        "endline" : 228
+        "endline" : 248
        }
       ]
      }
@@ -2962,85 +3105,74 @@
    {
     "name" : "mat4",
     "kind" : "alias",
-    "line" : 231
+    "line" : 251
    },
    {
     "name" : "mat4d",
     "kind" : "alias",
-    "line" : 232,
+    "line" : 252,
     "deco" : "S6sbylib4math6matrix13__T6MatrixTdZ6Matrix"
    },
    {
     "name" : "multMMCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 236,
+    "line" : 256,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 248
+    "endline" : 268
    },
    {
     "name" : "multMVCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 250,
+    "line" : 270,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 260
+    "endline" : 280
    },
    {
     "name" : "multMVAssignCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 262,
+    "line" : 282,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 272
+    "endline" : 292
    },
    {
     "name" : "getIdentityCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 274,
+    "line" : 294,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 284
+    "endline" : 304
    },
    {
     "name" : "getTranslationCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 286,
+    "line" : 306,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 297
+    "endline" : 317
    },
    {
     "name" : "getScaleCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 299,
-    "storageClass" : [
-     "static"
-    ],
-    "deco" : "FZAya",
-    "endline" : 310
-   },
-   {
-    "name" : "getRotAxisCode",
-    "kind" : "function",
-    "protection" : "private",
-    "line" : 312,
+    "line" : 319,
     "storageClass" : [
      "static"
     ],
@@ -3048,13 +3180,24 @@
     "endline" : 330
    },
    {
-    "name" : "getOpBinaryMMCode",
+    "name" : "getRotAxisCode",
     "kind" : "function",
     "protection" : "private",
     "line" : 332,
     "storageClass" : [
      "static"
     ],
+    "deco" : "FZAya",
+    "endline" : 350
+   },
+   {
+    "name" : "getOpBinaryMMCode",
+    "kind" : "function",
+    "protection" : "private",
+    "line" : 352,
+    "storageClass" : [
+     "static"
+    ],
     "deco" : "FAyaZAya",
     "parameters" : [
      {
@@ -3062,13 +3205,13 @@
       "deco" : "Aya"
      }
     ],
-    "endline" : 338
+    "endline" : 358
    },
    {
     "name" : "getOpBinaryMSCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 340,
+    "line" : 360,
     "storageClass" : [
      "static"
     ],
@@ -3079,13 +3222,13 @@
       "deco" : "Aya"
      }
     ],
-    "endline" : 346
+    "endline" : 366
    },
    {
     "name" : "getOpAssignMMCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 348,
+    "line" : 368,
     "storageClass" : [
      "static"
     ],
@@ -3096,68 +3239,68 @@
       "deco" : "Aya"
      }
     ],
-    "endline" : 354
+    "endline" : 374
    },
    {
     "name" : "getLookAtCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 356,
+    "line" : 376,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 418
+    "endline" : 438
    },
    {
     "name" : "getOrthoCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 420,
+    "line" : 440,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 440
+    "endline" : 460
    },
    {
     "name" : "getPerspectiveCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 442,
+    "line" : 462,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 462
+    "endline" : 482
    },
    {
     "name" : "getStringCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 464,
+    "line" : 484,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 478
+    "endline" : 498
    },
    {
     "name" : "getConvertCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 480,
+    "line" : 500,
     "storageClass" : [
      "static"
     ],
     "deco" : "FZAya",
-    "endline" : 489
+    "endline" : 509
    },
    {
     "name" : "getCopyCode",
     "kind" : "function",
     "protection" : "private",
-    "line" : 491,
+    "line" : 511,
     "storageClass" : [
      "static"
     ],
@@ -3168,7 +3311,7 @@
       "deco" : "Aya"
      }
     ],
-    "endline" : 500
+    "endline" : 520
    }
   ]
  },
@@ -3485,7 +3628,7 @@
         "endline" : 68
        },
        {
-        "name" : "getString",
+        "name" : "GetString",
         "kind" : "function",
         "line" : 70,
         "type" : "string()",
@@ -3771,9 +3914,9 @@
   ]
  },
  {
-  "name" : "sbylib.physics.bound.basebound",
+  "name" : "sbylib.physics.bound.bound",
   "kind" : "module",
-  "file" : "sbylib\\physics\\bound\\basebound.d",
+  "file" : "sbylib\\physics\\bound\\bound.d",
   "members" : [
    {
     "name" : "sbylib.imports",
@@ -3795,15 +3938,15 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FC6sbylib7physics5bound9basebound5BoundC6sbylib7physics5bound9basebound5BoundZS6sbylib7physics13collisioninfo13CollisionInfo",
+      "deco" : "FC6sbylib7physics5bound5bound5BoundC6sbylib7physics5bound5bound5BoundZS6sbylib7physics13collisioninfo13CollisionInfo",
       "parameters" : [
        {
         "name" : "b1",
-        "deco" : "C6sbylib7physics5bound9basebound5Bound"
+        "deco" : "C6sbylib7physics5bound5bound5Bound"
        },
        {
         "name" : "b2",
-        "deco" : "C6sbylib7physics5bound9basebound5Bound"
+        "deco" : "C6sbylib7physics5bound5bound5Bound"
        }
       ],
       "endline" : 22
@@ -3881,7 +4024,7 @@
   "file" : "sbylib\\physics\\bound\\imports.d",
   "members" : [
    {
-    "name" : "sbylib.physics.bound.basebound",
+    "name" : "sbylib.physics.bound.bound",
     "kind" : "import",
     "line" : 3
    },
@@ -4007,71 +4150,6 @@
   ]
  },
  {
-  "name" : "sbylib.primitive.baseprimitive",
-  "kind" : "module",
-  "file" : "sbylib\\primitive\\baseprimitive.d",
-  "members" : [
-   {
-    "name" : "sbylib.imports",
-    "kind" : "import",
-    "line" : 3,
-    "protection" : "private"
-   },
-   {
-    "name" : "Primitive",
-    "kind" : "class",
-    "line" : 5,
-    "members" : [
-     {
-      "name" : "Draw",
-      "kind" : "function",
-      "line" : 6,
-      "storageClass" : [
-       "abstract"
-      ],
-      "deco" : "FZv"
-     },
-     {
-      "name" : "mat",
-      "kind" : "variable",
-      "line" : 8,
-      "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
-      "originalType" : "mat4",
-      "init" : "Matrix([nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF], [[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]])",
-      "offset" : 8
-     },
-     {
-      "kind" : "template",
-      "name" : "opOpAssign(string op)(vec3 v)",
-      "line" : 10,
-      "parameters" : [
-       {
-        "name" : "op",
-        "kind" : "value",
-        "deco" : "Aya"
-       }
-      ],
-      "members" : [
-       {
-        "name" : "opOpAssign",
-        "kind" : "function",
-        "line" : 10,
-        "type" : "void(vec3 v)",
-        "parameters" : [
-         {
-          "name" : "v",
-          "type" : "vec3"
-         }
-        ],
-        "endline" : 14
-       }
-      ]
-     }
-    ]
-   }
-  ]
- },
- {
   "name" : "sbylib.primitive.cube",
   "kind" : "module",
   "file" : "SbyLib\\primitive\\box.d",
@@ -4171,7 +4249,7 @@
       "deco" : "FZv",
       "endline" : 80,
       "overrides" : [
-       "sbylib.primitive.baseprimitive.Primitive.Draw"
+       "sbylib.core.entity.drawable.EntityDrawable.Draw"
       ]
      }
     ]
@@ -4184,7 +4262,7 @@
   "file" : "SbyLib\\primitive\\imports.d",
   "members" : [
    {
-    "name" : "sbylib.primitive.baseprimitive",
+    "name" : "sbylib.primitive.primitive",
     "kind" : "import",
     "line" : 3
    },
@@ -4279,7 +4357,7 @@
       "line" : 13,
       "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
       "originalType" : "ShaderProgram",
-      "offset" : 136
+      "offset" : 448
      },
      {
       "name" : "this",
@@ -4306,7 +4384,222 @@
       "deco" : "FZv",
       "endline" : 65,
       "overrides" : [
-       "sbylib.primitive.baseprimitive.Primitive.Draw"
+       "sbylib.core.entity.drawable.EntityDrawable.Draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.primitive.primitive",
+  "kind" : "module",
+  "file" : "sbylib\\primitive\\primitive.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Primitive",
+    "kind" : "class",
+    "line" : 5,
+    "base" : "EntityDrawable",
+    "members" : [
+     {
+      "name" : "matWorld",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 7,
+      "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "init" : "Matrix([nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF], [[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]])",
+      "offset" : 56
+     },
+     {
+      "name" : "matWorldUpdateFlag",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 8,
+      "deco" : "b",
+      "init" : "false",
+      "offset" : 184
+     },
+     {
+      "name" : "mat",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 9,
+      "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "init" : "Matrix([nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF], [[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]])",
+      "offset" : 188
+     },
+     {
+      "name" : "matUpdateFlag",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 10,
+      "deco" : "b",
+      "init" : "false",
+      "offset" : 316
+     },
+     {
+      "name" : "matAll",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 11,
+      "deco" : "S6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4",
+      "init" : "Matrix([nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF, nanF], [[1F, 0F, 0F, 0F], [0F, 1F, 0F, 0F], [0F, 0F, 1F, 0F], [0F, 0F, 0F, 1F]])",
+      "offset" : 320
+     },
+     {
+      "kind" : "template",
+      "name" : "opOpAssign(string op)(vec3 v)",
+      "line" : 13,
+      "parameters" : [
+       {
+        "name" : "op",
+        "kind" : "value",
+        "deco" : "Aya"
+       }
+      ],
+      "members" : [
+       {
+        "name" : "opOpAssign",
+        "kind" : "function",
+        "line" : 13,
+        "type" : "void(vec3 v)",
+        "parameters" : [
+         {
+          "name" : "v",
+          "type" : "vec3"
+         }
+        ],
+        "endline" : 20
+       }
+      ]
+     },
+     {
+      "kind" : "template",
+      "name" : "opOpAssign(string op)(mat4 m)",
+      "line" : 22,
+      "parameters" : [
+       {
+        "name" : "op",
+        "kind" : "value",
+        "deco" : "Aya"
+       }
+      ],
+      "members" : [
+       {
+        "name" : "opOpAssign",
+        "kind" : "function",
+        "line" : 22,
+        "type" : "void(mat4 m)",
+        "parameters" : [
+         {
+          "name" : "m",
+          "type" : "mat4"
+         }
+        ],
+        "endline" : 27
+       }
+      ]
+     },
+     {
+      "name" : "GetWorldMatrix",
+      "kind" : "function",
+      "line" : 29,
+      "deco" : "FZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix",
+      "originalType" : "mat4()",
+      "endline" : 39
+     },
+     {
+      "name" : "Pos",
+      "kind" : "function",
+      "line" : 44,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 p)",
+      "parameters" : [
+       {
+        "name" : "p",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 47,
+      "overrides" : [
+       "sbylib.core.entity.entity.Entity.Pos"
+      ]
+     },
+     {
+      "name" : "VecX",
+      "kind" : "function",
+      "line" : 49,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 52,
+      "overrides" : [
+       "sbylib.core.entity.entity.Entity.VecX"
+      ]
+     },
+     {
+      "name" : "VecY",
+      "kind" : "function",
+      "line" : 54,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 57,
+      "overrides" : [
+       "sbylib.core.entity.entity.Entity.VecY"
+      ]
+     },
+     {
+      "name" : "VecZ",
+      "kind" : "function",
+      "line" : 59,
+      "storageClass" : [
+       "override",
+       "@property"
+      ],
+      "deco" : "FNdS6sbylib4math6vector16__T6VectorTfVi3Z6VectorZv",
+      "originalType" : "void(vec3 v)",
+      "parameters" : [
+       {
+        "name" : "v",
+        "deco" : "S6sbylib4math6vector16__T6VectorTfVi3Z6Vector"
+       }
+      ],
+      "endline" : 62,
+      "overrides" : [
+       "sbylib.core.entity.entity.Entity.VecZ"
       ]
      }
     ]
@@ -4319,16 +4612,16 @@
   "file" : "imports.d",
   "members" : [
    {
-    "name" : "sbylib.shadertemplates.shader",
+    "name" : "sbylib.shadertemplates.shaderstore",
     "kind" : "import",
     "line" : 3
    }
   ]
  },
  {
-  "name" : "sbylib.shadertemplates.shader",
+  "name" : "sbylib.shadertemplates.shaderstore",
   "kind" : "module",
-  "file" : "shader.d",
+  "file" : "shaderstore.d",
   "members" : [
    {
     "name" : "sbylib.imports",
@@ -4706,114 +4999,109 @@
     "line" : 5
    },
    {
-    "name" : "sbylib.manipulator.imports",
+    "name" : "sbylib.math.imports",
     "kind" : "import",
     "line" : 6
    },
    {
-    "name" : "sbylib.math.imports",
+    "name" : "sbylib.physics.imports",
     "kind" : "import",
     "line" : 7
    },
    {
-    "name" : "sbylib.physics.imports",
+    "name" : "sbylib.primitive.imports",
     "kind" : "import",
     "line" : 8
    },
    {
-    "name" : "sbylib.primitive.imports",
+    "name" : "sbylib.shadertemplates.imports",
     "kind" : "import",
     "line" : 9
    },
    {
-    "name" : "sbylib.shadertemplates.imports",
+    "name" : "sbylib.utils.imports",
     "kind" : "import",
     "line" : 10
    },
    {
-    "name" : "sbylib.utils.imports",
-    "kind" : "import",
-    "line" : 11
-   },
-   {
     "name" : "std.stdio",
     "kind" : "import",
-    "line" : 13
+    "line" : 12
    },
    {
     "name" : "std.string",
     "kind" : "import",
-    "line" : 14
+    "line" : 13
    },
    {
     "name" : "std.conv",
     "kind" : "import",
-    "line" : 15
+    "line" : 14
    },
    {
     "name" : "std.file",
     "kind" : "import",
-    "line" : 16
+    "line" : 15
    },
    {
     "name" : "std.mathspecial",
     "kind" : "import",
-    "line" : 17
+    "line" : 16
    },
    {
     "name" : "std.typecons",
     "kind" : "import",
-    "line" : 18
+    "line" : 17
    },
    {
     "name" : "std.algorithm",
     "kind" : "import",
-    "line" : 19
+    "line" : 18
    },
    {
     "name" : "std.datetime",
     "kind" : "import",
-    "line" : 20
+    "line" : 19
    },
    {
     "name" : "std.range",
     "kind" : "import",
-    "line" : 21
+    "line" : 20
    },
    {
     "name" : "derelict.opengl3.gl",
     "kind" : "import",
-    "line" : 23
+    "line" : 22
    },
    {
     "name" : "derelict.glfw3.glfw3",
     "kind" : "import",
-    "line" : 24
+    "line" : 23
    },
    {
     "name" : "derelict.devil.il",
     "kind" : "import",
-    "line" : 25
+    "line" : 24
    },
    {
     "name" : "derelict.devil.ilu",
     "kind" : "import",
-    "line" : 26
+    "line" : 25
    },
    {
     "name" : "derelict.devil.ilut",
     "kind" : "import",
-    "line" : 27
+    "line" : 26
    },
    {
     "name" : "derelict.freetype.ft",
     "kind" : "import",
-    "line" : 28
+    "line" : 27
    },
    {
     "name" : "derelict.opengl3.gl3",
     "kind" : "import",
-    "line" : 29
+    "line" : 28
    }
   ]
  },
@@ -4950,12 +5238,12 @@
     "kind" : "function",
     "line" : 15,
     "deco" : "FZb",
-    "endline" : 70
+    "endline" : 71
    },
    {
     "name" : "InitGLFW",
     "kind" : "function",
-    "line" : 72,
+    "line" : 73,
     "storageClass" : [
      "auto"
     ],
@@ -4971,7 +5259,7 @@
       "deco" : "xi"
      }
     ],
-    "endline" : 102
+    "endline" : 103
    }
   ]
  },

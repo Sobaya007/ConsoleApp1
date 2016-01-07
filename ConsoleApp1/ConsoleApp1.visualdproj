@@ -227,13 +227,23 @@
   </Folder>
   <Folder name="sbylib">
    <Folder name="camera">
-    <File path="sbylib\camera\basecamera.d" />
+    <File path="sbylib\camera\camera.d" />
     <File path="sbylib\camera\imports.d" />
     <File path="sbylib\camera\orthocamera.d" />
     <File path="sbylib\camera\perspectivecamera.d" />
    </Folder>
    <Folder name="core">
-    <File path="sbylib\entity.d" />
+    <Folder name="entity">
+     <File path="sbylib\entity\drawable.d" />
+     <File path="sbylib\entity\entity.d" />
+     <File path="sbylib\entity\imports.d" />
+    </Folder>
+    <Folder name="manipulator">
+     <File path="sbylib\manipulator\imports.d" />
+     <File path="sbylib\manipulator\manipulator.d" />
+     <File path="sbylib\manipulator\manipulatormanager.d" />
+     <File path="sbylib\manipulator\simplerotator.d" />
+    </Folder>
     <File path="sbylib\core\imports.d" />
     <File path="sbylib\core\window.d" />
     <File path="world.d" />
@@ -248,11 +258,6 @@
     <File path="SbyLib\gl\VertexArrayObject.d" />
     <File path="SbyLib\gl\VertexBufferObject.d" />
    </Folder>
-   <Folder name="manipulator">
-    <File path="sbylib\manipulator\basemanipulator.d" />
-    <File path="sbylib\manipulator\imports.d" />
-    <File path="sbylib\manipulator\simplerotator.d" />
-   </Folder>
    <Folder name="math">
     <File path="sbylib\math\imports.d" />
     <File path="sbylib\math\matrix.d" />
@@ -261,7 +266,7 @@
    </Folder>
    <Folder name="physics">
     <Folder name="bound">
-     <File path="sbylib\physics\bound\basebound.d" />
+     <File path="sbylib\physics\bound\bound.d" />
      <File path="sbylib\physics\bound\imports.d" />
      <File path="sbylib\physics\bound\obb.d" />
      <File path="sbylib\physics\bound\plane.d" />
@@ -270,14 +275,14 @@
     <File path="sbylib\physics\imports.d" />
    </Folder>
    <Folder name="primitive">
-    <File path="sbylib\primitive\baseprimitive.d" />
     <File path="SbyLib\primitive\box.d" />
     <File path="SbyLib\primitive\imports.d" />
     <File path="SbyLib\primitive\plane.d" />
+    <File path="sbylib\primitive\primitive.d" />
    </Folder>
    <Folder name="shadertemplates">
     <File path="imports.d" />
-    <File path="shader.d" />
+    <File path="shaderstore.d" />
    </Folder>
    <Folder name="utils">
     <File path="sbylib\fpscounter.d" />

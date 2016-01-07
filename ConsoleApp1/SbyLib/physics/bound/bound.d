@@ -1,4 +1,4 @@
-module sbylib.physics.bound.basebound;
+module sbylib.physics.bound.bound;
 
 import sbylib.imports;
 

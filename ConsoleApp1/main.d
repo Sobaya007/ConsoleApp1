@@ -49,11 +49,13 @@ bool GameMain() {
 	auto box = new Box;
 	vec3 scale = vec3(1,1,1) * 0.5f;
 	box *= scale;
-	box.mat *= mat4.RotAxisAngle(vec3(1,1,1), 45);
-	box += vec3(0,1,0);
+	box *= mat4.RotAxisAngle(vec3(1,1,1), 45);
+	box += vec3(0,1,0) * 3;
 
 	auto plane = new Plane(ShaderStore.getShader("Check"));
 	plane *= vec3(1,1,1) * 10;
+
+	ManipulatorManager.Add(new SimpleRotator(CurrentCamera));
 
 	MainLoop(() {
 
@@ -64,7 +66,6 @@ bool GameMain() {
 		
 		fpsCounter.Update();
 		window.glfwSetWindowTitle(("FPS:[" ~ to!string(fpsCounter.GetFPS) ~ "]").toStringz);
-		CurrentCamera.KeyMove();
 	});
 	return true;
 }

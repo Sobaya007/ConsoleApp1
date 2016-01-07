@@ -67,7 +67,7 @@ public:
 		return elements;
 	}
 
-	string getString() { //=============================================文字列化
+	string GetString() { //=============================================文字列化
 		mixin({
 			string code = "return ";
 			foreach (i; 0..S) {

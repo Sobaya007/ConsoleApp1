@@ -3,7 +3,6 @@ module sbylib.imports;
 public import sbylib.camera.imports;
 public import sbylib.core.imports;
 public import sbylib.gl.imports;
-public import sbylib.manipulator.imports;
 public import sbylib.math.imports;
 public import sbylib.physics.imports;
 public import sbylib.primitive.imports;

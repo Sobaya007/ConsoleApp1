@@ -73,9 +73,10 @@ class Box : Primitive {
 
 	override void Draw() {
 		for (int i = 0; i < 6; i++) {
-			sp.SetUniformMatrix!(4,"mWorld")(mat.array);
+			sp.SetUniformMatrix!(4,"mWorld")(GetWorldMatrix.array);
 			sp.SetUniformMatrix!(4,"mViewProj")(CurrentCamera.GetViewProjectionMatrix.array);
 			vao[i].Draw(index[i]);
 		}
 	}
+
 }

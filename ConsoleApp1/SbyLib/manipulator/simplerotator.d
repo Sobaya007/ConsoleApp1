@@ -1,10 +1,14 @@
-module sbylib.manipulator.simplerotator;
+module sbylib.core.manipulator.simplerotator;
 
 import sbylib.imports;
 
 class SimpleRotator : Manipulator {
 
-	override void Manipulate(Entity entity) {
+	this(Entity entity) {
+		super(entity);
+	}
+
+	override void Manipulate() {
 		with(entity) {
 			if (CurrentWindow.isPressed(KeyButton.W)) {
 				Pos = GetPos + 0.2 * GetVecZ;
@@ -23,7 +27,6 @@ class SimpleRotator : Manipulator {
 				mat4 mat = mat4.RotAxisAngle(GetVecX, -0.6);
 				Pos = (mat * vec4(GetPos, 1.0f)).xyz;
 			}
-			VecZ = -normalize(GetPos);
 			if (CurrentWindow.isPressed(KeyButton.Up) || CurrentWindow.isPressed(KeyButton.Down)) {
 				VecY = normalize(cross(GetVecZ, GetVecX));
 			}
@@ -39,6 +42,7 @@ class SimpleRotator : Manipulator {
 				VecY = (mat * vec4(GetVecY, 1)).xyz;
 				VecZ = (mat * vec4(GetVecZ, 1)).xyz;
 			}
+			VecX = normalize(cross(GetVecY, GetVecZ));
 			beforeMousePos = mousePos;
 		}
 	}

@@ -20,6 +20,8 @@ void MainLoop(void delegate() stepAndDraw) {
 	while (!glfwWindowShouldClose(CurrentWindow.window))
 	{
 		stepAndDraw();
+		//Manipulatorを動かす
+		ManipulatorManager.MoveAll();
 		//バッファを更新
 		glfwSwapBuffers(CurrentWindow.window);
 		//イベントをさばく

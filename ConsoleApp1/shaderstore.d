@@ -1,4 +1,4 @@
-module sbylib.shadertemplates.shader;
+module sbylib.shadertemplates.shaderstore;
 
 import sbylib.imports;
 

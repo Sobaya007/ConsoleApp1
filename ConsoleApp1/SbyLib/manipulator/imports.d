@@ -1,4 +1,5 @@
-module sbylib.manipulator.imports;
+module sbylib.core.manipulator.imports;
 
-public import sbylib.manipulator.basemanipulator;
-public import sbylib.manipulator.simplerotator;
+public import sbylib.core.manipulator.manipulator;
+public import sbylib.core.manipulator.simplerotator;
+public import sbylib.core.manipulator.manipulatormanager;

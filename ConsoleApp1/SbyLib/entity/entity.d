@@ -1,10 +1,10 @@
-module sbylib.core.entity;
+module sbylib.core.entity.entity;
 
 import sbylib.imports;
 
 abstract class Entity {
 protected:
-	vec3 pos;
+	vec3 pos = vec3(0,0,0);
 	vec3[3] base = [
 		vec3(1,0,0),
 		vec3(0,1,0),
