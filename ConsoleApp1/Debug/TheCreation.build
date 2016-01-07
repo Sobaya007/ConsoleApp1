@@ -11,6 +11,7 @@ echo sbylib\entity\imports.d >>Debug\TheCreation.build.rsp
 echo sbylib\manipulator\imports.d >>Debug\TheCreation.build.rsp
 echo sbylib\manipulator\manipulator.d >>Debug\TheCreation.build.rsp
 echo sbylib\manipulator\manipulatormanager.d >>Debug\TheCreation.build.rsp
+echo simplemover.d >>Debug\TheCreation.build.rsp
 echo sbylib\manipulator\simplerotator.d >>Debug\TheCreation.build.rsp
 echo sbylib\core\imports.d >>Debug\TheCreation.build.rsp
 echo sbylib\core\window.d >>Debug\TheCreation.build.rsp
@@ -37,6 +38,7 @@ echo SbyLib\primitive\box.d >>Debug\TheCreation.build.rsp
 echo SbyLib\primitive\imports.d >>Debug\TheCreation.build.rsp
 echo SbyLib\primitive\plane.d >>Debug\TheCreation.build.rsp
 echo sbylib\primitive\primitive.d >>Debug\TheCreation.build.rsp
+echo sbylib\primitive\sphere.d >>Debug\TheCreation.build.rsp
 echo imports.d >>Debug\TheCreation.build.rsp
 echo shaderstore.d >>Debug\TheCreation.build.rsp
 echo sbylib\fpscounter.d >>Debug\TheCreation.build.rsp

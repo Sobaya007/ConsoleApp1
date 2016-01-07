@@ -8,6 +8,7 @@ sbylib\entity\imports.d
 sbylib\manipulator\imports.d 
 sbylib\manipulator\manipulator.d 
 sbylib\manipulator\manipulatormanager.d 
+simplemover.d 
 sbylib\manipulator\simplerotator.d 
 sbylib\core\imports.d 
 sbylib\core\window.d 
@@ -34,6 +35,7 @@ SbyLib\primitive\box.d
 SbyLib\primitive\imports.d 
 SbyLib\primitive\plane.d 
 sbylib\primitive\primitive.d 
+sbylib\primitive\sphere.d 
 imports.d 
 shaderstore.d 
 sbylib\fpscounter.d 

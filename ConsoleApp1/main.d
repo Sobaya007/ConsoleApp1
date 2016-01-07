@@ -32,7 +32,7 @@ bool GameMain() {
 
 	CurrentCamera = new PerspectiveCamera(1, PI_4, 1, 30);
 	with (CurrentCamera) {
-		Pos = vec3(0,1,3) * 3;
+		Pos = vec3(0,1,3) * 10;
 		Target = vec3(0, 0, 0);
 		VecY = vec3(0,1, 0);
 	}
@@ -49,13 +49,14 @@ bool GameMain() {
 	auto box = new Box;
 	vec3 scale = vec3(1,1,1) * 0.5f;
 	box *= scale;
-	box *= mat4.RotAxisAngle(vec3(1,1,1), 45);
 	box += vec3(0,1,0) * 3;
 
 	auto plane = new Plane(ShaderStore.getShader("Check"));
 	plane *= vec3(1,1,1) * 10;
 
-	ManipulatorManager.Add(new SimpleRotator(CurrentCamera));
+	auto sphere = new Sphere;
+
+	ManipulatorManager.Add(new SimpleMover(box));
 
 	MainLoop(() {
 
@@ -63,6 +64,7 @@ bool GameMain() {
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		box.Draw();
 		plane.Draw();
+		sphere.Draw();
 		
 		fpsCounter.Update();
 		window.glfwSetWindowTitle(("FPS:[" ~ to!string(fpsCounter.GetFPS) ~ "]").toStringz);

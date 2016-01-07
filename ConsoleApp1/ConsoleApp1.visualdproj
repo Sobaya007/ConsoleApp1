@@ -242,6 +242,7 @@
      <File path="sbylib\manipulator\imports.d" />
      <File path="sbylib\manipulator\manipulator.d" />
      <File path="sbylib\manipulator\manipulatormanager.d" />
+     <File path="simplemover.d" />
      <File path="sbylib\manipulator\simplerotator.d" />
     </Folder>
     <File path="sbylib\core\imports.d" />
@@ -279,6 +280,7 @@
     <File path="SbyLib\primitive\imports.d" />
     <File path="SbyLib\primitive\plane.d" />
     <File path="sbylib\primitive\primitive.d" />
+    <File path="sbylib\primitive\sphere.d" />
    </Folder>
    <Folder name="shadertemplates">
     <File path="imports.d" />

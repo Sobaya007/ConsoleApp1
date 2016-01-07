@@ -36,7 +36,7 @@ public:
 		this.window = window;
 	}
 
-	bool isPressed(MouseButton mb) {
+	bool isMousePressed(MouseButton mb) {
 		final switch (mb) {
 			mixin({
 				string s;
@@ -50,7 +50,7 @@ public:
 		return false;
 	}
 
-	bool isPressed(KeyButton kb) {
+	bool isKeyPressed(KeyButton kb) {
 		return glfwGetKey(window, keyCodeTable[kb]) != 0;
 	}
 

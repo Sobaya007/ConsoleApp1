@@ -697,14 +697,19 @@
     "line" : 3
    },
    {
-    "name" : "sbylib.core.manipulator.simplerotator",
+    "name" : "sbylib.core.manipulator.simplemover",
     "kind" : "import",
     "line" : 4
    },
    {
-    "name" : "sbylib.core.manipulator.manipulatormanager",
+    "name" : "sbylib.core.manipulator.simplerotator",
     "kind" : "import",
     "line" : 5
+   },
+   {
+    "name" : "sbylib.core.manipulator.manipulatormanager",
+    "kind" : "import",
+    "line" : 6
    }
   ]
  },
@@ -816,6 +821,53 @@
   ]
  },
  {
+  "name" : "sbylib.core.manipulator.simplemover",
+  "kind" : "module",
+  "file" : "simplemover.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "SimpleMover",
+    "kind" : "class",
+    "line" : 5,
+    "base" : "Manipulator",
+    "members" : [
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 7,
+      "deco" : "FC6sbylib4core6entity6entity6EntityZC6sbylib4core11manipulator11simplemover11SimpleMover",
+      "parameters" : [
+       {
+        "name" : "entity",
+        "deco" : "C6sbylib4core6entity6entity6Entity"
+       }
+      ],
+      "endline" : 9
+     },
+     {
+      "name" : "Manipulate",
+      "kind" : "function",
+      "line" : 11,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 32,
+      "overrides" : [
+       "sbylib.core.manipulator.manipulator.Manipulator.Manipulate"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
   "name" : "sbylib.core.manipulator.simplerotator",
   "kind" : "module",
   "file" : "sbylib\\manipulator\\simplerotator.d",
@@ -853,7 +905,7 @@
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 48,
+      "endline" : 49,
       "overrides" : [
        "sbylib.core.manipulator.manipulator.Manipulator.Manipulate"
       ]
@@ -1158,7 +1210,7 @@
       "endline" : 37
      },
      {
-      "name" : "isPressed",
+      "name" : "isMousePressed",
       "kind" : "function",
       "line" : 39,
       "deco" : "FE6sbylib4core6window11MouseButtonZb",
@@ -1171,7 +1223,7 @@
       "endline" : 51
      },
      {
-      "name" : "isPressed",
+      "name" : "isKeyPressed",
       "kind" : "function",
       "line" : 53,
       "deco" : "FE6sbylib4core6window9KeyButtonZb",
@@ -4275,6 +4327,11 @@
     "name" : "sbylib.primitive.plane",
     "kind" : "import",
     "line" : 5
+   },
+   {
+    "name" : "sbylib.primitive.sphere",
+    "kind" : "import",
+    "line" : 6
    }
   ]
  },
@@ -4607,6 +4664,113 @@
   ]
  },
  {
+  "name" : "sbylib.primitive.sphere",
+  "kind" : "module",
+  "file" : "sbylib\\primitive\\sphere.d",
+  "members" : [
+   {
+    "name" : "sbylib.imports",
+    "kind" : "import",
+    "line" : 3,
+    "protection" : "private"
+   },
+   {
+    "name" : "Sphere",
+    "kind" : "class",
+    "line" : 5,
+    "base" : "Primitive",
+    "members" : [
+     {
+      "name" : "vao",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 8,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
+      "originalType" : "VAO"
+     },
+     {
+      "name" : "vertexVBO",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 9,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
+      "originalType" : "VBO"
+     },
+     {
+      "name" : "normalVBO",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 10,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
+      "originalType" : "VBO"
+     },
+     {
+      "name" : "sp",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 11,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
+      "originalType" : "ShaderProgram"
+     },
+     {
+      "name" : "index",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 12,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject",
+      "originalType" : "IBO"
+     },
+     {
+      "name" : "initFlag",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 13,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "b",
+      "init" : "false"
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 16,
+      "deco" : "FZC6sbylib9primitive6sphere6Sphere",
+      "endline" : 106
+     },
+     {
+      "name" : "Draw",
+      "kind" : "function",
+      "line" : 108,
+      "storageClass" : [
+       "override"
+      ],
+      "deco" : "FZv",
+      "endline" : 112,
+      "overrides" : [
+       "sbylib.core.entity.drawable.EntityDrawable.Draw"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
   "name" : "sbylib.shadertemplates.imports",
   "kind" : "module",
   "file" : "imports.d",
@@ -4859,8 +5023,68 @@
    },
    {
     "kind" : "template",
-    "name" : "CreateSetter(alias vary, string setterExtCode = \"\")",
+    "name" : "Or(T)(bool delegate(T) func, T[] elements...)",
     "line" : 34,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "Or",
+      "kind" : "function",
+      "line" : 34,
+      "type" : "bool(bool delegate(T) func, T[] elements...)",
+      "parameters" : [
+       {
+        "name" : "func",
+        "type" : "bool delegate(T)"
+       },
+       {
+        "name" : "elements",
+        "type" : "T[]"
+       }
+      ],
+      "endline" : 37
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "And(T)(bool delegate(T) func, T[] elements...)",
+    "line" : 39,
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "And",
+      "kind" : "function",
+      "line" : 39,
+      "type" : "bool(bool delegate(T) func, T[] elements...)",
+      "parameters" : [
+       {
+        "name" : "func",
+        "type" : "bool delegate(T)"
+       },
+       {
+        "name" : "elements",
+        "type" : "T[]"
+       }
+      ],
+      "endline" : 42
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "name" : "CreateSetter(alias vary, string setterExtCode = \"\")",
+    "line" : 44,
     "parameters" : [
      {
       "name" : "vary",
@@ -4878,7 +5102,7 @@
    {
     "kind" : "template",
     "name" : "CreateGetter(alias vary, string getterExtCode = \"\")",
-    "line" : 41,
+    "line" : 51,
     "parameters" : [
      {
       "name" : "vary",
@@ -4896,7 +5120,7 @@
    {
     "kind" : "template",
     "name" : "CreateSetterGetter(alias vary, string setterExtCode = \"\", string getterExtCode = \"\")",
-    "line" : 49,
+    "line" : 59,
     "parameters" : [
      {
       "name" : "vary",
@@ -4920,7 +5144,7 @@
    {
     "kind" : "template",
     "name" : "CacheVar(alias trigger, alias target, string updateFunc)",
-    "line" : 60,
+    "line" : 70,
     "parameters" : [
      {
       "name" : "trigger",
@@ -4940,22 +5164,22 @@
      {
       "name" : "CreateSetter!(trigger, target.stringof ~ \"_update_flag = true;\")",
       "kind" : "mixin",
-      "line" : 66
+      "line" : 76
      },
      {
       "name" : "CreateGetter!(trigger, \"\")",
       "kind" : "mixin",
-      "line" : 68
+      "line" : 78
      },
      {
       "name" : "CreateSetter!(target, \"\")",
       "kind" : "mixin",
-      "line" : 69
+      "line" : 79
      },
      {
       "name" : "CreateGetter!(target, \"if (\" ~ target.stringof ~ \"_update_flag) {\" ~ target.stringof ~ \"_update_flag = false;\" ~ target.stringof ~ \" = \" ~ updateFunc ~ \"();}\")",
       "kind" : "mixin",
-      "line" : 76
+      "line" : 86
      }
     ]
    }
@@ -5238,12 +5462,12 @@
     "kind" : "function",
     "line" : 15,
     "deco" : "FZb",
-    "endline" : 71
+    "endline" : 73
    },
    {
     "name" : "InitGLFW",
     "kind" : "function",
-    "line" : 73,
+    "line" : 75,
     "storageClass" : [
      "auto"
     ],
@@ -5259,7 +5483,7 @@
       "deco" : "xi"
      }
     ],
-    "endline" : 103
+    "endline" : 105
    }
   ]
  },

@@ -31,6 +31,16 @@ static string toString(int i) {
 	return r;
 }
 
+static bool Or(T)(bool delegate(T) func, T[] elements...) {
+	foreach (e; elements) if (func(e)) return true;
+	return false;
+}
+
+static bool And(T)(bool delegate(T) func, T[] elements...) {
+	foreach (e; elements) if (!func(e)) return false;
+	return true;
+}
+
 mixin template CreateSetter(alias vary, string setterExtCode = "") {
 	@property {
 		mixin("void " ~ std.string.capitalize([vary.stringof[0]]) ~ vary.stringof[1..$] ~ "_(" ~ typeof(vary).stringof ~ " " ~ vary.stringof ~ ") {"
