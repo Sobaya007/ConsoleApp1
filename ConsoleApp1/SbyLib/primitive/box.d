@@ -1,6 +1,6 @@
 module sbylib.primitive.cube;
 
-import sbylib.imports;
+import sbylib;
 
 class Box : Primitive {
 	static{

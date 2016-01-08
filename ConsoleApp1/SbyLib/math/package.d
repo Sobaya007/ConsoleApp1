@@ -1,4 +1,4 @@
-module sbylib.math.imports;
+module sbylib.math;
 
 public import sbylib.math.utils;
 public import sbylib.math.vector;

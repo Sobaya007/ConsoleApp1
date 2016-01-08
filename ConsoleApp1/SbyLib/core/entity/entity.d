@@ -1,6 +1,6 @@
 module sbylib.core.entity.entity;
 
-import sbylib.imports;
+import sbylib;
 
 abstract class Entity {
 protected:

@@ -1,7 +1,6 @@
 module sbylib.utils.functions;
 
-import std.string;
-import derelict.opengl3.gl;
+import sbylib;
 
 void SendBufferData(GLenum e)(inout int bufferID, inout float[] data) {
 	glBindBuffer(GL_ARRAY_BUFFER, bufferID);

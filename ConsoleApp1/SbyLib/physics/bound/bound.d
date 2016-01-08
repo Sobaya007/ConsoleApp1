@@ -1,6 +1,6 @@
 module sbylib.physics.bound.bound;
 
-import sbylib.imports;
+import sbylib;
 
 abstract class Bound : Entity {
 private:

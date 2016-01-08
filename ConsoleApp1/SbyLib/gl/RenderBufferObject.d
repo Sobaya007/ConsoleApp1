@@ -1,6 +1,6 @@
 module sbylib.gl.RenderBufferObject;
 
-import sbylib.imports;
+import sbylib;
 
 class RenderBufferObject {
 	immutable uint id;

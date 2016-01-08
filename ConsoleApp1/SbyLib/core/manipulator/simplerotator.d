@@ -1,6 +1,6 @@
 module sbylib.core.manipulator.simplerotator;
 
-import sbylib.imports;
+import sbylib;
 
 class SimpleRotator : Manipulator {
 
@@ -40,7 +40,7 @@ class SimpleRotator : Manipulator {
 														  + GetVecX * (delta * (mousePos.x - beforeMousePos.x))
 														  - GetVecY * (delta * (mousePos.y - beforeMousePos.y))));
 				Pos = (mat * vec4(GetPos, 1)).xyz;
-				VecY = (mat * vec4(GetVecY, 1)).xyz;
+				//VecY = (mat * vec4(GetVecY, 1)).xyz;
 				VecZ = (mat * vec4(GetVecZ, 1)).xyz;
 			}
 			VecX = normalize(cross(GetVecY, GetVecZ));

@@ -1,4 +1,4 @@
-module sbylib.camera.imports;
+module sbylib.camera;
 
 public import sbylib.camera.camera;
 public import sbylib.camera.orthocamera;

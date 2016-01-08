@@ -1,6 +1,6 @@
 module sbylib.physics.bound.obb;
 
-import sbylib.imports;
+import sbylib;
 
 class OBB : Bound {
 

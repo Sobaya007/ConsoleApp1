@@ -1,6 +1,6 @@
 module sbylib.utils.fpscounter;
 
-import sbylib.imports;
+import sbylib;
 
 class FpsCounter(uint N) {
 	long[N] periods;

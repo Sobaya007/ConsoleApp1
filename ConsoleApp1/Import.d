@@ -8,7 +8,7 @@ public import std.mathspecial;
 public import derelict.opengl3.gl;
 public import derelict.glfw3.glfw3;
 public import std.typecons;
-public import sbylib.imports;
+public import sbylib;
 public import derelict.devil.il;
 public import derelict.devil.ilu;
 public import derelict.devil.ilut;

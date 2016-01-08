@@ -4,7 +4,7 @@
   <obj>0</obj>
   <link>0</link>
   <lib>0</lib>
-  <subsystem>0</subsystem>
+  <subsystem>1</subsystem>
   <multiobj>0</multiobj>
   <singleFileCompilation>0</singleFileCompilation>
   <oneobj>0</oneobj>
@@ -228,31 +228,31 @@
   <Folder name="sbylib">
    <Folder name="camera">
     <File path="sbylib\camera\camera.d" />
-    <File path="sbylib\camera\imports.d" />
     <File path="sbylib\camera\orthocamera.d" />
+    <File path="sbylib\camera\package.d" />
     <File path="sbylib\camera\perspectivecamera.d" />
    </Folder>
    <Folder name="core">
     <Folder name="entity">
-     <File path="sbylib\entity\drawable.d" />
-     <File path="sbylib\entity\entity.d" />
-     <File path="sbylib\entity\imports.d" />
+     <File path="SbyLib\core\entity\drawable.d" />
+     <File path="SbyLib\core\entity\entity.d" />
+     <File path="sbylib\core\entity\package.d" />
     </Folder>
     <Folder name="manipulator">
-     <File path="sbylib\manipulator\imports.d" />
-     <File path="sbylib\manipulator\manipulator.d" />
-     <File path="sbylib\manipulator\manipulatormanager.d" />
-     <File path="simplemover.d" />
-     <File path="sbylib\manipulator\simplerotator.d" />
+     <File path="SbyLib\core\manipulator\manipulator.d" />
+     <File path="SbyLib\core\manipulator\manipulatormanager.d" />
+     <File path="sbylib\core\manipulator\package.d" />
+     <File path="sbylib\core\manipulator\simplemover.d" />
+     <File path="SbyLib\core\manipulator\simplerotator.d" />
     </Folder>
-    <File path="sbylib\core\imports.d" />
+    <File path="sbylib\core\package.d" />
     <File path="sbylib\core\window.d" />
     <File path="world.d" />
    </Folder>
    <Folder name="gl">
     <File path="SbyLib\gl\FrameBufferObject.d" />
-    <File path="SbyLib\gl\imports.d" />
     <File path="SbyLib\gl\IndexBufferObject.d" />
+    <File path="sbylib\gl\package.d" />
     <File path="SbyLib\gl\RenderBufferObject.d" />
     <File path="SbyLib\gl\ShaderProgram.d" />
     <File path="SbyLib\gl\TextureObject.d" />
@@ -260,38 +260,42 @@
     <File path="SbyLib\gl\VertexBufferObject.d" />
    </Folder>
    <Folder name="math">
-    <File path="sbylib\math\imports.d" />
     <File path="sbylib\math\matrix.d" />
+    <File path="sbylib\math\package.d" />
     <File path="sbylib\math\utils.d" />
     <File path="sbylib\math\vector.d" />
    </Folder>
    <Folder name="physics">
     <Folder name="bound">
      <File path="sbylib\physics\bound\bound.d" />
-     <File path="sbylib\physics\bound\imports.d" />
      <File path="sbylib\physics\bound\obb.d" />
+     <File path="sbylib\physics\bound\package.d" />
      <File path="sbylib\physics\bound\plane.d" />
     </Folder>
+    <Folder name="elastic">
+     <File path="sbylib\physics\elastic\package.d" />
+     <File path="sbylib\physics\elastic\sphere.d" />
+    </Folder>
     <File path="sbylib\physics\collisioninfo.d" />
-    <File path="sbylib\physics\imports.d" />
+    <File path="sbylib\physics\package.d" />
    </Folder>
    <Folder name="primitive">
     <File path="SbyLib\primitive\box.d" />
-    <File path="SbyLib\primitive\imports.d" />
+    <File path="sbylib\primitive\package.d" />
     <File path="SbyLib\primitive\plane.d" />
     <File path="sbylib\primitive\primitive.d" />
     <File path="sbylib\primitive\sphere.d" />
    </Folder>
    <Folder name="shadertemplates">
-    <File path="imports.d" />
-    <File path="shaderstore.d" />
+    <File path="sbylib\shadertemplates\package.d" />
+    <File path="SbyLib\shadertemplates\shaderstore.d" />
    </Folder>
    <Folder name="utils">
-    <File path="sbylib\fpscounter.d" />
-    <File path="functions.d" />
-    <File path="sbylib\utils\imports.d" />
+    <File path="SbyLib\utils\fpscounter.d" />
+    <File path="SbyLib\utils\functions.d" />
+    <File path="SbyLib\utils\package.d" />
    </Folder>
-   <File path="sbylib\imports.d" />
+   <File path="sbylib\package.d" />
   </Folder>
   <File path="Import.d" />
   <File path="main.d" />

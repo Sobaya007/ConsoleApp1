@@ -1,6 +1,6 @@
 module sbylib.gl.FrameBufferObject;
 
-import sbylib.imports;
+import sbylib;
 
 class FrameBufferObject {
 

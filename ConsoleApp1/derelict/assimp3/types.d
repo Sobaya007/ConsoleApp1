@@ -603,7 +603,7 @@ align(1) struct aiColor3D {
 
 struct aiString {
     size_t length;
-    char[MAXLEN] data;
+    char data[MAXLEN];
 }
 
 alias int aiReturn;

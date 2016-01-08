@@ -1,6 +1,6 @@
 module sbylib.primitive.primitive;
 
-import sbylib.imports;
+import sbylib;
 
 abstract class Primitive : EntityDrawable {
 

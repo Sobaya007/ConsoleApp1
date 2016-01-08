@@ -1,7 +1,7 @@
 module sbylib.math.utils;
 
 import std.math;
-import sbylib.math.imports;
+import sbylib.math;
 
 U ToRad(U)(U angle) {
 	return angle * PI / 180;

@@ -1,4 +1,4 @@
-module sbylib.gl.imports;
+module sbylib.gl;
 
 public import sbylib.gl.FrameBufferObject;
 public import sbylib.gl.RenderBufferObject;

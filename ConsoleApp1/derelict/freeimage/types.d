@@ -133,7 +133,7 @@ alias BITMAPINFOHEADER* PBITMAPINFOHEADER;
 align(1) struct BITMAPINFO
 {
     BITMAPINFOHEADER bmiHeader;
-    RGBQUAD          [1] bmiColors;
+    RGBQUAD          bmiColors[1];
 }
 
 alias BITMAPINFO* PBITMAPINFO;

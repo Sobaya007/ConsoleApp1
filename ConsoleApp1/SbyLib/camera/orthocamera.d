@@ -1,6 +1,6 @@
 module sbylib.camera.orthocamera;
 
-import sbylib.imports;
+import sbylib;
 
 final class OrthoCamera : Camera {
 private:

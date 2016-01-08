@@ -4,7 +4,7 @@ import std.conv;
 import std.math;
 import std.string;
 import std.stdio;
-import sbylib.utils.imports;
+import sbylib.utils;
 
 //T型のS個のベクトル
 struct Vector(T, int S) {
@@ -235,7 +235,6 @@ private string getXyzwCode(int S) {
 	string code;
 	//k文字のものについて考える。xは前につくk-1文字の名前
 	void func(int k, string x) {
-		import sbylib.utils.imports;
 		if (k > S) return;
 		//k文字目を決める
 		foreach (j; 0..S) {
@@ -243,21 +242,21 @@ private string getXyzwCode(int S) {
 			x = x[0..k-1] ~ expr[j];
 			if (k == 1) {
 				code ~= "void " ~ x ~ "(T v) {";
-				code ~= "elements[" ~ to!string(indexOf(expr, x[0])) ~ "] = v;";
+				code ~= "elements[" ~ toString(indexOf(expr, x[0])) ~ "] = v;";
 				code ~= "}";
 				code ~= "T " ~ x ~ "() {";
-				code ~= "return elements[" ~ to!string(indexOf(expr, x[0])) ~ "];";
+				code ~= "return elements[" ~ toString(indexOf(expr, x[0])) ~ "];";
 				code ~= "} ";
 			} else {
-				code ~= "void " ~ x ~ "(Vector!(T," ~ to!string(k) ~ ") v) {";
+				code ~= "void " ~ x ~ "(Vector!(T," ~ toString(k) ~ ") v) {";
 				foreach (l; 0..k) {
-					code ~= "elements[" ~ to!string(indexOf(expr, x[l])) ~ "] = v[" ~ to!string(l) ~ "];";
+					code ~= "elements[" ~ toString(indexOf(expr, x[l])) ~ "] = v[" ~ toString(l) ~ "];";
 				}
 				code ~= "}";
-				code ~= "Vector!(T," ~ to!string(k) ~ ") " ~ x ~ "() {";
-				code ~= "return Vector!(T, " ~ to!string(k) ~ ")(";
+				code ~= "Vector!(T," ~ toString(k) ~ ") " ~ x ~ "() {";
+				code ~= "return Vector!(T, " ~ toString(k) ~ ")(";
 				foreach (l; 0..k) {
-					code ~= "elements[" ~ to!string(indexOf(expr, x[l])) ~ "]";
+					code ~= "elements[" ~ toString(indexOf(expr, x[l])) ~ "]";
 					if (l != k-1) code ~= ",";
 				}
 				code ~= ");} ";

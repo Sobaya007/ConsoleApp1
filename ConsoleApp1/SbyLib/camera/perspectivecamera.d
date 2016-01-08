@@ -1,6 +1,6 @@
 module sbylib.camera.perspectivecamera;
 
-import sbylib.imports;
+import sbylib;
 
 final class PerspectiveCamera : Camera {
 private:

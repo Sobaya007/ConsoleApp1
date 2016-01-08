@@ -1,6 +1,6 @@
 module sbylib.core.manipulator.manipulator;
 
-import sbylib.imports;
+import sbylib;
 
 abstract class Manipulator {
 

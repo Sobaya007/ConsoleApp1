@@ -1,6 +1,6 @@
 module sbylib.gl.VertexBufferObject;
 
-import sbylib.imports;
+import sbylib;
 
 class VertexBufferObject(T) {
 
@@ -20,7 +20,7 @@ class VertexBufferObject(T) {
 		else if (frequency == Frequency.DYNAMIC) usage = GL_DYNAMIC_DRAW;
 		else if (frequency == Frequency.STATIC) usage = GL_STATIC_DRAW;
 		glBindBuffer(GL_ARRAY_BUFFER, id);
-		glBufferData(GL_ARRAY_BUFFER, data.length * T.sizeof, data, usage);
+		glBufferData(GL_ARRAY_BUFFER, data.length * T.sizeof, cast(void*)data, usage);
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 		length = data.length;
 	}
@@ -37,7 +37,7 @@ class VertexBufferObject(T) {
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 	}
 
-	void Update(T[] data) {
+	void Update(int S = 0)(T[] data) {
 		glBindBuffer(GL_ARRAY_BUFFER, id);
 		T* ptr = cast(T*)glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
 		if (ptr) {
@@ -45,7 +45,14 @@ class VertexBufferObject(T) {
 				ptr[i] = data[i];
 			}
 		}
+		glUnmapBuffer(GL_ARRAY_BUFFER);
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
+	}
+
+	void Update(int S)(Vector!(T, S)[] vertex) {
+		T[] array;
+		foreach (v; vertex) array ~= vertex.array;
+		Update(array);
 	}
 
 	alias id this;

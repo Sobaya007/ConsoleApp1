@@ -1782,7 +1782,7 @@ struct SDL_PixelFormat
     SDL_Palette *palette;
     Uint8 BitsPerPixel;
     Uint8 BytesPerPixel;
-    Uint8[2] padding;
+    Uint8 padding[2];
     Uint32 Rmask;
     Uint32 Gmask;
     Uint32 Bmask;

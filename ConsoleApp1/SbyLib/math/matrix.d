@@ -1,6 +1,6 @@
 module sbylib.math.matrix;
 
-import sbylib.math.imports;
+import sbylib.math;
 import std.conv;
 import std.math;
 import std.string;

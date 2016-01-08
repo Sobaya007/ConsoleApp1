@@ -1,6 +1,6 @@
 module sbylib.gl.IndexBufferObject;
 
-import sbylib.imports;
+import sbylib;
 
 class IndexBufferObject(T) {
 
@@ -20,7 +20,7 @@ class IndexBufferObject(T) {
 		else if (frequency == Frequency.DYNAMIC) usage = GL_DYNAMIC_DRAW;
 		else if (frequency == Frequency.STATIC) usage = GL_STATIC_DRAW;
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, id);
-		glBufferData(GL_ELEMENT_ARRAY_BUFFER, data.length * T.sizeof, data, usage);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, data.length * T.sizeof, cast(void*)data, usage);
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 		length = data.length;
 	}

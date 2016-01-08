@@ -161,7 +161,7 @@ extern(C)
     alias nothrow FT_Error function(FT_Face face, FT_UInt idx, FT_SfntName *aname) da_FT_Get_Sfnt_Name;
     alias nothrow FT_Error function(FT_Face face, FT_UInt validation_flags, FT_Bytes *BASE_table, FT_Bytes *GDEF_table, FT_Bytes *GPOS_table, FT_Bytes *GSUB_table, FT_Bytes *JSTF_table) da_FT_OpenType_Validate;
     alias nothrow void function (FT_Face face, FT_Bytes table) da_FT_OpenType_Free;
-    alias nothrow FT_Error function(FT_Face face, FT_UInt validation_flags, FT_Bytes[FT_VALIDATE_GX_LENGTH] tables, FT_UInt table_length) da_FT_TrueTypeGX_Validate;
+    alias nothrow FT_Error function(FT_Face face, FT_UInt validation_flags, FT_Bytes tables[FT_VALIDATE_GX_LENGTH], FT_UInt table_length) da_FT_TrueTypeGX_Validate;
     alias nothrow void function(FT_Face face, FT_Bytes table) da_FT_TrueTypeGX_Free;
     alias nothrow FT_Error function(FT_Face face, FT_UInt validation_flags, FT_Bytes *ckern_table) da_FT_ClassicKern_Validate;
     alias nothrow void function(FT_Face face, FT_Bytes table) da_FT_ClassicKern_Free;

@@ -1,6 +1,6 @@
 module sbylib.core.world;
 
-import sbylib.imports;
+import sbylib;
 import std.datetime;
 import core.thread;
 

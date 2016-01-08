@@ -1,6 +1,6 @@
 module sbylib.physics.collisioninfo;
 
-import sbylib.imports;
+import sbylib;
 
 struct CollisionInfo {
 	bool isHit;

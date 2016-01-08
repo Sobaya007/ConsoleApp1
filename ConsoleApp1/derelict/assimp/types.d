@@ -238,7 +238,7 @@ struct aiTexture
 {
     uint mWidth;
     uint mHeight;
-    char[4] achFormatHint;
+    char achFormatHint[4];
     aiTexel* pcData;
 }
 
@@ -399,8 +399,8 @@ struct aiAnimMesh
     aiVector3D* mNormals;
     aiVector3D* mTangents;
     aiVector3D* mBitangents;
-    aiColor4D*[AI_MAX_NUMBER_OF_COLOR_SETS] mColor;
-    aiVector3D*[AI_MAX_NUMBER_OF_TEXTURECOORDS] mTextureCoords;
+    aiColor4D* mColor[AI_MAX_NUMBER_OF_COLOR_SETS];
+    aiVector3D* mTextureCoords[AI_MAX_NUMBER_OF_TEXTURECOORDS];
     uint mNumVertices;
 }
 
@@ -413,9 +413,9 @@ struct aiMesh
     aiVector3D* mNormals;
     aiVector3D* mTangents;
     aiVector3D* mBitangents;
-    aiColor4D *[AI_MAX_NUMBER_OF_COLOR_SETS] mColors;
-    aiVector3D*[AI_MAX_NUMBER_OF_TEXTURECOORDS] mTextureCoords;
-    uint[AI_MAX_NUMBER_OF_TEXTURECOORDS] mNumUVComponents;
+    aiColor4D * mColors[AI_MAX_NUMBER_OF_COLOR_SETS];
+    aiVector3D* mTextureCoords[AI_MAX_NUMBER_OF_TEXTURECOORDS];
+    uint mNumUVComponents[AI_MAX_NUMBER_OF_TEXTURECOORDS];
     aiFace* mFaces;
     uint mNumBones;
     aiBone** mBones;
@@ -461,7 +461,7 @@ struct aiScene
 struct aiString
 {
     size_t length;
-    char[MAXLEN] data;
+    char data[MAXLEN];
 }
 
 enum aiDefaultLogStream : int

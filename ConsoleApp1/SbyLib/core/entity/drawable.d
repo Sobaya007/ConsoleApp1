@@ -1,6 +1,6 @@
 module sbylib.core.entity.drawable;
 
-import sbylib.imports;
+import sbylib;
 
 abstract class EntityDrawable : Entity {
 

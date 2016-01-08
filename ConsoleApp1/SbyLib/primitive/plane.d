@@ -1,6 +1,6 @@
 module sbylib.primitive.plane;
 
-import sbylib.imports;
+import sbylib;
 
 class Plane : Primitive {
 	static{

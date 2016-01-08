@@ -1,13 +1,13 @@
-module sbylib.imports;
+module sbylib;
 
-public import sbylib.camera.imports;
-public import sbylib.core.imports;
-public import sbylib.gl.imports;
-public import sbylib.math.imports;
-public import sbylib.physics.imports;
-public import sbylib.primitive.imports;
-public import sbylib.shadertemplates.imports;
-public import sbylib.utils.imports;
+public import sbylib.camera;
+public import sbylib.core;
+public import sbylib.gl;
+public import sbylib.math;
+public import sbylib.physics;
+public import sbylib.primitive;
+public import sbylib.shadertemplates;
+public import sbylib.utils;
 
 public import std.stdio;
 public import std.string;

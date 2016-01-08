@@ -191,7 +191,7 @@ static if(Derelict_OS_Posix && !Derelict_OS_Mac)
     union GLXEvent
     {
         GLXPbufferClobberEvent glxpbufferclobber;
-        int[24] pad;
+        int pad[24];
     }
 
     extern (C)

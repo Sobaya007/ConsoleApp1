@@ -1,12 +1,12 @@
 module sbylib.gl.ShaderProgram;
 
-import sbylib.imports;
+import sbylib;
 
 class ShaderProgram {
 
 	static enum InputType {SourceCode, FilePath}
 
-	immutable uint programID;
+	uint programID;
 	private static uint[string] Shaders;
 	void delegate()[string] attributeApply;
 	void delegate()[string] uniformApply;

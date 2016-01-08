@@ -1,6 +1,6 @@
 module sbylib.camera.camera;
 
-import sbylib.imports;
+import sbylib;
 
 abstract class Camera : Entity {
 

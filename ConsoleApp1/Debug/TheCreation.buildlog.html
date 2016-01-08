@@ -13,49 +13,51 @@ set PATH=C:\D\dmd2\windows\bin;C:\Program Files (x86)\Microsoft Visual Studio 14
 set DMD_LIB=;DerelictLib
 
 echo sbylib\camera\camera.d &gt;Debug\TheCreation.build.rsp
-echo sbylib\camera\imports.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\camera\orthocamera.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\camera\package.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\camera\perspectivecamera.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\entity\drawable.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\entity\entity.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\entity\imports.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\manipulator\imports.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\manipulator\manipulator.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\manipulator\manipulatormanager.d &gt;&gt;Debug\TheCreation.build.rsp
-echo simplemover.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\manipulator\simplerotator.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\core\imports.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyLib\core\entity\drawable.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyLib\core\entity\entity.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\core\entity\package.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyLib\core\manipulator\manipulator.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyLib\core\manipulator\manipulatormanager.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\core\manipulator\package.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\core\manipulator\simplemover.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyLib\core\manipulator\simplerotator.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\core\package.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\core\window.d &gt;&gt;Debug\TheCreation.build.rsp
 echo world.d &gt;&gt;Debug\TheCreation.build.rsp
 echo SbyLib\gl\FrameBufferObject.d &gt;&gt;Debug\TheCreation.build.rsp
-echo SbyLib\gl\imports.d &gt;&gt;Debug\TheCreation.build.rsp
 echo SbyLib\gl\IndexBufferObject.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\gl\package.d &gt;&gt;Debug\TheCreation.build.rsp
 echo SbyLib\gl\RenderBufferObject.d &gt;&gt;Debug\TheCreation.build.rsp
 echo SbyLib\gl\ShaderProgram.d &gt;&gt;Debug\TheCreation.build.rsp
 echo SbyLib\gl\TextureObject.d &gt;&gt;Debug\TheCreation.build.rsp
 echo SbyLib\gl\VertexArrayObject.d &gt;&gt;Debug\TheCreation.build.rsp
 echo SbyLib\gl\VertexBufferObject.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\math\imports.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\math\matrix.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\math\package.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\math\utils.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\math\vector.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\physics\bound\bound.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\physics\bound\imports.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\physics\bound\obb.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\physics\bound\package.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\physics\bound\plane.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\physics\elastic\package.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\physics\elastic\sphere.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\physics\collisioninfo.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\physics\imports.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\physics\package.d &gt;&gt;Debug\TheCreation.build.rsp
 echo SbyLib\primitive\box.d &gt;&gt;Debug\TheCreation.build.rsp
-echo SbyLib\primitive\imports.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\primitive\package.d &gt;&gt;Debug\TheCreation.build.rsp
 echo SbyLib\primitive\plane.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\primitive\primitive.d &gt;&gt;Debug\TheCreation.build.rsp
 echo sbylib\primitive\sphere.d &gt;&gt;Debug\TheCreation.build.rsp
-echo imports.d &gt;&gt;Debug\TheCreation.build.rsp
-echo shaderstore.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\fpscounter.d &gt;&gt;Debug\TheCreation.build.rsp
-echo functions.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\utils\imports.d &gt;&gt;Debug\TheCreation.build.rsp
-echo sbylib\imports.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\shadertemplates\package.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyLib\shadertemplates\shaderstore.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyLib\utils\fpscounter.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyLib\utils\functions.d &gt;&gt;Debug\TheCreation.build.rsp
+echo SbyLib\utils\package.d &gt;&gt;Debug\TheCreation.build.rsp
+echo sbylib\package.d &gt;&gt;Debug\TheCreation.build.rsp
 echo Import.d &gt;&gt;Debug\TheCreation.build.rsp
 echo main.d &gt;&gt;Debug\TheCreation.build.rsp
 echo Player.d &gt;&gt;Debug\TheCreation.build.rsp
@@ -63,7 +65,7 @@ echo Player.d &gt;&gt;Debug\TheCreation.build.rsp
 dmd -g -debug -X -Xf&quot;Debug\TheCreation.json&quot; -Iderelict -deps=&quot;Debug\TheCreation.dep&quot; -c -of&quot;Debug\TheCreation.obj&quot; @Debug\TheCreation.build.rsp
 if errorlevel 1 goto reportError
 
-set LIB=&quot;C:\D\dmd2\windows\bin\..\lib&quot;;\dm\lib
+set LIB=&quot;C:\D\dmd2\windows\bin\..\lib&quot;
 echo. &gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 echo &quot;Debug\TheCreation.obj&quot;,&quot;Debug\TheCreation.exe&quot;,&quot;Debug\TheCreation.map&quot;,DerelictUtil.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 echo DerelictGL3.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
@@ -72,7 +74,7 @@ echo DerelictIL.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~
 echo DerelictFT.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 echo user32.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 echo kernel32.lib+ &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
-echo DerelictLib\/NOMAP/CO/NOI/DELEXE &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo DerelictLib\/NOMAP/CO/NOI/DELEXE /SUBSYSTEM:CONSOLE &gt;&gt; C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 
 &quot;C:\Program Files (x86)\VisualD\pipedmd.exe&quot; -deps Debug\TheCreation.lnkdep C:\D\dmd2\windows\bin\link.exe @C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 if errorlevel 1 goto reportError

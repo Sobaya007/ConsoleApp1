@@ -1,6 +1,6 @@
 import Import;
 import core.thread;
-import sbylib.imports;
+import sbylib;
 
 const int window_width = 800;
 const int window_height = 600;
@@ -32,7 +32,7 @@ bool GameMain() {
 
 	CurrentCamera = new PerspectiveCamera(1, PI_4, 1, 30);
 	with (CurrentCamera) {
-		Pos = vec3(0,1,3) * 10;
+		Pos = vec3(0,1,3) * 4;
 		Target = vec3(0, 0, 0);
 		VecY = vec3(0,1, 0);
 	}
@@ -54,9 +54,9 @@ bool GameMain() {
 	auto plane = new Plane(ShaderStore.getShader("Check"));
 	plane *= vec3(1,1,1) * 10;
 
-	auto sphere = new Sphere;
+	auto sphere = new ElasticSphere;
 
-	ManipulatorManager.Add(new SimpleMover(box));
+	ManipulatorManager.Add(new SimpleRotator(CurrentCamera));
 
 	MainLoop(() {
 

@@ -1,6 +1,6 @@
 module sbylib.gl.TextureObject;
 
-import sbylib.imports;
+import sbylib;
 
 class TextureObject {
 	import derelict.devil.il;

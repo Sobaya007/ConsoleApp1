@@ -1,6 +1,6 @@
 module sbylib.core.manipulator.manipulatormanager;
 
-import sbylib.imports;
+import sbylib;
 
 class ManipulatorManager {
 	private static Manipulator[] manipulatorList;

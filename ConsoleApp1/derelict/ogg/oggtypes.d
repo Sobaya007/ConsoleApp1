@@ -74,7 +74,7 @@ struct ogg_stream_state
     c_long     lacing_fill;
     c_long     lacing_packet;
     c_long     lacing_returned;
-    ubyte[282]   header;
+    ubyte   header[282];
     int     header_fill;
     int     e_o_s;
     int     b_o_s;

@@ -1,6 +1,6 @@
 module sbylib.shadertemplates.shaderstore;
 
-import sbylib.imports;
+import sbylib;
 
 class ShaderStore {
 	private static ShaderProgram[string] shaderList;

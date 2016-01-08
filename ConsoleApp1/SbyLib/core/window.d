@@ -1,6 +1,6 @@
 module sbylib.core.window;
 
-import sbylib.imports;
+import sbylib;
 
 enum MouseButton{BUTTON1, BUTTON2, BUTTON3}
 

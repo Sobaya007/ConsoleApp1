@@ -366,25 +366,25 @@ static if(Derelict_OS_Posix && !Derelict_OS_Mac)
 	}
 
     struct GLXHyperpipeNetworkSGIX {
-        char[80]    pipeName; /* Should be [GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX] */
+        char    pipeName[80]; /* Should be [GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX] */
         int     networkId;
     }
 
     struct GLXHyperpipeConfigSGIX {
-        char[80]    pipeName; /* Should be [GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX] */
+        char    pipeName[80]; /* Should be [GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX] */
         int     chann;
         uint participationType;
         int     timeSlice;
     }
 
     struct GLXPipeRect {
-        char[80] pipeName; /* Should be [GLX_HYPERPIPE_PIPE_NAME NGTH_SGIX] */
+        char pipeName[80]; /* Should be [GLX_HYPERPIPE_PIPE_NAME NGTH_SGIX] */
         int srcXOrigin, srcYOrigin, srcWidth, srcHeight;
         int destXOrigin, destYOrigin, destWidth, destHeight;
     }
 
     struct GLXPipeRectLimits {
-        char[80] pipeNa; /* Should be [GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX] */
+        char pipeNa[80]; /* Should be [GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX] */
         int XOrigin, YOrigin, maxHeight, maxWidth;
     }
 

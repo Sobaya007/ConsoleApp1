@@ -6,4 +6,4 @@ DerelictIL.lib+
 DerelictFT.lib+ 
 user32.lib+ 
 kernel32.lib+ 
-DerelictLib\/NOMAP/CO/NOI/DELEXE 
+DerelictLib\/NOMAP/CO/NOI/DELEXE /SUBSYSTEM:CONSOLE 

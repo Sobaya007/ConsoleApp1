@@ -1,17 +1,61 @@
-module sbylib.primitive.sphere;
+module sbylib.physics.elastic.sphere;
 
 import sbylib;
 
-class Sphere : Primitive {
+class ElasticSphere : Primitive {
 
 	static{
-		private VAO vao;
-		private VBO vertexVBO;
-		private VBO normalVBO;
-		private ShaderProgram sp;
-		private IBO index;
-		private bool initFlag = false;
-		private vec3[] vertex;
+		private {
+			VAO vao;
+			VBO vertexVBO;
+			VBO normalVBO;
+			ShaderProgram sp;
+			IBO index;
+			bool initFlag = false;
+			vec3[] vertex;
+
+			immutable {
+				int recursionLevel = 3;
+				//float R = 80;
+				//float dTheta = 2 * Math.PI / N;
+				//float d = R * dTheta;
+				//float h = 0.02;
+				//float zeta = 1;
+				//float omega = 1000;
+				//float m = 1;
+				//float c = 2 * zeta * omega * m;
+				//float k = m * omega * omega;
+				//float deflen = d;
+				//float friction = 0.01;
+				//float gravity = 500;
+			}
+			//
+			//class Particle {
+			//    float x, y;
+			//    float sx, sy;
+			//    float nx, ny;
+			//
+			//    this(float x, float y) {
+			//        this.x = x;
+			//        this.y = y;
+			//        nx = x / R; ny = y / R;
+			//    }
+			//
+			//    void move() {
+			//        x += sx * h;
+			//        y += sy * h;
+			//
+			//        sy += gravity * h;
+			//
+			//        //if (y >= R * 2.5) {
+			//        //    y = R * 2.5;
+			//        //    sy = 0;
+			//        //    sx -= sx * friction;
+			//        //}
+			//    }
+			//}
+
+		}
 	}
 
 	this()  {
@@ -62,11 +106,9 @@ class Sphere : Primitive {
 			indices ~= [ 7,  6,  8];
 			indices ~= [ 1,  8,  9];
 
-			enum int recursionLevel = 3;
-
 			int idx = 12;
 			//解像度細かく
-			foreach (k; 0..3) {
+			foreach (k; 0..recursionLevel) {
 				uint[] indices2;
 				foreach (i; 0..indices.length/3) { //各面について
 					vec3 p0 = vertex[indices[i*3]];
@@ -142,5 +184,12 @@ class Sphere : Primitive {
 		sp.SetUniformMatrix!(4,"mWorld")(GetWorldMatrix.array);
 		sp.SetUniformMatrix!(4,"mViewProj")(CurrentCamera.GetViewProjectionMatrix.array);
 		vao.Draw(index);
+
+		float[] vertexArray;
+		foreach (ref v;vertex) {
+			v += vec3(1,1,1) * 0.01;
+			vertexArray ~= v.array;
+		}
+		vertexVBO.Update(vertexArray);
 	}
 }

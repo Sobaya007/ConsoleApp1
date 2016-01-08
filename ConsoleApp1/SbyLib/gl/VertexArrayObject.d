@@ -1,6 +1,6 @@
 module sbylib.gl.VertexArrayObject;
 
-import sbylib.imports;
+import sbylib;
 
 class VertexArrayObject(T) {
 
