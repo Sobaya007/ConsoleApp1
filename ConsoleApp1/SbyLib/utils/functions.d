@@ -17,6 +17,24 @@ static bool contains(T)(T value, T[] array... ) {
 	return false;
 }
 
+static T computeSignedVolume(T)(Vector!(T, 3)[4] positions...) {
+	alias Vector!(T, S) vec;
+	mixin({
+		string code;
+		foreach (i; 0..3) {
+			code ~= "vec v" ~ to!string(i) ~ " = positions[" ~to!string(i+1) ~ "] - positions[0];";
+		}
+		code ~= "return ";
+		foreach (i; 0..3) {
+			code ~= "+v" ~ to!string(i) ~ ".x * v" ~ to!string((i+1)%3) ~ ".y * v" ~ to!string((i+2)%3) ~ ".z";
+		}
+		foreach (i; 0..3) {
+			code ~= "-v" ~ to!string(i) ~ ".x * v" ~ to!string((i+2)%3) ~ ".y * v" ~ to!string((i+1)%3) ~ ".z";
+		}
+		return code;
+	}());
+}
+
 
 static string toString(int i) {
 	if (i == 0) return "0";

@@ -68,7 +68,7 @@ static this() {
 	mixin({
 		string s;
 		//アルファベット
-		foreach (char c; 'A'..'Z') {
+		foreach (char c; 'A'..'Z'+1) {
 			s ~= "keyCodeTable[KeyButton." ~ c ~ "] = GLFW_KEY_" ~ c ~ ";";
 		}
 		//数字

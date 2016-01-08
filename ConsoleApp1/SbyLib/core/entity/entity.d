@@ -44,4 +44,7 @@ public:
 	vec3 GetVecZ() {
 		return base[2];
 	}
+
+	void opOpAssign(string op)(vec3 v) {
+	}
 }

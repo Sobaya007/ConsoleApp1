@@ -32,7 +32,7 @@ bool GameMain() {
 
 	CurrentCamera = new PerspectiveCamera(1, PI_4, 1, 30);
 	with (CurrentCamera) {
-		Pos = vec3(0,1,3) * 4;
+		Pos = vec3(0,1,3) * 3;
 		Target = vec3(0, 0, 0);
 		VecY = vec3(0,1, 0);
 	}
@@ -62,7 +62,7 @@ bool GameMain() {
 
 		glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		box.Draw();
+		//box.Draw();
 		plane.Draw();
 		sphere.Draw();
 		

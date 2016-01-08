@@ -244,7 +244,7 @@ private string getXyzwCode(int S) {
 				code ~= "void " ~ x ~ "(T v) {";
 				code ~= "elements[" ~ toString(indexOf(expr, x[0])) ~ "] = v;";
 				code ~= "}";
-				code ~= "T " ~ x ~ "() {";
+				code ~= "ref T " ~ x ~ "() {";
 				code ~= "return elements[" ~ toString(indexOf(expr, x[0])) ~ "];";
 				code ~= "} ";
 			} else {
