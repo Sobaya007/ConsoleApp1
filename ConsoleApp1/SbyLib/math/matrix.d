@@ -473,8 +473,8 @@ private static string getPerspectiveCode() {
 	foreach (i; 0..4) {
 		if (i != 2) code ~= "result.elements[" ~ to!string(i) ~ "][3] = 0;";
 	}
-	code ~= "result.elements[0][0] = aspectWperH / tan(fovy/2);";
-	code ~= "result.elements[1][1] = 1 / tan(fovy/2);";
+	code ~= "result.elements[0][0] = 1 / (aspectWperH * tan(fovy/2));";
+	code ~= "result.elements[1][1] = 1 / (tan(fovy/2));";
 	code ~= "result.elements[2][2] = 1 / (farZ - nearZ);";
 	code ~= "result.elements[3][2] = nearZ / (nearZ - farZ);";
 	code ~= "result.elements[2][3] = 1;";

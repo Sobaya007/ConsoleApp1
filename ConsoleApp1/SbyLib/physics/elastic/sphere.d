@@ -8,10 +8,10 @@ class ElasticSphere : Primitive {
 		private {
 			ShaderProgram sp;
 			IBO index;
-			bool initFlag = false;
 			vec3[] vertex;
 			uint[] indices;
 			uint[][] pairIndex;
+			vec3[] dList;
 
 			immutable {
 				int recursionLevel = 2;
@@ -19,39 +19,15 @@ class ElasticSphere : Primitive {
 				float h = 0.02;
 				float zeta = 0.5;
 				float omega = 1000;
-				float m = 0.0001;
+				float m = 0.1;
 				float c = 2 * zeta * omega * m;
 				float k = m * omega * omega;
 				float deflen = R * 2 * (1 - 1 / sqrt(5.0f)) / (recursionLevel + 1);
-				float friction = 0.01;
+				float friction = 0.3;
 				float gravity = 10;
 
 				float velocity_coefficient = 1 / (1+h*c/m+h*h*k/m);
 				float position_coefficient = - (h*k/m) / (1+h*c/m+h*h*k/m);
-			}
-
-			class Particle {
-				vec3 p;
-				vec3 v;
-				vec3 n;
-
-				this(vec3 p) {
-					this.p = p;
-					this.n = normalize(p);
-					this.v = vec3(0,10,0);
-				}
-
-				void move() {
-					p += v * h;
-
-					v.y -= gravity * h;
-
-					if (p.y < 0) {
-						p.y = 0;
-						v.y = 0;
-						v.x -= v.x * friction;
-					}
-				}
 			}
 		}
 
@@ -145,6 +121,7 @@ class ElasticSphere : Primitive {
 			if (pairIndex.canFind(makePair(idx1,idx2)) == false) pairIndex ~= makePair(idx1,idx2);
 			if (pairIndex.canFind(makePair(idx2,idx0)) == false) pairIndex ~= makePair(idx2,idx0);
 		}
+		dList = new vec3[pairIndex.length];
 	}
 
 	private {
@@ -152,66 +129,70 @@ class ElasticSphere : Primitive {
 		VAO vao;
 		VBO vertexVBO;
 		VBO normalVBO;
+
+		TextureObject particleInfoTexture;
 	}
 
 	this()  {
-		if (!initFlag) {
-			sp = ShaderStore.getShader("NormalShow");
+		sp = ShaderStore.getShader("NormalShow");
 
 
-			float[] vertexArray;
-			foreach (v; vertex) vertexArray ~= v.array;
+		float[] vertexArray;
+		foreach (v; vertex) vertexArray ~= v.array;
 
-			vertexVBO = new VBO( vertexArray, VBO.Frequency.STREAM);
+		vertexVBO = new VBO( vertexArray, VBO.Frequency.STREAM);
 
-			//法線
-			float[] normal;
+		//法線
+		float[] normal;
 
-			foreach (v; vertex) {
-				auto n = normalize(v);
-				normal ~= n.array;
-			}
-			normalVBO = new VBO(normal, VBO.Frequency.STATIC);
-
-			//インデックス
-			index = new IBO(indices, IBO.Frequency.STATIC);
-
-			//VAO設置
-			vao = new VAO;
-			vao.shaderProgram = sp;
-			vao.mode = GL_TRIANGLES;
-
-			vao.Bind();
-			{	
-
-				normalVBO.Bind();
-				{
-					glEnableClientState(GL_NORMAL_ARRAY);
-					glNormalPointer(GL_FLOAT, 0, null);
-				}
-				normalVBO.UnBind();
-
-				vertexVBO.Bind();
-				{
-					glEnableClientState(GL_VERTEX_ARRAY);
-					glVertexPointer(3, GL_FLOAT, 0, null);
-				}
-				vertexVBO.UnBind();
-			}
-			vao.UnBind();
-			initFlag = true;
-
-			//パーティクル初期化
-			foreach (v; vertex) {
-				particleList ~= new Particle(v);
-			}
+		foreach (v; vertex) {
+			auto n = normalize(v);
+			normal ~= n.array;
 		}
+		normalVBO = new VBO(normal, VBO.Frequency.STATIC);
+
+		//インデックス
+		index = new IBO(indices, IBO.Frequency.STATIC);
+
+		//VAO設置
+		vao = new VAO;
+		vao.shaderProgram = sp;
+		vao.mode = GL_TRIANGLES;
+
+		vao.Bind();
+		{	
+
+			normalVBO.Bind();
+			{
+				glEnableClientState(GL_NORMAL_ARRAY);
+				glNormalPointer(GL_FLOAT, 0, null);
+			}
+			normalVBO.UnBind();
+
+			vertexVBO.Bind();
+			{
+				glEnableClientState(GL_VERTEX_ARRAY);
+				glVertexPointer(3, GL_FLOAT, 0, null);
+			}
+			vertexVBO.UnBind();
+		}
+		vao.UnBind();
+
+		//パーティクル初期化
+		foreach (v; vertex) {
+			particleList ~= new Particle(v);
+		}
+
+		int n = cast(int)ceil(log2(vertex.length));
+
+		//GPGPUの準備
+		particleInfoTexture = new TextureObject(2^^n, 1, GL_RGBA);
 	}
 
 	override void Draw() {
-		sp.SetUniformMatrix!(4,"mWorld")(GetWorldMatrix.array);
+		sp.SetUniformMatrix!(4,"mWorld")(mat4.Identity.array);
 		sp.SetUniformMatrix!(4,"mViewProj")(CurrentCamera.GetViewProjectionMatrix.array);
-		vao.Draw(index);
+		//vao.Draw(index);
 
 		Move();
 
@@ -220,42 +201,131 @@ class ElasticSphere : Primitive {
 			vertexArray ~= p.p.array;
 		}
 		vertexVBO.Update(vertexArray);
+
 	}
 
 	void Move() {
 		immutable N = particleList.length;
-		foreach (k; 0..100){
-			//隣との拘束
+		//隣との拘束
+		{
 			foreach (i; 0..pairIndex.length) {
-				auto id0 = pairIndex[i][0], id1 = pairIndex[i][1];
-				vec3 d = particleList[id1].p - particleList[id0].p;
+				vec3 d = particleList[pairIndex[i][1]].p - particleList[pairIndex[i][0]].p;	
 				auto len = d.length;
 				if (len > 0) d /= len;
 				len -= deflen;
 				d *= len;
-				vec3 v1 = particleList[id1].v - particleList[id0].v;
-				vec3 v2 = v1 * velocity_coefficient + d * position_coefficient;
-				vec3 dv = (v2 - v1) * 0.5f;
-				particleList[id0].v -= dv;
-				particleList[id1].v += dv;
+				dList[i] = d;
+			}
+			foreach (k; 0..100){
+				foreach (i; 0..pairIndex.length) {
+					auto id0 = pairIndex[i][0], id1 = pairIndex[i][1];
+					vec3 v1 = particleList[id1].v - particleList[id0].v;
+					vec3 v2 = v1 * velocity_coefficient + dList[i] * position_coefficient;
+					vec3 dv = (v2 - v1) * 0.5f;
+					particleList[id0].v -= dv;
+					particleList[id1].v += dv;
+				}
 			}
 		}
 		//ちょっとふくらませる
 		foreach (i; 0..N) {
-			enum force = 10;
+			enum force = 20;
 			Particle p = particleList[i];
 			p.v += p.n * force;
 		}
 
-		if (CurrentWindow.isKeyPressed(KeyButton.Z)) {
+		vec3 g = vec3(0,0,0);
+		foreach (p; particleList) g += p.p;
+		g /= particleList.length;
+		Pos = g;
+
+		if (Or(&CurrentWindow.isKeyPressed, KeyButton.Space, KeyButton.Enter)) {
 			foreach (p; particleList) {
-				p.v.y -= 5 * (1 - p.p.xz.length);
+				if (p.p.y > g.y) {
+					float len = length(p.p.xz - g.xz);
+					p.v.y -= 5 / len;
+				}
 			}
 		}
+		{
+			enum force = 3;
+			vec3 f = vec3(0,0,0);
+			with (CurrentWindow) {
+
+				if (isKeyPressed(KeyButton.A)) {
+					f -= CurrentCamera.GetVecX * force;
+				}
+				if (isKeyPressed(KeyButton.D)) {
+					f += CurrentCamera.GetVecX * force;
+				}
+				if (isKeyPressed(KeyButton.W)) {
+					f += CurrentCamera.GetVecZ * force;
+				}
+				if (isKeyPressed(KeyButton.S)) {
+					f -= CurrentCamera.GetVecZ * force;
+				}
+			}
+			foreach (p; particleList) {
+				if (p.isGround)
+				p.v += f;
+			}
+
+		}
+
+
+		//マウス座標で動かす
+
+		vec4 color = vec4(1,1,1,1);
+
+		Ray ray = CurrentCamera.GetCameraRay(CurrentWindow.getMousePos);
+		auto mp = ray.GetPos - ray.GetPos.y / ray.vector.y * ray.vector;
+
+		foreach (p; particleList) {
+			vec3 d = p.p - mp;
+			float len;
+			if ((len = d.length) < 1) {
+				enum force = 0.2;
+				p.v += d / len * force;
+				color = vec4(1,1,0,1);
+			}
+		}
+
+		DrawRect(0,0,300,300, color);
 
 		foreach (i; 0..N) {
 			particleList[i].move();
 		}
 
 	}
+
+	class Particle {
+		vec3 p;
+		vec3 v;
+		vec3 n;
+		bool isGround;
+
+		this(vec3 p) {
+			this.p = p;
+			this.n = normalize(p);
+			this.v = vec3(0,10,0);
+		}
+
+		void move() {
+			p += v * h;
+ 
+			v.y -= gravity * h;
+
+			isGround = false;
+
+			if (p.y < 0) {
+				p.y = 0;
+				v.y = 0;
+				v.xz = v.xz * (1 - friction);
+				isGround = true;
+			}
+		}
+	}	
 }
+
+
+

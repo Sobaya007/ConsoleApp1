@@ -103,6 +103,8 @@ class TextureObject {
 		this.height = ilGetInteger(IL_IMAGE_HEIGHT);
 
 	}
+
+
 	/*
 	Params:
 	width = テクスチャの幅
@@ -110,7 +112,7 @@ class TextureObject {
 	texMode = テクスチャの種類(GL_RBGなど)
 	depthUse = テクスチャに深度バッファを使うか否か
 	*/
-	this(int width, int height, GLenum texMode, GLenum internalTexFormat = GL_RGB) {
+	this(int width, int height, GLenum texMode) {
 		// レンダリングしようとしているテクスチャ
 		uint id;
 		glGenTextures(1, &id);
@@ -119,7 +121,7 @@ class TextureObject {
 		Bind();
 
 		// OpnGLに空の画像を与える(最後が"0")
-		glTexImage2D(GL_TEXTURE_2D, 0, texMode, width, height, 0, internalTexFormat, GL_UNSIGNED_BYTE, null);
+		glTexImage2D(GL_TEXTURE_2D, 0, texMode, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, null);
 
 		// フィルタリング
 		SetMagFilter(TexFilterType.Linear);

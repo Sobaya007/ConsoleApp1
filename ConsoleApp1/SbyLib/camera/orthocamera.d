@@ -20,4 +20,9 @@ public:
 	override mat4 GenerateProjectionMatrix() {
 		return mat4.Ortho(width, height, nearZ, farZ);
 	}
+
+	override Ray GetCameraRay(vec2 windowPos) {
+		return new Ray(GetPos, GetVecZ);
+	}
+	
 }

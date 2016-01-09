@@ -79,4 +79,10 @@ private:
 
 		return result;
 	}
+
+	static CollisionInfo ColSphereAndRay(BoundingSphere s, Ray r) {
+		CollisionInfo result;
+		result.isHit = r.GetDistance(s.GetPos) <= s.radius;
+		return result;
+	}
 }

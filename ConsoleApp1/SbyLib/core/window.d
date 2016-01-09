@@ -23,6 +23,8 @@ mixin({ //========================================= enum KeyButton　の宣言
 	s ~= "Right,";
 	s ~= "Up,";
 	s ~= "Down,";
+	s ~= "Space,";
+	s ~= "Enter";
 
 	s ~= "}";
 	return s;
@@ -60,6 +62,42 @@ public:
 		return vec2(mousePosX, mousePosY);
 	}
 
+	@property int Width() {
+		int w, h;
+		glfwGetWindowSize(window, &w, &h);
+		return w;
+	}
+
+	@property int Height() {
+		int w, h;
+		glfwGetWindowSize(window, &w, &h);
+		return h;
+	}
+
+	@property int ViewportLeft() {
+		int[4] data;
+		glGetIntegerv(GL_VIEWPORT, data.ptr);
+		return data[0];
+	}
+
+	@property int ViewportTop() {
+		int[4] data;
+		glGetIntegerv(GL_VIEWPORT, data.ptr);
+		return data[1];
+	}
+
+	@property int ViewportWidth() {
+		int[4] data;
+		glGetIntegerv(GL_VIEWPORT, data.ptr);
+		return data[2];
+	}
+
+	@property int ViewportHeight() {
+		int[4] data;
+		glGetIntegerv(GL_VIEWPORT, data.ptr);
+		return data[3];
+	}
+
 }
 
 static uint[KeyButton] keyCodeTable;
@@ -82,4 +120,6 @@ static this() {
 	keyCodeTable[KeyButton.Right] = GLFW_KEY_RIGHT;
 	keyCodeTable[KeyButton.Up] = GLFW_KEY_UP;
 	keyCodeTable[KeyButton.Down] = GLFW_KEY_DOWN;
+	keyCodeTable[KeyButton.Space] = GLFW_KEY_SPACE;
+	keyCodeTable[KeyButton.Enter] = GLFW_KEY_ENTER;
 }

@@ -8,24 +8,32 @@ class SimpleRotator : Manipulator {
 		super(entity);
 	}
 
+	Entity focus;
+
+	protected vec3 beforeCenter = vec3(0,0,0);
+
 	override void Manipulate() {
+		vec3 center;
+		if (focus) center = focus.GetPos;
+		else center = vec3(0,0,0);
 		with(entity) {
+			Pos = GetPos + center - beforeCenter;
 			if (CurrentWindow.isKeyPressed(KeyButton.W)) {
 				Pos = GetPos + 0.2 * GetVecZ;
 			} else if (CurrentWindow.isKeyPressed(KeyButton.S)) {
 				Pos = GetPos - 0.2 * GetVecZ;
 			} else if (CurrentWindow.isKeyPressed(KeyButton.Left)) {
 				mat4 mat = mat4.RotAxisAngle(GetVecY, 0.6);
-				Pos = (mat * vec4(GetPos, 1.0f)).xyz;
+				Pos = (mat * vec4(GetPos - center, 1.0f)).xyz + center;
 			} else if (CurrentWindow.isKeyPressed(KeyButton.Right)) {
 				mat4 mat = mat4.RotAxisAngle(GetVecY, -0.6);
-				Pos = (mat * vec4(GetPos, 1.0f)).xyz;
+				Pos = (mat * vec4(GetPos - center, 1.0f)).xyz + center;
 			} else if (CurrentWindow.isKeyPressed(KeyButton.Up)) {
 				mat4 mat = mat4.RotAxisAngle(GetVecX, 0.6);
-				Pos = (mat * vec4(GetPos, 1.0f)).xyz;
+				Pos = (mat * vec4(GetPos - center, 1.0f)).xyz + center;
 			} else if (CurrentWindow.isKeyPressed(KeyButton.Down)) {
 				mat4 mat = mat4.RotAxisAngle(GetVecX, -0.6);
-				Pos = (mat * vec4(GetPos, 1.0f)).xyz;
+				Pos = (mat * vec4(GetPos - center, 1.0f)).xyz + center;
 			}
 			VecZ = -normalize(GetPos);
 			if (CurrentWindow.isKeyPressed(KeyButton.Up) || CurrentWindow.isKeyPressed(KeyButton.Down)) {
@@ -46,5 +54,8 @@ class SimpleRotator : Manipulator {
 			VecX = normalize(cross(GetVecY, GetVecZ));
 			beforeMousePos = mousePos;
 		}
+		beforeCenter = center;
+
+
 	}
 }

@@ -21,4 +21,16 @@ public:
 	override mat4 GenerateProjectionMatrix() {
 		return mat4.Perspective(aspectWperH, fovy, nearZ, farZ);
 	}
+
+	override Ray GetCameraRay(vec2 windowPos) {
+
+		auto tan = tan(fovy/2);
+		auto vector = vec3(windowPos / vec2(CurrentWindow.ViewportWidth, CurrentWindow.ViewportHeight) - 0.5, 1);
+		vector.y *= -1;
+		vector.x *= 2 * aspectWperH * tan;
+		vector.y *= 2 * tan;
+		vector = (mat4.Invert(GetViewMatrix) * vec4(vector, 0) ).xyz;
+		return new Ray(GetPos, vector);
+	}
+	
 }

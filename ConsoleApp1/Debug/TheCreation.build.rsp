@@ -5,6 +5,7 @@ sbylib\camera\perspectivecamera.d
 SbyLib\core\entity\drawable.d 
 SbyLib\core\entity\entity.d 
 sbylib\core\entity\package.d 
+sbylib\core\manipulator\camerachaser.d 
 SbyLib\core\manipulator\manipulator.d 
 SbyLib\core\manipulator\manipulatormanager.d 
 sbylib\core\manipulator\package.d 
@@ -12,7 +13,7 @@ sbylib\core\manipulator\simplemover.d
 SbyLib\core\manipulator\simplerotator.d 
 sbylib\core\package.d 
 sbylib\core\window.d 
-world.d 
+SbyLib\core\world.d 
 SbyLib\gl\FrameBufferObject.d 
 SbyLib\gl\IndexBufferObject.d 
 sbylib\gl\package.d 
@@ -26,14 +27,18 @@ sbylib\math\package.d
 sbylib\math\utils.d 
 sbylib\math\vector.d 
 sbylib\physics\bound\bound.d 
+sbylib\physics\bound\line.d 
 sbylib\physics\bound\obb.d 
 sbylib\physics\bound\package.d 
 sbylib\physics\bound\plane.d 
+sbylib\physics\bound\ray.d 
+sbylib\physics\bound\sphere.d 
 sbylib\physics\elastic\package.d 
 sbylib\physics\elastic\sphere.d 
 sbylib\physics\collisioninfo.d 
 sbylib\physics\package.d 
 SbyLib\primitive\box.d 
+sbylib\primitive\line.d 
 sbylib\primitive\package.d 
 SbyLib\primitive\plane.d 
 sbylib\primitive\primitive.d 

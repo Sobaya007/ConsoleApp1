@@ -8,6 +8,7 @@ echo sbylib\camera\perspectivecamera.d >>Debug\TheCreation.build.rsp
 echo SbyLib\core\entity\drawable.d >>Debug\TheCreation.build.rsp
 echo SbyLib\core\entity\entity.d >>Debug\TheCreation.build.rsp
 echo sbylib\core\entity\package.d >>Debug\TheCreation.build.rsp
+echo sbylib\core\manipulator\camerachaser.d >>Debug\TheCreation.build.rsp
 echo SbyLib\core\manipulator\manipulator.d >>Debug\TheCreation.build.rsp
 echo SbyLib\core\manipulator\manipulatormanager.d >>Debug\TheCreation.build.rsp
 echo sbylib\core\manipulator\package.d >>Debug\TheCreation.build.rsp
@@ -15,7 +16,7 @@ echo sbylib\core\manipulator\simplemover.d >>Debug\TheCreation.build.rsp
 echo SbyLib\core\manipulator\simplerotator.d >>Debug\TheCreation.build.rsp
 echo sbylib\core\package.d >>Debug\TheCreation.build.rsp
 echo sbylib\core\window.d >>Debug\TheCreation.build.rsp
-echo world.d >>Debug\TheCreation.build.rsp
+echo SbyLib\core\world.d >>Debug\TheCreation.build.rsp
 echo SbyLib\gl\FrameBufferObject.d >>Debug\TheCreation.build.rsp
 echo SbyLib\gl\IndexBufferObject.d >>Debug\TheCreation.build.rsp
 echo sbylib\gl\package.d >>Debug\TheCreation.build.rsp
@@ -29,14 +30,18 @@ echo sbylib\math\package.d >>Debug\TheCreation.build.rsp
 echo sbylib\math\utils.d >>Debug\TheCreation.build.rsp
 echo sbylib\math\vector.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\bound\bound.d >>Debug\TheCreation.build.rsp
+echo sbylib\physics\bound\line.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\bound\obb.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\bound\package.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\bound\plane.d >>Debug\TheCreation.build.rsp
+echo sbylib\physics\bound\ray.d >>Debug\TheCreation.build.rsp
+echo sbylib\physics\bound\sphere.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\elastic\package.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\elastic\sphere.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\collisioninfo.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\package.d >>Debug\TheCreation.build.rsp
 echo SbyLib\primitive\box.d >>Debug\TheCreation.build.rsp
+echo sbylib\primitive\line.d >>Debug\TheCreation.build.rsp
 echo sbylib\primitive\package.d >>Debug\TheCreation.build.rsp
 echo SbyLib\primitive\plane.d >>Debug\TheCreation.build.rsp
 echo sbylib\primitive\primitive.d >>Debug\TheCreation.build.rsp

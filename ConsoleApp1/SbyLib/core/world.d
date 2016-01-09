@@ -12,6 +12,7 @@ long CurrentFrameTime; //milliseconds
 void SbyInit(GLFWwindow *window, long frameTime) {
 	CurrentWindow = new Window(window);
 	CurrentFrameTime = frameTime;
+	FunctionsInit();
 }
 
 void MainLoop(void delegate() stepAndDraw) {

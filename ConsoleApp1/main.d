@@ -20,14 +20,15 @@ bool GameMain() {
 		writeln(description);
 	});
 
-	SbyInit(window, 16);
+	SbyInit(window, 10);
 
 	{
-		if (window_width < window_height) {
-			glViewport(0, (window_height - window_width) /2, window_width, window_width);
-		} else {
-			glViewport((window_width - window_height) /2, 0, window_height, window_height);
-		}
+		//if (window_width < window_height) {
+		//    glViewport(0, (window_height - window_width) /2, window_width, window_width);
+		//} else {
+		//    glViewport((window_width - window_height) /2, 0, window_height, window_height);
+		//}
+		glViewport(0,0,window_width, window_height);
 	}
 
 	CurrentCamera = new PerspectiveCamera(1, PI_4, 1, 30);
@@ -56,15 +57,24 @@ bool GameMain() {
 
 	auto sphere = new ElasticSphere;
 
-	ManipulatorManager.Add(new SimpleRotator(CurrentCamera));
+	auto ball = new Sphere;
+
+	auto cameraManipulator = new CameraChaser(CurrentCamera);
+	cameraManipulator.focus = sphere;
+	ManipulatorManager.Add(cameraManipulator);
 
 	MainLoop(() {
 
 		glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		//box.Draw();
+		box.Draw();
 		plane.Draw();
 		sphere.Draw();
+		ball.Draw();
+
+		Ray ray = CurrentCamera.GetCameraRay(CurrentWindow.getMousePos);
+		auto p = ray.GetPos - ray.GetPos.y / ray.vector.y * ray.vector;
+		ball.Pos = p;
 		
 		fpsCounter.Update();
 		window.glfwSetWindowTitle(("FPS:[" ~ to!string(fpsCounter.GetFPS) ~ "]").toStringz);
@@ -91,7 +101,7 @@ auto InitGLFW(in int window_width, in int window_height) {
 		writeln("Failed to create window");
 		return null;
 	}
-	glfwSetWindowPos(window,100, 100);
+	glfwSetWindowPos(window,0, 30);
 
 
 	glfwMakeContextCurrent(window);

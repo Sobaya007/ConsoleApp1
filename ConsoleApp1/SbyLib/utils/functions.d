@@ -10,14 +10,14 @@ void SendBufferData(GLenum e)(inout int bufferID, inout float[] data) {
 alias SendBufferData!(GL_STATIC_DRAW) StaticSendBufferData;
 alias SendBufferData!(GL_DYNAMIC_DRAW) DynamicSendBufferData;
 
-static bool contains(T)(T value, T[] array... ) {
+bool contains(T)(T value, T[] array... ) {
 	foreach( e; array )
 		if( value == e )
 			return true;
 	return false;
 }
 
-static T computeSignedVolume(T)(Vector!(T, 3)[4] positions...) {
+T computeSignedVolume(T)(Vector!(T, 3)[4] positions...) {
 	alias Vector!(T, S) vec;
 	mixin({
 		string code;
@@ -35,8 +35,11 @@ static T computeSignedVolume(T)(Vector!(T, 3)[4] positions...) {
 	}());
 }
 
+void sbywrite(alias v)() {
+	writeln(v.stringof, "=", v);
+}
 
-static string toString(int i) {
+string toString(int i) {
 	if (i == 0) return "0";
 	char[] s;
 	while (i > 0) {
@@ -48,14 +51,58 @@ static string toString(int i) {
 	return r;
 }
 
-static bool Or(T)(bool delegate(T) func, T[] elements...) {
+bool Or(T)(bool delegate(T) func, T[] elements...) {
 	foreach (e; elements) if (func(e)) return true;
 	return false;
 }
 
-static bool And(T)(bool delegate(T) func, T[] elements...) {
+bool And(T)(bool delegate(T) func, T[] elements...) {
 	foreach (e; elements) if (!func(e)) return false;
 	return true;
+}
+
+private VAO vao;
+private VBO vertexVBO;
+private ShaderProgram drawRect;
+
+void FunctionsInit(){
+	vao = new VAO;
+	vao.Bind();
+	{
+		float[] vertex = [-1,-1, +1,-1, -1,+1, +1,+1];
+		vertexVBO = new VBO(vertex, VBO.Frequency.STATIC);
+		vertexVBO.Bind();
+		glEnableClientState(GL_VERTEX_ARRAY);
+		glVertexPointer(2, GL_FLOAT, 0, null);
+		vertexVBO.UnBind();
+	}
+	vao.UnBind();
+	vao.mode = GL_TRIANGLE_STRIP;
+}
+
+void DrawRect(float cx, float cy, float width, float height, vec4 color = vec4(1,1,1,1)) {
+	ShaderProgram sp = ShaderStore.getShader("DrawRect");
+	sp.SetUniform!(4, "color")(color.array);
+	DrawRectWidthShader(cx, cy, width, height, sp);
+}
+
+void DrawImage(float cx, float cy, float width, float height, TextureObject tex) {
+	ShaderProgram sp = ShaderStore.getShader("DrawImage");
+	sp.SetTexture(tex);
+	DrawRectWidthShader(cx, cy, width, height, sp);
+}
+
+void DrawRectWidthShader(float cx, float cy, float width, float height, ShaderProgram sp) {
+	vao.shaderProgram = sp;
+	vao.SetUniform!(1, "cx")(cx);
+	vao.SetUniform!(1, "cy")(cy);
+	vao.SetUniform!(1, "width")(width);
+	vao.SetUniform!(1, "height")(height);
+	vao.SetUniform!(1, "ww")(CurrentWindow.ViewportWidth);
+	vao.SetUniform!(1, "wh")(CurrentWindow.ViewportHeight);
+	glDisable(GL_DEPTH_TEST);
+	vao.Draw();
+	glEnable(GL_DEPTH_TEST);
 }
 
 mixin template CreateSetter(alias vary, string setterExtCode = "") {

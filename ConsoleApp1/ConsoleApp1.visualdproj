@@ -239,6 +239,7 @@
      <File path="sbylib\core\entity\package.d" />
     </Folder>
     <Folder name="manipulator">
+     <File path="sbylib\core\manipulator\camerachaser.d" />
      <File path="SbyLib\core\manipulator\manipulator.d" />
      <File path="SbyLib\core\manipulator\manipulatormanager.d" />
      <File path="sbylib\core\manipulator\package.d" />
@@ -247,7 +248,7 @@
     </Folder>
     <File path="sbylib\core\package.d" />
     <File path="sbylib\core\window.d" />
-    <File path="world.d" />
+    <File path="SbyLib\core\world.d" />
    </Folder>
    <Folder name="gl">
     <File path="SbyLib\gl\FrameBufferObject.d" />
@@ -268,9 +269,12 @@
    <Folder name="physics">
     <Folder name="bound">
      <File path="sbylib\physics\bound\bound.d" />
+     <File path="sbylib\physics\bound\line.d" />
      <File path="sbylib\physics\bound\obb.d" />
      <File path="sbylib\physics\bound\package.d" />
      <File path="sbylib\physics\bound\plane.d" />
+     <File path="sbylib\physics\bound\ray.d" />
+     <File path="sbylib\physics\bound\sphere.d" />
     </Folder>
     <Folder name="elastic">
      <File path="sbylib\physics\elastic\package.d" />
@@ -281,6 +285,7 @@
    </Folder>
    <Folder name="primitive">
     <File path="SbyLib\primitive\box.d" />
+    <File path="sbylib\primitive\line.d" />
     <File path="sbylib\primitive\package.d" />
     <File path="SbyLib\primitive\plane.d" />
     <File path="sbylib\primitive\primitive.d" />

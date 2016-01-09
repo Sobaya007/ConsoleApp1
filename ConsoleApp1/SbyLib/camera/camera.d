@@ -77,6 +77,7 @@ public:
 
 		void Target(vec3 t) {
 			VecZ(normalize(t - GetPos));
+			writeln("F+LJK");
 		}
 	}
 
@@ -91,7 +92,7 @@ public:
 	mat4 GetProjectionMatrix() {
 		if (projUpdate) {
 			projUpdate = false;
-			projMatrix = GenerateProjectionMatrix();
+			projMatrix = mat4.Scale(vec3(cast(float)CurrentWindow.ViewportHeight / CurrentWindow.ViewportWidth, 1, 1)) * GenerateProjectionMatrix();
 		}
 		return projMatrix;
 	}
@@ -111,4 +112,7 @@ public:
 	}
 
 	protected abstract mat4 GenerateProjectionMatrix();
+
+	abstract Ray GetCameraRay(vec2 windowPos);
+
 }
