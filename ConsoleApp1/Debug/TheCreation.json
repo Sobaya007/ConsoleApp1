@@ -5932,19 +5932,19 @@
       "line" : 207,
       "char" : 7,
       "deco" : "FZv",
-      "endline" : 299,
+      "endline" : 322,
       "endchar" : 2
      },
      {
       "name" : "Particle",
       "kind" : "class",
-      "line" : 301,
+      "line" : 324,
       "char" : 2,
       "members" : [
        {
         "name" : "p",
         "kind" : "variable",
-        "line" : 302,
+        "line" : 325,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -5953,7 +5953,7 @@
        {
         "name" : "v",
         "kind" : "variable",
-        "line" : 303,
+        "line" : 326,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -5962,7 +5962,7 @@
        {
         "name" : "n",
         "kind" : "variable",
-        "line" : 304,
+        "line" : 327,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -5971,7 +5971,7 @@
        {
         "name" : "isGround",
         "kind" : "variable",
-        "line" : 305,
+        "line" : 328,
         "char" : 8,
         "deco" : "b",
         "offset" : 44
@@ -5979,7 +5979,7 @@
        {
         "name" : "this",
         "kind" : "constructor",
-        "line" : 307,
+        "line" : 330,
         "char" : 3,
         "deco" : "FS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics7elastic6sphere13ElasticSphere8Particle",
         "originalType" : "(vec3 p)",
@@ -5989,22 +5989,22 @@
           "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector"
          }
         ],
-        "endline" : 311,
+        "endline" : 334,
         "endchar" : 3
        },
        {
         "name" : "move",
         "kind" : "function",
-        "line" : 313,
+        "line" : 336,
         "char" : 8,
         "deco" : "FZv",
-        "endline" : 326,
+        "endline" : 349,
         "endchar" : 3
        },
        {
         "name" : "this",
         "kind" : "variable",
-        "line" : 301,
+        "line" : 324,
         "char" : 2,
         "deco" : "C6sbylib7physics7elastic6sphere13ElasticSphere",
         "offset" : 48
@@ -6995,58 +6995,6 @@
     "kind" : "template",
     "line" : 5,
     "char" : 6,
-    "name" : "SendBufferData",
-    "parameters" : [
-     {
-      "name" : "e",
-      "kind" : "value",
-      "deco" : "k"
-     }
-    ],
-    "members" : [
-     {
-      "name" : "SendBufferData",
-      "kind" : "function",
-      "line" : 5,
-      "char" : 6,
-      "type" : "void(inout int bufferID, inout float[] data)",
-      "parameters" : [
-       {
-        "name" : "bufferID",
-        "deco" : "i",
-        "storageClass" : [
-         "inout"
-        ]
-       },
-       {
-        "name" : "data",
-        "type" : "float[]",
-        "storageClass" : [
-         "inout"
-        ]
-       }
-      ],
-      "endline" : 8,
-      "endchar" : 1
-     }
-    ]
-   },
-   {
-    "name" : "StaticSendBufferData",
-    "kind" : "alias",
-    "line" : 10,
-    "char" : 39
-   },
-   {
-    "name" : "DynamicSendBufferData",
-    "kind" : "alias",
-    "line" : 11,
-    "char" : 40
-   },
-   {
-    "kind" : "template",
-    "line" : 13,
-    "char" : 6,
     "name" : "contains",
     "parameters" : [
      {
@@ -7058,7 +7006,7 @@
      {
       "name" : "contains",
       "kind" : "function",
-      "line" : 13,
+      "line" : 5,
       "char" : 6,
       "type" : "bool(T value, T[] array...)",
       "parameters" : [
@@ -7071,14 +7019,14 @@
         "type" : "T[]"
        }
       ],
-      "endline" : 18,
+      "endline" : 10,
       "endchar" : 1
      }
     ]
    },
    {
     "kind" : "template",
-    "line" : 20,
+    "line" : 12,
     "char" : 3,
     "name" : "computeSignedVolume",
     "parameters" : [
@@ -7091,23 +7039,52 @@
      {
       "name" : "computeSignedVolume",
       "kind" : "function",
-      "line" : 20,
+      "line" : 12,
       "char" : 3,
-      "type" : "T(Vector!(T, 3)[4] positions...)",
+      "type" : "T(Vector!(T, 3)[4] positions)",
       "parameters" : [
        {
         "name" : "positions",
         "type" : "Vector!(T, 3)[4]"
        }
       ],
-      "endline" : 36,
+      "endline" : 28,
       "endchar" : 1
      }
     ]
    },
    {
     "kind" : "template",
-    "line" : 38,
+    "line" : 30,
+    "char" : 3,
+    "name" : "computeUnSignedArea",
+    "parameters" : [
+     {
+      "name" : "T",
+      "kind" : "type"
+     }
+    ],
+    "members" : [
+     {
+      "name" : "computeUnSignedArea",
+      "kind" : "function",
+      "line" : 30,
+      "char" : 3,
+      "type" : "T(Vector!(T, 3)[3] positions)",
+      "parameters" : [
+       {
+        "name" : "positions",
+        "type" : "Vector!(T, 3)[3]"
+       }
+      ],
+      "endline" : 32,
+      "endchar" : 1
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "line" : 34,
     "char" : 6,
     "name" : "sbywrite",
     "parameters" : [
@@ -7120,10 +7097,10 @@
      {
       "name" : "sbywrite",
       "kind" : "function",
-      "line" : 38,
+      "line" : 34,
       "char" : 6,
       "type" : "void()",
-      "endline" : 40,
+      "endline" : 36,
       "endchar" : 1
      }
     ]
@@ -7131,7 +7108,7 @@
    {
     "name" : "toString",
     "kind" : "function",
-    "line" : 42,
+    "line" : 38,
     "char" : 8,
     "deco" : "FiZAya",
     "parameters" : [
@@ -7140,12 +7117,12 @@
       "deco" : "i"
      }
     ],
-    "endline" : 52,
+    "endline" : 48,
     "endchar" : 1
    },
    {
     "kind" : "template",
-    "line" : 54,
+    "line" : 50,
     "char" : 6,
     "name" : "Or",
     "parameters" : [
@@ -7158,7 +7135,7 @@
      {
       "name" : "Or",
       "kind" : "function",
-      "line" : 54,
+      "line" : 50,
       "char" : 6,
       "type" : "bool(bool delegate(T) func, T[] elements...)",
       "parameters" : [
@@ -7171,14 +7148,14 @@
         "type" : "T[]"
        }
       ],
-      "endline" : 57,
+      "endline" : 53,
       "endchar" : 1
      }
     ]
    },
    {
     "kind" : "template",
-    "line" : 59,
+    "line" : 55,
     "char" : 6,
     "name" : "And",
     "parameters" : [
@@ -7191,7 +7168,7 @@
      {
       "name" : "And",
       "kind" : "function",
-      "line" : 59,
+      "line" : 55,
       "char" : 6,
       "type" : "bool(bool delegate(T) func, T[] elements...)",
       "parameters" : [
@@ -7204,7 +7181,7 @@
         "type" : "T[]"
        }
       ],
-      "endline" : 62,
+      "endline" : 58,
       "endchar" : 1
      }
     ]
@@ -7213,7 +7190,7 @@
     "name" : "vao",
     "kind" : "variable",
     "protection" : "private",
-    "line" : 64,
+    "line" : 60,
     "char" : 13,
     "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
     "originalType" : "VAO"
@@ -7222,7 +7199,7 @@
     "name" : "vertexVBO",
     "kind" : "variable",
     "protection" : "private",
-    "line" : 65,
+    "line" : 61,
     "char" : 13,
     "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
     "originalType" : "VBO"
@@ -7231,7 +7208,7 @@
     "name" : "drawRect",
     "kind" : "variable",
     "protection" : "private",
-    "line" : 66,
+    "line" : 62,
     "char" : 23,
     "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram",
     "originalType" : "ShaderProgram"
@@ -7239,16 +7216,16 @@
    {
     "name" : "FunctionsInit",
     "kind" : "function",
-    "line" : 68,
+    "line" : 64,
     "char" : 6,
     "deco" : "FZv",
-    "endline" : 81,
+    "endline" : 77,
     "endchar" : 1
    },
    {
     "name" : "DrawRect",
     "kind" : "function",
-    "line" : 83,
+    "line" : 79,
     "char" : 6,
     "deco" : "FffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv",
     "originalType" : "void(float cx, float cy, float width, float height, vec4 color = vec4(1, 1, 1, 1))",
@@ -7275,13 +7252,13 @@
       "default" : "Vector(nanF).this(1.00000F, 1.00000F, 1.00000F, 1.00000F)"
      }
     ],
-    "endline" : 87,
+    "endline" : 83,
     "endchar" : 1
    },
    {
     "name" : "DrawImage",
     "kind" : "function",
-    "line" : 89,
+    "line" : 85,
     "char" : 6,
     "deco" : "FffffC6sbylib2gl13TextureObject13TextureObjectZv",
     "parameters" : [
@@ -7306,13 +7283,13 @@
       "deco" : "C6sbylib2gl13TextureObject13TextureObject"
      }
     ],
-    "endline" : 93,
+    "endline" : 89,
     "endchar" : 1
    },
    {
     "name" : "DrawRectWidthShader",
     "kind" : "function",
-    "line" : 95,
+    "line" : 91,
     "char" : 6,
     "deco" : "FffffC6sbylib2gl13ShaderProgram13ShaderProgramZv",
     "parameters" : [
@@ -7337,12 +7314,12 @@
       "deco" : "C6sbylib2gl13ShaderProgram13ShaderProgram"
      }
     ],
-    "endline" : 106,
+    "endline" : 102,
     "endchar" : 1
    },
    {
     "kind" : "template",
-    "line" : 108,
+    "line" : 104,
     "char" : 7,
     "name" : "CreateSetter",
     "parameters" : [
@@ -7361,7 +7338,7 @@
    },
    {
     "kind" : "template",
-    "line" : 115,
+    "line" : 111,
     "char" : 7,
     "name" : "CreateGetter",
     "parameters" : [
@@ -7380,7 +7357,7 @@
    },
    {
     "kind" : "template",
-    "line" : 123,
+    "line" : 119,
     "char" : 7,
     "name" : "CreateSetterGetter",
     "parameters" : [
@@ -7405,7 +7382,7 @@
    },
    {
     "kind" : "template",
-    "line" : 134,
+    "line" : 130,
     "char" : 7,
     "name" : "CacheVar",
     "parameters" : [
@@ -7427,25 +7404,25 @@
      {
       "name" : "CreateSetter!(trigger, target.stringof ~ \"_update_flag = true;\")",
       "kind" : "mixin",
-      "line" : 140,
+      "line" : 136,
       "char" : 3
      },
      {
       "name" : "CreateGetter!(trigger, \"\")",
       "kind" : "mixin",
-      "line" : 142,
+      "line" : 138,
       "char" : 3
      },
      {
       "name" : "CreateSetter!(target, \"\")",
       "kind" : "mixin",
-      "line" : 143,
+      "line" : 139,
       "char" : 3
      },
      {
       "name" : "CreateGetter!(target, \"if (\" ~ target.stringof ~ \"_update_flag) {\" ~ target.stringof ~ \"_update_flag = false;\" ~ target.stringof ~ \" = \" ~ updateFunc ~ \"();}\")",
       "kind" : "mixin",
-      "line" : 145,
+      "line" : 141,
       "char" : 3
      }
     ]

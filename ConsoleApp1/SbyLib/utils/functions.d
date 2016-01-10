@@ -2,14 +2,6 @@ module sbylib.utils.functions;
 
 import sbylib;
 
-void SendBufferData(GLenum e)(inout int bufferID, inout float[] data) {
-	glBindBuffer(GL_ARRAY_BUFFER, bufferID);
-	glBufferData(GL_ARRAY_BUFFER, data.length * float.sizeof, data.ptr, e);
-}
-
-alias SendBufferData!(GL_STATIC_DRAW) StaticSendBufferData;
-alias SendBufferData!(GL_DYNAMIC_DRAW) DynamicSendBufferData;
-
 bool contains(T)(T value, T[] array... ) {
 	foreach( e; array )
 		if( value == e )
@@ -17,22 +9,26 @@ bool contains(T)(T value, T[] array... ) {
 	return false;
 }
 
-T computeSignedVolume(T)(Vector!(T, 3)[4] positions...) {
-	alias Vector!(T, S) vec;
+T computeSignedVolume(T)(Vector!(T, 3) positions[4]) {
 	mixin({
 		string code;
 		foreach (i; 0..3) {
-			code ~= "vec v" ~ to!string(i) ~ " = positions[" ~to!string(i+1) ~ "] - positions[0];";
+			code ~= "Vector!(T,3) v" ~ to!string(i) ~ " = positions[" ~to!string(i+1) ~ "] - positions[0];\n";
 		}
 		code ~= "return ";
 		foreach (i; 0..3) {
-			code ~= "+v" ~ to!string(i) ~ ".x * v" ~ to!string((i+1)%3) ~ ".y * v" ~ to!string((i+2)%3) ~ ".z";
+			code ~= "+v" ~ to!string(i) ~ ".x * v" ~ to!string((i+1)%3) ~ ".y * v" ~ to!string((i+2)%3) ~ ".z\n";
 		}
 		foreach (i; 0..3) {
-			code ~= "-v" ~ to!string(i) ~ ".x * v" ~ to!string((i+2)%3) ~ ".y * v" ~ to!string((i+1)%3) ~ ".z";
+			code ~= "-v" ~ to!string(i) ~ ".x * v" ~ to!string((i+2)%3) ~ ".y * v" ~ to!string((i+1)%3) ~ ".z\n";
 		}
+		code ~= ";";
 		return code;
 	}());
+}
+
+T computeUnSignedArea(T)(Vector!(T,3) positions[3]) {
+	return length(cross(positions[2] - positions[0], positions[1] - positions[0]));
 }
 
 void sbywrite(alias v)() {

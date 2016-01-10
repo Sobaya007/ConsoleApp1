@@ -192,7 +192,7 @@ class ElasticSphere : Primitive {
 	override void Draw() {
 		sp.SetUniformMatrix!(4,"mWorld")(mat4.Identity.array);
 		sp.SetUniformMatrix!(4,"mViewProj")(CurrentCamera.GetViewProjectionMatrix.array);
-		//vao.Draw(index);
+		vao.Draw(index);
 
 		Move();
 
@@ -227,18 +227,40 @@ class ElasticSphere : Primitive {
 				}
 			}
 		}
+		//体積の測定
+		float volume = 0;
+		{
+			int base = indices[0];
+			foreach (i; 0..indices.length/3) {
+				int idx0 = indices[i*3+0]; 
+				int idx1 = indices[i*3+1];
+				int idx2 = indices[i*3+2];
+				volume += -computeSignedVolume!float([particleList[base].p, particleList[idx0].p, particleList[idx1].p, particleList[idx2].p]) / 6;
+			}
+		}
+		//表面積の測定
+		float area = 0;
+		{
+			foreach (i; 0..indices.length/3) {
+				int idx0 = indices[i*3+0]; 
+				int idx1 = indices[i*3+1];
+				int idx2 = indices[i*3+2];
+				area += computeUnSignedArea!float([particleList[idx0].p, particleList[idx1].p, particleList[idx2].p]) / 2;
+			}
+		}
 		//ちょっとふくらませる
-		foreach (i; 0..N) {
-			enum force = 20;
-			Particle p = particleList[i];
-			p.v += p.n * force;
+		{
+			float force = 20;
+			foreach (i; 0..N) {
+					Particle p = particleList[i];
+				p.v += p.n * force;
+			}
 		}
 
 		vec3 g = vec3(0,0,0);
 		foreach (p; particleList) g += p.p;
 		g /= particleList.length;
 		Pos = g;
-
 		if (Or(&CurrentWindow.isKeyPressed, KeyButton.Space, KeyButton.Enter)) {
 			foreach (p; particleList) {
 				if (p.p.y > g.y) {
@@ -326,6 +348,3 @@ class ElasticSphere : Primitive {
 		}
 	}	
 }
-
-
-
