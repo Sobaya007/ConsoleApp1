@@ -47,6 +47,12 @@ class ShaderStore {
 												}
 												",
 												ShaderProgram.InputType.SourceCode);
+		//shaderList["Phong"] = new ShaderProgram(
+		//                                        "
+		//                                        ",
+		//                                        "
+		//                                        ",
+		//                                        ShaderProgram.InputType.SourceCode);
 		shaderList["SimpleColor"] = new ShaderProgram(
 												"
 												uniform mat4 mWorld;

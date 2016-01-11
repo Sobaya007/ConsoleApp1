@@ -5862,7 +5862,7 @@
       ],
       "deco" : "yf",
       "originalType" : "float",
-      "init" : "30.0000F"
+      "init" : "100.000F"
      },
      {
       "name" : "baloon_coefficient",
@@ -6012,19 +6012,19 @@
       "line" : 215,
       "char" : 7,
       "deco" : "FZv",
-      "endline" : 353,
+      "endline" : 356,
       "endchar" : 2
      },
      {
       "name" : "Particle",
       "kind" : "class",
-      "line" : 355,
+      "line" : 358,
       "char" : 2,
       "members" : [
        {
         "name" : "p",
         "kind" : "variable",
-        "line" : 356,
+        "line" : 359,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6033,7 +6033,7 @@
        {
         "name" : "v",
         "kind" : "variable",
-        "line" : 357,
+        "line" : 360,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6042,7 +6042,7 @@
        {
         "name" : "n",
         "kind" : "variable",
-        "line" : 358,
+        "line" : 361,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6051,7 +6051,7 @@
        {
         "name" : "force",
         "kind" : "variable",
-        "line" : 359,
+        "line" : 362,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6060,7 +6060,7 @@
        {
         "name" : "isGround",
         "kind" : "variable",
-        "line" : 360,
+        "line" : 363,
         "char" : 8,
         "deco" : "b",
         "offset" : 56
@@ -6068,7 +6068,7 @@
        {
         "name" : "this",
         "kind" : "constructor",
-        "line" : 362,
+        "line" : 365,
         "char" : 3,
         "deco" : "FS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics7elastic6sphere13ElasticSphere8Particle",
         "originalType" : "(vec3 p)",
@@ -6078,22 +6078,22 @@
           "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector"
          }
         ],
-        "endline" : 367,
+        "endline" : 370,
         "endchar" : 3
        },
        {
         "name" : "move",
         "kind" : "function",
-        "line" : 369,
+        "line" : 372,
         "char" : 8,
         "deco" : "FZv",
-        "endline" : 381,
+        "endline" : 386,
         "endchar" : 3
        },
        {
         "name" : "this",
         "kind" : "variable",
-        "line" : 355,
+        "line" : 358,
         "char" : 2,
         "deco" : "C6sbylib7physics7elastic6sphere13ElasticSphere",
         "offset" : 60
@@ -6951,13 +6951,13 @@
        "static"
       ],
       "deco" : "FZv",
-      "endline" : 105,
+      "endline" : 111,
       "endchar" : 2
      },
      {
       "name" : "getShader",
       "kind" : "function",
-      "line" : 107,
+      "line" : 113,
       "char" : 23,
       "storageClass" : [
        "static"
@@ -6969,7 +6969,7 @@
         "deco" : "Aya"
        }
       ],
-      "endline" : 109,
+      "endline" : 115,
       "endchar" : 2
      }
     ]

@@ -28,7 +28,7 @@ class ElasticSphere : Primitive {
 				float friction = 0.3;
 				float gravity = 90;
 				float down_push_force = 600;
-				float side_push_force = 30;
+				float side_push_force = 100;
 				float baloon_coefficient = 20000;
 
 				float velocity_coefficient = 1 / (1+h*c/m+h*h*k/m);
@@ -239,16 +239,20 @@ class ElasticSphere : Primitive {
 
 		//重心を求める
 		vec3 g = vec3(0,0,0);
-		foreach (p; particleList) g += p.p;
+		float upper = 0, lower = float.max_exp;
+		foreach (p; particleList) {
+			g += p.p;
+			upper = max(upper, p.p.y);
+			lower = min(lower, p.p.y);
+		}
 		g /= particleList.length;
 		Pos = g;
 		//キー入力で動かす
 		if (Or(&CurrentWindow.isKeyPressed, KeyButton.Space, KeyButton.Enter)) {
 			foreach (p; particleList) {
+				//下向きの力
 				float len = length(p.p.xz - g.xz);
-				if (p.p.y > g.y) { //下向きの力
-					p.force.y -= down_push_force / pow(len + 0.5, 2);
-				}
+				p.force.y -= min(800, down_push_force / pow(len + 0.6, 2.5)) * (p.p.y - lower) / (upper - lower);
 			}
 		}
 
@@ -315,8 +319,7 @@ class ElasticSphere : Primitive {
 				}
 				////地面との拘束
 				//foreach (i, p; particleList) {
-				//    vec3 v1 = p.v;
-				//    vec3 v2 = v1 * velocity_coefficient + floorSinkList[i] * position_coefficient;
+				//    vec3 v2 = floorSinkList[i] * position_coefficient;
 				//    p.v -= v2;
 				//}
 			}
@@ -327,22 +330,22 @@ class ElasticSphere : Primitive {
 		}
 
 
-		//マウス座標で動かす
-
+		////マウス座標で動かす
+		//
 		vec4 color = vec4(1,1,1,1);
-
-		Ray ray = CurrentCamera.GetCameraRay(CurrentWindow.getMousePos);
-		auto mp = ray.GetPos - ray.GetPos.y / ray.vector.y * ray.vector;
-
-		foreach (p; particleList) {
-			vec3 d = p.p - mp;
-			float len;
-			if ((len = d.length) < 1) {
-				enum force = 1;
-				p.v += d * force;
-				color = vec4(1,1,0,1);
-			}
-		}
+		//
+		//Ray ray = CurrentCamera.GetCameraRay(CurrentWindow.getMousePos);
+		//auto mp = ray.GetPos - ray.GetPos.y / ray.vector.y * ray.vector;
+		//
+		//foreach (p; particleList) {
+		//    vec3 d = p.p - mp;
+		//    float len;
+		//    if ((len = d.length) < 1) {
+		//        enum force = 1;
+		//        p.v += d * force;
+		//        color = vec4(1,1,0,1);
+		//    }
+		//}
 
 		DrawRect(0,0,300,300, color);
 
@@ -367,13 +370,13 @@ class ElasticSphere : Primitive {
 		}
 
 		void move() {
+
 			p += v * h;
 
 			isGround = false;
-
 			if (p.y < 0) {
-				p.y = 0;
-				v.y = 0;
+				//p.y = 0;
+				v.y = -p.y / h;
 				v.xz = v.xz * (1 - friction);
 				isGround = true;
 			}
