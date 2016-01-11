@@ -31,8 +31,8 @@ class Box : Primitive {
 				vec3(0,0,+1),
 				vec3(0,+1,0),
 				vec3(0,-1,0),
-				vec3(-1,0,0),
-				vec3(+1,0,0)
+				vec3(+1,0,0),
+				vec3(-1,0,0)
 			];
 			foreach (i; 0..6) {
 				vao[i] = new VAO;

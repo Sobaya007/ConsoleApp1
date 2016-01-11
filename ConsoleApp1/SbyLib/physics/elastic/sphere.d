@@ -12,22 +12,28 @@ class ElasticSphere : Primitive {
 			uint[] indices;
 			uint[][] pairIndex;
 			vec3[] dList;
+			vec3[] forceList;
+			vec3[] floorSinkList;
 
 			immutable {
 				int recursionLevel = 2;
 				float R = 0.5;
 				float h = 0.02;
 				float zeta = 0.5;
-				float omega = 1000;
+				float omega = 100;
 				float m = 0.1;
 				float c = 2 * zeta * omega * m;
 				float k = m * omega * omega;
 				float deflen = R * 2 * (1 - 1 / sqrt(5.0f)) / (recursionLevel + 1);
 				float friction = 0.3;
-				float gravity = 10;
+				float gravity = 90;
+				float down_push_force = 600;
+				float side_push_force = 30;
+				float baloon_coefficient = 20000;
 
 				float velocity_coefficient = 1 / (1+h*c/m+h*h*k/m);
 				float position_coefficient = - (h*k/m) / (1+h*c/m+h*h*k/m);
+				float force_coefficient = (h/m) / (1+h*c/m+h*h*k/m);
 			}
 		}
 
@@ -122,6 +128,8 @@ class ElasticSphere : Primitive {
 			if (pairIndex.canFind(makePair(idx2,idx0)) == false) pairIndex ~= makePair(idx2,idx0);
 		}
 		dList = new vec3[pairIndex.length];
+		forceList = new vec3[pairIndex.length];
+		floorSinkList = new vec3[vertex.length];
 	}
 
 	private {
@@ -206,27 +214,7 @@ class ElasticSphere : Primitive {
 
 	void Move() {
 		immutable N = particleList.length;
-		//隣との拘束
-		{
-			foreach (i; 0..pairIndex.length) {
-				vec3 d = particleList[pairIndex[i][1]].p - particleList[pairIndex[i][0]].p;	
-				auto len = d.length;
-				if (len > 0) d /= len;
-				len -= deflen;
-				d *= len;
-				dList[i] = d;
-			}
-			foreach (k; 0..100){
-				foreach (i; 0..pairIndex.length) {
-					auto id0 = pairIndex[i][0], id1 = pairIndex[i][1];
-					vec3 v1 = particleList[id1].v - particleList[id0].v;
-					vec3 v2 = v1 * velocity_coefficient + dList[i] * position_coefficient;
-					vec3 dv = (v2 - v1) * 0.5f;
-					particleList[id0].v -= dv;
-					particleList[id1].v += dv;
-				}
-			}
-		}
+
 		//体積の測定
 		float volume = 0;
 		{
@@ -248,50 +236,94 @@ class ElasticSphere : Primitive {
 				area += computeUnSignedArea!float([particleList[idx0].p, particleList[idx1].p, particleList[idx2].p]) / 2;
 			}
 		}
-		//ちょっとふくらませる
-		{
-			float force = 20;
-			foreach (i; 0..N) {
-					Particle p = particleList[i];
-				p.v += p.n * force;
-			}
-		}
 
+		//重心を求める
 		vec3 g = vec3(0,0,0);
 		foreach (p; particleList) g += p.p;
 		g /= particleList.length;
 		Pos = g;
+		//キー入力で動かす
 		if (Or(&CurrentWindow.isKeyPressed, KeyButton.Space, KeyButton.Enter)) {
 			foreach (p; particleList) {
-				if (p.p.y > g.y) {
-					float len = length(p.p.xz - g.xz);
-					p.v.y -= 5 / len;
+				float len = length(p.p.xz - g.xz);
+				if (p.p.y > g.y) { //下向きの力
+					p.force.y -= down_push_force / pow(len + 0.5, 2);
 				}
 			}
 		}
+
 		{
-			enum force = 3;
 			vec3 f = vec3(0,0,0);
 			with (CurrentWindow) {
 
 				if (isKeyPressed(KeyButton.A)) {
-					f -= CurrentCamera.GetVecX * force;
+					f -= CurrentCamera.GetVecX;
 				}
 				if (isKeyPressed(KeyButton.D)) {
-					f += CurrentCamera.GetVecX * force;
+					f += CurrentCamera.GetVecX;
 				}
 				if (isKeyPressed(KeyButton.W)) {
-					f += CurrentCamera.GetVecZ * force;
+					f += CurrentCamera.GetVecZ;
 				}
 				if (isKeyPressed(KeyButton.S)) {
-					f -= CurrentCamera.GetVecZ * force;
+					f -= CurrentCamera.GetVecZ;
 				}
+				if (f.length > 0) f = normalize(f) * side_push_force;
 			}
 			foreach (p; particleList) {
 				if (p.isGround)
-				p.v += f;
+					p.force += f;
 			}
-
+		}
+		//†ちょっと†ふくらませる
+		{
+			float force = baloon_coefficient * area / (volume * N);
+			foreach (i; 0..N) {
+				particleList[i].force += particleList[i].n * force;
+			}
+		}
+		//重力
+		foreach (p; particleList) {
+			p.force.y -= gravity * m;
+		}
+		//拘束解消
+		{
+			//隣との距離を計算
+			foreach (i; 0..pairIndex.length) {
+				vec3 d = particleList[pairIndex[i][1]].p - particleList[pairIndex[i][0]].p;	
+				auto len = d.length;
+				if (len > 0) d /= len;
+				len -= deflen;
+				d *= len;
+				dList[i] = d;
+				forceList[i] = (particleList[pairIndex[i][1]].force + particleList[pairIndex[i][0]].force) / 2; //適当です
+				//writeln(forceList[i]);
+			}
+			//床とのめり込みを計算
+			foreach (i, p; particleList) {
+				floorSinkList[i] = vec3(0, -min(0, p.p.y), 0);
+			}
+			foreach (k; 0..100){
+				//隣との拘束
+				foreach (i; 0..pairIndex.length) {
+					auto id0 = pairIndex[i][0], id1 = pairIndex[i][1];
+					vec3 v1 = particleList[id1].v - particleList[id0].v;
+					vec3 v2 = v1 * velocity_coefficient + dList[i] * position_coefficient;
+					vec3 dv = (v2 - v1) * 0.5f;
+					particleList[id0].v -= dv;
+					particleList[id1].v += dv;
+				}
+				////地面との拘束
+				//foreach (i, p; particleList) {
+				//    vec3 v1 = p.v;
+				//    vec3 v2 = v1 * velocity_coefficient + floorSinkList[i] * position_coefficient;
+				//    p.v -= v2;
+				//}
+			}
+			//なんかうまくいかないので定数だけ分離
+			foreach (i; 0..N) {
+				particleList[i].v += particleList[i].force * force_coefficient;
+			}
 		}
 
 
@@ -306,8 +338,8 @@ class ElasticSphere : Primitive {
 			vec3 d = p.p - mp;
 			float len;
 			if ((len = d.length) < 1) {
-				enum force = 0.2;
-				p.v += d / len * force;
+				enum force = 1;
+				p.v += d * force;
 				color = vec4(1,1,0,1);
 			}
 		}
@@ -324,18 +356,18 @@ class ElasticSphere : Primitive {
 		vec3 p;
 		vec3 v;
 		vec3 n;
+		vec3 force;
 		bool isGround;
 
 		this(vec3 p) {
 			this.p = p;
 			this.n = normalize(p);
 			this.v = vec3(0,10,0);
+			this.force = vec3(0,0,0);
 		}
 
 		void move() {
 			p += v * h;
- 
-			v.y -= gravity * h;
 
 			isGround = false;
 
@@ -345,6 +377,7 @@ class ElasticSphere : Primitive {
 				v.xz = v.xz * (1 - friction);
 				isGround = true;
 			}
+			force = vec3(0,0,0); //用済み
 		}
 	}	
 }

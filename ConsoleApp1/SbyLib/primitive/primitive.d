@@ -16,6 +16,8 @@ abstract class Primitive : EntityDrawable {
 			matUpdateFlag = true;
 		} else if (op == "+") {
 			Pos = GetPos + v;
+		} else if (op == "-") {
+			Pos = GetPos - v;
 		}
 	}
 

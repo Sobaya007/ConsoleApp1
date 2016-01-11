@@ -5,6 +5,20 @@ import sbylib;
 const int window_width = 800;
 const int window_height = 600;
 
+//static this()
+//{
+//    DerelictFT.load();
+//} 
+//
+//void main(string[] args)
+//{
+//    FT_Library handle;
+//    int v0,v1,v2;
+//    FT_Init_FreeType(&handle);
+//    FT_Library_Version(handle, &v0, &v1, &v2);
+//    writeln(v0," ",v1," ",v2);
+//}
+
 void main()
 {
 	if (!GameMain()) {
@@ -54,6 +68,7 @@ bool GameMain() {
 
 	auto plane = new Plane(ShaderStore.getShader("Check"));
 	plane *= vec3(1,1,1) * 10;
+	plane -= vec3(0,0.1, 0);
 
 	auto sphere = new ElasticSphere;
 
@@ -70,7 +85,7 @@ bool GameMain() {
 		box.Draw();
 		plane.Draw();
 		sphere.Draw();
-		ball.Draw();
+		//ball.Draw();
 
 		Ray ray = CurrentCamera.GetCameraRay(CurrentWindow.getMousePos);
 		auto p = ray.GetPos - ray.GetPos.y / ray.vector.y * ray.vector;
@@ -86,9 +101,9 @@ auto InitGLFW(in int window_width, in int window_height) {
 
 	DerelictGL.load();
 	DerelictGL3.load();
-
 	DerelictGLFW3.load();
-
+	//DerelictFT.load();
+	//DerelictSDL2.load();
 
 	if (!glfwInit()) {
 		writeln("Failed to initialize GLFW");
