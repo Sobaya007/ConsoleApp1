@@ -72,11 +72,16 @@ bool GameMain() {
 
 	auto sphere = new ElasticSphere;
 
+
 	auto ball = new Sphere;
 
 	auto cameraManipulator = new CameraChaser(CurrentCamera);
 	cameraManipulator.focus = sphere;
 	ManipulatorManager.Add(cameraManipulator);
+	TextureObject compass = new TextureObject(0xff, 0xff, GL_RGBA); 
+	FrameBufferObject fbo = new FrameBufferObject();
+
+	glLineWidth(5f);
 
 	MainLoop(() {
 
@@ -86,6 +91,16 @@ bool GameMain() {
 		plane.Draw();
 		sphere.Draw();
 		//ball.Draw();
+
+		fbo.AttachTextureAsColor(compass);
+		fbo.Write(0xff, 0xff,{
+			glClearColor(0, 0, 0, 0);
+			glClear(GL_COLOR_BUFFER_BIT);
+			auto shader = ShaderStore.getShader("Compass");
+			shader.SetUniformMatrix!(4, "mView")(CurrentCamera.GetViewMatrix.array);
+			DrawRectWithShader(0xff/2+1, 0xff/2+1, 0xff, 0xff, shader);
+		});
+		DrawImage(window_width-50, 50, 100, 100, compass);
 
 		Ray ray = CurrentCamera.GetCameraRay(CurrentWindow.getMousePos);
 		auto p = ray.GetPos - ray.GetPos.y / ray.vector.y * ray.vector;

@@ -22,6 +22,15 @@ class CameraChaser : Manipulator {
 			if (CurrentWindow.isKeyPressed(KeyButton.Up) || CurrentWindow.isKeyPressed(KeyButton.Down)) {
 				VecY = normalize(cross(GetVecZ, GetVecX));
 			}
+			const float speed = 0.3;
+			vec3 vec = GetPos - center;
+			float len = length(vec);
+			if (CurrentWindow.isKeyPressed(KeyButton.W)) {
+				if (len > speed) Pos = center + normalize(vec) * (len - speed);
+			}
+			if (CurrentWindow.isKeyPressed(KeyButton.S)) {
+				Pos = center + normalize(vec) * (len + speed);
+			}
 
 			static vec2 beforeMousePos;
 			vec2 mousePos = CurrentWindow.getMousePos();

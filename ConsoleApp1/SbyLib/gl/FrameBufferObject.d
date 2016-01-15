@@ -35,32 +35,40 @@ class FrameBufferObject {
 		glBindFramebuffer(GL_FRAMEBUFFER, fb);
 	}
 
-	void AttatchTextureAsColor(TextureObject tex) {
+	void AttachTextureAsColor(TextureObject tex) {
+		Bind();
 		if (tex)
 			glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, tex.texID, 0);
 		else
 			glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, 0, 0);
+		UnBind();
 	}
 
-	void AttatchTextureAsDepth(TextureObject tex) {
+	void AttachTextureAsDepth(TextureObject tex) {
+		Bind();
 		if (tex)
 			glFramebufferTexture2DEXT(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, tex.texID, 0);
 		else
 			glFramebufferTexture2DEXT(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, 0, 0);
+		UnBind();
 	}
 
-	void AttatchRenderBufferObjectAsColor(RenderBufferObject rb) {
+	void AttachRenderBufferObjectAsColor(RenderBufferObject rb) {
+		Bind();
 		if (rb)
 			glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, rb.id);
 		else
 			glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, 0);
+		UnBind();
 	}
 
-	void AttatchRenderBufferObjectAsDepth(RenderBufferObject rb) {
+	void AttachRenderBufferObjectAsDepth(RenderBufferObject rb) {
+		Bind();
 		if (rb)
 			glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, rb.id);
 		else
 			glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, 0);
+		UnBind();
 	}
 
 	void WriteBegin(int width, int height) {
@@ -82,7 +90,7 @@ class FrameBufferObject {
 		glBindFramebuffer(GL_FRAMEBUFFER, frameBufferData);
 		glFramebufferTexture(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, texIdData, 0);
 		glViewport(viewportData[0], viewportData[1], viewportData[2], viewportData[3]);
-		//		UnBind();
+		UnBind();
 	}
 
 	void Write(int width, int height, void delegate() Draw) {

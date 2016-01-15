@@ -22,8 +22,11 @@ SbyLib\gl\ShaderProgram.d
 SbyLib\gl\TextureObject.d 
 SbyLib\gl\VertexArrayObject.d 
 SbyLib\gl\VertexBufferObject.d 
+sbylib\light\light.d 
+sbylib\light\package.d 
 sbylib\math\matrix.d 
 sbylib\math\package.d 
+sbylib\math\quaternion.d 
 sbylib\math\utils.d 
 sbylib\math\vector.d 
 sbylib\physics\bound\bound.d 

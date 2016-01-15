@@ -18,6 +18,7 @@ public import std.typecons;
 public import std.algorithm;
 public import std.datetime;
 public import std.range;
+public import std.traits;
 
 public import derelict.opengl3.gl;
 public import derelict.glfw3.glfw3;

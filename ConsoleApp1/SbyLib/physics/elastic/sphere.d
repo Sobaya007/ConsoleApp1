@@ -16,7 +16,7 @@ class ElasticSphere : Primitive {
 			vec3[] floorSinkList;
 
 			immutable {
-				int recursionLevel = 2;
+				int recursionLevel = 0;
 				float R = 0.5;
 				float h = 0.02;
 				float zeta = 0.5;
@@ -25,10 +25,10 @@ class ElasticSphere : Primitive {
 				float c = 2 * zeta * omega * m;
 				float k = m * omega * omega;
 				float deflen = R * 2 * (1 - 1 / sqrt(5.0f)) / (recursionLevel + 1);
-				float friction = 0.3;
+				float friction = 1;
 				float gravity = 90;
 				float down_push_force = 600;
-				float side_push_force = 100;
+				float side_push_force = 10;
 				float baloon_coefficient = 20000;
 
 				float velocity_coefficient = 1 / (1+h*c/m+h*h*k/m);
@@ -142,7 +142,7 @@ class ElasticSphere : Primitive {
 	}
 
 	this()  {
-		sp = ShaderStore.getShader("NormalShow");
+		sp = ShaderStore.getShader("Phong");
 
 
 		float[] vertexArray;
@@ -190,6 +190,12 @@ class ElasticSphere : Primitive {
 		foreach (v; vertex) {
 			particleList ~= new Particle(v);
 		}
+		vec3 g = vec3(0,0,0);
+		foreach (v; vertex) g += v;
+		g /= vertex.length;
+		foreach (p; particleList) p.nNutral = normalize(p.p - g);
+
+		foreach (p; particleList) p.p.y += 50;
 
 		int n = cast(int)ceil(log2(vertex.length));
 
@@ -200,7 +206,11 @@ class ElasticSphere : Primitive {
 	override void Draw() {
 		sp.SetUniformMatrix!(4,"mWorld")(mat4.Identity.array);
 		sp.SetUniformMatrix!(4,"mViewProj")(CurrentCamera.GetViewProjectionMatrix.array);
+		sp.SetUniform!(4, "lightPos")(vec4(1, 20, 1, 1).array);
+		sp.SetUniform!(3, "cameraPos")(CurrentCamera.GetPos.array);
 		vao.Draw(index);
+		//
+		//foreach (p; particleList) DrawLine(p.p, p.p + p.nNutral * 2, vec4(0,0,1,1));
 
 		Move();
 
@@ -256,28 +266,30 @@ class ElasticSphere : Primitive {
 			}
 		}
 
+		vec3 keyForce, constraintForce, baloonForce;
+
 		{
-			vec3 f = vec3(0,0,0);
+			vec3 axis = vec3(0,0,0);
 			with (CurrentWindow) {
 
-				if (isKeyPressed(KeyButton.A)) {
-					f -= CurrentCamera.GetVecX;
+				if (isKeyPressed(KeyButton.Left)) {
+					axis += CurrentCamera.GetVecZ;
 				}
-				if (isKeyPressed(KeyButton.D)) {
-					f += CurrentCamera.GetVecX;
+				if (isKeyPressed(KeyButton.Right)) {
+					axis -= CurrentCamera.GetVecZ;
 				}
-				if (isKeyPressed(KeyButton.W)) {
-					f += CurrentCamera.GetVecZ;
+				if (isKeyPressed(KeyButton.Up)) {
+					axis += CurrentCamera.GetVecX;
 				}
-				if (isKeyPressed(KeyButton.S)) {
-					f -= CurrentCamera.GetVecZ;
+				if (isKeyPressed(KeyButton.Down)) {
+					axis -= CurrentCamera.GetVecX;
 				}
-				if (f.length > 0) f = normalize(f) * side_push_force;
+				if (axis.length > 0) axis = axis.normalize;
 			}
 			foreach (p; particleList) {
-				if (p.isGround)
-					p.force += f;
+				p.force += cross(axis, normalize(p.p - g)) * side_push_force * 11;
 			}
+			keyForce = cross(axis, normalize(particleList[0].p - g)) * force_coefficient * 11 * side_push_force;
 		}
 		//†ちょっと†ふくらませる
 		{
@@ -285,13 +297,15 @@ class ElasticSphere : Primitive {
 			foreach (i; 0..N) {
 				particleList[i].force += particleList[i].n * force;
 			}
+			baloonForce = particleList[0].n * force * force_coefficient;
 		}
 		//重力
 		foreach (p; particleList) {
-			p.force.y -= gravity * m;
+			//p.force.y -= gravity * m;
 		}
 		//拘束解消
 		{
+			vec3 beforeV = particleList[0].v;
 			//隣との距離を計算
 			foreach (i; 0..pairIndex.length) {
 				vec3 d = particleList[pairIndex[i][1]].p - particleList[pairIndex[i][0]].p;	
@@ -303,10 +317,6 @@ class ElasticSphere : Primitive {
 				forceList[i] = (particleList[pairIndex[i][1]].force + particleList[pairIndex[i][0]].force) / 2; //適当です
 				//writeln(forceList[i]);
 			}
-			//床とのめり込みを計算
-			foreach (i, p; particleList) {
-				floorSinkList[i] = vec3(0, -min(0, p.p.y), 0);
-			}
 			foreach (k; 0..100){
 				//隣との拘束
 				foreach (i; 0..pairIndex.length) {
@@ -317,42 +327,63 @@ class ElasticSphere : Primitive {
 					particleList[id0].v -= dv;
 					particleList[id1].v += dv;
 				}
-				////地面との拘束
-				//foreach (i, p; particleList) {
-				//    vec3 v2 = floorSinkList[i] * position_coefficient;
-				//    p.v -= v2;
-				//}
 			}
+			constraintForce = particleList[0].v - beforeV;
 			//なんかうまくいかないので定数だけ分離
 			foreach (i; 0..N) {
 				particleList[i].v += particleList[i].force * force_coefficient;
 			}
 		}
 
-
-		////マウス座標で動かす
-		//
-		vec4 color = vec4(1,1,1,1);
-		//
-		//Ray ray = CurrentCamera.GetCameraRay(CurrentWindow.getMousePos);
-		//auto mp = ray.GetPos - ray.GetPos.y / ray.vector.y * ray.vector;
-		//
-		//foreach (p; particleList) {
-		//    vec3 d = p.p - mp;
-		//    float len;
-		//    if ((len = d.length) < 1) {
-		//        enum force = 1;
-		//        p.v += d * force;
-		//        color = vec4(1,1,0,1);
-		//    }
-		//}
-
-		DrawRect(0,0,300,300, color);
+		vec3 gv = vec3(0,0,0);
+		foreach (p; particleList) gv += p.v;
+		gv /= particleList.length;
+		//foreach (p; particleList) p.v -= gv;
 
 		foreach (i; 0..N) {
 			particleList[i].move();
 		}
 
+		float rotAngle;
+		vec3 rotAxis;
+		g = vec3(0,0,0);
+		foreach (p; particleList) g += p.p;
+		g /= particleList.length;
+		foreach (i, p; particleList) {
+			vec3 v = cross(p.nNutral, normalize(p.p - g));
+			float s = v.length;
+			float angle = asin(s);
+			rotAngle += angle;
+			rotAxis += v;
+
+			DrawLine(p.p, p.p + normalize(p.p - g) * 5, vec4(1,1,1,1));
+			DrawLine(p.p, p.p + p.nNutral * 5, vec4(0,0,0,1));
+		}
+		rotAngle /= particleList.length * 2;
+		rotAngle *= 5;
+		quat rot = quat(normalize(rotAxis)  * sin(rotAngle), cos(rotAngle));
+		if (rot.length > 0) {
+			foreach (p; particleList) p.n = (rot * quat(p.nNutral, 0) * ~rot).Axis;
+		}
+
+		{
+
+			vec3 p = (rot * quat(particleList[0].nNutral, 0) * ~rot).Axis;
+
+			DrawLine(g, g + p * 10, vec4(0,1,0,1));
+		}
+
+
+		foreach (i, p; particleList)  DrawLine(p.p, p.p + p.n, vec4(1,0,0,1));
+
+		with (particleList[0]) {
+			vec3 vec = keyForce.normalize;
+			DrawLine(p, p + keyForce, vec4(0,1,1,1));
+			DrawLine(p, p + constraintForce, vec4(1,1,0,1));
+			DrawLine(p, p + baloonForce, vec4(0,0,1,1));
+
+			writeln( keyForce + constraintForce + baloonForce);
+		}
 	}
 
 	class Particle {
@@ -360,6 +391,7 @@ class ElasticSphere : Primitive {
 		vec3 v;
 		vec3 n;
 		vec3 force;
+		vec3 nNutral;
 		bool isGround;
 
 		this(vec3 p) {
@@ -371,13 +403,17 @@ class ElasticSphere : Primitive {
 
 		void move() {
 
+			isGround = false;
+			if (p.y < 0) {
+				isGround = true;
+				v.xz = v.xz * 0.1;
+			}
 			p += v * h;
 
 			isGround = false;
 			if (p.y < 0) {
 				//p.y = 0;
 				v.y = -p.y / h;
-				v.xz = v.xz * (1 - friction);
 				isGround = true;
 			}
 			force = vec3(0,0,0); //用済み

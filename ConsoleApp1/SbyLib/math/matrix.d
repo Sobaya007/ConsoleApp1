@@ -7,7 +7,7 @@ import std.string;
 import std.stdio;
 
 //U型の4x4行列
-struct Matrix(U) {
+struct Matrix(U) if (__traits(isArithmetic, U)){
 private:
 	U[16] arrayForConvert; 
 public:

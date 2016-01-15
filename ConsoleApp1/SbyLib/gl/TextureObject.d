@@ -121,7 +121,7 @@ class TextureObject {
 		Bind();
 
 		// OpnGLに空の画像を与える(最後が"0")
-		glTexImage2D(GL_TEXTURE_2D, 0, texMode, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, null);
+		glTexImage2D(GL_TEXTURE_2D, 0, texMode, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, null);
 
 		// フィルタリング
 		SetMagFilter(TexFilterType.Linear);

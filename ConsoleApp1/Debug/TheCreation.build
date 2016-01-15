@@ -25,8 +25,11 @@ echo SbyLib\gl\ShaderProgram.d >>Debug\TheCreation.build.rsp
 echo SbyLib\gl\TextureObject.d >>Debug\TheCreation.build.rsp
 echo SbyLib\gl\VertexArrayObject.d >>Debug\TheCreation.build.rsp
 echo SbyLib\gl\VertexBufferObject.d >>Debug\TheCreation.build.rsp
+echo sbylib\light\light.d >>Debug\TheCreation.build.rsp
+echo sbylib\light\package.d >>Debug\TheCreation.build.rsp
 echo sbylib\math\matrix.d >>Debug\TheCreation.build.rsp
 echo sbylib\math\package.d >>Debug\TheCreation.build.rsp
+echo sbylib\math\quaternion.d >>Debug\TheCreation.build.rsp
 echo sbylib\math\utils.d >>Debug\TheCreation.build.rsp
 echo sbylib\math\vector.d >>Debug\TheCreation.build.rsp
 echo sbylib\physics\bound\bound.d >>Debug\TheCreation.build.rsp

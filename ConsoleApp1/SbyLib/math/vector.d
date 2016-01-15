@@ -7,7 +7,7 @@ import std.stdio;
 import sbylib.utils;
 
 //T型のS個のベクトル
-struct Vector(T, int S) {
+struct Vector(T, int S) if (__traits(isArithmetic, T)) {
 package:
 	T[S] elements;
 public:

@@ -8,10 +8,12 @@ class ShaderProgram {
 
 	uint programID;
 	private static uint[string] Shaders;
-	void delegate()[string] attributeApply;
-	void delegate()[string] uniformApply;
+	private void delegate()[string] attributeApply;
+	private void delegate()[string] uniformApply;
 
-	Tuple!(uint, int)[int] texIDs;
+	private Tuple!(uint, int)[int] texIDs;
+
+	string vsSource, fsSource;
 
 	this(string vs, string fs, InputType inputType) {
 		final switch (inputType) {
@@ -85,25 +87,25 @@ class ShaderProgram {
 		glUseProgram(programID);
 	}
 
-	private static int GetShaderProgramID(string vsPath, string fsPath) {
+	private int GetShaderProgramID(string vsPath, string fsPath) {
 		uint *p;
 		int vsID, fsID;
 		if ((p = vsPath in Shaders) != null) {
 			vsID = *p;
 		} else {
-			string vsSource = ((cast(const char[])read(vsPath))).idup;
+			auto vsSource = ((cast(const char[])read(vsPath))).idup;
 			vsID = getVertexShaderFromString(vsSource);
 		}
 		if ((p = fsPath in Shaders) != null) {
 			fsID = *p;
 		} else {
-			string fsSource = ((cast(const char[])read(fsPath))).idup;
+			auto fsSource = ((cast(const char[])read(fsPath))).idup;
 			fsID = getFragmentShaderFromString(fsSource);
 		}
 		return getSP(vsID, fsID);
 	}
 
-	private static int getShaderProgramIDFromString(string vsString, string fsString) {
+	private int getShaderProgramIDFromString(string vsString, string fsString) {
 		int vsID = getVertexShaderFromString(vsString);
 		int fsID = getFragmentShaderFromString(fsString);
 		return getSP(vsID, fsID);
@@ -134,7 +136,8 @@ class ShaderProgram {
 		return programID;
 	}
 
-	private static int getVertexShaderFromString(string vsSource, string vsPath = null) {
+	private int getVertexShaderFromString(string vsSource, string vsPath = null) {
+		this.vsSource = vsSource;
 		uint vsID, fsID;
 		vsID = glCreateShader(GL_VERTEX_SHADER);
 		auto str = vsSource.toStringz;
@@ -161,7 +164,8 @@ class ShaderProgram {
 		return vsID;
 	}
 
-	private static int getFragmentShaderFromString(string fsSource, string fsPath = null) {
+	private int getFragmentShaderFromString(string fsSource, string fsPath = null) {
+		this.fsSource = fsSource;
 		int fsID;
 		fsID = glCreateShader(GL_FRAGMENT_SHADER);
 		auto str = fsSource.toStringz;

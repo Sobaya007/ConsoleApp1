@@ -260,9 +260,14 @@
     <File path="SbyLib\gl\VertexArrayObject.d" />
     <File path="SbyLib\gl\VertexBufferObject.d" />
    </Folder>
+   <Folder name="light">
+    <File path="sbylib\light\light.d" />
+    <File path="sbylib\light\package.d" />
+   </Folder>
    <Folder name="math">
     <File path="sbylib\math\matrix.d" />
     <File path="sbylib\math\package.d" />
+    <File path="sbylib\math\quaternion.d" />
     <File path="sbylib\math\utils.d" />
     <File path="sbylib\math\vector.d" />
    </Folder>
