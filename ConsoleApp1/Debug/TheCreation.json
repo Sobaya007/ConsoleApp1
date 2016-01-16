@@ -6269,7 +6269,7 @@
       ],
       "deco" : "yi",
       "originalType" : "int",
-      "init" : "0"
+      "init" : "2"
      },
      {
       "name" : "R",
@@ -6381,7 +6381,7 @@
       ],
       "deco" : "yf",
       "originalType" : "float",
-      "init" : "0.552786F"
+      "init" : "0.184262F"
      },
      {
       "name" : "friction",
@@ -6395,7 +6395,7 @@
       ],
       "deco" : "yf",
       "originalType" : "float",
-      "init" : "1.00000F"
+      "init" : "0.3F"
      },
      {
       "name" : "gravity",
@@ -6437,7 +6437,7 @@
       ],
       "deco" : "yf",
       "originalType" : "float",
-      "init" : "10.0000F"
+      "init" : "100.000F"
      },
      {
       "name" : "baloon_coefficient",
@@ -6563,19 +6563,19 @@
       "char" : 2,
       "deco" : "FZC6sbylib7physics7elastic6sphere13ElasticSphere",
       "originalType" : "()",
-      "endline" : 204,
+      "endline" : 198,
       "endchar" : 2
      },
      {
       "name" : "Draw",
       "kind" : "function",
-      "line" : 206,
+      "line" : 200,
       "char" : 16,
       "storageClass" : [
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 223,
+      "endline" : 213,
       "endchar" : 2,
       "overrides" : [
        "sbylib.core.entity.drawable.EntityDrawable.Draw"
@@ -6584,22 +6584,22 @@
      {
       "name" : "Move",
       "kind" : "function",
-      "line" : 225,
+      "line" : 215,
       "char" : 7,
       "deco" : "FZv",
-      "endline" : 387,
+      "endline" : 371,
       "endchar" : 2
      },
      {
       "name" : "Particle",
       "kind" : "class",
-      "line" : 389,
+      "line" : 373,
       "char" : 2,
       "members" : [
        {
         "name" : "p",
         "kind" : "variable",
-        "line" : 390,
+        "line" : 374,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6608,7 +6608,7 @@
        {
         "name" : "v",
         "kind" : "variable",
-        "line" : 391,
+        "line" : 375,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6617,7 +6617,7 @@
        {
         "name" : "n",
         "kind" : "variable",
-        "line" : 392,
+        "line" : 376,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6626,33 +6626,24 @@
        {
         "name" : "force",
         "kind" : "variable",
-        "line" : 393,
+        "line" : 377,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
         "offset" : 44
        },
        {
-        "name" : "nNutral",
-        "kind" : "variable",
-        "line" : 394,
-        "char" : 8,
-        "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
-        "originalType" : "vec3",
-        "offset" : 56
-       },
-       {
         "name" : "isGround",
         "kind" : "variable",
-        "line" : 395,
+        "line" : 378,
         "char" : 8,
         "deco" : "b",
-        "offset" : 68
+        "offset" : 56
        },
        {
         "name" : "this",
         "kind" : "constructor",
-        "line" : 397,
+        "line" : 380,
         "char" : 3,
         "deco" : "FS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics7elastic6sphere13ElasticSphere8Particle",
         "originalType" : "(vec3 p)",
@@ -6662,25 +6653,25 @@
           "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector"
          }
         ],
-        "endline" : 402,
+        "endline" : 385,
         "endchar" : 3
        },
        {
         "name" : "move",
         "kind" : "function",
-        "line" : 404,
+        "line" : 387,
         "char" : 8,
         "deco" : "FZv",
-        "endline" : 420,
+        "endline" : 399,
         "endchar" : 3
        },
        {
         "name" : "this",
         "kind" : "variable",
-        "line" : 389,
+        "line" : 373,
         "char" : 2,
         "deco" : "C6sbylib7physics7elastic6sphere13ElasticSphere",
-        "offset" : 72
+        "offset" : 60
        }
       ]
      }

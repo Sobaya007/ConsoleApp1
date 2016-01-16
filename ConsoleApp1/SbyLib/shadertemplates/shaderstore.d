@@ -55,7 +55,7 @@ class ShaderStore {
 												varying vec2 tc;
 												void main() {
 												if ( ( mod(tc.x,0.1) - 0.05) * ( mod(tc.y,0.1) - 0.05) < 0) 
-												gl_FragColor = vec4(1,1,1,1);
+												gl_FragColor = vec4(.5,.5,.5,1);
 												else
 												gl_FragColor = vec4(0,0,0,1);
 												}
