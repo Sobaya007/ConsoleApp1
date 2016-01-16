@@ -81,8 +81,6 @@ bool GameMain() {
 	TextureObject compass = new TextureObject(0xff, 0xff, GL_RGBA); 
 	FrameBufferObject fbo = new FrameBufferObject();
 
-	glLineWidth(5f);
-
 	MainLoop(() {
 
 		glClearColor(0.5f, 0.5f, 0.5f, 1.0f);

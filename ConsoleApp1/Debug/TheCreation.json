@@ -6188,10 +6188,22 @@
       "originalType" : "IBO"
      },
      {
-      "name" : "vertex",
+      "name" : "indexForWireframe",
       "kind" : "variable",
       "protection" : "private",
       "line" : 11,
+      "char" : 8,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "C6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject",
+      "originalType" : "IBO"
+     },
+     {
+      "name" : "vertex",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 12,
       "char" : 11,
       "storageClass" : [
        "static"
@@ -6203,7 +6215,7 @@
       "name" : "indices",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 12,
+      "line" : 13,
       "char" : 11,
       "storageClass" : [
        "static"
@@ -6214,7 +6226,7 @@
       "name" : "pairIndex",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 13,
+      "line" : 14,
       "char" : 13,
       "storageClass" : [
        "static"
@@ -6223,18 +6235,6 @@
      },
      {
       "name" : "dList",
-      "kind" : "variable",
-      "protection" : "private",
-      "line" : 14,
-      "char" : 11,
-      "storageClass" : [
-       "static"
-      ],
-      "deco" : "AS6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
-      "originalType" : "vec3[]"
-     },
-     {
-      "name" : "forceList",
       "kind" : "variable",
       "protection" : "private",
       "line" : 15,
@@ -6246,7 +6246,7 @@
       "originalType" : "vec3[]"
      },
      {
-      "name" : "floorSinkList",
+      "name" : "forceList",
       "kind" : "variable",
       "protection" : "private",
       "line" : 16,
@@ -6258,10 +6258,22 @@
       "originalType" : "vec3[]"
      },
      {
+      "name" : "floorSinkList",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 17,
+      "char" : 11,
+      "storageClass" : [
+       "static"
+      ],
+      "deco" : "AS6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
+      "originalType" : "vec3[]"
+     },
+     {
       "name" : "recursionLevel",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 19,
+      "line" : 20,
       "char" : 9,
       "storageClass" : [
        "static",
@@ -6275,7 +6287,7 @@
       "name" : "R",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 20,
+      "line" : 21,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6289,7 +6301,7 @@
       "name" : "h",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 21,
+      "line" : 22,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6303,7 +6315,7 @@
       "name" : "zeta",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 22,
+      "line" : 23,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6317,7 +6329,7 @@
       "name" : "omega",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 23,
+      "line" : 24,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6331,7 +6343,7 @@
       "name" : "m",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 24,
+      "line" : 25,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6345,7 +6357,7 @@
       "name" : "c",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 25,
+      "line" : 26,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6359,7 +6371,7 @@
       "name" : "k",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 26,
+      "line" : 27,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6373,7 +6385,7 @@
       "name" : "deflen",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 27,
+      "line" : 28,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6387,7 +6399,7 @@
       "name" : "friction",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 28,
+      "line" : 29,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6401,7 +6413,7 @@
       "name" : "gravity",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 29,
+      "line" : 30,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6415,7 +6427,7 @@
       "name" : "down_push_force",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 30,
+      "line" : 31,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6429,7 +6441,7 @@
       "name" : "side_push_force",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 31,
+      "line" : 32,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6443,7 +6455,7 @@
       "name" : "baloon_coefficient",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 32,
+      "line" : 33,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6457,7 +6469,7 @@
       "name" : "velocity_coefficient",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 34,
+      "line" : 35,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6471,7 +6483,7 @@
       "name" : "position_coefficient",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 35,
+      "line" : 36,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6485,7 +6497,7 @@
       "name" : "force_coefficient",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 36,
+      "line" : 37,
       "char" : 11,
       "storageClass" : [
        "static",
@@ -6498,20 +6510,20 @@
      {
       "name" : "_staticCtor5",
       "kind" : "function",
-      "line" : 42,
+      "line" : 43,
       "char" : 2,
       "storageClass" : [
        "static"
       ],
       "deco" : "FZv",
-      "endline" : 133,
+      "endline" : 134,
       "endchar" : 2
      },
      {
       "name" : "particleList",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 136,
+      "line" : 137,
       "char" : 14,
       "deco" : "AC6sbylib7physics7elastic6sphere13ElasticSphere8Particle",
       "offset" : 448
@@ -6520,7 +6532,7 @@
       "name" : "vao",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 137,
+      "line" : 138,
       "char" : 7,
       "deco" : "C6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject",
       "originalType" : "VAO",
@@ -6530,7 +6542,7 @@
       "name" : "vertexVBO",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 138,
+      "line" : 139,
       "char" : 7,
       "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
       "originalType" : "VBO",
@@ -6540,42 +6552,52 @@
       "name" : "normalVBO",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 139,
+      "line" : 140,
       "char" : 7,
       "deco" : "C6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject",
       "originalType" : "VBO",
       "offset" : 464
      },
      {
-      "name" : "particleInfoTexture",
+      "name" : "CurrentIBO",
       "kind" : "variable",
       "protection" : "private",
       "line" : 141,
+      "char" : 7,
+      "deco" : "C6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject",
+      "originalType" : "IBO",
+      "offset" : 468
+     },
+     {
+      "name" : "particleInfoTexture",
+      "kind" : "variable",
+      "protection" : "private",
+      "line" : 143,
       "char" : 17,
       "deco" : "C6sbylib2gl13TextureObject13TextureObject",
       "originalType" : "TextureObject",
-      "offset" : 468
+      "offset" : 472
      },
      {
       "name" : "this",
       "kind" : "constructor",
-      "line" : 144,
+      "line" : 146,
       "char" : 2,
       "deco" : "FZC6sbylib7physics7elastic6sphere13ElasticSphere",
       "originalType" : "()",
-      "endline" : 198,
+      "endline" : 210,
       "endchar" : 2
      },
      {
       "name" : "Draw",
       "kind" : "function",
-      "line" : 200,
+      "line" : 212,
       "char" : 16,
       "storageClass" : [
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 213,
+      "endline" : 225,
       "endchar" : 2,
       "overrides" : [
        "sbylib.core.entity.drawable.EntityDrawable.Draw"
@@ -6584,22 +6606,37 @@
      {
       "name" : "Move",
       "kind" : "function",
-      "line" : 215,
+      "line" : 227,
       "char" : 7,
       "deco" : "FZv",
-      "endline" : 371,
+      "endline" : 383,
+      "endchar" : 2
+     },
+     {
+      "name" : "SetWireframe",
+      "kind" : "function",
+      "line" : 385,
+      "char" : 7,
+      "deco" : "FbZv",
+      "parameters" : [
+       {
+        "name" : "flag",
+        "deco" : "b"
+       }
+      ],
+      "endline" : 393,
       "endchar" : 2
      },
      {
       "name" : "Particle",
       "kind" : "class",
-      "line" : 373,
+      "line" : 395,
       "char" : 2,
       "members" : [
        {
         "name" : "p",
         "kind" : "variable",
-        "line" : 374,
+        "line" : 396,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6608,7 +6645,7 @@
        {
         "name" : "v",
         "kind" : "variable",
-        "line" : 375,
+        "line" : 397,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6617,7 +6654,7 @@
        {
         "name" : "n",
         "kind" : "variable",
-        "line" : 376,
+        "line" : 398,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6626,7 +6663,7 @@
        {
         "name" : "force",
         "kind" : "variable",
-        "line" : 377,
+        "line" : 399,
         "char" : 8,
         "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector",
         "originalType" : "vec3",
@@ -6635,7 +6672,7 @@
        {
         "name" : "isGround",
         "kind" : "variable",
-        "line" : 378,
+        "line" : 400,
         "char" : 8,
         "deco" : "b",
         "offset" : 56
@@ -6643,7 +6680,7 @@
        {
         "name" : "this",
         "kind" : "constructor",
-        "line" : 380,
+        "line" : 402,
         "char" : 3,
         "deco" : "FS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics7elastic6sphere13ElasticSphere8Particle",
         "originalType" : "(vec3 p)",
@@ -6653,22 +6690,22 @@
           "deco" : "S6sbylib4math6vector17__T6VectorTfVii3Z6Vector"
          }
         ],
-        "endline" : 385,
+        "endline" : 407,
         "endchar" : 3
        },
        {
         "name" : "move",
         "kind" : "function",
-        "line" : 387,
+        "line" : 409,
         "char" : 8,
         "deco" : "FZv",
-        "endline" : 399,
+        "endline" : 421,
         "endchar" : 3
        },
        {
         "name" : "this",
         "kind" : "variable",
-        "line" : 373,
+        "line" : 395,
         "char" : 2,
         "deco" : "C6sbylib7physics7elastic6sphere13ElasticSphere",
         "offset" : 60
@@ -8467,13 +8504,13 @@
     "line" : 29,
     "char" : 6,
     "deco" : "FZb",
-    "endline" : 113,
+    "endline" : 111,
     "endchar" : 1
    },
    {
     "name" : "InitGLFW",
     "kind" : "function",
-    "line" : 115,
+    "line" : 113,
     "char" : 6,
     "storageClass" : [
      "auto"
@@ -8490,7 +8527,7 @@
       "deco" : "xi"
      }
     ],
-    "endline" : 145,
+    "endline" : 143,
     "endchar" : 1
    }
   ]

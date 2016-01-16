@@ -8,6 +8,7 @@ class ElasticSphere : Primitive {
 		private {
 			ShaderProgram sp;
 			IBO index;
+			IBO indexForWireframe;
 			vec3[] vertex;
 			uint[] indices;
 			uint[][] pairIndex;
@@ -137,6 +138,7 @@ class ElasticSphere : Primitive {
 		VAO vao;
 		VBO vertexVBO;
 		VBO normalVBO;
+		IBO CurrentIBO;
 
 		TextureObject particleInfoTexture;
 	}
@@ -157,10 +159,18 @@ class ElasticSphere : Primitive {
 			auto n = normalize(v);
 			normal ~= n.array;
 		}
-		normalVBO = new VBO(normal, VBO.Frequency.STATIC);
+		normalVBO = new VBO(normal, VBO.Frequency.STREAM);
 
 		//インデックス
 		index = new IBO(indices, IBO.Frequency.STATIC);
+		{
+			uint[] indexW;
+			foreach (i; pairIndex) {
+				indexW ~= i[0];
+				indexW ~= i[1];
+			}
+			indexForWireframe = new IBO(indexW, IBO.Frequency.STATIC);
+		}
 
 		//VAO設置
 		vao = new VAO;
@@ -195,12 +205,14 @@ class ElasticSphere : Primitive {
 
 		//GPGPUの準備
 		particleInfoTexture = new TextureObject(2^^n, 1, GL_RGBA);
+
+		SetWireframe(false);
 	}
 
 	override void Draw() {
 		sp.SetUniformMatrix!(4,"mWorld")(mat4.Identity.array);
 		sp.SetUniformMatrix!(4,"mViewProj")(CurrentCamera.GetViewProjectionMatrix.array);
-		vao.Draw(index);
+		vao.Draw(CurrentIBO);
 
 		Move();
 
@@ -368,6 +380,16 @@ class ElasticSphere : Primitive {
 			particleList[i].move();
 		}
 
+	}
+
+	void SetWireframe(bool flag) {
+		if (flag) {
+			vao.mode = GL_LINES;
+			CurrentIBO = indexForWireframe;
+		} else {
+			vao.mode = GL_TRIANGLES;
+			CurrentIBO = index;
+		}
 	}
 
 	class Particle {
