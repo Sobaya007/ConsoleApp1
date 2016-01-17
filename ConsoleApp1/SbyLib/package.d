@@ -1,5 +1,6 @@
 module sbylib;
 
+public import sbylib.al;
 public import sbylib.camera;
 public import sbylib.core;
 public import sbylib.gl;
@@ -27,3 +28,5 @@ public import derelict.devil.ilu;
 public import derelict.devil.ilut;
 public import derelict.freetype.ft;
 public import derelict.opengl3.gl3;
+public import derelict.openal.al;
+public import derelict.alure.alure;

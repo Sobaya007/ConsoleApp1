@@ -28,6 +28,7 @@ void main()
 
 bool GameMain() {
 
+	InitOpenAL();
 	auto window = InitGLFW(window_width, window_height);
 	if (!window) return false;
 	glfwSetErrorCallback((error, description){ 
@@ -81,6 +82,10 @@ bool GameMain() {
 	TextureObject compass = new TextureObject(0xff, 0xff, GL_RGBA); 
 	FrameBufferObject fbo = new FrameBufferObject();
 
+
+	AudioSource as = new AudioSource("Resource/notify.wav");
+	as.Play;
+
 	MainLoop(() {
 
 		glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
@@ -107,6 +112,9 @@ bool GameMain() {
 		fpsCounter.Update();
 		window.glfwSetWindowTitle(("FPS:[" ~ to!string(fpsCounter.GetFPS) ~ "]").toStringz);
 	});
+
+	// ALUREの終了処理
+	alureShutdownDevice();
 	return true;
 }
 
@@ -140,4 +148,15 @@ auto InitGLFW(in int window_width, in int window_height) {
 		return null;
 	}
 	return window;
+}
+
+void InitOpenAL() {
+	DerelictAL.load();
+	DerelictALURE.load();
+
+
+	// まず最初にALUREを初期化
+	if ( !alureInitDevice(null, null) ) {
+		writeln("Failed to init alure!");
+	}
 }

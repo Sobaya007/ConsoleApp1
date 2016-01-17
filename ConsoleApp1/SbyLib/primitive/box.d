@@ -1,4 +1,4 @@
-module sbylib.primitive.cube;
+module sbylib.primitive.box;
 
 import sbylib;
 

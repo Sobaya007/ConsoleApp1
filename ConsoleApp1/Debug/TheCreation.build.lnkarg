@@ -4,6 +4,8 @@ DerelictGL3.lib+
 DerelictGLFW3.lib+ 
 DerelictIL.lib+ 
 DerelictFT.lib+ 
+DerelictAL.lib+ 
+DerelictALURE.lib+ 
 user32.lib+ 
 kernel32.lib+ 
 DerelictLib\/NOMAP/CO/NOI/DELEXE /SUBSYSTEM:CONSOLE 

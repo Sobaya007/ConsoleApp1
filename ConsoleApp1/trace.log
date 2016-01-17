@@ -1,0 +1,1464 @@
+------------------
+	 1620	_D3std9algorithm10comparison12__T3maxTfTfZ3maxFNaNbNiNfffZf
+	 1620	_D3std9algorithm10comparison12__T3minTfTfZ3minFNaNbNiNfffZf
+_D3std10functional20__T6safeOpVAyaa1_3cZ15__T6safeOpTfTfZ6safeOpFNaNbNiNfKfKfZb	3240	172	172
+------------------
+	 1620	_D3std9algorithm10comparison12__T3minTiTfZ3minFNaNbNiNfifZf
+_D3std10functional20__T6safeOpVAyaa1_3cZ15__T6safeOpTiTfZ6safeOpFNaNbNiNfKiKfZb	1620	74	74
+------------------
+	    6	_D3std9algorithm10comparison12__T3maxTkTiZ3maxFNaNbNiNfkiZk
+_D3std10functional20__T6safeOpVAyaa1_3cZ15__T6safeOpTkTiZ6safeOpFNaNbNiNfKkKiZb	6	1	0
+	    6	_D3std10functional20__T6safeOpVAyaa1_3cZ17__T8unsafeOpTkTiZ8unsafeOpFNaNbNiNfkiZb
+------------------
+	  324	_D3std9algorithm10comparison13__T3minTyiTkZ3minFNaNbNiNfyikZyi
+_D3std10functional20__T6safeOpVAyaa1_3cZ16__T6safeOpTyiTkZ6safeOpFNaNbNiNfKyiKkZb	324	97	69
+	  324	_D3std10functional20__T6safeOpVAyaa1_3cZ18__T8unsafeOpTyiTkZ8unsafeOpFNaNbNiNfyikZb
+------------------
+	    6	_D3std10functional20__T6safeOpVAyaa1_3cZ15__T6safeOpTkTiZ6safeOpFNaNbNiNfKkKiZb
+_D3std10functional20__T6safeOpVAyaa1_3cZ17__T8unsafeOpTkTiZ8unsafeOpFNaNbNiNfkiZb	6	1	1
+------------------
+	  324	_D3std10functional20__T6safeOpVAyaa1_3cZ16__T6safeOpTyiTkZ6safeOpFNaNbNiNfKyiKkZb
+_D3std10functional20__T6safeOpVAyaa1_3cZ18__T8unsafeOpTyiTkZ8unsafeOpFNaNbNiNfyikZb	324	28	28
+------------------
+	   57	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhAhZAh
+_D3std10functional51__T9binaryFunVAyaa6_61203d3d2062VAyaa1_61VAyaa1_62Z18__T9binaryFunThThZ9binaryFunFNaNbNiNfKhKhZb	57	2	2
+------------------
+	230400	_D3std9algorithm9searching35__T4findVAyaa6_61203d3d2062TAAkTAkZ4findFNaNbNiNfAAkAkZAAk
+_D3std10functional51__T9binaryFunVAyaa6_61203d3d2062VAyaa1_61VAyaa1_62Z20__T9binaryFunTAkTAkZ9binaryFunFNaNbNiNfKAkKAkZb	230400	23141	23141
+------------------
+	  324	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAyaTaZ4findFNaNfAyaaZAya
+_D3std3utf28__T20canSearchInCodeUnitsTaZ20canSearchInCodeUnitsFNaNbNiNfwZb	324	23	23
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D3std4conv11__T2toTAyaZ9__T2toTlZ2toFNaNbNflZAya	10	71	2
+	   10	_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNflZAya
+------------------
+	   10	_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNflZAya
+_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNelkE3std5ascii10LetterCaseZAya	10	67	15
+	   10	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result
+	   10	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+------------------
+	   10	_D3std4conv11__T2toTAyaZ9__T2toTlZ2toFNaNbNflZAya
+_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNflZAya	10	69	2
+	   10	_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNelkE3std5ascii10LetterCaseZAya
+------------------
+	   24	_D3std4conv20__T10emplaceRefTaTaZ10emplaceRefFNaNbNcNiNfKaKaZa
+_D3std4conv19__T11emplaceImplTaZ19__T11emplaceImplTaZ11emplaceImplFNaNbNcNiNfKaKaZa	24	2	2
+------------------
+	   24	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std4conv20__T10emplaceRefTaTaZ10emplaceRefFNaNbNcNiNfKaKaZa	24	7	5
+	   24	_D3std4conv19__T11emplaceImplTaZ19__T11emplaceImplTaZ11emplaceImplFNaNbNcNiNfKaKaZa
+------------------
+	    6	_D3std4conv24__T10emplaceRefTAyaTAyaZ10emplaceRefFNaNbNcNiNfKAyaKAyaZAya
+_D3std4conv21__T11emplaceImplTAyaZ21__T11emplaceImplTAyaZ11emplaceImplFNaNbNcNiNfKAyaKAyaZAya	6	0	0
+------------------
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv
+_D3std4conv24__T10emplaceRefTAyaTAyaZ10emplaceRefFNaNbNcNiNfKAyaKAyaZAya	6	1	1
+	    6	_D3std4conv21__T11emplaceImplTAyaZ21__T11emplaceImplTAyaZ11emplaceImplFNaNbNcNiNfKAyaKAyaZAya
+------------------
+	   34	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result5emptyMFNaNbNdNiNfZb	34	1	1
+------------------
+	   24	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result5frontMFNaNbNdNiNfZa	24	0	0
+------------------
+	   10	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result6__ctorMFNaNbNcNiNflZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result	10	5	5
+------------------
+	   10	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result6lengthMFNaNbNdNiNfZk	10	0	0
+------------------
+	   24	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result8popFrontMFNaNbNiNfZv	24	1	1
+------------------
+	   10	_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNelkE3std5ascii10LetterCaseZAya
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result	10	9	4
+	   10	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result6__ctorMFNaNbNcNiNflZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result
+------------------
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+_D3std4math12__T3powTiTiZ3powFNaNbNiNeiiZi	1	0	0
+------------------
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+_D3std4math12__T5isNaNTeZ5isNaNFNaNbNiNeeZb	1	0	0
+------------------
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+_D3std4math18__T10isInfinityTeZ10isInfinityFNaNbNiNeeZb	1	0	0
+------------------
+	    3	_D6sbylib2gl13TextureObject13TextureObject12_staticCtor2FZv
+	    3	_D4main8InitGLFWFxixiZPS8derelict5glfw35types10GLFWwindow
+_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya	6	125	10
+	    6	_D3std5array18__T8appenderTAAyaZ8appenderFNaNbNfZS3std5array18__T8AppenderTAAyaZ8Appender
+	   12	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result5emptyMFNaNbNdNiNfZb
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result5frontMFNaNbNdNiNfZAya
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result8popFrontMFNaNbNiNfZv
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender4dataMNgFNaNbNdNiNeZANgAya
+------------------
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv
+_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFAyaZ9__lambda2MFNaNbNiNeZAAya	6	1	1
+------------------
+	    6	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv	6	29	9
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender13ensureAddableMFNaNbNekZv
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFAyaZ9__lambda2MFNaNbNiNeZAAya
+	    6	_D3std4conv24__T10emplaceRefTAyaTAyaZ10emplaceRefFNaNbNcNiNfKAyaKAyaZAya
+------------------
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv
+_D3std5array18__T8AppenderTAAyaZ8Appender13ensureAddableMFNaNbNekZv	6	18	8
+	    6	_D3std5array29__T19appenderNewCapacityVki8Z19appenderNewCapacityFNaNbNiNfkkZk
+------------------
+	    6	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+_D3std5array18__T8AppenderTAAyaZ8Appender4dataMNgFNaNbNdNiNeZANgAya	6	1	1
+------------------
+	    6	_D3std5array18__T8appenderTAAyaZ8appenderFNaNbNfZS3std5array18__T8AppenderTAAyaZ8Appender
+_D3std5array18__T8AppenderTAAyaZ8Appender6__ctorMFNaNbNcNeAAyaZS3std5array18__T8AppenderTAAyaZ8Appender	6	32	21
+	    6	_D6object17__T8capacityTAyaZ8capacityFNaNbNdAAyaZk
+------------------
+	    6	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+_D3std5array18__T8appenderTAAyaZ8appenderFNaNbNfZS3std5array18__T8AppenderTAAyaZ8Appender	6	33	1
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender6__ctorMFNaNbNcNeAAyaZS3std5array18__T8AppenderTAAyaZ8Appender
+------------------
+	   10	_D3std5array29__T18uninitializedArrayTAaTkZ18uninitializedArrayFNaNbNekZAa
+_D3std5array29__T14arrayAllocImplVbi0TAaTkZ14arrayAllocImplFNaNbkZAa	10	6	6
+------------------
+	   10	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda2MFNaNbNeZAa
+_D3std5array29__T18uninitializedArrayTAaTkZ18uninitializedArrayFNaNbNekZAa	10	9	3
+	   10	_D3std5array29__T14arrayAllocImplVbi0TAaTkZ14arrayAllocImplFNaNbkZAa
+------------------
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender13ensureAddableMFNaNbNekZv
+_D3std5array29__T19appenderNewCapacityVki8Z19appenderNewCapacityFNaNbNiNfkkZk	6	10	8
+	    6	_D3std9algorithm10comparison12__T3maxTkTiZ3maxFNaNbNiNfkiZk
+------------------
+	   10	_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNelkE3std5ascii10LetterCaseZAya
+_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa	10	43	16
+	   10	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result6lengthMFNaNbNdNiNfZk
+	   10	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda2MFNaNbNeZAa
+	   34	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result5emptyMFNaNbNdNiNfZb
+	   24	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result5frontMFNaNbNdNiNfZa
+	   24	_D3std4conv20__T10emplaceRefTaTaZ10emplaceRefFNaNbNcNiNfKaKaZa
+	   24	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result8popFrontMFNaNbNiNfZv
+	   10	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda3MFNaNbNiNeZAa
+------------------
+	   10	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda2MFNaNbNeZAa	10	18	9
+	   10	_D3std5array29__T18uninitializedArrayTAaTkZ18uninitializedArrayFNaNbNekZAa
+------------------
+	   10	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda3MFNaNbNiNeZAa	10	0	0
+------------------
+	    6	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhAhZAh
+_D3std5range10primitives11__T4backThZ4backFNaNbNcNdNiNfAhZh	6	2	2
+------------------
+	   12	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhAhZAh
+_D3std5range10primitives11__T4saveThZ4saveFNaNbNdNiNfAhZAh	12	2	2
+------------------
+	   18	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result5emptyMFNaNbNdNiNfZb
+	   12	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result17ensureFrontLengthMFNaNbNiNfZv
+	  176	_D6sbylib2gl13TextureObject13TextureObject12_staticCtor2FZv
+	 1130	_D4main8InitGLFWFxixiZPS8derelict5glfw35types10GLFWwindow
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram25getVertexShaderFromStringMFAyaAyaZi
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram27getFragmentShaderFromStringMFAyaAyaZi
+	  648	_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb
+	    1	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFAyaZC6sbylib2gl13TextureObject13TextureObject
+	   80	_D6sbylib2gl13ShaderProgram13ShaderProgram45__T16SetUniformMatrixVii4VAyaa6_6d576f726c64Z16SetUniformMatrixMFNbAfZv
+	   80	_D6sbylib2gl13ShaderProgram13ShaderProgram51__T16SetUniformMatrixVii4VAyaa9_6d5669657750726f6aZ16SetUniformMatrixMFNbAfZv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram43__T10SetUniformVii3VAyaa8_6c69676874506f73Z10SetUniformMFNbG3fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram45__T10SetUniformVii3VAyaa9_63616d657261506f73Z10SetUniformMFNbG3fXv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram10SetTextureMFkAyaiZv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6378Z10SetUniformMFNbG1fXv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6379Z10SetUniformMFNbG1fXv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii1VAyaa5_7769647468Z10SetUniformMFNbG1fXv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram39__T10SetUniformVii1VAyaa6_686569676874Z10SetUniformMFNbG1fXv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7777Z10SetUniformMFNbG1fXv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7768Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii4VAyaa5_636f6c6f72Z10SetUniformMFNbG4fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram43__T16SetUniformMatrixVii4VAyaa5_6d56696577Z16SetUniformMatrixMFNbAfZv
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb	2351	184	184
+------------------
+	   12	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhAhZAh
+_D3std5range10primitives12__T5emptyThZ5emptyFNaNbNdNiNfxAhZb	12	1	1
+------------------
+	  960	_D3std9algorithm9searching12__T7canFindZ19__T7canFindTAAkTAkZ7canFindFNaNbNiNfAAkAkZb
+_D3std5range10primitives13__T5emptyTAkZ5emptyFNaNbNdNiNfxAAkZb	960	56	56
+------------------
+	    6	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhAhZAh
+_D3std5range10primitives14__T7popBackThZ7popBackFNaNbNiNfKAhZv	6	1	1
+------------------
+	    6	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhAhZAh
+_D3std5range10primitives19__T10walkLengthTAhZ10walkLengthFNaNbNiNfAhZk	6	0	0
+------------------
+	  162	_D3std5stdio4File20__T5writeTeTAyaTeTaZ5writeMFNfeAyaeaZv
+_D3std5range10primitives46__T3putTS3std5stdio4File17LockingTextWriterTaZ3putFNbNiNfKS3std5stdio4File17LockingTextWriteraZv	162	98918	42
+	  162	_D3std5range10primitives48__T5doPutTS3std5stdio4File17LockingTextWriterTaZ5doPutFNbNiNfKS3std5stdio4File17LockingTextWriterKaZv
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std5range10primitives47__T3putTS3std5stdio4File17LockingTextWriterTAaZ3putFNfKS3std5stdio4File17LockingTextWriterAaZv	324	368	89
+	  324	_D3std5range10primitives49__T5doPutTS3std5stdio4File17LockingTextWriterTAaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAaZv
+------------------
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb
+_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAxaZ3putFNfKS3std5stdio4File17LockingTextWriterAxaZv	324	279	60
+	  324	_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAxaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAxaZv
+------------------
+	  162	_D3std5stdio4File20__T5writeTeTAyaTeTaZ5writeMFNfeAyaeaZv
+_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAyaZ3putFNfKS3std5stdio4File17LockingTextWriterAyaZv	162	195	41
+	  162	_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAyaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAyaZv
+------------------
+	  162	_D3std5range10primitives46__T3putTS3std5stdio4File17LockingTextWriterTaZ3putFNbNiNfKS3std5stdio4File17LockingTextWriteraZv
+_D3std5range10primitives48__T5doPutTS3std5stdio4File17LockingTextWriterTaZ5doPutFNbNiNfKS3std5stdio4File17LockingTextWriterKaZv	162	98876	52
+	  162	_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNbNiNfaZv
+------------------
+	  324	_D3std5range10primitives47__T3putTS3std5stdio4File17LockingTextWriterTAaZ3putFNfKS3std5stdio4File17LockingTextWriterAaZv
+_D3std5range10primitives49__T5doPutTS3std5stdio4File17LockingTextWriterTAaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAaZv	324	279	82
+	  324	_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFNfAaZv
+------------------
+	  324	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAxaZ3putFNfKS3std5stdio4File17LockingTextWriterAxaZv
+_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAxaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAxaZv	324	219	66
+	  324	_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFNfAxaZv
+------------------
+	  162	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAyaZ3putFNfKS3std5stdio4File17LockingTextWriterAyaZv
+_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAyaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAyaZv	162	154	55
+	  162	_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFNfAyaZv
+------------------
+	    1	_D6sbylib6camera6camera6Camera6TargetMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFAyaZC6sbylib2gl13TextureObject13TextureObject
+_D3std5stdio16__T7writelnTAyaZ7writelnFNfAyaZv	2	841	11
+	    2	_D3std9exception27__T7enforceHTC9ExceptionTbZ7enforceFNaNfbLAxaAyakZb
+	    2	_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFNfAyaZv
+	    2	_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNbNiNfaZv
+------------------
+	  162	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+_D3std5stdio20__T7writelnTeTAyaTeZ7writelnFNfeAyaeZv	162	103874	177
+	  162	_D3std5stdio4File20__T5writeTeTAyaTeTaZ5writeMFNfeAyaeaZv
+------------------
+	    2	_D3std5stdio16__T7writelnTAyaZ7writelnFNfAyaZv
+	  162	_D3std5range10primitives48__T5doPutTS3std5stdio4File17LockingTextWriterTaZ5doPutFNbNiNfKS3std5stdio4File17LockingTextWriterKaZv
+_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNbNiNfaZv	164	99570	70
+	  164	_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNfaZ12trustedFPUTCFNbNiNeiPS4core4stdc5stdio6_iobufZi
+------------------
+	  164	_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNbNiNfaZv
+_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNfaZ12trustedFPUTCFNbNiNeiPS4core4stdc5stdio6_iobufZi	164	99500	99500
+------------------
+	  324	_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFNfAaZv
+_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFAaZ13trustedFwriteFNbNiNexPvkkPOS4core4stdc5stdio6_iobufZk	324	137	137
+------------------
+	  324	_D3std5range10primitives49__T5doPutTS3std5stdio4File17LockingTextWriterTAaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAaZv
+_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFNfAaZv	324	197	60
+	  324	_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFAaZ13trustedFwriteFNbNiNexPvkkPOS4core4stdc5stdio6_iobufZk
+------------------
+	  324	_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFNfAxaZv
+_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFAxaZ13trustedFwriteFNbNiNexPvkkPOS4core4stdc5stdio6_iobufZk	324	89	89
+------------------
+	  324	_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAxaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAxaZv
+_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFNfAxaZv	324	153	64
+	  324	_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFAxaZ13trustedFwriteFNbNiNexPvkkPOS4core4stdc5stdio6_iobufZk
+------------------
+	  164	_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFNfAyaZv
+_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFAyaZ13trustedFwriteFNbNiNexPvkkPOS4core4stdc5stdio6_iobufZk	164	133	133
+------------------
+	    2	_D3std5stdio16__T7writelnTAyaZ7writelnFNfAyaZv
+	  162	_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAyaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAyaZv
+_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFNfAyaZv	164	183	50
+	  164	_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFAyaZ13trustedFwriteFNbNiNexPvkkPOS4core4stdc5stdio6_iobufZk
+------------------
+	  162	_D3std5stdio20__T7writelnTeTAyaTeZ7writelnFNfeAyaeZv
+_D3std5stdio4File20__T5writeTeTAyaTeTaZ5writeMFNfeAyaeaZv	162	103697	460
+	  162	_D3std9exception27__T7enforceHTC9ExceptionTbZ7enforceFNaNfbLAxaAyakZb
+	  324	_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaeZk
+	  162	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAyaZ3putFNfKS3std5stdio4File17LockingTextWriterAyaZv
+	  162	_D3std5range10primitives46__T3putTS3std5stdio4File17LockingTextWriterTaZ3putFNbNiNfKS3std5stdio4File17LockingTextWriteraZv
+------------------
+	  648	_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaeZk
+_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb	648	912	473
+	  648	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+	  324	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAxaZ3putFNfKS3std5stdio4File17LockingTextWriterAxaZv
+	  324	_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTbZ9enforceExFNaNfbLAyaAyakZb
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec6fillUpMFNaNfZv
+------------------
+	  324	_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaeZk
+_D3std6format18__T10FormatSpecTaZ10FormatSpec6__ctorMFNaNbNcNiNfxAaZS3std6format18__T10FormatSpecTaZ10FormatSpec	324	36	36
+------------------
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb
+_D3std6format18__T10FormatSpecTaZ10FormatSpec6fillUpMFNaNfZv	324	51	51
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format18__T10FormatSpecTaZ10FormatSpec6flDashMxFNaNbNdNiNfZb	324	33	33
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format18__T10FormatSpecTaZ10FormatSpec6flHashMxFNaNbNdNiNfZb	324	33	33
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format18__T10FormatSpecTaZ10FormatSpec6flPlusMxFNaNbNdNiNfZb	324	32	32
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format18__T10FormatSpecTaZ10FormatSpec6flZeroMxFNaNbNdNiNfZb	324	31	31
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format18__T10FormatSpecTaZ10FormatSpec7flSpaceMxFNaNbNdNiNfZb	324	32	32
+------------------
+	  324	_D3std6format59__T13formatGenericTS3std5stdio4File17LockingTextWriterTeTaZ13formatGenericFS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv	324	2486	695
+	  324	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAyaTaZ4findFNaNfAyaaZAya
+	  324	_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTkZ9enforceExFNaNfkLAyaAyakZk
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec6flDashMxFNaNbNdNiNfZb
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec6flPlusMxFNaNbNdNiNfZb
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec6flZeroMxFNaNbNdNiNfZb
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec7flSpaceMxFNaNbNdNiNfZb
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec6flHashMxFNaNbNdNiNfZb
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZ9__lambda6MFNbNiNeZi
+	  324	_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTbZ9enforceExFNaNfbLAyaAyakZb
+	  324	_D3std9algorithm10comparison13__T3minTyiTkZ3minFNaNbNiNfyikZyi
+	  324	_D3std5range10primitives47__T3putTS3std5stdio4File17LockingTextWriterTAaZ3putFNfKS3std5stdio4File17LockingTextWriterAaZv
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZ9__lambda6MFNbNiNeZi	324	871	871
+------------------
+	  324	_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaeZk
+_D3std6format59__T13formatGenericTS3std5stdio4File17LockingTextWriterTeTaZ13formatGenericFS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv	324	2613	127
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+------------------
+	  324	_D3std5stdio4File20__T5writeTeTAyaTeTaZ5writeMFNfeAyaeaZv
+_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaeZk	324	4103	488
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec6__ctorMFNaNbNcNiNfxAaZS3std6format18__T10FormatSpecTaZ10FormatSpec
+	  324	_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFS3std5stdio4File17LockingTextWriterxAaeZ9__lambda5FNaNbNiNeZPFNaNbNfS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+	  324	_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFS3std5stdio4File17LockingTextWriterxAaeZ16__T9__lambda6TeZ9__lambda6FNaNbNiNeKeZxPv
+	  648	_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb
+	  324	_D3std6format59__T13formatGenericTS3std5stdio4File17LockingTextWriterTeTaZ13formatGenericFS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+------------------
+	  324	_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaeZk
+_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFS3std5stdio4File17LockingTextWriterxAaeZ16__T9__lambda6TeZ9__lambda6FNaNbNiNeKeZxPv	324	24	24
+------------------
+	  324	_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaeZk
+_D3std6format60__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTeZ14formattedWriteFS3std5stdio4File17LockingTextWriterxAaeZ9__lambda5FNaNbNiNeZPFNaNbNfS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv	324	30	30
+------------------
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram10SetTextureMFkAyaiZv
+_D3std8typecons10__T5tupleZ14__T5tupleTkTiZ5tupleFNaNbNiNfkiZS3std8typecons14__T5TupleTkTiZ5Tuple	20	13	9
+	   20	_D3std8typecons14__T5TupleTkTiZ5Tuple6__ctorMFNaNbNcNiNfkiZS3std8typecons14__T5TupleTkTiZ5Tuple
+------------------
+	   18	_D6sbylib2gl13ShaderProgram13ShaderProgram10SetTextureMFkAyaiZv
+_D3std8typecons14__T5TupleTkTiZ5Tuple50__T8opAssignTS3std8typecons14__T5TupleTkTiZ5TupleZ8opAssignMFNaNbNiNfS3std8typecons14__T5TupleTkTiZ5TupleZv	18	23	4
+	   18	_D3std9algorithm8mutation46__T4swapTS3std8typecons14__T5TupleTkTiZ5TupleZ4swapFNaNbNiNeKS3std8typecons14__T5TupleTkTiZ5TupleKS3std8typecons14__T5TupleTkTiZ5TupleZv
+------------------
+	   20	_D3std8typecons10__T5tupleZ14__T5tupleTkTiZ5tupleFNaNbNiNfkiZS3std8typecons14__T5TupleTkTiZ5Tuple
+_D3std8typecons14__T5TupleTkTiZ5Tuple6__ctorMFNaNbNcNiNfkiZS3std8typecons14__T5TupleTkTiZ5Tuple	20	4	4
+------------------
+	 1620	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D3std9algorithm10comparison12__T3maxTfTfZ3maxFNaNbNiNfffZf	1620	242	160
+	 1620	_D3std10functional20__T6safeOpVAyaa1_3cZ15__T6safeOpTfTfZ6safeOpFNaNbNiNfKfKfZb
+------------------
+	    6	_D3std5array29__T19appenderNewCapacityVki8Z19appenderNewCapacityFNaNbNiNfkkZk
+_D3std9algorithm10comparison12__T3maxTkTiZ3maxFNaNbNiNfkiZk	6	2	1
+	    6	_D3std10functional20__T6safeOpVAyaa1_3cZ15__T6safeOpTkTiZ6safeOpFNaNbNiNfKkKiZb
+------------------
+	 1620	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D3std9algorithm10comparison12__T3minTfTfZ3minFNaNbNiNfffZf	1620	280	190
+	 1620	_D3std10functional20__T6safeOpVAyaa1_3cZ15__T6safeOpTfTfZ6safeOpFNaNbNiNfKfKfZb
+------------------
+	 1620	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D3std9algorithm10comparison12__T3minTiTfZ3minFNaNbNiNfifZf	1620	225	151
+	 1620	_D3std10functional20__T6safeOpVAyaa1_3cZ15__T6safeOpTiTfZ6safeOpFNaNbNiNfKiKfZb
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std9algorithm10comparison13__T3minTyiTkZ3minFNaNbNiNfyikZyi	324	157	60
+	  324	_D3std10functional20__T6safeOpVAyaa1_3cZ16__T6safeOpTyiTkZ6safeOpFNaNbNiNfKyiKkZb
+------------------
+	   18	_D3std8typecons14__T5TupleTkTiZ5Tuple50__T8opAssignTS3std8typecons14__T5TupleTkTiZ5TupleZ8opAssignMFNaNbNiNfS3std8typecons14__T5TupleTkTiZ5TupleZv
+_D3std9algorithm8mutation46__T4swapTS3std8typecons14__T5TupleTkTiZ5TupleZ4swapFNaNbNiNeKS3std8typecons14__T5TupleTkTiZ5TupleKS3std8typecons14__T5TupleTkTiZ5TupleZv	18	19	19
+------------------
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result5frontMFNaNbNdNiNfZAya
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result8popFrontMFNaNbNiNfZv
+_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result17ensureFrontLengthMFNaNbNiNfZv	12	37	13
+	   12	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+	    6	_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFNaNbNiNfAyaAyaZAya
+------------------
+	   12	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result5frontMFNaNbNdNiNfZAya
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result8popFrontMFNaNbNiNfZv
+_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result5emptyMFNaNbNdNiNfZb	24	10	8
+	   18	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	    6	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result5frontMFNaNbNdNiNfZAya	6	38	3
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result5emptyMFNaNbNdNiNfZb
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result17ensureFrontLengthMFNaNbNiNfZv
+------------------
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFNaNbNiNfAyaAyaZS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result
+_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result6__ctorMFNaNbNcNiNfAyaAyaZS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result	6	0	0
+------------------
+	    6	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result8popFrontMFNaNbNiNfZv	6	5	2
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result5emptyMFNaNbNdNiNfZb
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result17ensureFrontLengthMFNaNbNiNfZv
+------------------
+	    3	_D6sbylib2gl13TextureObject13TextureObject12_staticCtor2FZv
+	    3	_D4main8InitGLFWFxixiZPS8derelict5glfw35types10GLFWwindow
+_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFNaNbNiNfAyaAyaZS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result	6	4	4
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result6__ctorMFNaNbNcNiNfAyaAyaZS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result
+------------------
+	  960	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZv
+_D3std9algorithm9searching12__T7canFindZ19__T7canFindTAAkTAkZ7canFindFNaNbNiNfAAkAkZb	960	37940	186
+	  960	_D3std9algorithm9searching35__T4findVAyaa6_61203d3d2062TAAkTAkZ4findFNaNbNiNfAAkAkZAAk
+	  960	_D3std5range10primitives13__T5emptyTAkZ5emptyFNaNbNdNiNfxAAkZb
+------------------
+	    6	_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFNaNbNiNfAyaAyaZAya
+_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhAhZAh	6	15	7
+	   12	_D3std5range10primitives12__T5emptyThZ5emptyFNaNbNdNiNfxAhZb
+	   12	_D3std5range10primitives11__T4saveThZ4saveFNaNbNdNiNfAhZAh
+	    6	_D3std5range10primitives19__T10walkLengthTAhZ10walkLengthFNaNbNiNfAhZk
+	    6	_D3std5range10primitives11__T4backThZ4backFNaNbNcNdNiNfAhZh
+	    6	_D3std5range10primitives14__T7popBackThZ7popBackFNaNbNiNfKAhZv
+	   57	_D3std10functional51__T9binaryFunVAyaa6_61203d3d2062VAyaa1_61VAyaa1_62Z18__T9binaryFunThThZ9binaryFunFNaNbNiNfKhKhZb
+------------------
+	  324	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAyaTaZ4findFNaNfAyaaZAya
+_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAyaTaZ4findFAyaaZ13trustedMemchrFNaNbNiNeKAyaKaZAya	324	60	60
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAyaTaZ4findFNaNfAyaaZAya	324	171	88
+	  324	_D3std3utf28__T20canSearchInCodeUnitsTaZ20canSearchInCodeUnitsFNaNbNiNfwZb
+	  324	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAyaTaZ4findFAyaaZ13trustedMemchrFNaNbNiNeKAyaKaZAya
+------------------
+	  960	_D3std9algorithm9searching12__T7canFindZ19__T7canFindTAAkTAkZ7canFindFNaNbNiNfAAkAkZb
+_D3std9algorithm9searching35__T4findVAyaa6_61203d3d2062TAAkTAkZ4findFNaNbNiNfAAkAkZAAk	960	37698	14557
+	230400	_D3std10functional51__T9binaryFunVAyaa6_61203d3d2062VAyaa1_61VAyaa1_62Z20__T9binaryFunTAkTAkZ9binaryFunFNaNbNiNfKAkKAkZb
+------------------
+	   12	_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFNaNbNiNfAyaAyaZAya
+_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFAyaAyaZ17__T5forceTAhTAyaZ5forceFNaNbNiNeAyaZAh	12	1	1
+------------------
+	    6	_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFNaNbNiNfAyaAyaZAya
+_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFAyaAyaZ17__T5forceTAyaTAhZ5forceFNaNbNiNeAhZAya	6	0	0
+------------------
+	    6	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result17ensureFrontLengthMFNaNbNiNfZv
+_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFNaNbNiNfAyaAyaZAya	6	23	7
+	   12	_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFAyaAyaZ17__T5forceTAhTAyaZ5forceFNaNbNiNeAyaZAh
+	    6	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhAhZAh
+	    6	_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFAyaAyaZ17__T5forceTAyaTAhZ5forceFNaNbNiNeAhZAya
+------------------
+	    2	_D3std5stdio16__T7writelnTAyaZ7writelnFNfAyaZv
+	  162	_D3std5stdio4File20__T5writeTeTAyaTeTaZ5writeMFNfeAyaeaZv
+	   10	_D6sbylib4core5world8MainLoopFDFZvZv
+_D3std9exception27__T7enforceHTC9ExceptionTbZ7enforceFNaNfbLAxaAyakZb	174	24	24
+------------------
+	  324	_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTbZ9enforceExFNaNfbLAyaAyakZb	648	68	68
+------------------
+	  324	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTeTaZ11formatValueFNfS3std5stdio4File17LockingTextWritereKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTkZ9enforceExFNaNfkLAyaAyakZk	324	37	37
+------------------
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject5WriteMFiiDFZvZv
+_D4main8GameMainFZ9__lambda2MFZ9__lambda1MFZv	10	1635	589
+	   10	_D6sbylib15shadertemplates11shaderstore11ShaderStore9getShaderFAyaZC6sbylib2gl13ShaderProgram13ShaderProgram
+	   10	_D6sbylib6camera6camera6Camera13GetViewMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix5arrayMFNaNbNiNfZAf
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram43__T16SetUniformMatrixVii4VAyaa5_6d56696577Z16SetUniformMatrixMFNbAfZv
+	   10	_D6sbylib5utils9functions18DrawRectWithShaderFffffC6sbylib2gl13ShaderProgram13ShaderProgramZv
+------------------
+	   10	_D6sbylib4core5world8MainLoopFDFZvZv
+_D4main8GameMainFZ9__lambda2MFZv	10	907702	4739
+	   10	_D6sbylib9primitive4cube3Box4DrawMFZv
+	   10	_D6sbylib9primitive5plane5Plane4DrawMFZv
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject20AttachTextureAsColorMFC6sbylib2gl13TextureObject13TextureObjectZv
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject5WriteMFiiDFZvZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+	   10	_D6sbylib4core6window6Window11getMousePosMFZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+	   20	_D6sbylib4core6entity6entity6Entity6GetPosMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   20	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1yMFNaNbNcNdNiNfZf
+	   10	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector28__T13opBinaryRightVAyaa1_2aZ13opBinaryRightMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2dZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib9primitive9primitive9Primitive3PosMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	   10	_D6sbylib5utils10fpscounter22__T10FpsCounterVki100Z10FpsCounter6UpdateMFZv
+	   10	_D6sbylib5utils10fpscounter22__T10FpsCounterVki100Z10FpsCounter6GetFPSMFZl
+	   10	_D3std4conv11__T2toTAyaZ9__T2toTlZ2toFNaNbNflZAya
+	   10	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	    1	_Dmain
+_D4main8GameMainFZb	1	1748759	126
+	    1	_D4main8InitGLFWFxixiZPS8derelict5glfw35types10GLFWwindow
+	    1	_D6sbylib4core5world7SbyInitFPS8derelict5glfw35types10GLFWwindowlZv
+	    1	_D6sbylib6camera17perspectivecamera17PerspectiveCamera6__ctorMFffffZC6sbylib6camera17perspectivecamera17PerspectiveCamera
+	    7	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNffffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	    4	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D6sbylib6camera6camera6Camera3PosMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib6camera6camera6Camera6TargetMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib6camera6camera6Camera4VecYMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib15shadertemplates11shaderstore11ShaderStore4InitFZv
+	    1	_D6sbylib5utils10fpscounter22__T10FpsCounterVki100Z10FpsCounter6__ctorMFNfZC6sbylib5utils10fpscounter22__T10FpsCounterVki100Z10FpsCounter
+	    1	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	    2	_D6sbylib9primitive9primitive9Primitive25__T10opOpAssignVAyaa1_2aZ10opOpAssignMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib9primitive9primitive9Primitive25__T10opOpAssignVAyaa1_2bZ10opOpAssignMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib15shadertemplates11shaderstore11ShaderStore9getShaderFAyaZC6sbylib2gl13ShaderProgram13ShaderProgram
+	    1	_D6sbylib9primitive5plane5Plane6__ctorMFC6sbylib2gl13ShaderProgram13ShaderProgramZC6sbylib9primitive5plane5Plane
+	    1	_D6sbylib9primitive9primitive9Primitive25__T10opOpAssignVAyaa1_2dZ10opOpAssignMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    1	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+	    1	_D6sbylib4core11manipulator12camerachaser12CameraChaser6__ctorMFC6sbylib6camera6camera6CameraZC6sbylib4core11manipulator12camerachaser12CameraChaser
+	    1	_D6sbylib4core11manipulator18manipulatormanager18ManipulatorManager3AddFC6sbylib4core11manipulator11manipulator11ManipulatorZv
+	    1	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFiikZC6sbylib2gl13TextureObject13TextureObject
+	    1	_D6sbylib2gl17FrameBufferObject17FrameBufferObject6__ctorMFZC6sbylib2gl17FrameBufferObject17FrameBufferObject
+	    1	_D6sbylib4core5world8MainLoopFDFZvZv
+------------------
+	    1	_D4main8GameMainFZb
+_D4main8InitGLFWFxixiZPS8derelict5glfw35types10GLFWwindow	1	259805	259682
+	    3	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFNaNbNiNfAyaAyaZS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result
+	    3	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+	 1130	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	    2	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZv
+	    3	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+_D6object10__T3dupTkZ3dupFNaNbNdNfAxkZAk	5	52	2
+	    5	_D6object22__T11_trustedDupTxkTkZ11_trustedDupFNaNbNeAxkZAk
+------------------
+	    5	_D6object22__T11_trustedDupTxkTkZ11_trustedDupFNaNbNeAxkZAk
+_D6object14__T4_dupTxkTkZ4_dupFNaNbAxkZAk	5	49	3
+	    5	_D6object14__T7_rawDupTkZ7_rawDupFNaNbANgkZANgk
+	    5	_D6object19__T11_doPostblitTkZ11_doPostblitFNaNbNiNfAkZv
+------------------
+	    5	_D6object14__T4_dupTxkTkZ4_dupFNaNbAxkZAk
+_D6object14__T7_rawDupTkZ7_rawDupFNaNbANgkZANgk	5	42	42
+------------------
+	    6	_D3std5array18__T8AppenderTAAyaZ8Appender6__ctorMFNaNbNcNeAAyaZS3std5array18__T8AppenderTAAyaZ8Appender
+_D6object17__T8capacityTAyaZ8capacityFNaNbNdAAyaZk	6	11	11
+------------------
+	  110	_D6object90__T4keysHTxHiS3std8typecons14__T5TupleTkTiZ5TupleTxS3std8typecons14__T5TupleTkTiZ5TupleTiZ4keysFNaNbNdxHiS3std8typecons14__T5TupleTkTiZ5TupleZAi
+_D6object19__T11_doPostblitTiZ11_doPostblitFNaNbNiNfAiZv	110	44	15
+	  110	_D6object20__T12_getPostblitTiZ12_getPostblitFNaNbNiNeZDFNaNbNiNfKiZv
+------------------
+	    5	_D6object14__T4_dupTxkTkZ4_dupFNaNbAxkZAk
+_D6object19__T11_doPostblitTkZ11_doPostblitFNaNbNiNfAkZv	5	4	2
+	    5	_D6object20__T12_getPostblitTkZ12_getPostblitFNaNbNiNeZDFNaNbNiNfKkZv
+------------------
+	  110	_D6object19__T11_doPostblitTiZ11_doPostblitFNaNbNiNfAiZv
+_D6object20__T12_getPostblitTiZ12_getPostblitFNaNbNiNeZDFNaNbNiNfKiZv	110	29	29
+------------------
+	    5	_D6object19__T11_doPostblitTkZ11_doPostblitFNaNbNiNfAkZv
+_D6object20__T12_getPostblitTkZ12_getPostblitFNaNbNiNeZDFNaNbNiNfKkZv	5	2	2
+------------------
+	    5	_D6object10__T3dupTkZ3dupFNaNbNdNfAxkZAk
+_D6object22__T11_trustedDupTxkTkZ11_trustedDupFNaNbNeAxkZAk	5	50	1
+	    5	_D6object14__T4_dupTxkTkZ4_dupFNaNbAxkZAk
+------------------
+	  110	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZv
+_D6object90__T4keysHTxHiS3std8typecons14__T5TupleTkTiZ5TupleTxS3std8typecons14__T5TupleTkTiZ5TupleTiZ4keysFNaNbNdxHiS3std8typecons14__T5TupleTkTiZ5TupleZAi	110	103	59
+	  110	_D6object19__T11_doPostblitTiZ11_doPostblitFNaNbNiNfAiZv
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib15shadertemplates11shaderstore11ShaderStore4InitFZv	1	175497	104
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram6__ctorMFAyaAyaE6sbylib2gl13ShaderProgram13ShaderProgram9InputTypeZC6sbylib2gl13ShaderProgram13ShaderProgram
+------------------
+	    1	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	    1	_D4main8GameMainFZb
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    1	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D4main8GameMainFZ9__lambda2MFZ9__lambda1MFZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+_D6sbylib15shadertemplates11shaderstore11ShaderStore9getShaderFAyaZC6sbylib2gl13ShaderProgram13ShaderProgram	34	45	45
+------------------
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram10SetTextureMFC6sbylib2gl13TextureObject13TextureObjectAyaiZv	20	123	12
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram10SetTextureMFkAyaiZv
+------------------
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram10SetTextureMFC6sbylib2gl13TextureObject13TextureObjectAyaiZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram10SetTextureMFkAyaiZv	20	111	73
+	   20	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+	   20	_D3std8typecons10__T5tupleZ14__T5tupleTkTiZ5tupleFNaNbNiNfkiZS3std8typecons14__T5TupleTkTiZ5Tuple
+	   18	_D3std8typecons14__T5TupleTkTiZ5Tuple50__T8opAssignTS3std8typecons14__T5TupleTkTiZ5TupleZ8opAssignMFNaNbNiNfS3std8typecons14__T5TupleTkTiZ5TupleZv
+------------------
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram28getShaderProgramIDFromStringMFAyaAyaZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram25getVertexShaderFromStringMFAyaAyaZi	8	18845	18844
+	    8	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram28getShaderProgramIDFromStringMFAyaAyaZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram27getFragmentShaderFromStringMFAyaAyaZi	8	13270	13269
+	    8	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram6__ctorMFAyaAyaE6sbylib2gl13ShaderProgram13ShaderProgram9InputTypeZC6sbylib2gl13ShaderProgram13ShaderProgram
+_D6sbylib2gl13ShaderProgram13ShaderProgram28getShaderProgramIDFromStringMFAyaAyaZi	8	175384	13
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram25getVertexShaderFromStringMFAyaAyaZi
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram27getFragmentShaderFromStringMFAyaAyaZi
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram5getSPFiiZi
+------------------
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6378Z10SetUniformMFG1fX9__lambda2MFNbZv	20	10	10
+------------------
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6378Z10SetUniformMFNbG1fXv	20	170	169
+	   20	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6379Z10SetUniformMFG1fX9__lambda2MFNbZv	20	6	6
+------------------
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6379Z10SetUniformMFNbG1fXv	20	36	36
+	   20	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7768Z10SetUniformMFG1fX9__lambda2MFNbZv	20	5	5
+------------------
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7768Z10SetUniformMFNbG1fXv	20	27	27
+	   20	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7777Z10SetUniformMFG1fX9__lambda2MFNbZv	20	9	9
+------------------
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7777Z10SetUniformMFNbG1fXv	20	93	91
+	   20	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii1VAyaa5_7769647468Z10SetUniformMFG1fX9__lambda2MFNbZv	20	7	7
+------------------
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii1VAyaa5_7769647468Z10SetUniformMFNbG1fXv	20	37	37
+	   20	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii4VAyaa5_636f6c6f72Z10SetUniformMFG4fX9__lambda2MFNbZv	10	28	28
+------------------
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii4VAyaa5_636f6c6f72Z10SetUniformMFNbG4fXv	10	24	23
+	   10	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram39__T10SetUniformVii1VAyaa6_686569676874Z10SetUniformMFG1fX9__lambda2MFNbZv	20	77	77
+------------------
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram39__T10SetUniformVii1VAyaa6_686569676874Z10SetUniformMFNbG1fXv	20	39	39
+	   20	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   70	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObjectZv
+	   40	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram3UseMxFZv	110	1627	1627
+------------------
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram43__T10SetUniformVii3VAyaa8_6c69676874506f73Z10SetUniformMFG3fX9__lambda2MFNbZv	10	7	7
+------------------
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram43__T10SetUniformVii3VAyaa8_6c69676874506f73Z10SetUniformMFNbG3fXv	10	18	17
+	   10	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram43__T16SetUniformMatrixVii4VAyaa5_6d56696577Z16SetUniformMatrixMFAfZ9__lambda2MFNbZv	10	24	24
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZ9__lambda1MFZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram43__T16SetUniformMatrixVii4VAyaa5_6d56696577Z16SetUniformMatrixMFNbAfZv	10	72	71
+	   10	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram45__T10SetUniformVii3VAyaa9_63616d657261506f73Z10SetUniformMFG3fX9__lambda2MFNbZv	10	30	30
+------------------
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram45__T10SetUniformVii3VAyaa9_63616d657261506f73Z10SetUniformMFNbG3fXv	10	18	17
+	   10	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   80	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram45__T16SetUniformMatrixVii4VAyaa6_6d576f726c64Z16SetUniformMatrixMFAfZ9__lambda2MFNbZv	80	24	24
+------------------
+	   60	_D6sbylib9primitive4cube3Box4DrawMFZv
+	   10	_D6sbylib9primitive5plane5Plane4DrawMFZv
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram45__T16SetUniformMatrixVii4VAyaa6_6d576f726c64Z16SetUniformMatrixMFNbAfZv	80	258	252
+	   80	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	   80	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram51__T16SetUniformMatrixVii4VAyaa9_6d5669657750726f6aZ16SetUniformMatrixMFAfZ9__lambda2MFNbZv	80	1152	1152
+------------------
+	   60	_D6sbylib9primitive4cube3Box4DrawMFZv
+	   10	_D6sbylib9primitive5plane5Plane4DrawMFZv
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram51__T16SetUniformMatrixVii4VAyaa9_6d5669657750726f6aZ16SetUniformMatrixMFNbAfZv	80	97	90
+	   80	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram28getShaderProgramIDFromStringMFAyaAyaZi
+_D6sbylib2gl13ShaderProgram13ShaderProgram5getSPFiiZi	8	143256	143256
+------------------
+	    8	_D6sbylib15shadertemplates11shaderstore11ShaderStore4InitFZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram6__ctorMFAyaAyaE6sbylib2gl13ShaderProgram13ShaderProgram9InputTypeZC6sbylib2gl13ShaderProgram13ShaderProgram	8	175393	9
+	    8	_D6sbylib2gl13ShaderProgram13ShaderProgram28getShaderProgramIDFromStringMFAyaAyaZi
+------------------
+	  320	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi	320	1432	53
+	   80	_D6sbylib2gl13ShaderProgram13ShaderProgram51__T16SetUniformMatrixVii4VAyaa9_6d5669657750726f6aZ16SetUniformMatrixMFAfZ9__lambda2MFNbZv
+	   80	_D6sbylib2gl13ShaderProgram13ShaderProgram45__T16SetUniformMatrixVii4VAyaa6_6d576f726c64Z16SetUniformMatrixMFAfZ9__lambda2MFNbZv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram45__T10SetUniformVii3VAyaa9_63616d657261506f73Z10SetUniformMFG3fX9__lambda2MFNbZv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram43__T10SetUniformVii3VAyaa8_6c69676874506f73Z10SetUniformMFG3fX9__lambda2MFNbZv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram39__T10SetUniformVii1VAyaa6_686569676874Z10SetUniformMFG1fX9__lambda2MFNbZv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7777Z10SetUniformMFG1fX9__lambda2MFNbZv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii1VAyaa5_7769647468Z10SetUniformMFG1fX9__lambda2MFNbZv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7768Z10SetUniformMFG1fX9__lambda2MFNbZv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6379Z10SetUniformMFG1fX9__lambda2MFNbZv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii4VAyaa5_636f6c6f72Z10SetUniformMFG4fX9__lambda2MFNbZv
+	   20	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6378Z10SetUniformMFG1fX9__lambda2MFNbZv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram43__T16SetUniformMatrixVii4VAyaa5_6d56696577Z16SetUniformMatrixMFAfZ9__lambda2MFNbZv
+------------------
+	   70	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObjectZv
+	   40	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFZv
+_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZv	110	1803	268
+	  110	_D6object90__T4keysHTxHiS3std8typecons14__T5TupleTkTiZ5TupleTxS3std8typecons14__T5TupleTkTiZ5TupleTiZ4keysFNaNbNdxHiS3std8typecons14__T5TupleTkTiZ5TupleZAi
+	  320	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZ14__foreachbody1MFKxDFZvZi
+------------------
+	    2	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFiikZC6sbylib2gl13TextureObject13TextureObject
+_D6sbylib2gl13TextureObject13TextureObject12SetMagFilterMFE6sbylib2gl13TextureObject13TextureObject13TexFilterTypeZv	2	22	22
+------------------
+	    2	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFiikZC6sbylib2gl13TextureObject13TextureObject
+_D6sbylib2gl13TextureObject13TextureObject12SetMinFilterMFE6sbylib2gl13TextureObject13TextureObject13TexFilterTypeZv	2	0	0
+------------------
+_D6sbylib2gl13TextureObject13TextureObject12_staticCtor2FZv	0	150349	150254
+	    3	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFNaNbNiNfAyaAyaZS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result
+	    3	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+	  176	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	    2	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFiikZC6sbylib2gl13TextureObject13TextureObject
+	    2	_D6sbylib2gl13TextureObject13TextureObject8SetWrapSMFE6sbylib2gl13TextureObject13TextureObject11TexWrapTypeZv
+_D6sbylib2gl13TextureObject13TextureObject4BindMFZv	4	83	83
+------------------
+	    2	_D6sbylib2gl13TextureObject13TextureObject8SetWrapSMFE6sbylib2gl13TextureObject13TextureObject11TexWrapTypeZv
+	    2	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFiikZC6sbylib2gl13TextureObject13TextureObject
+_D6sbylib2gl13TextureObject13TextureObject6UnBindMFZv	4	3	3
+------------------
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+_D6sbylib2gl13TextureObject13TextureObject6__ctorMFAyaZC6sbylib2gl13TextureObject13TextureObject	1	7047	6599
+	    1	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+	    1	_D3std5stdio16__T7writelnTAyaZ7writelnFNfAyaZv
+------------------
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    1	_D4main8GameMainFZb
+_D6sbylib2gl13TextureObject13TextureObject6__ctorMFiikZC6sbylib2gl13TextureObject13TextureObject	2	517	403
+	    2	_D6sbylib2gl13TextureObject13TextureObject4BindMFZv
+	    2	_D6sbylib2gl13TextureObject13TextureObject12SetMagFilterMFE6sbylib2gl13TextureObject13TextureObject13TexFilterTypeZv
+	    2	_D6sbylib2gl13TextureObject13TextureObject12SetMinFilterMFE6sbylib2gl13TextureObject13TextureObject13TexFilterTypeZv
+	    2	_D6sbylib2gl13TextureObject13TextureObject8SetWrapSMFE6sbylib2gl13TextureObject13TextureObject11TexWrapTypeZv
+	    2	_D6sbylib2gl13TextureObject13TextureObject8SetWrapTMFE6sbylib2gl13TextureObject13TextureObject11TexWrapTypeZv
+	    2	_D6sbylib2gl13TextureObject13TextureObject6UnBindMFZv
+------------------
+	    2	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFiikZC6sbylib2gl13TextureObject13TextureObject
+_D6sbylib2gl13TextureObject13TextureObject8SetWrapSMFE6sbylib2gl13TextureObject13TextureObject11TexWrapTypeZv	2	7	5
+	    2	_D6sbylib2gl13TextureObject13TextureObject4BindMFZv
+	    2	_D6sbylib2gl13TextureObject13TextureObject6UnBindMFZv
+------------------
+	    2	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFiikZC6sbylib2gl13TextureObject13TextureObject
+_D6sbylib2gl13TextureObject13TextureObject8SetWrapTMFE6sbylib2gl13TextureObject13TextureObject11TexWrapTypeZv	2	1	1
+------------------
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject5WriteMFiiDFZvZv
+_D6sbylib2gl17FrameBufferObject17FrameBufferObject10WriteBeginMFiiZv	10	112	97
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject4BindMFZv
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D6sbylib2gl17FrameBufferObject17FrameBufferObject20AttachTextureAsColorMFC6sbylib2gl13TextureObject13TextureObjectZv	10	480	244
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject4BindMFZv
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject6UnBindMFZv
+------------------
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject20AttachTextureAsColorMFC6sbylib2gl13TextureObject13TextureObjectZv
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject10WriteBeginMFiiZv
+_D6sbylib2gl17FrameBufferObject17FrameBufferObject4BindMFZv	20	203	203
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D6sbylib2gl17FrameBufferObject17FrameBufferObject5WriteMFiiDFZvZv	10	1804	9
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject10WriteBeginMFiiZv
+	   10	_D4main8GameMainFZ9__lambda2MFZ9__lambda1MFZv
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject8WriteEndMFZv
+------------------
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject20AttachTextureAsColorMFC6sbylib2gl13TextureObject13TextureObjectZv
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject8WriteEndMFZv
+_D6sbylib2gl17FrameBufferObject17FrameBufferObject6UnBindMFZv	20	51	51
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib2gl17FrameBufferObject17FrameBufferObject6__ctorMFZC6sbylib2gl17FrameBufferObject17FrameBufferObject	1	112	112
+------------------
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject5WriteMFiiDFZvZv
+_D6sbylib2gl17FrameBufferObject17FrameBufferObject8WriteEndMFZv	10	48	45
+	   10	_D6sbylib2gl17FrameBufferObject17FrameBufferObject6UnBindMFZv
+------------------
+	   70	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObjectZv
+_D6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject4BindMxFZv	70	60	60
+------------------
+	   70	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObjectZv
+_D6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject6UnBindMxFZv	70	29	29
+------------------
+	    6	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	    2	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    1	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+_D6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject6__ctorMFNbAkE6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject9FrequencyZC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject	9	845	845
+------------------
+	    2	_D6sbylib5utils9functions13FunctionsInitFZv
+	    6	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	    1	_D6sbylib9primitive5plane5Plane6__ctorMFC6sbylib2gl13ShaderProgram13ShaderProgramZC6sbylib9primitive5plane5Plane
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    1	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+	   70	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObjectZv
+	   40	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFZv
+_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4BindMxFZv	121	502	502
+------------------
+	   60	_D6sbylib9primitive4cube3Box4DrawMFZv
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObjectZv	70	7498	5175
+	   70	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4BindMxFZv
+	   70	_D6sbylib2gl13ShaderProgram13ShaderProgram3UseMxFZv
+	   70	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZv
+	   70	_D6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject4BindMxFZv
+	   70	_D6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject6UnBindMxFZv
+	   70	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject6UnBindMxFZv
+------------------
+	   10	_D6sbylib9primitive5plane5Plane4DrawMFZv
+	   30	_D6sbylib5utils9functions18DrawRectWithShaderFffffC6sbylib2gl13ShaderProgram13ShaderProgramZv
+_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFZv	40	3742	2363
+	   40	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4BindMxFZv
+	   40	_D6sbylib2gl13ShaderProgram13ShaderProgram3UseMxFZv
+	   40	_D6sbylib2gl13ShaderProgram13ShaderProgram7UniformMxFZv
+	   40	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject6UnBindMxFZv
+------------------
+	    2	_D6sbylib5utils9functions13FunctionsInitFZv
+	    6	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	    1	_D6sbylib9primitive5plane5Plane6__ctorMFC6sbylib2gl13ShaderProgram13ShaderProgramZC6sbylib9primitive5plane5Plane
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    1	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+	   70	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObjectZv
+	   40	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFZv
+_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject6UnBindMxFZv	121	49	49
+------------------
+	    2	_D6sbylib5utils9functions13FunctionsInitFZv
+	    6	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	    1	_D6sbylib9primitive5plane5Plane6__ctorMFC6sbylib2gl13ShaderProgram13ShaderProgramZC6sbylib9primitive5plane5Plane
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    1	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject6__ctorMFNbZC6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject	11	226	226
+------------------
+	   20	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject15__T6UpdateVii0Z6UpdateMFNbAfZv	20	20320	20320
+------------------
+	    2	_D6sbylib5utils9functions13FunctionsInitFZv
+	   12	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	    3	_D6sbylib9primitive5plane5Plane6__ctorMFC6sbylib2gl13ShaderProgram13ShaderProgramZC6sbylib9primitive5plane5Plane
+	    3	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    2	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject4BindMFZv	22	4	4
+------------------
+	    2	_D6sbylib5utils9functions13FunctionsInitFZv
+	   12	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	    3	_D6sbylib9primitive5plane5Plane6__ctorMFC6sbylib2gl13ShaderProgram13ShaderProgramZC6sbylib9primitive5plane5Plane
+	    3	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    2	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject6UnBindMFZv	22	5	5
+------------------
+	    2	_D6sbylib5utils9functions13FunctionsInitFZv
+	    7	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	    3	_D6sbylib9primitive5plane5Plane6__ctorMFC6sbylib2gl13ShaderProgram13ShaderProgramZC6sbylib9primitive5plane5Plane
+	    3	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	    2	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject6__ctorMFNbAfE6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject9FrequencyZC6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject	17	3986	3986
+------------------
+	    1	_D6sbylib4core11manipulator12camerachaser12CameraChaser6__ctorMFC6sbylib6camera6camera6CameraZC6sbylib4core11manipulator12camerachaser12CameraChaser
+_D6sbylib4core11manipulator11manipulator11Manipulator6__ctorMFC6sbylib4core6entity6entity6EntityZC6sbylib4core11manipulator11manipulator11Manipulator	1	0	0
+------------------
+	   10	_D6sbylib4core11manipulator18manipulatormanager18ManipulatorManager7MoveAllFZv
+_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv	10	328	122
+	   40	_D6sbylib4core6entity6entity6Entity6GetPosMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2bZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   30	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2dZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib6camera6camera6Camera3PosMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	   40	_D6sbylib4core6window6Window12isKeyPressedMFE6sbylib4core6window9KeyButtonZb
+	   10	_D6sbylib4math6vector17__T6lengthTfVii3Z6lengthFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	   10	_D6sbylib4core6window6Window11getMousePosMFZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+	   10	_D6sbylib4core6window6Window14isMousePressedMFE6sbylib4core6window11MouseButtonZb
+	   20	_D6sbylib4math6vector20__T9normalizeTfVii3Z9normalizeFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib6camera6camera6Camera4VecZMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	   10	_D6sbylib6camera6camera6Camera7GetVecYMFNdZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib6camera6camera6Camera7GetVecZMFNdZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib4math6vector16__T5crossTfVii3Z5crossFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib6camera6camera6Camera4VecXMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib4core11manipulator12camerachaser12CameraChaser6__ctorMFC6sbylib6camera6camera6CameraZC6sbylib4core11manipulator12camerachaser12CameraChaser	1	1	1
+	    1	_D6sbylib4core11manipulator11manipulator11Manipulator6__ctorMFC6sbylib4core6entity6entity6EntityZC6sbylib4core11manipulator11manipulator11Manipulator
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib4core11manipulator18manipulatormanager18ManipulatorManager3AddFC6sbylib4core11manipulator11manipulator11ManipulatorZv	1	3	3
+------------------
+	   10	_D6sbylib4core5world8MainLoopFDFZvZv
+_D6sbylib4core11manipulator18manipulatormanager18ManipulatorManager7MoveAllFZv	10	343	15
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib4core5world7SbyInitFPS8derelict5glfw35types10GLFWwindowlZv	1	2492	7
+	    1	_D6sbylib4core6window6Window6__ctorMFPS8derelict5glfw35types10GLFWwindowZC6sbylib4core6window6Window
+	    1	_D6sbylib5utils9functions13FunctionsInitFZv
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib4core5world8MainLoopFDFZvZv	1	1191097	283049
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+	   10	_D6sbylib4core11manipulator18manipulatormanager18ManipulatorManager7MoveAllFZv
+	   10	_D3std9exception27__T7enforceHTC9ExceptionTbZ7enforceFNaNfbLAxaAyakZb
+------------------
+	   11	_D6sbylib6camera6camera6Camera3PosMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	   10	_D6sbylib7physics5bound3ray3Ray6__ctorMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4core6entity6entity6Entity3PosMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	21	4	4
+------------------
+	   11	_D6sbylib6camera6camera6Camera4VecXMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+_D6sbylib4core6entity6entity6Entity4VecXMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	11	4	4
+------------------
+	    1	_D6sbylib6camera6camera6Camera4VecYMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+_D6sbylib4core6entity6entity6Entity4VecYMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	1	0	0
+------------------
+	   11	_D6sbylib6camera6camera6Camera4VecZMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+_D6sbylib4core6entity6entity6Entity4VecZMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	11	3	3
+------------------
+	    1	_D6sbylib6camera6camera6Camera6TargetMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib9primitive9primitive9Primitive25__T10opOpAssignVAyaa1_2bZ10opOpAssignMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib9primitive9primitive9Primitive25__T10opOpAssignVAyaa1_2dZ10opOpAssignMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	   10	_D6sbylib6camera6camera6Camera13GetViewMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+	   20	_D4main8GameMainFZ9__lambda2MFZv
+	   40	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib4core6entity6entity6Entity6GetPosMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	103	28	28
+------------------
+	    2	_D6sbylib9primitive9primitive9Primitive14GetWorldMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib4core6entity6entity6Entity7GetVecXMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	2	0	0
+------------------
+	    2	_D6sbylib9primitive9primitive9Primitive14GetWorldMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib4core6entity6entity6Entity7GetVecYMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	2	1	1
+------------------
+	    2	_D6sbylib9primitive9primitive9Primitive14GetWorldMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib4core6entity6entity6Entity7GetVecZMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	2	0	0
+------------------
+_D6sbylib4core6window12_staticCtor1FZv	0	46	46
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib4core6window6Window11getMousePosMFZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector	20	184	183
+	   20	_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector6__ctorMFNaNbNcNiNfffZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+------------------
+	   20	_D6sbylib5utils9functions38__T2OrTE6sbylib4core6window9KeyButtonZ2OrFDFE6sbylib4core6window9KeyButtonZbAE6sbylib4core6window9KeyButtonXb
+	   40	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	   40	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib4core6window6Window12isKeyPressedMFE6sbylib4core6window9KeyButtonZb	100	73	73
+------------------
+	    1	_D6sbylib6camera6camera6Camera19GetProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4core6window6Window13ViewportWidthMFNdZi	31	56	56
+------------------
+	    1	_D6sbylib6camera6camera6Camera19GetProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4core6window6Window14ViewportHeightMFNdZi	31	773	773
+------------------
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib4core6window6Window14isMousePressedMFE6sbylib4core6window11MouseButtonZb	10	3	3
+------------------
+	    1	_D6sbylib4core5world7SbyInitFPS8derelict5glfw35types10GLFWwindowlZv
+_D6sbylib4core6window6Window6__ctorMFPS8derelict5glfw35types10GLFWwindowZC6sbylib4core6window6Window	1	0	0
+------------------
+	 3240	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion21__T7opUnaryVAyaa1_7eZ7opUnaryMxFNaNbNiNfZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion	3240	5092	4956
+	 3240	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion6__ctorMFNaNbNcNiNfffffZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+------------------
+	 6480	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion22__T8opBinaryVAyaa1_2aZ8opBinaryMxFNaNbNiNfS6sbylib4math10quaternion18__T10QuaternionTfZ10QuaternionZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion	6480	422	422
+------------------
+	 3240	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion4AxisMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	3240	1038	679
+	 3240	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1xMFNaNbNdNiNffZv
+	 3240	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1yMFNaNbNdNiNffZv
+	 3240	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1zMFNaNbNdNiNffZv
+------------------
+	 3250	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorfZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion	3250	1348	805
+	 3250	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1xMFNaNbNcNdNiNfZf
+	 3250	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1yMFNaNbNcNdNiNfZf
+	 3250	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1zMFNaNbNcNdNiNfZf
+	 3250	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion6__ctorMFNaNbNcNiNfffffZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+------------------
+	 3250	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorfZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+	 3240	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion21__T7opUnaryVAyaa1_7eZ7opUnaryMxFNaNbNiNfZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion6__ctorMFNaNbNcNiNfffffZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion	6490	265	265
+------------------
+	    1	_D6sbylib6camera17perspectivecamera17PerspectiveCamera24GenerateProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix11PerspectiveFNaNbNiNfffffZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	1	1	1
+------------------
+	    2	_D6sbylib9primitive9primitive9Primitive14GetWorldMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix11ReplacementFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	2	0	0
+------------------
+	    2	_D6sbylib9primitive9primitive9Primitive25__T10opOpAssignVAyaa1_2aZ10opOpAssignMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib6camera6camera6Camera19GetProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix14__T5ScaleVii3Z5ScaleFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	3	3	2
+	    9	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector7opIndexMFNaNbNcNiNfiZf
+------------------
+	    2	_D6sbylib9primitive9primitive9Primitive14GetWorldMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix21__T11TranslationVii3Z11TranslationFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	2	3	2
+	    6	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector7opIndexMFNaNbNcNiNfiZf
+------------------
+	    2	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix25__T10opOpAssignVAyaa1_2aZ10opOpAssignMFNaNbNiNfS6sbylib4math6matrix13__T6MatrixTfZ6MatrixZv
+	    4	_D6sbylib9primitive9primitive9Primitive14GetWorldMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	    1	_D6sbylib6camera6camera6Camera19GetProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib6camera6camera6Camera23GetViewProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNfS6sbylib4math6matrix13__T6MatrixTfZ6MatrixZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	17	15	15
+------------------
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZS6sbylib4math6vector17__T6VectorTfVii4Z6Vector	10	30	18
+	  160	_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector7opIndexMFNaNbNcNiNfiZf
+------------------
+	    2	_D6sbylib9primitive9primitive9Primitive25__T10opOpAssignVAyaa1_2aZ10opOpAssignMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix25__T10opOpAssignVAyaa1_2aZ10opOpAssignMFNaNbNiNfS6sbylib4math6matrix13__T6MatrixTfZ6MatrixZv	2	1	0
+	    2	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNfS6sbylib4math6matrix13__T6MatrixTfZ6MatrixZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+------------------
+	  120	_D6sbylib9primitive4cube3Box4DrawMFZv
+	   20	_D6sbylib9primitive5plane5Plane4DrawMFZv
+	   20	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+	   10	_D4main8GameMainFZ9__lambda2MFZ9__lambda1MFZv
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix5arrayMFNaNbNiNfZAf	170	20	20
+------------------
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix6InvertFNaNbNiNfS6sbylib4math6matrix13__T6MatrixTfZ6MatrixZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	10	10	10
+------------------
+	   10	_D6sbylib6camera6camera6Camera13GetViewMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix6LookAtFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	10	8	8
+------------------
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix8IdentityFNaNbNiNfZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	10	3	3
+------------------
+	 3200	_D6sbylib5utils9functions27__T19computeUnSignedAreaTfZ19computeUnSignedAreaFNaNbNiNfG3S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib4math6vector16__T5crossTfVii3Z5crossFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	3220	1479	914
+	 9660	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector7opIndexMFNaNbNcNiNfiZf
+------------------
+	  135	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle4moveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector	135	17	17
+------------------
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector22__T8opBinaryVAyaa1_2dZ8opBinaryMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector	10	7	6
+	   10	_arraySliceExpSubSliceAssign_f
+------------------
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector22__T8opBinaryVAyaa1_2fZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector	10	4	2
+	   10	_arraySliceSliceDivSliceAssign_f
+------------------
+	  459	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector2xzMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+	   20	_D6sbylib4core6window6Window11getMousePosMFZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector6__ctorMFNaNbNcNiNfffZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector	489	82	82
+------------------
+	  270	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector2xzMFNaNbNdNiNfS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZv
+	   20	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii2Z6VectorfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector7opIndexMFNaNbNcNiNfiZf	290	20	20
+------------------
+	  486	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	19200	_D6sbylib5utils9functions27__T19computeSignedVolumeTfZ19computeSignedVolumeFNaNbNiNfG4S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	 3250	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorfZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+	   20	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1xMFNaNbNcNdNiNfZf	22956	1123	1123
+------------------
+	 3240	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion4AxisMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1xMFNaNbNdNiNffZv	3240	129	129
+------------------
+	  164	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	19200	_D6sbylib5utils9functions27__T19computeSignedVolumeTfZ19computeSignedVolumeFNaNbNiNfG4S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	 6480	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	 3250	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorfZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+	 1755	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle4moveMFZv
+	   30	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+	   20	_D4main8GameMainFZ9__lambda2MFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1yMFNaNbNcNdNiNfZf	30899	1593	1593
+------------------
+	 3240	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion4AxisMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	  135	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle4moveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1yMFNaNbNdNiNffZv	3375	113	113
+------------------
+	  178	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	19200	_D6sbylib5utils9functions27__T19computeSignedVolumeTfZ19computeSignedVolumeFNaNbNiNfG4S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	 3250	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorfZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1zMFNaNbNcNdNiNfZf	22628	1132	1132
+------------------
+	 3240	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion4AxisMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1zMFNaNbNdNiNffZv	3240	123	123
+------------------
+	    4	_D4main8GameMainFZb
+	1443250	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	 1620	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle4moveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	1444874	180013	180013
+------------------
+	  150	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZ9getMiddleMFkkZk
+	    1	_D6sbylib9primitive9primitive9Primitive25__T10opOpAssignVAyaa1_2bZ10opOpAssignMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	 1260	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+	486420	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2bZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	487841	73188	73188
+------------------
+	    1	_D6sbylib6camera6camera6Camera6TargetMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D6sbylib9primitive9primitive9Primitive25__T10opOpAssignVAyaa1_2dZ10opOpAssignMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	 9600	_D6sbylib5utils9functions27__T19computeSignedVolumeTfZ19computeSignedVolumeFNaNbNiNfG4S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	 6400	_D6sbylib5utils9functions27__T19computeUnSignedAreaTfZ19computeUnSignedAreaFNaNbNiNfG3S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	966430	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+	   30	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2dZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	982472	189634	110363
+	982472	_arraySliceSliceSubSliceAssign_f
+------------------
+	 1260	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+	 4800	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2fZ8opBinaryMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	6060	658	658
+------------------
+	 4800	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector25__T10opOpAssignVAyaa1_2aZ10opOpAssignMFNaNbNiNffZv	4800	329	329
+------------------
+	484995	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	 1620	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle4moveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector25__T10opOpAssignVAyaa1_2bZ10opOpAssignMFNaNbNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	486615	50672	50672
+------------------
+	480000	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector25__T10opOpAssignVAyaa1_2dZ10opOpAssignMFNaNbNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	480000	83734	47939
+	480000	_arraySliceSliceSubass_f
+------------------
+	 4820	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector25__T10opOpAssignVAyaa1_2fZ10opOpAssignMFNaNbNiNffZv	4820	309	309
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector28__T13opBinaryRightVAyaa1_2aZ13opBinaryRightMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	10	6	6
+------------------
+	  135	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle4moveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector2xzMFNaNbNdNiNfS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZv	135	43	25
+	  270	_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector7opIndexMFNaNbNcNiNfiZf
+------------------
+	  324	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	  135	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle4moveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector2xzMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector	459	416	335
+	  459	_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector6__ctorMFNaNbNcNiNfffZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+------------------
+	   48	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	  324	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	 2544	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+	 3250	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector5arrayMFNaNbNiNfZG3f	6166	369	369
+------------------
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii2Z6VectorfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	10	5	3
+	   20	_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector7opIndexMFNaNbNcNiNfiZf
+------------------
+	   12	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZv
+	    2	_D6sbylib6camera6camera6Camera6__ctorMFZC6sbylib6camera6camera6Camera
+	    7	_D4main8GameMainFZb
+	    6	_D6sbylib9primitive4cube3Box6__ctorMFZC6sbylib9primitive4cube3Box
+	  324	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle6__ctorMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics7elastic6sphere13ElasticSphere8Particle
+	   12	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+	    1	_D6sbylib6camera6camera6Camera19GetProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	 1650	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	 1620	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle4moveMFZv
+	   10	_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector3xyzMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNffffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	3644	234	234
+------------------
+	    9	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix14__T5ScaleVii3Z5ScaleFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	    6	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix21__T11TranslationVii3Z11TranslationFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	 9660	_D6sbylib4math6vector16__T5crossTfVii3Z5crossFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   30	_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorfZS6sbylib4math6vector17__T6VectorTfVii4Z6Vector
+_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector7opIndexMFNaNbNcNiNfiZf	9705	574	574
+------------------
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector3xyzMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	10	3	3
+	   10	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNffffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector5arrayMFNaNbNiNfZG4f	10	1	1
+------------------
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorfZS6sbylib4math6vector17__T6VectorTfVii4Z6Vector	10	14	7
+	   30	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector7opIndexMFNaNbNcNiNfiZf
+------------------
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector6__ctorMFNaNbNcNiNfffffZS6sbylib4math6vector17__T6VectorTfVii4Z6Vector	10	3	3
+------------------
+	  160	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZS6sbylib4math6vector17__T6VectorTfVii4Z6Vector
+_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector7opIndexMFNaNbNcNiNfiZf	160	12	12
+------------------
+	  324	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+_D6sbylib4math6vector17__T6lengthTfVii2Z6lengthFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZf	324	34	34
+------------------
+	 3200	_D6sbylib5utils9functions27__T19computeUnSignedAreaTfZ19computeUnSignedAreaFNaNbNiNfG3S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	 4830	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib4math6vector17__T6lengthTfVii3Z6lengthFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf	8040	332	332
+------------------
+	   12	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZv
+	  150	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZ9getMiddleMFkkZk
+	    1	_D6sbylib6camera6camera6Camera6TargetMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	  162	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+	  162	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle6__ctorMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics7elastic6sphere13ElasticSphere8Particle
+	 2544	_D6sbylib9primitive6sphere6Sphere6__ctorMFZC6sbylib9primitive6sphere6Sphere
+	   11	_D6sbylib6camera6camera6Camera7GetVecZMFNdZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D6sbylib6camera6camera6Camera7GetVecYMFNdZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   20	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib4math6vector20__T9normalizeTfVii3Z9normalizeFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	3063	191	191
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D6sbylib5utils10fpscounter22__T10FpsCounterVki100Z10FpsCounter6GetFPSMFZl	10	1	1
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D6sbylib5utils10fpscounter22__T10FpsCounterVki100Z10FpsCounter6UpdateMFZv	10	19	19
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib5utils10fpscounter22__T10FpsCounterVki100Z10FpsCounter6__ctorMFNfZC6sbylib5utils10fpscounter22__T10FpsCounterVki100Z10FpsCounter	1	5	5
+------------------
+	    1	_D6sbylib4core5world7SbyInitFPS8derelict5glfw35types10GLFWwindowlZv
+_D6sbylib5utils9functions13FunctionsInitFZv	1	2485	35
+	    2	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject6__ctorMFNbZC6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject
+	    2	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4BindMxFZv
+	    2	_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject6__ctorMFNbAfE6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject9FrequencyZC6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject
+	    2	_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject4BindMFZv
+	    2	_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject6UnBindMFZv
+	    2	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject6UnBindMxFZv
+------------------
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	   10	_D4main8GameMainFZ9__lambda2MFZ9__lambda1MFZv
+	   10	_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv
+_D6sbylib5utils9functions18DrawRectWithShaderFffffC6sbylib2gl13ShaderProgram13ShaderProgramZv	30	3280	80
+	   30	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFZv
+------------------
+	 3200	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib5utils9functions27__T19computeSignedVolumeTfZ19computeSignedVolumeFNaNbNiNfG4S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf	3200	9505	4476
+	 9600	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2dZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	19200	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1xMFNaNbNcNdNiNfZf
+	19200	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1yMFNaNbNcNdNiNfZf
+	19200	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1zMFNaNbNcNdNiNfZf
+------------------
+	 3200	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib5utils9functions27__T19computeUnSignedAreaTfZ19computeUnSignedAreaFNaNbNiNfG3S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf	3200	4004	1008
+	 6400	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2dZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	 3200	_D6sbylib4math6vector16__T5crossTfVii3Z5crossFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	 3200	_D6sbylib4math6vector17__T6lengthTfVii3Z6lengthFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+------------------
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib5utils9functions38__T2OrTE6sbylib4core6window9KeyButtonZ2OrFDFE6sbylib4core6window9KeyButtonZbAE6sbylib4core6window9KeyButtonXb	10	32	8
+	   20	_D6sbylib4core6window6Window12isKeyPressedMFE6sbylib4core6window9KeyButtonZb
+------------------
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv	10	1671	91
+	   10	_D6sbylib15shadertemplates11shaderstore11ShaderStore9getShaderFAyaZC6sbylib2gl13ShaderProgram13ShaderProgram
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6378Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6379Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii1VAyaa5_7769647468Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram39__T10SetUniformVii1VAyaa6_686569676874Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib4core6window6Window13ViewportWidthMFNdZi
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7777Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib4core6window6Window14ViewportHeightMFNdZi
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7768Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector5arrayMFNaNbNiNfZG4f
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii4VAyaa5_636f6c6f72Z10SetUniformMFNbG4fXv
+	   10	_D6sbylib5utils9functions18DrawRectWithShaderFffffC6sbylib2gl13ShaderProgram13ShaderProgramZv
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D6sbylib5utils9functions9DrawImageFffffC6sbylib2gl13TextureObject13TextureObjectZv	10	1337	29
+	   10	_D6sbylib15shadertemplates11shaderstore11ShaderStore9getShaderFAyaZC6sbylib2gl13ShaderProgram13ShaderProgram
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6378Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_6379Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram37__T10SetUniformVii1VAyaa5_7769647468Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram39__T10SetUniformVii1VAyaa6_686569676874Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib4core6window6Window13ViewportWidthMFNdZi
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7777Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib4core6window6Window14ViewportHeightMFNdZi
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram31__T10SetUniformVii1VAyaa2_7768Z10SetUniformMFNbG1fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram10SetTextureMFC6sbylib2gl13TextureObject13TextureObjectAyaiZv
+	   10	_D6sbylib5utils9functions18DrawRectWithShaderFffffC6sbylib2gl13ShaderProgram13ShaderProgramZv
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray	10	143	53
+	   10	_D6sbylib4core6window6Window13ViewportWidthMFNdZi
+	   10	_D6sbylib4core6window6Window14ViewportHeightMFNdZi
+	   10	_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector6__ctorMFNaNbNcNiNfffZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+	   10	_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector22__T8opBinaryVAyaa1_2fZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+	   10	_D6sbylib4math6vector17__T6VectorTfVii2Z6Vector22__T8opBinaryVAyaa1_2dZ8opBinaryMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+	   10	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii2Z6VectorfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   30	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1yMFNaNbNcNdNiNfZf
+	   20	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1xMFNaNbNcNdNiNfZf
+	   10	_D6sbylib6camera6camera6Camera13GetViewMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix6InvertFNaNbNiNfS6sbylib4math6matrix13__T6MatrixTfZ6MatrixZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorfZS6sbylib4math6vector17__T6VectorTfVii4Z6Vector
+	   10	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZS6sbylib4math6vector17__T6VectorTfVii4Z6Vector
+	   10	_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector3xyzMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib4core6entity6entity6Entity6GetPosMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib7physics5bound3ray3Ray6__ctorMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics5bound3ray3Ray
+------------------
+	    1	_D6sbylib6camera6camera6Camera19GetProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib6camera17perspectivecamera17PerspectiveCamera24GenerateProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	1	1	0
+	    1	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix11PerspectiveFNaNbNiNfffffZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib6camera17perspectivecamera17PerspectiveCamera6__ctorMFffffZC6sbylib6camera17perspectivecamera17PerspectiveCamera	1	12	7
+	    1	_D6sbylib6camera6camera6Camera6__ctorMFZC6sbylib6camera6camera6Camera
+------------------
+	   10	_D6sbylib6camera6camera6Camera23GetViewProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D4main8GameMainFZ9__lambda2MFZ9__lambda1MFZv
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib6camera6camera6Camera13GetViewMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	30	40	21
+	   10	_D6sbylib4core6entity6entity6Entity6GetPosMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib6camera6camera6Camera7GetVecZMFNdZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib6camera6camera6Camera7GetVecYMFNdZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix6LookAtFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+------------------
+	   10	_D6sbylib6camera6camera6Camera23GetViewProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+_D6sbylib6camera6camera6Camera19GetProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	10	771	5
+	    1	_D6sbylib4core6window6Window14ViewportHeightMFNdZi
+	    1	_D6sbylib4core6window6Window13ViewportWidthMFNdZi
+	    1	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNffffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix14__T5ScaleVii3Z5ScaleFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	    1	_D6sbylib6camera17perspectivecamera17PerspectiveCamera24GenerateProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	    1	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNfS6sbylib4math6matrix13__T6MatrixTfZ6MatrixZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+------------------
+	   60	_D6sbylib9primitive4cube3Box4DrawMFZv
+	   10	_D6sbylib9primitive5plane5Plane4DrawMFZv
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib6camera6camera6Camera23GetViewProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix	80	840	28
+	   10	_D6sbylib6camera6camera6Camera19GetProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib6camera6camera6Camera13GetViewMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNfS6sbylib4math6matrix13__T6MatrixTfZ6MatrixZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+------------------
+	    1	_D4main8GameMainFZb
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib6camera6camera6Camera3PosMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	11	8	6
+	   11	_D6sbylib4core6entity6entity6Entity3PosMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+------------------
+	    1	_D6sbylib6camera6camera6Camera6__ctorMFZC6sbylib6camera6camera6Camera
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib6camera6camera6Camera4VecXMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	11	9	5
+	   11	_D6sbylib4core6entity6entity6Entity4VecXMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib6camera6camera6Camera4VecYMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	1	0	0
+	    1	_D6sbylib4core6entity6entity6Entity4VecYMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+------------------
+	    1	_D6sbylib6camera6camera6Camera6TargetMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib6camera6camera6Camera4VecZMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	11	7	4
+	   11	_D6sbylib4core6entity6entity6Entity4VecZMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib6camera6camera6Camera6TargetMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv	1	400	6
+	    1	_D6sbylib4core6entity6entity6Entity6GetPosMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2dZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D6sbylib4math6vector20__T9normalizeTfVii3Z9normalizeFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D6sbylib6camera6camera6Camera4VecZMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D3std5stdio16__T7writelnTAyaZ7writelnFNfAyaZv
+------------------
+	    1	_D6sbylib6camera17perspectivecamera17PerspectiveCamera6__ctorMFffffZC6sbylib6camera17perspectivecamera17PerspectiveCamera
+_D6sbylib6camera6camera6Camera6__ctorMFZC6sbylib6camera6camera6Camera	1	5	2
+	    2	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNffffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D6sbylib6camera6camera6Camera4VecXMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+------------------
+	   10	_D6sbylib6camera6camera6Camera13GetViewMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib6camera6camera6Camera7GetVecYMFNdZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	20	5	5
+	    1	_D6sbylib4math6vector20__T9normalizeTfVii3Z9normalizeFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+	   10	_D6sbylib6camera6camera6Camera13GetViewMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib4core11manipulator12camerachaser12CameraChaser10ManipulateMFZv
+_D6sbylib6camera6camera6Camera7GetVecZMFNdZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector	20	8	6
+	   11	_D6sbylib4math6vector20__T9normalizeTfVii3Z9normalizeFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+	   10	_D6sbylib6camera17perspectivecamera17PerspectiveCamera12GetCameraRayMFS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZC6sbylib7physics5bound3ray3Ray
+_D6sbylib7physics5bound3ray3Ray6__ctorMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics5bound3ray3Ray	10	4	2
+	   10	_D6sbylib4core6entity6entity6Entity3PosMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+------------------
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere
+_D6sbylib7physics7elastic6sphere13ElasticSphere12SetWireframeMFbZv	1	101	101
+------------------
+	 1440	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZv
+_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZ8makePairMFkkZAk	1440	749	749
+------------------
+	  300	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZv
+_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZ9getMiddleMFkkZk	300	243	198
+	  150	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2bZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	  150	_D6sbylib4math6vector20__T9normalizeTfVii3Z9normalizeFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZv	0	41587	2632
+	   12	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNffffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   12	_D6sbylib4math6vector20__T9normalizeTfVii3Z9normalizeFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	  300	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZ9getMiddleMFkkZk
+	    2	_D6object10__T3dupTkZ3dupFNaNbNdNfAxkZAk
+	 1440	_D6sbylib7physics7elastic6sphere13ElasticSphere12_staticCtor5FZ8makePairMFkkZAk
+	  960	_D3std9algorithm9searching12__T7canFindZ19__T7canFindTAAkTAkZ7canFindFNaNbNiNfAAkAkZb
+------------------
+	   10	_D4main8GameMainFZ9__lambda2MFZv
+_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv	10	890098	1443
+	   10	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix8IdentityFNaNbNiNfZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   20	_D6sbylib4math6matrix13__T6MatrixTfZ6Matrix5arrayMFNaNbNiNfZAf
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram45__T16SetUniformMatrixVii4VAyaa6_6d576f726c64Z16SetUniformMatrixMFNbAfZv
+	   10	_D6sbylib6camera6camera6Camera23GetViewProjectionMatrixMFZS6sbylib4math6matrix13__T6MatrixTfZ6Matrix
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram51__T16SetUniformMatrixVii4VAyaa9_6d5669657750726f6aZ16SetUniformMatrixMFNbAfZv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram43__T10SetUniformVii3VAyaa8_6c69676874506f73Z10SetUniformMFNbG3fXv
+	   10	_D6sbylib4core6entity6entity6Entity6GetPosMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	 3250	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector5arrayMFNaNbNiNfZG3f
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram45__T10SetUniformVii3VAyaa9_63616d657261506f73Z10SetUniformMFNbG3fXv
+	   10	_D6sbylib2gl13ShaderProgram13ShaderProgram10SetTextureMFC6sbylib2gl13TextureObject13TextureObjectAyaiZv
+	   10	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4DrawMxFC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObjectZv
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv
+	   20	_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject15__T6UpdateVii0Z6UpdateMFNbAfZv
+------------------
+	   10	_D6sbylib7physics7elastic6sphere13ElasticSphere4DrawMFZv
+_D6sbylib7physics7elastic6sphere13ElasticSphere4MoveMFZv	10	867008	266820
+	 3200	_D6sbylib5utils9functions27__T19computeSignedVolumeTfZ19computeSignedVolumeFNaNbNiNfG4S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	 3200	_D6sbylib5utils9functions27__T19computeUnSignedAreaTfZ19computeUnSignedAreaFNaNbNiNfG3S6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	 1650	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector6__ctorMFNaNbNcNiNffffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	484995	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector25__T10opOpAssignVAyaa1_2bZ10opOpAssignMFNaNbNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	 6480	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1yMFNaNbNcNdNiNfZf
+	 1620	_D3std9algorithm10comparison12__T3maxTfTfZ3maxFNaNbNiNfffZf
+	 1620	_D3std9algorithm10comparison12__T3minTfTfZ3minFNaNbNiNfffZf
+	 4820	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector25__T10opOpAssignVAyaa1_2fZ10opOpAssignMFNaNbNiNffZv
+	   10	_D6sbylib4core6entity6entity6Entity6GetPosMFZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	966430	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2dZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib4math6vector16__T5crossTfVii3Z5crossFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	 4830	_D6sbylib4math6vector17__T6lengthTfVii3Z6lengthFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZf
+	1443250	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2aZ8opBinaryMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	 3250	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion6__ctorMFNaNbNcNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorfZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+	 6480	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion22__T8opBinaryVAyaa1_2aZ8opBinaryMxFNaNbNiNfS6sbylib4math10quaternion18__T10QuaternionTfZ10QuaternionZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+	 3240	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion21__T7opUnaryVAyaa1_7eZ7opUnaryMxFNaNbNiNfZS6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion
+	 3240	_D6sbylib4math10quaternion18__T10QuaternionTfZ10Quaternion4AxisMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	486420	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2bZ8opBinaryMFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	   10	_D6sbylib9primitive9primitive9Primitive3PosMFNdS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	   10	_D6sbylib5utils9functions38__T2OrTE6sbylib4core6window9KeyButtonZ2OrFDFE6sbylib4core6window9KeyButtonZbAE6sbylib4core6window9KeyButtonXb
+	   40	_D6sbylib4core6window6Window12isKeyPressedMFE6sbylib4core6window9KeyButtonZb
+	 4800	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector25__T10opOpAssignVAyaa1_2aZ10opOpAssignMFNaNbNiNffZv
+	 4800	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector22__T8opBinaryVAyaa1_2fZ8opBinaryMFNaNbNiNffZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	 1620	_D3std9algorithm10comparison12__T3minTiTfZ3minFNaNbNiNfifZf
+	480000	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector25__T10opOpAssignVAyaa1_2dZ10opOpAssignMFNaNbNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZv
+	   10	_D6sbylib4math6vector17__T6VectorTfVii4Z6Vector6__ctorMFNaNbNcNiNfffffZS6sbylib4math6vector17__T6VectorTfVii4Z6Vector
+	   10	_D6sbylib5utils9functions8DrawRectFffffS6sbylib4math6vector17__T6VectorTfVii4Z6VectorZv
+	 1620	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle4moveMFZv
+------------------
+	    1	_D4main8GameMainFZb
+_D6sbylib7physics7elastic6sphere13ElasticSphere6__ctorMFZC6sbylib7physics7elastic6sphere13ElasticSphere	1	113678	1064
+	    1	_D6sbylib15shadertemplates11shaderstore11ShaderStore9getShaderFAyaZC6sbylib2gl13ShaderProgram13ShaderProgram
+	  324	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector5arrayMFNaNbNiNfZG3f
+	    3	_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject6__ctorMFNbAfE6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject9FrequencyZC6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject
+	  162	_D6sbylib4math6vector20__T9normalizeTfVii3Z9normalizeFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZS6sbylib4math6vector17__T6VectorTfVii3Z6Vector
+	  178	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1zMFNaNbNcNdNiNfZf
+	  486	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1xMFNaNbNcNdNiNfZf
+	  164	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector1yMFNaNbNcNdNiNfZf
+	  324	_D6sbylib4math6vector17__T6VectorTfVii3Z6Vector2xzMFNaNbNdNiNfZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector
+	  324	_D6sbylib4math6vector17__T6lengthTfVii2Z6lengthFNaNbNiNfS6sbylib4math6vector17__T6VectorTfVii2Z6VectorZf
+	  162	_D3std5stdio20__T7writelnTeTAyaTeZ7writelnFNfeAyaeZv
+	    2	_D6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject6__ctorMFNbAkE6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject9FrequencyZC6sbylib2gl17IndexBufferObject25__T17IndexBufferObjectTkZ17IndexBufferObject
+	    1	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject6__ctorMFNbZC6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject
+	    1	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject4BindMxFZv
+	    3	_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject4BindMFZv
+	    3	_D6sbylib2gl18VertexBufferObject26__T18VertexBufferObjectTfZ18VertexBufferObject6UnBindMFZv
+	    1	_D6sbylib2gl17VertexArrayObject25__T17VertexArrayObjectTfZ17VertexArrayObject6UnBindMxFZv
+	  162	_D6sbylib7physics7elastic6sphere13ElasticSphere8Particle6__ctorMFS6sbylib4math6vector17__T6VectorTfVii3Z6VectorZC6sbylib7physics7elastic6sphere13ElasticSphere8Particle
+	    1	_D3std4math12__T5isNaNTeZ5isNaNFNaNbNiNeeZb
+	    1	_D3std4math18__T10isInfinityTeZ10isInfinityFNaNbNiNeeZb
+	    1	_D3std4math12__T3powTiTiZ3powFNaNbNiNeiiZi
+	    1	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFiikZC6sbylib2gl13TextureObject13TextureObject
+	    1	_D6sbylib2gl13TextureObject13TextureObject6__ctorMFAyaZC6sbylib2gl13TextureObject13TextureObject
+	    1	_D6sbylib7physics7elastic6sphere13ElasticSphere12SetWireframeMFbZv
+-------------

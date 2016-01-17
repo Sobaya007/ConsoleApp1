@@ -1,3 +1,5 @@
+sbylib\al\audiosource.d 
+sbylib\al\package.d 
 sbylib\camera\camera.d 
 sbylib\camera\orthocamera.d 
 sbylib\camera\package.d 

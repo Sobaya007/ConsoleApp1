@@ -1,5 +1,124 @@
 [
  {
+  "name" : "sbylib.al.audiosource",
+  "kind" : "module",
+  "file" : "sbylib\\al\\audiosource.d",
+  "members" : [
+   {
+    "name" : "sbylib",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "AudioSource",
+    "kind" : "class",
+    "line" : 5,
+    "char" : 1,
+    "members" : [
+     {
+      "name" : "src",
+      "kind" : "variable",
+      "line" : 7,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 8
+     },
+     {
+      "name" : "buf",
+      "kind" : "variable",
+      "line" : 8,
+      "char" : 7,
+      "deco" : "k",
+      "offset" : 12
+     },
+     {
+      "name" : "this",
+      "kind" : "constructor",
+      "line" : 11,
+      "char" : 2,
+      "deco" : "FAyaZC6sbylib2al11audiosource11AudioSource",
+      "originalType" : "(string filePath)",
+      "parameters" : [
+       {
+        "name" : "filePath",
+        "deco" : "Aya"
+       }
+      ],
+      "endline" : 23,
+      "endchar" : 2
+     },
+     {
+      "name" : "~this",
+      "kind" : "destructor",
+      "line" : 25,
+      "char" : 2,
+      "deco" : "FZv",
+      "endline" : 28,
+      "endchar" : 2
+     },
+     {
+      "name" : "Play",
+      "kind" : "function",
+      "line" : 30,
+      "char" : 7,
+      "deco" : "FZv",
+      "endline" : 32,
+      "endchar" : 2
+     },
+     {
+      "name" : "SetIsRelative",
+      "kind" : "function",
+      "line" : 34,
+      "char" : 7,
+      "deco" : "FbZv",
+      "parameters" : [
+       {
+        "name" : "relative",
+        "deco" : "b"
+       }
+      ],
+      "endline" : 36,
+      "endchar" : 2
+     },
+     {
+      "name" : "SetLoop",
+      "kind" : "function",
+      "line" : 38,
+      "char" : 7,
+      "deco" : "FbZv",
+      "parameters" : [
+       {
+        "name" : "loop",
+        "deco" : "b"
+       }
+      ],
+      "endline" : 40,
+      "endchar" : 2
+     },
+     {
+      "name" : "__xdtor",
+      "kind" : "alias"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "sbylib.al",
+  "kind" : "module",
+  "file" : "sbylib\\al\\package.d",
+  "members" : [
+   {
+    "name" : "sbylib.al.audiosource",
+    "kind" : "import",
+    "line" : 3,
+    "char" : 15
+   }
+  ]
+ },
+ {
   "name" : "sbylib.camera.camera",
   "kind" : "module",
   "file" : "sbylib\\camera\\camera.d",
@@ -1298,296 +1417,303 @@
      {
       "name" : "A",
       "kind" : "enum member",
-      "value" : "0",
+      "value" : "65",
       "line" : 7,
       "char" : 16
      },
      {
       "name" : "B",
       "kind" : "enum member",
-      "value" : "1",
+      "value" : "66",
       "line" : 7,
-      "char" : 18
+      "char" : 31
      },
      {
       "name" : "C",
       "kind" : "enum member",
-      "value" : "2",
-      "line" : 7,
-      "char" : 20
-     },
-     {
-      "name" : "D",
-      "kind" : "enum member",
-      "value" : "3",
-      "line" : 7,
-      "char" : 22
-     },
-     {
-      "name" : "E",
-      "kind" : "enum member",
-      "value" : "4",
-      "line" : 7,
-      "char" : 24
-     },
-     {
-      "name" : "F",
-      "kind" : "enum member",
-      "value" : "5",
-      "line" : 7,
-      "char" : 26
-     },
-     {
-      "name" : "G",
-      "kind" : "enum member",
-      "value" : "6",
-      "line" : 7,
-      "char" : 28
-     },
-     {
-      "name" : "H",
-      "kind" : "enum member",
-      "value" : "7",
-      "line" : 7,
-      "char" : 30
-     },
-     {
-      "name" : "I",
-      "kind" : "enum member",
-      "value" : "8",
-      "line" : 7,
-      "char" : 32
-     },
-     {
-      "name" : "J",
-      "kind" : "enum member",
-      "value" : "9",
-      "line" : 7,
-      "char" : 34
-     },
-     {
-      "name" : "K",
-      "kind" : "enum member",
-      "value" : "10",
-      "line" : 7,
-      "char" : 36
-     },
-     {
-      "name" : "L",
-      "kind" : "enum member",
-      "value" : "11",
-      "line" : 7,
-      "char" : 38
-     },
-     {
-      "name" : "M",
-      "kind" : "enum member",
-      "value" : "12",
-      "line" : 7,
-      "char" : 40
-     },
-     {
-      "name" : "N",
-      "kind" : "enum member",
-      "value" : "13",
-      "line" : 7,
-      "char" : 42
-     },
-     {
-      "name" : "O",
-      "kind" : "enum member",
-      "value" : "14",
-      "line" : 7,
-      "char" : 44
-     },
-     {
-      "name" : "P",
-      "kind" : "enum member",
-      "value" : "15",
+      "value" : "67",
       "line" : 7,
       "char" : 46
      },
      {
+      "name" : "D",
+      "kind" : "enum member",
+      "value" : "68",
+      "line" : 7,
+      "char" : 61
+     },
+     {
+      "name" : "E",
+      "kind" : "enum member",
+      "value" : "69",
+      "line" : 7,
+      "char" : 76
+     },
+     {
+      "name" : "F",
+      "kind" : "enum member",
+      "value" : "70",
+      "line" : 7,
+      "char" : 91
+     },
+     {
+      "name" : "G",
+      "kind" : "enum member",
+      "value" : "71",
+      "line" : 7,
+      "char" : 106
+     },
+     {
+      "name" : "H",
+      "kind" : "enum member",
+      "value" : "72",
+      "line" : 7,
+      "char" : 121
+     },
+     {
+      "name" : "I",
+      "kind" : "enum member",
+      "value" : "73",
+      "line" : 7,
+      "char" : 136
+     },
+     {
+      "name" : "J",
+      "kind" : "enum member",
+      "value" : "74",
+      "line" : 7,
+      "char" : 151
+     },
+     {
+      "name" : "K",
+      "kind" : "enum member",
+      "value" : "75",
+      "line" : 7,
+      "char" : 166
+     },
+     {
+      "name" : "L",
+      "kind" : "enum member",
+      "value" : "76",
+      "line" : 7,
+      "char" : 181
+     },
+     {
+      "name" : "M",
+      "kind" : "enum member",
+      "value" : "77",
+      "line" : 7,
+      "char" : 196
+     },
+     {
+      "name" : "N",
+      "kind" : "enum member",
+      "value" : "78",
+      "line" : 7,
+      "char" : 211
+     },
+     {
+      "name" : "O",
+      "kind" : "enum member",
+      "value" : "79",
+      "line" : 7,
+      "char" : 226
+     },
+     {
+      "name" : "P",
+      "kind" : "enum member",
+      "value" : "80",
+      "line" : 7,
+      "char" : 241
+     },
+     {
       "name" : "Q",
       "kind" : "enum member",
-      "value" : "16",
+      "value" : "81",
       "line" : 7,
-      "char" : 48
+      "char" : 256
      },
      {
       "name" : "R",
       "kind" : "enum member",
-      "value" : "17",
+      "value" : "82",
       "line" : 7,
-      "char" : 50
+      "char" : 271
      },
      {
       "name" : "S",
       "kind" : "enum member",
-      "value" : "18",
+      "value" : "83",
       "line" : 7,
-      "char" : 52
+      "char" : 286
      },
      {
       "name" : "T",
       "kind" : "enum member",
-      "value" : "19",
+      "value" : "84",
       "line" : 7,
-      "char" : 54
+      "char" : 301
      },
      {
       "name" : "U",
       "kind" : "enum member",
-      "value" : "20",
+      "value" : "85",
       "line" : 7,
-      "char" : 56
+      "char" : 316
      },
      {
       "name" : "V",
       "kind" : "enum member",
-      "value" : "21",
+      "value" : "86",
       "line" : 7,
-      "char" : 58
+      "char" : 331
      },
      {
       "name" : "W",
       "kind" : "enum member",
-      "value" : "22",
+      "value" : "87",
       "line" : 7,
-      "char" : 60
+      "char" : 346
      },
      {
       "name" : "X",
       "kind" : "enum member",
-      "value" : "23",
+      "value" : "88",
       "line" : 7,
-      "char" : 62
+      "char" : 361
      },
      {
       "name" : "Y",
       "kind" : "enum member",
-      "value" : "24",
+      "value" : "89",
       "line" : 7,
-      "char" : 64
+      "char" : 376
      },
      {
       "name" : "Z",
       "kind" : "enum member",
-      "value" : "25",
+      "value" : "90",
       "line" : 7,
-      "char" : 66
+      "char" : 391
      },
      {
       "name" : "KEY_0",
       "kind" : "enum member",
-      "value" : "26",
+      "value" : "48",
       "line" : 7,
-      "char" : 68
+      "char" : 406
      },
      {
       "name" : "KEY_1",
       "kind" : "enum member",
-      "value" : "27",
+      "value" : "49",
       "line" : 7,
-      "char" : 74
+      "char" : 425
      },
      {
       "name" : "KEY_2",
       "kind" : "enum member",
-      "value" : "28",
+      "value" : "50",
       "line" : 7,
-      "char" : 80
+      "char" : 444
      },
      {
       "name" : "KEY_3",
       "kind" : "enum member",
-      "value" : "29",
+      "value" : "51",
       "line" : 7,
-      "char" : 86
+      "char" : 463
      },
      {
       "name" : "KEY_4",
       "kind" : "enum member",
-      "value" : "30",
+      "value" : "52",
       "line" : 7,
-      "char" : 92
+      "char" : 482
      },
      {
       "name" : "KEY_5",
       "kind" : "enum member",
-      "value" : "31",
+      "value" : "53",
       "line" : 7,
-      "char" : 98
+      "char" : 501
      },
      {
       "name" : "KEY_6",
       "kind" : "enum member",
-      "value" : "32",
+      "value" : "54",
       "line" : 7,
-      "char" : 104
+      "char" : 520
      },
      {
       "name" : "KEY_7",
       "kind" : "enum member",
-      "value" : "33",
+      "value" : "55",
       "line" : 7,
-      "char" : 110
+      "char" : 539
      },
      {
       "name" : "KEY_8",
       "kind" : "enum member",
-      "value" : "34",
+      "value" : "56",
       "line" : 7,
-      "char" : 116
+      "char" : 558
      },
      {
       "name" : "KEY_9",
       "kind" : "enum member",
-      "value" : "35",
+      "value" : "57",
       "line" : 7,
-      "char" : 122
+      "char" : 577
      },
      {
       "name" : "Left",
       "kind" : "enum member",
-      "value" : "36",
+      "value" : "263",
       "line" : 7,
-      "char" : 128
+      "char" : 596
      },
      {
       "name" : "Right",
       "kind" : "enum member",
-      "value" : "37",
+      "value" : "262",
       "line" : 7,
-      "char" : 133
+      "char" : 617
      },
      {
       "name" : "Up",
       "kind" : "enum member",
-      "value" : "38",
+      "value" : "265",
       "line" : 7,
-      "char" : 139
+      "char" : 640
      },
      {
       "name" : "Down",
       "kind" : "enum member",
-      "value" : "39",
+      "value" : "264",
       "line" : 7,
-      "char" : 142
+      "char" : 657
      },
      {
       "name" : "Space",
       "kind" : "enum member",
-      "value" : "40",
+      "value" : "32",
       "line" : 7,
-      "char" : 147
+      "char" : 678
      },
      {
       "name" : "Enter",
       "kind" : "enum member",
-      "value" : "41",
+      "value" : "257",
       "line" : 7,
-      "char" : 153
+      "char" : 701
+     },
+     {
+      "name" : "Escape",
+      "kind" : "enum member",
+      "value" : "256",
+      "line" : 7,
+      "char" : 724
      }
     ]
    },
@@ -1595,14 +1721,14 @@
     "name" : "Window",
     "kind" : "class",
     "file" : "sbylib\\core\\window.d",
-    "line" : 33,
+    "line" : 34,
     "char" : 1,
     "members" : [
      {
       "name" : "window",
       "kind" : "variable",
       "protection" : "package",
-      "line" : 35,
+      "line" : 36,
       "char" : 14,
       "deco" : "PS8derelict5glfw35types10GLFWwindow",
       "offset" : 8
@@ -1610,7 +1736,7 @@
      {
       "name" : "this",
       "kind" : "constructor",
-      "line" : 37,
+      "line" : 38,
       "char" : 2,
       "deco" : "FPS8derelict5glfw35types10GLFWwindowZC6sbylib4core6window6Window",
       "originalType" : "(GLFWwindow* window)",
@@ -1620,13 +1746,13 @@
         "deco" : "PS8derelict5glfw35types10GLFWwindow"
        }
       ],
-      "endline" : 39,
+      "endline" : 40,
       "endchar" : 2
      },
      {
       "name" : "isMousePressed",
       "kind" : "function",
-      "line" : 41,
+      "line" : 42,
       "char" : 7,
       "deco" : "FE6sbylib4core6window11MouseButtonZb",
       "parameters" : [
@@ -1635,13 +1761,13 @@
         "deco" : "E6sbylib4core6window11MouseButton"
        }
       ],
-      "endline" : 53,
+      "endline" : 54,
       "endchar" : 2
      },
      {
       "name" : "isKeyPressed",
       "kind" : "function",
-      "line" : 55,
+      "line" : 56,
       "char" : 7,
       "deco" : "FE6sbylib4core6window9KeyButtonZb",
       "parameters" : [
@@ -1650,96 +1776,74 @@
         "deco" : "E6sbylib4core6window9KeyButton"
        }
       ],
-      "endline" : 57,
+      "endline" : 58,
       "endchar" : 2
      },
      {
       "name" : "getMousePos",
       "kind" : "function",
-      "line" : 59,
+      "line" : 60,
       "char" : 7,
       "deco" : "FZS6sbylib4math6vector17__T6VectorTfVii2Z6Vector",
       "originalType" : "vec2()",
-      "endline" : 63,
+      "endline" : 64,
       "endchar" : 2
      },
      {
       "name" : "Width",
       "kind" : "function",
-      "line" : 65,
+      "line" : 66,
       "char" : 16,
       "deco" : "FNdZi",
-      "endline" : 69,
+      "endline" : 70,
       "endchar" : 2
      },
      {
       "name" : "Height",
       "kind" : "function",
-      "line" : 71,
+      "line" : 72,
       "char" : 16,
       "deco" : "FNdZi",
-      "endline" : 75,
+      "endline" : 76,
       "endchar" : 2
      },
      {
       "name" : "ViewportLeft",
       "kind" : "function",
-      "line" : 77,
+      "line" : 78,
       "char" : 16,
       "deco" : "FNdZi",
-      "endline" : 81,
+      "endline" : 82,
       "endchar" : 2
      },
      {
       "name" : "ViewportTop",
       "kind" : "function",
-      "line" : 83,
+      "line" : 84,
       "char" : 16,
       "deco" : "FNdZi",
-      "endline" : 87,
+      "endline" : 88,
       "endchar" : 2
      },
      {
       "name" : "ViewportWidth",
       "kind" : "function",
-      "line" : 89,
+      "line" : 90,
       "char" : 16,
       "deco" : "FNdZi",
-      "endline" : 93,
+      "endline" : 94,
       "endchar" : 2
      },
      {
       "name" : "ViewportHeight",
       "kind" : "function",
-      "line" : 95,
+      "line" : 96,
       "char" : 16,
       "deco" : "FNdZi",
-      "endline" : 99,
+      "endline" : 100,
       "endchar" : 2
      }
     ]
-   },
-   {
-    "name" : "keyCodeTable",
-    "kind" : "variable",
-    "line" : 103,
-    "char" : 24,
-    "storageClass" : [
-     "static"
-    ],
-    "deco" : "HE6sbylib4core6window9KeyButtonk"
-   },
-   {
-    "name" : "_staticCtor1",
-    "kind" : "function",
-    "line" : 105,
-    "char" : 1,
-    "storageClass" : [
-     "static"
-    ],
-    "deco" : "FZv",
-    "endline" : 125,
-    "endchar" : 1
    }
   ]
  },
@@ -1831,7 +1935,7 @@
       "deco" : "DFZv"
      }
     ],
-    "endline" : 38,
+    "endline" : 39,
     "endchar" : 1
    }
   ]
@@ -2874,7 +2978,7 @@
       "offset" : 16
      },
      {
-      "name" : "_staticCtor2",
+      "name" : "_staticCtor1",
       "kind" : "function",
       "line" : 13,
       "char" : 2,
@@ -3034,13 +3138,13 @@
         "deco" : "E6sbylib2gl13TextureObject13TextureObject11TexWrapType"
        }
       ],
-      "endline" : 158,
+      "endline" : 160,
       "endchar" : 2
      },
      {
       "name" : "SetWrapT",
       "kind" : "function",
-      "line" : 160,
+      "line" : 162,
       "char" : 7,
       "deco" : "FE6sbylib2gl13TextureObject13TextureObject11TexWrapTypeZv",
       "parameters" : [
@@ -3049,25 +3153,25 @@
         "deco" : "E6sbylib2gl13TextureObject13TextureObject11TexWrapType"
        }
       ],
-      "endline" : 162,
+      "endline" : 164,
       "endchar" : 2
      },
      {
       "name" : "Bind",
       "kind" : "function",
-      "line" : 164,
+      "line" : 166,
       "char" : 7,
       "deco" : "FZv",
-      "endline" : 166,
+      "endline" : 168,
       "endchar" : 2
      },
      {
       "name" : "UnBind",
       "kind" : "function",
-      "line" : 168,
+      "line" : 170,
       "char" : 7,
       "deco" : "FZv",
-      "endline" : 170,
+      "endline" : 172,
       "endchar" : 2
      }
     ]
@@ -6532,7 +6636,7 @@
       "init" : "0.0285714F"
      },
      {
-      "name" : "_staticCtor5",
+      "name" : "_staticCtor4",
       "kind" : "function",
       "line" : 45,
       "char" : 2,
@@ -6796,7 +6900,7 @@
   ]
  },
  {
-  "name" : "sbylib.primitive.cube",
+  "name" : "sbylib.primitive.box",
   "kind" : "module",
   "file" : "SbyLib\\primitive\\box.d",
   "members" : [
@@ -6891,7 +6995,7 @@
       "kind" : "constructor",
       "line" : 15,
       "char" : 2,
-      "deco" : "FZC6sbylib9primitive4cube3Box",
+      "deco" : "FZC6sbylib9primitive3box3Box",
       "originalType" : "()",
       "endline" : 72,
       "endchar" : 2
@@ -7020,7 +7124,7 @@
     "char" : 15
    },
    {
-    "name" : "sbylib.primitive.cube",
+    "name" : "sbylib.primitive.box",
     "kind" : "import",
     "line" : 4,
     "char" : 15
@@ -8222,153 +8326,171 @@
   "file" : "sbylib\\package.d",
   "members" : [
    {
-    "name" : "sbylib.camera",
+    "name" : "sbylib.al",
     "kind" : "import",
     "line" : 3,
     "char" : 15
    },
    {
-    "name" : "sbylib.core",
+    "name" : "sbylib.camera",
     "kind" : "import",
     "line" : 4,
     "char" : 15
    },
    {
-    "name" : "sbylib.gl",
+    "name" : "sbylib.core",
     "kind" : "import",
     "line" : 5,
     "char" : 15
    },
    {
-    "name" : "sbylib.math",
+    "name" : "sbylib.gl",
     "kind" : "import",
     "line" : 6,
     "char" : 15
    },
    {
-    "name" : "sbylib.physics",
+    "name" : "sbylib.math",
     "kind" : "import",
     "line" : 7,
     "char" : 15
    },
    {
-    "name" : "sbylib.primitive",
+    "name" : "sbylib.physics",
     "kind" : "import",
     "line" : 8,
     "char" : 15
    },
    {
-    "name" : "sbylib.shadertemplates",
+    "name" : "sbylib.primitive",
     "kind" : "import",
     "line" : 9,
     "char" : 15
    },
    {
-    "name" : "sbylib.utils",
+    "name" : "sbylib.shadertemplates",
     "kind" : "import",
     "line" : 10,
     "char" : 15
    },
    {
-    "name" : "std.stdio",
+    "name" : "sbylib.utils",
     "kind" : "import",
-    "line" : 12,
+    "line" : 11,
     "char" : 15
    },
    {
-    "name" : "std.string",
+    "name" : "std.stdio",
     "kind" : "import",
     "line" : 13,
     "char" : 15
    },
    {
-    "name" : "std.conv",
+    "name" : "std.string",
     "kind" : "import",
     "line" : 14,
     "char" : 15
    },
    {
-    "name" : "std.file",
+    "name" : "std.conv",
     "kind" : "import",
     "line" : 15,
     "char" : 15
    },
    {
-    "name" : "std.mathspecial",
+    "name" : "std.file",
     "kind" : "import",
     "line" : 16,
     "char" : 15
    },
    {
-    "name" : "std.typecons",
+    "name" : "std.mathspecial",
     "kind" : "import",
     "line" : 17,
     "char" : 15
    },
    {
-    "name" : "std.algorithm",
+    "name" : "std.typecons",
     "kind" : "import",
     "line" : 18,
     "char" : 15
    },
    {
-    "name" : "std.datetime",
+    "name" : "std.algorithm",
     "kind" : "import",
     "line" : 19,
     "char" : 15
    },
    {
-    "name" : "std.range",
+    "name" : "std.datetime",
     "kind" : "import",
     "line" : 20,
     "char" : 15
    },
    {
-    "name" : "std.traits",
+    "name" : "std.range",
     "kind" : "import",
     "line" : 21,
     "char" : 15
    },
    {
-    "name" : "derelict.opengl3.gl",
+    "name" : "std.traits",
     "kind" : "import",
-    "line" : 23,
+    "line" : 22,
     "char" : 15
    },
    {
-    "name" : "derelict.glfw3.glfw3",
+    "name" : "derelict.opengl3.gl",
     "kind" : "import",
     "line" : 24,
     "char" : 15
    },
    {
-    "name" : "derelict.devil.il",
+    "name" : "derelict.glfw3.glfw3",
     "kind" : "import",
     "line" : 25,
     "char" : 15
    },
    {
-    "name" : "derelict.devil.ilu",
+    "name" : "derelict.devil.il",
     "kind" : "import",
     "line" : 26,
     "char" : 15
    },
    {
-    "name" : "derelict.devil.ilut",
+    "name" : "derelict.devil.ilu",
     "kind" : "import",
     "line" : 27,
     "char" : 15
    },
    {
-    "name" : "derelict.freetype.ft",
+    "name" : "derelict.devil.ilut",
     "kind" : "import",
     "line" : 28,
     "char" : 15
    },
    {
-    "name" : "derelict.opengl3.gl3",
+    "name" : "derelict.freetype.ft",
     "kind" : "import",
     "line" : 29,
+    "char" : 15
+   },
+   {
+    "name" : "derelict.opengl3.gl3",
+    "kind" : "import",
+    "line" : 30,
+    "char" : 15
+   },
+   {
+    "name" : "derelict.openal.al",
+    "kind" : "import",
+    "line" : 31,
+    "char" : 15
+   },
+   {
+    "name" : "derelict.alure.alure",
+    "kind" : "import",
+    "line" : 32,
     "char" : 15
    }
   ]
@@ -8528,13 +8650,13 @@
     "line" : 29,
     "char" : 6,
     "deco" : "FZb",
-    "endline" : 111,
+    "endline" : 119,
     "endchar" : 1
    },
    {
     "name" : "InitGLFW",
     "kind" : "function",
-    "line" : 113,
+    "line" : 121,
     "char" : 6,
     "storageClass" : [
      "auto"
@@ -8551,7 +8673,16 @@
       "deco" : "xi"
      }
     ],
-    "endline" : 143,
+    "endline" : 151,
+    "endchar" : 1
+   },
+   {
+    "name" : "InitOpenAL",
+    "kind" : "function",
+    "line" : 153,
+    "char" : 6,
+    "deco" : "FZv",
+    "endline" : 162,
     "endchar" : 1
    }
   ]

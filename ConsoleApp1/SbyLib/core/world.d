@@ -27,10 +27,11 @@ void MainLoop(void delegate() stepAndDraw) {
 		glfwSwapBuffers(CurrentWindow.window);
 		//イベントをさばく
 		glfwPollEvents();
+		if (CurrentWindow.isKeyPressed(KeyButton.Escape)) break;
 		auto period = sw.peek().msecs();
 		if (CurrentFrameTime > period)
 			Thread.sleep(dur!("msecs")(CurrentFrameTime - period));
-		sw.reset();
+		sw.start();
 		stdout.flush();
 	}
 	//後始末

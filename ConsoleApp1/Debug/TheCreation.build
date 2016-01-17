@@ -1,7 +1,9 @@
 set PATH=C:\D\dmd2\windows\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\\Common7\IDE;C:\Program Files (x86)\Windows Kits\8.1\\bin;%PATH%
 set DMD_LIB=;DerelictLib
 
-echo sbylib\camera\camera.d >Debug\TheCreation.build.rsp
+echo sbylib\al\audiosource.d >Debug\TheCreation.build.rsp
+echo sbylib\al\package.d >>Debug\TheCreation.build.rsp
+echo sbylib\camera\camera.d >>Debug\TheCreation.build.rsp
 echo sbylib\camera\orthocamera.d >>Debug\TheCreation.build.rsp
 echo sbylib\camera\package.d >>Debug\TheCreation.build.rsp
 echo sbylib\camera\perspectivecamera.d >>Debug\TheCreation.build.rsp
@@ -69,6 +71,8 @@ echo DerelictGL3.lib+ >> C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CON
 echo DerelictGLFW3.lib+ >> C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 echo DerelictIL.lib+ >> C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 echo DerelictFT.lib+ >> C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo DerelictAL.lib+ >> C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
+echo DerelictALURE.lib+ >> C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 echo user32.lib+ >> C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 echo kernel32.lib+ >> C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK
 echo DerelictLib\/NOMAP/CO/NOI/DELEXE /SUBSYSTEM:CONSOLE >> C:\Users\Sobaya\DOCUME~1\VISUAL~2\Projects\CONSOL~1\CONSOL~1\Debug\THECRE~1.LNK

@@ -10,21 +10,22 @@ mixin({ //========================================= enum KeyButton　の宣言
 	//アルファベット
 	foreach (char c; 'A'..'Z'+1) {
 		s ~= c;
-		s ~= ",";
+		s ~= " = GLFW_KEY_" ~ c ~ ",";
 	}
 	//数字
 	foreach (int i; 0..10) {
 		s ~= "KEY_";
 		s ~= to!string(i);
-		s ~= ",";
+		s ~= " = GLFW_KEY_" ~ to!string(i) ~  ",";
 	}
 	//その他
-	s ~= "Left,";
-	s ~= "Right,";
-	s ~= "Up,";
-	s ~= "Down,";
-	s ~= "Space,";
-	s ~= "Enter";
+	s ~= "Left = GLFW_KEY_LEFT,";
+	s ~= "Right = GLFW_KEY_RIGHT,";
+	s ~= "Up = GLFW_KEY_UP,";
+	s ~= "Down = GLFW_KEY_DOWN,";
+	s ~= "Space = GLFW_KEY_SPACE,";
+	s ~= "Enter = GLFW_KEY_ENTER,";
+	s ~= "Escape = GLFW_KEY_ESCAPE";
 
 	s ~= "}";
 	return s;
@@ -53,7 +54,7 @@ public:
 	}
 
 	bool isKeyPressed(KeyButton kb) {
-		return glfwGetKey(window, keyCodeTable[kb]) != 0;
+		return glfwGetKey(window, kb) != 0;
 	}
 
 	vec2 getMousePos() {
@@ -98,28 +99,4 @@ public:
 		return data[3];
 	}
 
-}
-
-static uint[KeyButton] keyCodeTable;
-
-static this() {
-	mixin({
-		string s;
-		//アルファベット
-		foreach (char c; 'A'..'Z'+1) {
-			s ~= "keyCodeTable[KeyButton." ~ c ~ "] = GLFW_KEY_" ~ c ~ ";";
-		}
-		//数字
-		foreach (i; 0..10) {
-			s ~= "keyCodeTable[KeyButton.KEY_" ~ to!string(i) ~ "] = GLFW_KEY_" ~ to!string(i) ~ ";";
-		}
-		return s;
-	}());
-	//その他
-	keyCodeTable[KeyButton.Left] = GLFW_KEY_LEFT;
-	keyCodeTable[KeyButton.Right] = GLFW_KEY_RIGHT;
-	keyCodeTable[KeyButton.Up] = GLFW_KEY_UP;
-	keyCodeTable[KeyButton.Down] = GLFW_KEY_DOWN;
-	keyCodeTable[KeyButton.Space] = GLFW_KEY_SPACE;
-	keyCodeTable[KeyButton.Enter] = GLFW_KEY_ENTER;
 }

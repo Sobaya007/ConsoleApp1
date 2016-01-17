@@ -89,7 +89,7 @@
   <cv2pdbOptions />
   <objfiles />
   <linkswitches />
-  <libfiles>DerelictUtil.lib DerelictGL3.lib DerelictGLFW3.lib DerelictIL.lib DerelictFT.lib</libfiles>
+  <libfiles>DerelictUtil.lib DerelictGL3.lib DerelictGLFW3.lib DerelictIL.lib DerelictFT.lib DerelictAL.lib DerelictALURE.lib</libfiles>
   <libpaths>DerelictLib</libpaths>
   <deffile />
   <resfile />
@@ -226,6 +226,10 @@
    <File path="Shader\Fluid\VelocityUpdate.frag" />
   </Folder>
   <Folder name="sbylib">
+   <Folder name="al">
+    <File path="sbylib\al\audiosource.d" />
+    <File path="sbylib\al\package.d" />
+   </Folder>
    <Folder name="camera">
     <File path="sbylib\camera\camera.d" />
     <File path="sbylib\camera\orthocamera.d" />
