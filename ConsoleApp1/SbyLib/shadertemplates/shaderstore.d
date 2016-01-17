@@ -31,6 +31,29 @@ class ShaderStore {
 													 }",
 													 ShaderProgram.InputType.SourceCode);
 		/*
+		テクスチャ座標を色として表示。
+		Built-in : gl_Vertex
+				   gl_MultiTexCoord0
+		uniform:   mWorld
+				   mViewProj
+		*/
+		shaderList["TexcoordShow"] = new ShaderProgram(
+													 "
+													 uniform mat4 mWorld;
+													 uniform mat4 mViewProj;
+													 varying vec2 tc;
+
+													 void main() {
+													 gl_Position = mViewProj * mWorld * gl_Vertex;
+													 tc = gl_MultiTexCoord0.xy;
+													 }",
+													 "
+													 varying vec2 tc;
+													 void main() {
+													 gl_FragColor = vec4(tc, 0, 1);
+													 }",
+													 ShaderProgram.InputType.SourceCode);
+		/*
 		テクスチャ座標から白黒のチェック模様を表示。
 		Built-in: gl_Vertex
 				  gl_MultiTexCoord0
@@ -100,35 +123,48 @@ class ShaderStore {
 												  }
 												  ",
 												  ShaderProgram.InputType.SourceCode);
+		/*
+		グローバル座標系のx,y,z軸を表示。２次元専用。
+		Built-in: gl_Vertex
+				  gl_Normal
+		Uniform:  mWorld
+				  mViewProj
+				  lightPos
+				  cameraPos
+		*/
 		shaderList["Phong"] = new ShaderProgram(
 												"
 												uniform mat4 mWorld;
 												uniform mat4 mViewProj;
 												varying vec4 p;
 												varying vec3 n;
+												varying vec2 tc;
 
 												void main() {
 												gl_Position = mViewProj * mWorld * gl_Vertex;
 												mat3 m2 = mat3(mWorld[0].xyz,mWorld[1].xyz,mWorld[2].xyz);
 												n = m2 * gl_Normal;
 												p = mWorld * gl_Vertex;
+												tc = gl_MultiTexCoord0.xy;
 												}",
 												"
-												uniform vec4 lightPos;
+												uniform vec3 lightPos;
 												uniform vec3 cameraPos;
+												uniform sampler2D mTexture;
 
 												varying vec4 p;
 												varying vec3 n;
+												varying vec2 tc;
 
 												void main() {
 
-												vec3 ambient = (n * 0.5+ 0.5) * 0.5;
-												vec3 diffuse = n * 0.5+ 0.5;
+												vec3 ambient = vec3(1,1,1) * .1;
+												vec3 diffuse = texture2D(mTexture, tc).rgb;
 												vec3 specular = vec3(1,1,1);
 												vec3 pos = p.xyz / p.w;
 												gl_FragColor.xyz = 
 												+ ambient
-												+ diffuse * max(0, dot( normalize(lightPos.xyz - pos), n ))
+												+ diffuse * max(0, dot( normalize(lightPos - pos), n ));
 												+ specular * pow(max(0, dot( normalize(cameraPos - pos), normalize(reflect(pos - lightPos.xyz, n)))), 20);
 												gl_FragColor.w = 1;
 												}",

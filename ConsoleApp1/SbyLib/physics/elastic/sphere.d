@@ -9,12 +9,14 @@ class ElasticSphere : Primitive {
 			ShaderProgram sp;
 			IBO index;
 			IBO indexForWireframe;
+			VBO texcoordVBO;
 			vec3[] vertex;
 			uint[] indices;
 			uint[][] pairIndex;
 			vec3[] dList;
 			vec3[] forceList;
 			vec3[] floorSinkList;
+			TextureObject tex;
 
 			immutable {
 				int recursionLevel = 2;
@@ -144,7 +146,7 @@ class ElasticSphere : Primitive {
 	}
 
 	this()  {
-		sp = ShaderStore.getShader("NormalShow");
+		sp = ShaderStore.getShader("Phong");
 
 
 		float[] vertexArray;
@@ -160,6 +162,21 @@ class ElasticSphere : Primitive {
 			normal ~= n.array;
 		}
 		normalVBO = new VBO(normal, VBO.Frequency.STREAM);
+
+		//テクスチャ座標
+		float[] texcoord;
+
+		foreach (v; vertex) {
+			float theta = atan(v.z / v.x) + (v.x > 0 ? 0 : PI);
+			if (v.x == 0) if (v.z > 0) theta = PI / 2; else theta = -PI/2;
+			if (theta < 0) theta += 2 * PI;
+			float phi = atan(v.y / v.xz.length);
+			if (v.xz.length == 0) if (v.y > 0) phi = PI/2; else phi = -PI/2;
+			texcoord ~= theta / (2 * PI);
+			texcoord ~= phi / PI + 0.5f;
+			writeln(theta/(2*PI), ",", phi/PI+.5f);
+		}
+		texcoordVBO = new VBO(texcoord, VBO.Frequency.STATIC);
 
 		//インデックス
 		index = new IBO(indices, IBO.Frequency.STATIC);
@@ -187,6 +204,13 @@ class ElasticSphere : Primitive {
 			}
 			normalVBO.UnBind();
 
+			texcoordVBO.Bind();
+			{
+				glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+				glTexCoordPointer(2, GL_FLOAT, 0, null);
+			}
+			texcoordVBO.UnBind();
+
 			vertexVBO.Bind();
 			{
 				glEnableClientState(GL_VERTEX_ARRAY);
@@ -206,12 +230,18 @@ class ElasticSphere : Primitive {
 		//GPGPUの準備
 		particleInfoTexture = new TextureObject(2^^n, 1, GL_RGBA);
 
+		//テクスチャ用意
+		tex = new TextureObject("Resource/earth.jpg");
+
 		SetWireframe(false);
 	}
 
 	override void Draw() {
 		sp.SetUniformMatrix!(4,"mWorld")(mat4.Identity.array);
 		sp.SetUniformMatrix!(4,"mViewProj")(CurrentCamera.GetViewProjectionMatrix.array);
+		sp.SetUniform!(3, "lightPos")([0, 20, 0]);
+		sp.SetUniform!(3, "cameraPos")(CurrentCamera.GetPos.array);
+		sp.SetTexture(tex);
 		vao.Draw(CurrentIBO);
 
 		Move();
@@ -221,6 +251,12 @@ class ElasticSphere : Primitive {
 			vertexArray ~= p.p.array;
 		}
 		vertexVBO.Update(vertexArray);
+
+		float[] normalArray;
+		foreach (ref p;particleList) {
+			normalArray ~= p.n.array;
+		}
+		normalVBO.Update(normalArray);
 
 	}
 
